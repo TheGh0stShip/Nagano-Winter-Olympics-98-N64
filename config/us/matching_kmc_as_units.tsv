@@ -1,3 +1,35 @@
 # KMC GCC 2.7.2 units matching with original assembler scheduling
 # ROM_START SIZE SOURCE FLAGS SHA256
 0x27F4	0xC	src/game/get_global_halfword.c	-O2 -G0 -mips3 -mgp32 -mfp32	db89976a733bc78e7e612b235fd0549a45d6a8a310e2ad12741f00076eb27e87
+0x4AA0	0x8	src/game/add4_80003ea0.c	-O2 -G0 -mips3 -mgp32 -mfp32	590255ef084339244a11bac51be404a1f0b5ca01553e8703bc0b9cab9259ba53
+0x4AA8	0x8	src/game/add348_80003ea8.c	-O2 -G0 -mips3 -mgp32 -mfp32	fa31f3ab2aa4a8d1945a53bd4c4093aa557649098335aa9c2cc93130fffbb9da
+0x4AB0	0x8	src/game/load_word_80003eb0.c	-O2 -G0 -mips3 -mgp32 -mfp32	46ea534b6577fffb8d28ef60699dc36718b2b015e8de1c309089066f6a985f60
+0x5128	0x8	src/game/load_word_80004528.c	-O2 -G0 -mips3 -mgp32 -mfp32	de3291106aed9d3a524f46e97b04d97a209e070a9655b6dd17529969fbaaff46
+0x1E244	0x8	src/game/return_one_8001d644.c	-O2 -G0 -mips3 -mgp32 -mfp32	a7e7ca11a6b853f66aed197e962cbe2e8f22691c363f271a0a6e780f4ceb9b83
+0x1E24C	0x8	src/game/return_one_8001d64c.c	-O2 -G0 -mips3 -mgp32 -mfp32	a7e7ca11a6b853f66aed197e962cbe2e8f22691c363f271a0a6e780f4ceb9b83
+0x2D2EC	0x8	src/game/return_fifty_8002c6ec.c	-O2 -G0 -mips3 -mgp32 -mfp32	fad8c7cb80e34aac64af72ed6576cb44dcf50318b1f7b4eb3578aaabec383769
+0x32ED4	0x8	src/game/return_one_800322d4.c	-O2 -G0 -mips3 -mgp32 -mfp32	a7e7ca11a6b853f66aed197e962cbe2e8f22691c363f271a0a6e780f4ceb9b83
+0x6A10	0x8	src/game/noop_80005e10.c	-O2 -G0 -mips3 -mgp32 -mfp32	78aa5094d5ec7291c79f799c009d04f06c2f20187988e3dcc8d35ee5efdbb378
+0xC594	0x8	src/game/noop_8000b994.c	-O2 -G0 -mips3 -mgp32 -mfp32	78aa5094d5ec7291c79f799c009d04f06c2f20187988e3dcc8d35ee5efdbb378
+0xD1A4	0x8	src/game/noop_8000c5a4.c	-O2 -G0 -mips3 -mgp32 -mfp32	78aa5094d5ec7291c79f799c009d04f06c2f20187988e3dcc8d35ee5efdbb378
+0x13A60	0x8	src/game/noop_80012e60.c	-O2 -G0 -mips3 -mgp32 -mfp32	78aa5094d5ec7291c79f799c009d04f06c2f20187988e3dcc8d35ee5efdbb378
+0x144BC	0x8	src/game/noop_800138bc.c	-O2 -G0 -mips3 -mgp32 -mfp32	78aa5094d5ec7291c79f799c009d04f06c2f20187988e3dcc8d35ee5efdbb378
+0x1BC00	0x8	src/game/noop_8001b000.c	-O2 -G0 -mips3 -mgp32 -mfp32	78aa5094d5ec7291c79f799c009d04f06c2f20187988e3dcc8d35ee5efdbb378
+0x1ED1C	0x8	src/game/noop_8001e11c.c	-O2 -G0 -mips3 -mgp32 -mfp32	78aa5094d5ec7291c79f799c009d04f06c2f20187988e3dcc8d35ee5efdbb378
+0x2149C	0x8	src/game/noop_8002089c.c	-O2 -G0 -mips3 -mgp32 -mfp32	78aa5094d5ec7291c79f799c009d04f06c2f20187988e3dcc8d35ee5efdbb378
+0x21B18	0x8	src/game/noop_80020f18.c	-O2 -G0 -mips3 -mgp32 -mfp32	78aa5094d5ec7291c79f799c009d04f06c2f20187988e3dcc8d35ee5efdbb378
+0x34574	0x8	src/game/noop_80033974.c	-O2 -G0 -mips3 -mgp32 -mfp32	78aa5094d5ec7291c79f799c009d04f06c2f20187988e3dcc8d35ee5efdbb378
+0x3457C	0x8	src/game/noop_8003397c.c	-O2 -G0 -mips3 -mgp32 -mfp32	78aa5094d5ec7291c79f799c009d04f06c2f20187988e3dcc8d35ee5efdbb378
+0x354D4	0x8	src/game/noop_800348d4.c	-O2 -G0 -mips3 -mgp32 -mfp32	78aa5094d5ec7291c79f799c009d04f06c2f20187988e3dcc8d35ee5efdbb378
+0x381E8	0x8	src/game/noop_800375e8.c	-O2 -G0 -mips3 -mgp32 -mfp32	78aa5094d5ec7291c79f799c009d04f06c2f20187988e3dcc8d35ee5efdbb378
+0x3F234	0x8	src/game/noop_8003e634.c	-O2 -G0 -mips3 -mgp32 -mfp32	78aa5094d5ec7291c79f799c009d04f06c2f20187988e3dcc8d35ee5efdbb378
+0x3F698	0x8	src/game/noop_8003ea98.c	-O2 -G0 -mips3 -mgp32 -mfp32	78aa5094d5ec7291c79f799c009d04f06c2f20187988e3dcc8d35ee5efdbb378
+0x3F6A0	0x8	src/game/noop_8003eaa0.c	-O2 -G0 -mips3 -mgp32 -mfp32	78aa5094d5ec7291c79f799c009d04f06c2f20187988e3dcc8d35ee5efdbb378
+0x4A3BC	0x8	src/game/noop_800497bc.c	-O2 -G0 -mips3 -mgp32 -mfp32	78aa5094d5ec7291c79f799c009d04f06c2f20187988e3dcc8d35ee5efdbb378
+0x4CE74	0x8	src/game/noop_8004c274.c	-O2 -G0 -mips3 -mgp32 -mfp32	78aa5094d5ec7291c79f799c009d04f06c2f20187988e3dcc8d35ee5efdbb378
+0x51A40	0x8	src/game/noop_80050e40.c	-O2 -G0 -mips3 -mgp32 -mfp32	78aa5094d5ec7291c79f799c009d04f06c2f20187988e3dcc8d35ee5efdbb378
+0x51A48	0x8	src/game/noop_80050e48.c	-O2 -G0 -mips3 -mgp32 -mfp32	78aa5094d5ec7291c79f799c009d04f06c2f20187988e3dcc8d35ee5efdbb378
+0x51B3C	0x8	src/game/noop_80050f3c.c	-O2 -G0 -mips3 -mgp32 -mfp32	78aa5094d5ec7291c79f799c009d04f06c2f20187988e3dcc8d35ee5efdbb378
+0x55FC0	0x8	src/game/noop_800553c0.c	-O2 -G0 -mips3 -mgp32 -mfp32	78aa5094d5ec7291c79f799c009d04f06c2f20187988e3dcc8d35ee5efdbb378
+0x56100	0x8	src/game/noop_80055500.c	-O2 -G0 -mips3 -mgp32 -mfp32	78aa5094d5ec7291c79f799c009d04f06c2f20187988e3dcc8d35ee5efdbb378
+0x5F5F8	0x8	src/game/noop_8005e9f8.c	-O2 -G0 -mips3 -mgp32 -mfp32	78aa5094d5ec7291c79f799c009d04f06c2f20187988e3dcc8d35ee5efdbb378

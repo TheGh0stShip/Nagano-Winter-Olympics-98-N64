@@ -27,7 +27,11 @@ class BaselineTests(unittest.TestCase):
         self.assertEqual(sum(report["ledger_totals"].values()), ROM_SIZE)
 
     def test_matching_manifest_shape(self):
-        row = (ROOT / "config/us/matching_kmc_as_units.tsv").read_text().splitlines()[2]
+        lines = (ROOT / "config/us/matching_kmc_as_units.tsv").read_text().splitlines()
+        rows = [line for line in lines if line and not line.startswith("#")]
+        self.assertEqual(len(rows), 33)
+        self.assertEqual(sum(int(row.split("\t")[1], 0) for row in rows), 268)
+        row = rows[0]
         fields = row.split("\t")
         self.assertEqual(fields[:3], ["0x27F4", "0xC", "src/game/get_global_halfword.c"])
         self.assertEqual(len(fields[4]), 64)

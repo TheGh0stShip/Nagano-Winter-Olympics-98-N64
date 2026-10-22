@@ -17,7 +17,7 @@ You must provide your own legally obtained retail ROM.
 - RSP code identified inside the linked text section: 7,296 bytes
 - SDK functions named: 241 (220 high-confidence)
 - Audio: three libaudio bank files and 93 indexed ADPCM sample payloads
-- Matching C: 1 function / 12 bytes
+- Matching C: 33 functions / 268 bytes
 - Physical ROM inventory: 12,582,912 / 12,582,912 bytes (100%)
 
 Physical coverage does not mean semantic understanding. The conservative
