@@ -185,3 +185,5 @@
 0x5E730	0x10	src/game/read_pi_status_8005db30.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	b794ebb66cea4f9ab8045e1dccf9609b0405c2573ac48053f8459a14044cd798
 0x5FFD0	0x10	src/game/write_sp_status_8005f3d0.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	7d016b2d4909b353bf819db0810e921c6e15a1d004bae3eac2f1e8266c3e398c
 0x5FFE0	0x10	src/game/read_sp_status_8005f3e0.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	791ef91fc4d88fb2cb5c71c47984a82b411f1a747f24c7d50c2034015bdbe3db
+0x2E560	0x20	src/game/reset_shared_state_8002d960.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	fb0c6fa5675903c67a5d87fa536c7704a4ba3b14b7503fcf48155b8979a09dc6
+0x30234	0x20	src/game/reset_shared_state_8002f634.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	fb0c6fa5675903c67a5d87fa536c7704a4ba3b14b7503fcf48155b8979a09dc6

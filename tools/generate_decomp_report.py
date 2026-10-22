@@ -10,6 +10,7 @@ FUNCTIONS = ROOT / "analysis/survey/functions.toml"
 MANIFESTS = (
     ROOT / "config/us/matching_kmc_as_units.tsv",
     ROOT / "config/us/matching_ido_units.tsv",
+    ROOT / "config/us/matching_ido7_units.tsv",
 )
 OUTPUT = ROOT / "build/report.json"
 INVENTORY = ROOT / "analysis/rom_inventory.tsv"

@@ -15,6 +15,7 @@ FUNCTIONS = ROOT / "analysis/survey/functions.toml"
 MANIFESTS = (
     ROOT / "config/us/matching_kmc_as_units.tsv",
     ROOT / "config/us/matching_ido_units.tsv",
+    ROOT / "config/us/matching_ido7_units.tsv",
 )
 
 
@@ -65,7 +66,7 @@ def matched_sources() -> dict[tuple[int, int], str]:
     return result
 
 
-def families(rom: bytes) -> list[dict]:
+def families(rom: bytes, include_unmatched: bool = False) -> list[dict]:
     matched = matched_sources()
     functions = tomllib.loads(FUNCTIONS.read_text())["section"][0]["functions"]
     grouped = defaultdict(list)
@@ -84,7 +85,7 @@ def families(rom: bytes) -> list[dict]:
     for (size, digest), members in grouped.items():
         sources = [member for member in members if member["source"]]
         unknown = [member for member in members if not member["source"]]
-        if sources and unknown:
+        if sources and unknown or include_unmatched and not sources and len(unknown) > 1:
             result.append({"size": size, "fingerprint": digest,
                            "matched": sources, "candidates": unknown})
     return sorted(result, key=lambda item: (-item["size"] * len(item["candidates"]),
@@ -95,9 +96,11 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--rom", type=Path, default=ROOT / "baseroms/us/baserom.z64")
     parser.add_argument("--json", action="store_true")
+    parser.add_argument("--include-unmatched", action="store_true",
+                        help="also show repeated families with no matching member")
     parser.add_argument("--limit", type=int, default=50)
     args = parser.parse_args()
-    found = families(args.rom.read_bytes())[:args.limit]
+    found = families(args.rom.read_bytes(), args.include_unmatched)[:args.limit]
     if args.json:
         print(json.dumps(found, indent=2))
         return
