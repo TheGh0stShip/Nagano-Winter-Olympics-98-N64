@@ -17,3 +17,5 @@
 0x14048	0x44	src/game/init_range_80013448.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	b155966c2e6e3c8e3e3d4f5ae69e3233558411221f0a2b38139016992f525153
 0x1408C	0x44	src/game/init_range_8001348c.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	f15486c25bc3f4ae8be410860d9070f032ef2d7c65962ab5db04ea10c02ef7ff
 0x140D0	0x44	src/game/init_range_800134d0.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	7b2f2808b0d845d753fec4873a8e7722f3244cdc8c224503d813e616ccaa6d0f
+0x14004	0x44	src/game/init_range_80013404.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	cb84ef1a7d7dd00b32d78648e36109ec3dc45ae1ae2597b12d5f056cbeb01176
+0x14114	0x44	src/game/init_range_80013514.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	9901f0f5887499ac614a7cb671e3a7c278c7f418d01f602c6e452cbc42d78249
