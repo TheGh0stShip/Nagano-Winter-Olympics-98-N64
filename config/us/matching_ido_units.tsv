@@ -1,5 +1,11 @@
 # IDO 5.3 exact matching units
 # ROM_START SIZE SOURCE FLAGS SHA256
+0x560B8	0x18	src/game/push_global_link_800554b8.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	29ce2aa774e51d60ed7961e674678eb221c88b362658e85134f00beaf3dd1c04
+0x4F350	0x24	src/game/link_before_8004e750.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	bc5376a9c0214c2355430e588d8b8846c00202a85ac01f8f183f4b845820d31a
+0x13388	0x1C	src/game/set_state_one_80012788.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	19c8bb73c5d07420761c6017b63f1572ae08bb8195790fffe0667fb59d47dc67
+0x30300	0x24	src/game/vector_length_8002f700.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	5c9e4d3eb9564fd8cadf43b1b2b07cb63f53faa5d86c06a1472478cbdf18377b
+0x54CE0	0x1C	src/game/convert_double_to_s64_800540e0.c	-O1 -mips3 -32 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	48aaeb35564e08822c2bdb27216388c251c5694800d6ecdfcf7e097b9a755ac0
+0x54CFC	0x1C	src/game/convert_float_to_s64_800540fc.c	-O1 -mips3 -32 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	f8bea959cb8ea987ad5d91b842cf546fb7d18ff8fc740c2e8417d4270aad84cd
 0xB4DC	0x10	src/game/set_global_byte_8000a8dc.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	aadf123a793f41898d057aa93cf9c15d89ba27bdc6828ab9ff6a3eb3d3f0b131
 0x133A4	0x18	src/game/clear_state_byte_800127a4.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	8d5b712d99f3fd869583999b6242f2ea4c554a789e000961a67329383039a869
 0x31B70	0x18	src/game/get_state_byte_80030f70.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	6f7e1db8435272b5ab0f11ddbd60ef98c32210d91e238dba75617c6ee740e0f4
