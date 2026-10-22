@@ -4,8 +4,8 @@ Retail ROM SHA-1: `eaf543e195731031a84f4136b506449209e3a8f5`. This audit scans a
 
 ## Code census
 
-- Exact matches: 435 functions / 19,980 bytes.
-- Remaining: 1,034 functions / 372,148 surveyed bytes.
+- Exact matches: 436 functions / 20,068 bytes.
+- Remaining: 1,033 functions / 372,060 surveyed bytes.
 - Direct call sites: 3,929; indirect call sites: 64; branch sites: 7,046.
 - COP1 instructions: 7,233.
 - Exact duplicate groups: 26; structural duplicate groups: 95; structural groups with unmatched members: 18.
@@ -25,7 +25,7 @@ Retail ROM SHA-1: `eaf543e195731031a84f4136b506449209e3a8f5`. This audit scans a
 
 ### Verified compiler units
 
-- IDO 5.3: 303
+- IDO 5.3: 304
 - KMC GCC 2.7.2 + assembler: 65
 - IDO 7.1: 67
 
@@ -37,7 +37,7 @@ Retail ROM SHA-1: `eaf543e195731031a84f4136b506449209e3a8f5`. This audit scans a
 | `0x11000..0x21000` | 243 | 98 | 3964 | KMC GCC 2.7.2 + assembler: 13, IDO 5.3: 72, IDO 7.1: 13 |
 | `0x21000..0x31000` | 274 | 81 | 3012 | KMC GCC 2.7.2 + assembler: 10, IDO 5.3: 59, IDO 7.1: 12 |
 | `0x31000..0x41000` | 239 | 80 | 3284 | IDO 5.3: 60, IDO 7.1: 7, KMC GCC 2.7.2 + assembler: 13 |
-| `0x41000..0x51000` | 242 | 53 | 2664 | IDO 5.3: 37, KMC GCC 2.7.2 + assembler: 8, IDO 7.1: 8 |
+| `0x41000..0x51000` | 242 | 54 | 2752 | IDO 5.3: 38, KMC GCC 2.7.2 + assembler: 8, IDO 7.1: 8 |
 | `0x51000..0x61000` | 237 | 42 | 1744 | IDO 5.3: 33, KMC GCC 2.7.2 + assembler: 9 |
 | `0x61000..0x71000` | 0 | 0 | 0 | none |
 | `0x71000..0x81000` | 0 | 0 | 0 | none |
