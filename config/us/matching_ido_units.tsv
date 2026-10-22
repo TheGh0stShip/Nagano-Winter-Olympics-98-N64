@@ -1,6 +1,29 @@
 # IDO 5.3 exact matching units
 # ROM_START SIZE SOURCE FLAGS SHA256
 0x128D4	0x10	src/game/copy_global_byte_80011cd4.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	4f53812f7a46f9db4e0051057ab0b5f50d23ae767bb6ce8116b8c7dbe06b9d23
+0x13FEC	0x18	src/game/clear_indexed_halfword_800133ec.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	9fea410c6d8657038e8457e8ca935807ac7c546c2c462c91b00bac30d818b482
+0x4DC90	0x24	src/game/reset_object_8004d090.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	11d9a65c04269242f169869ed12f7381dff720cbc814a55cfde82b845f7442af
+0x4DC78	0x18	src/game/restore_counter_8004d078.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	b591e61425c3eb5254a03b2283cba90e79b334f62e2fd8d8c8a2475059ddca5e
+0x4DC60	0x18	src/game/save_counter_8004d060.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	46d6feee3160c33b6b65aece6902266045c616aed0b42616a929ef0475223e78
+0x3D368	0x18	src/game/set_state_bytes_8003c768.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	9251762e68aa04703c72ee7b70e0e1e083f960d0b0138ad7387d5f5c5828d2eb
+0x13FCC	0x20	src/game/call_field_800133cc.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	cdd77e8bbea0cfddeda38b72399b1cbdeb86d27723691ac19b92be43fe8327b3
+0x14184	0x20	src/game/call_field_80013584.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	c5db776b42bbfef6cfba457999ce144a4024ee0d4adaed395a5b64c3835ce4e8
+0x14304	0x20	src/game/call_field_80013704.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	42d098ae51782af73c59d3feda58775e24e9ba3bf480d36f5cbc676b3cc5a007
+0x14228	0x24	src/game/call_pair_80013628.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	34ca3a8560b52141d4745656938d1aa95a7d62d6445f5a7236749cbf318c9d2e
+0x1424C	0x24	src/game/call_pair_8001364c.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	be19788930ac05c635ae9e0e0b485c0ef03c4ebf6ba66b09d12d1a0086af1190
+0x14270	0x24	src/game/call_pair_80013670.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	49bc585752846329733962186e51517e533c29d8d841bc9594f6bfa8f4553f75
+0x14294	0x24	src/game/call_pair_80013694.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	c2ad96bccc278e12f9daa522f842e3e0660459621b3390ac8cd374b021b3ddb3
+0x142B8	0x24	src/game/call_pair_800136b8.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	f1202081cc265b8b90c6e6e021cf42b95e5f688472b1c29d256d6825a4509b33
+0x143A8	0x24	src/game/call_pair_800137a8.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	32a5a9780f2417051a7fe63121c3154687f2b652c9149f12a7bc98721859dbd0
+0x143CC	0x24	src/game/call_pair_800137cc.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	a9b41d70d8a3c36b288cbd79a779b63aa8819dedceadd00fcf2b560fe38b53f2
+0x143F0	0x24	src/game/call_pair_800137f0.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	1f0dba8fbed4e55efc3ec93ddadf2a9e0a76edea09153e381480cd5895c34edf
+0x14414	0x24	src/game/call_pair_80013814.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	ce1bf54062427f0123c2a1c07f321c605716639c13fd22bca0977e2d86fc7ced
+0x14438	0x24	src/game/call_pair_80013838.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	cc818af56381097f48bd843fe55893af6b0fc491a94149bf2a1fce3fc943131c
+0x3BC20	0x24	src/game/call_pair_8003b020.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	b3427e836699d02bc367019f19cbbc65c4543927f3873e003ccabc714cc9da6f
+0x3D614	0x24	src/game/call_pair_8003ca14.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	119a5497d90a4c9db73ed364e37466cb55ad591673e28044bf22f55b3416f056
+0x3D638	0x24	src/game/call_pair_8003ca38.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	5985026dac3f90e4833d45767477221fe518b05a8a0632c651f3b290d688c5cc
+0x3FA4C	0x24	src/game/call_then_clear_8003ee4c.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	4d7220d0e50672da247c361de2631ef4ac2e91fc5a64e5c216ebb4db4938c6b9
+0x12818	0x24	src/game/reset_then_call_80011c18.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	c9590175b1d2ea178d76179c3d48eb2b5f74b24797c98135f5d681d9a2a20bf9
 0x220AC	0x24	src/game/clear_vector_800214ac.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	851949bba1694566e0a4879682cc67570d82e6ca960015800dedf274ce2d1352
 0x57884	0x18	src/game/conditional_store_80056c84.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	d579f83f1b28d4da1cf5cb4bd9173ba35d58f32ea6afb3e464e181cbd4604775
 0x21E98	0x1C	src/game/copy_vector_80021298.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	4dcf4d5f71afac685b2150a9df043a5641c13620a23f728b2eb64b69cc1fcdaf
