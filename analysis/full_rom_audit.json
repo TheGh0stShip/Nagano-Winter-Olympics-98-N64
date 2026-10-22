@@ -1360,8 +1360,8 @@
   },
   "functions": {
     "total": 1469,
-    "matched": 374,
-    "matched_bytes": 15740,
+    "matched": 375,
+    "matched_bytes": 15780,
     "total_bytes": 392128,
     "size_buckets": {
       "<=0x10": 96,
@@ -1375,7 +1375,7 @@
       ">0x800": 13
     },
     "compiler_matches": {
-      "IDO 5.3": 267,
+      "IDO 5.3": 268,
       "KMC GCC 2.7.2 + assembler": 65,
       "IDO 7.1": 42
     },
@@ -1444,10 +1444,10 @@
         "start": 331776,
         "end": 397312,
         "functions": 237,
-        "matched": 33,
-        "matched_bytes": 1244,
+        "matched": 34,
+        "matched_bytes": 1284,
         "compiler_matches": {
-          "IDO 5.3": 24,
+          "IDO 5.3": 25,
           "KMC GCC 2.7.2 + assembler": 9
         }
       },
@@ -3743,22 +3743,6 @@
         "trailing_nops": 0
       },
       {
-        "name": "func_800570F0",
-        "vram": 2147840240,
-        "rom": 359664,
-        "size": 40,
-        "matched": false,
-        "source": null,
-        "compiler": null,
-        "direct_calls": [],
-        "indirect_calls": 0,
-        "jumps": 0,
-        "branches": 1,
-        "cop1": 4,
-        "loads_stores": 0,
-        "trailing_nops": 0
-      },
-      {
         "name": "func_80000FA0",
         "vram": 2147487648,
         "rom": 7072,
@@ -4434,6 +4418,22 @@
         "name": "func_8000ED68",
         "vram": 2147544424,
         "rom": 63848,
+        "size": 80,
+        "matched": false,
+        "source": null,
+        "compiler": null,
+        "direct_calls": [],
+        "indirect_calls": 0,
+        "jumps": 0,
+        "branches": 1,
+        "cop1": 0,
+        "loads_stores": 12,
+        "trailing_nops": 0
+      },
+      {
+        "name": "func_8000F310",
+        "vram": 2147545872,
+        "rom": 65296,
         "size": 80,
         "matched": false,
         "source": null,
