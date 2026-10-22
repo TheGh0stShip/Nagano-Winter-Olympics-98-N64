@@ -127,3 +127,13 @@
 0x13AB8	0x2C	src/game/reset_fields_80012eb8.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	25daab13a4f8953fd5163939c6597f2483d333651f82f84ba7e21ffccbc19cc8
 0x1DC74	0x2C	src/game/reset_then_clear_8001d074.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	713136e3ac19b171b5af185e6eb5a523015bd79231c60e5e2e68dbc1a6fe1445
 0x2DDD8	0x28	src/game/set_then_call_8002d1d8.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	66dab76dea727b1166e5d23594f5bfb6af39d5f44f25518ae87ef564a30f506b
+0x2BB3C	0x30	src/game/call_indexed_8002af3c.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	5d0415d635991375f734e63f7b88bb7e079a58b4ad47f86b8476f1ce82f16628
+0x2BBE4	0x30	src/game/call_indexed_8002afe4.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	d82ca8626f9f080724e441518c11cca0918dd4aa738d0c811b3e4b337b76f9c7
+0x2C0B4	0x30	src/game/call_state_byte_8002b4b4.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	6810703d9eded7687730095c113ef47012c9addf204b6b776c7506386b57566b
+0x2F494	0x30	src/game/call_ten_if_clear_8002e894.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	22ffe7b85931a97a46b772de4b2a014d53212b9feb54f55fc954e2a96b86750d
+0xFFB0	0x30	src/game/call_three_8000f3b0.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	98cf331908318e04e1e428b17b052f036d2d55cdec70b2e72737d568f031a14f
+0x4C9E0	0x30	src/game/call_three_8004bde0.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	1e6ef85f546f043602e8a14e8444b9ce28412c6b9d513de84f27de0672a821f6
+0x26B60	0x30	src/game/copy_vector_to_state_80025f60.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	bbca76ceb14cb562a6b564afaa8a8f1569d032dfd3dac8aba09a5eeafa55b61c
+0x5D0B0	0x30	src/game/get_conditional_global_8005c4b0.c	-O1 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	5a200b1df770c82f2012cd18639bc7f386c46161e704d0747129a7d63c9a5c63
+0x302D0	0x30	src/game/get_object_record_8002f6d0.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	29394bfbf06872a98193738a24bd939f4978721815565b09e59becfe6196e36a
+0x4F320	0x30	src/game/unlink_node_8004e720.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	a6094f1c1ad9362d419c3830ac448e92a6d5d36ba8a476c78bf4723efac94381
