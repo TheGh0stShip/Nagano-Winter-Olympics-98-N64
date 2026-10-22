@@ -66,3 +66,4 @@
 0xF968	0x50	src/game/load_blob_8000ed68.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	e66f0cffce37ade598e403377c3821d1600593aee46f9280bb1fbfadd1ffdb19
 0xFF10	0x50	src/game/store_blob_8000f310.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	1cd43c98730dff33ff0fe502f765b82a531fc6346cd8ce470ee581e20edd7731
 0xFF60	0x50	src/game/store_blob_8000f360.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	93cdecec6118d5c9fa1a8871e6c2b146cf003de29b6e51fa3ae7a471184e591c
+0x108F4	0x50	src/game/reset_six_vectors_8000fcf4.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	0953374672b08667405fad194fd0d24c045524e10779b6537d2fbf7ec8bde4a0
