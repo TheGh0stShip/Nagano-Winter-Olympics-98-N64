@@ -180,3 +180,8 @@
 0x51664	0x2C	src/game/reset_global_object_80050a64.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	526d84e9c60e5246beba5a3b41f29de5a0a5d4c769a2a1016fa757ca608ee417
 0x4AD20	0x24	src/game/set_if_enabled_8004a120.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	43558e3662c804d33b49fd3497f80e4f426c0a92ffff7c02bbb42234dc6df7f8
 0x4B018	0x24	src/game/set_if_enabled_8004a418.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	effd1d5b85f6043c21fa3cb678c37de734f1e46f41950bc3c7f4ea92c9b8f222
+0x30390	0x2C	src/game/init_effect_8002f790.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	1e0a2da366e57a7a75c29f41ca95fd4c60f17da23415265bca49a235648315f8
+0x304D4	0x2C	src/game/init_effect_8002f8d4.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	5c692c4c32b80f0b6b3147e3ecd3c4b4af03042769aefd7221d5490eaa2d3fca
+0x5E730	0x10	src/game/read_pi_status_8005db30.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	b794ebb66cea4f9ab8045e1dccf9609b0405c2573ac48053f8459a14044cd798
+0x5FFD0	0x10	src/game/write_sp_status_8005f3d0.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	7d016b2d4909b353bf819db0810e921c6e15a1d004bae3eac2f1e8266c3e398c
+0x5FFE0	0x10	src/game/read_sp_status_8005f3e0.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	791ef91fc4d88fb2cb5c71c47984a82b411f1a747f24c7d50c2034015bdbe3db

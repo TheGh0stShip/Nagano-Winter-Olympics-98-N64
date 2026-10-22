@@ -18,7 +18,7 @@ You must provide your own legally obtained retail ROM.
 - SDK functions named: 241 (220 high-confidence)
 - Audio: three libaudio bank files and 93 indexed ADPCM sample payloads
 - Music: 23 loader-indexed Konami LZW sequence records decode successfully
-- Matching C: 245 functions / 7,360 bytes
+- Matching C: 250 functions / 7,496 bytes
 - Byte-matched initialized data: 0 / 129,864 bytes
 - Identified post-program asset bytes: 794,392 / 12,047,904 bytes
 - Extracted asset bytes: 0 / 794,392 identified bytes
@@ -51,4 +51,9 @@ region, reproducibly extracted asset bytes, and gap-free physical inventory.
 Only code and initialized data contribute to aggregate decompilation progress.
 Identified audio is not reported as extracted, and loader-referenced ranges do
 not count as identified assets until their formats are decoded.
+
+`make families` compares mnemonic-level instruction fingerprints across the
+function catalogue and reports unmatched functions that share a shape with
+verified C. Its output is candidate evidence only; every promoted result must
+still pass `make verify-matching`.
 

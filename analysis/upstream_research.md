@@ -66,8 +66,9 @@ range from `0x1A0` to `0x391C`. The physical ledger now classifies the full
 in the extraction category.
 
 Rounds 1-8 and 46 support normalized instruction-family transfer followed by
-the strict matching gate. That method produced the 12 exact matches in commit
-`a3114ac`; it should be automated rather than repeated ad hoc.
+the strict matching gate. `tools/find_function_families.py` now performs that
+scan reproducibly. Its first run produced five further exact matches in
+addition to the 12 earlier matches in commit `a3114ac`.
 
 Rounds 9-20 and 37-40 confirm the reporting policy: exact code/data, identified
 formats, reproducibly extracted assets, and gap-free inventory are different
