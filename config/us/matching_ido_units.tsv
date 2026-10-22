@@ -320,3 +320,5 @@
 0x3D744	0x3C	src/game/create_configured_entry_8003cb44.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	9c9c4e5ba491d228686ea6d5f20505e95895005bd1df144e1443648b9261e50b
 0x4E224	0x40	src/game/consume_and_dispatch_byte_8004d624.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	e6496088ad9554eb437b20704aa980b365cba4200ba88cb8d6d76a6561afe8c8
 0x144F0	0x44	src/game/reset_then_process_800138f0.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	47c5515038558edc2feb40620945f42e857bc2e36f1bf646581fa039b76f6620
+0x37C40	0x34	src/game/get_runtime_scale_80037040.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	50ab92578413a090231875af654e095e7731ae573bc1e4f8fd40305eed4de9d8
+0x2DF5C	0x38	src/game/set_processed_halfword_8002d35c.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	54ad908d80f93011acf2984d94db53c0e281a45200e6e332b562f2f89ffc9f19
