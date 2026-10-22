@@ -197,3 +197,6 @@
 0xA2E4	0xB4	src/game/apply_record_800096e4.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	60c08680a54e37ecf7be5a26a042f5a881e5e4d313461cd70fcfde4e1b24c652
 0xA398	0xB4	src/game/apply_record_80009798.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	60c08680a54e37ecf7be5a26a042f5a881e5e4d313461cd70fcfde4e1b24c652
 0xA44C	0xB4	src/game/apply_record_8000984c.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	60c08680a54e37ecf7be5a26a042f5a881e5e4d313461cd70fcfde4e1b24c652
+0x23BC	0x40	src/game/forward_arguments_800017bc.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	705a098d3c2f8c0527beda7217018808e84a3cadbc6fd3eab1815abee1a31aa5
+0x23FC	0x40	src/game/forward_arguments_800017fc.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	705a098d3c2f8c0527beda7217018808e84a3cadbc6fd3eab1815abee1a31aa5
+0x243C	0x40	src/game/forward_arguments_8000183c.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	705a098d3c2f8c0527beda7217018808e84a3cadbc6fd3eab1815abee1a31aa5
