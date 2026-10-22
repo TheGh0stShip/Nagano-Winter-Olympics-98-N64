@@ -1,5 +1,9 @@
 # IDO 5.3 exact matching units
 # ROM_START SIZE SOURCE FLAGS SHA256
+0x510F0	0x50	src/game/init_resource_800504f0.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	db31ca00def43374029395f45a0dd8cec6a6e70ccd8432e40ed785019da8e54f
+0x515D0	0x50	src/game/init_resource_800509d0.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	18808b1527a145fef26e22dc6a703dcface838670ec810a6b5c3646f2f7559c7
+0x51140	0x44	src/game/lock_resource_80050540.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	7762626e59464926105fb38622a5b4012b4e446403fc33fdf4145001a52a95ef
+0x51620	0x44	src/game/lock_resource_80050a20.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	caa308297f2df1c48ed8dd467afcc7d5cfe302d1670bc0f17aaf6e4b72d2cf7c
 0x27B8	0x3C	src/game/reset_control_80001bb8.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	af5f729a105ce0b82b8c480abaac11676a1dc84ce671a6b40be9e586b1fff525
 0x4DA70	0x38	src/game/init_stream_fields_8004ce70.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	5e58e0739e4de80617163d7486a15efbbb2b984d6b222efdb566f7d78e29eae9
 0x4DB68	0x38	src/game/init_stream_fields_8004cf68.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	105ae353c6396d3fe097f8c176b800cce25f8f4b3b868b64be5d8c70b9cc8eb3

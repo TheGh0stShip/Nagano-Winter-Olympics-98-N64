@@ -1,5 +1,8 @@
 # IDO 7.1 units verified against the retail ROM
 # ROM_START SIZE SOURCE FLAGS SHA256
+0x5750	0x4C	src/game/copy_template_80004b50.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	3745c99a9aa46e1ecf42e8850cbc0cb4ace58227da3c44135bc21ada7d653c2b
+0xE8C0	0x4C	src/game/copy_template_8000dcc0.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	8c0d7da33c18767658831534c20f30602a4f1d3c1acec4a45105b501bb385a5f
+0x108A8	0x4C	src/game/copy_template_8000fca8.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	8c0d7da33c18767658831534c20f30602a4f1d3c1acec4a45105b501bb385a5f
 0x571C	0x34	src/game/clear_indexed_halfword_80004b1c.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	c8a711bd2b0ba5bc3ad9d3562dfd131fd687d6454323914131aeb28a31b9e20f
 0x4348	0x30	src/game/set_control_bytes_80003748.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	d00dcc7e86e171619e79e773be04bc4131e1b1b15bc12e9385f7fd37253315ee
 0x2D4E0	0x54	src/game/update_six_entries_8002c8e0.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	3d0c0a26fd6e165f05cf1bd6cb4aebe2332333ec5cd37f114c4a7937ba234156
