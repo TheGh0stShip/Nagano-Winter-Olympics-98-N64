@@ -53,3 +53,5 @@
 0x2C41C	0x30	src/game/call_summed_halfwords_8002b81c.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	31db933ea943fbcaaaab844e73bdb3daefcf5966573ebec4e4ae90e7161ffe8e
 0x354FC	0x30	src/game/call_byte_max_800348fc.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	5c4731c778c31e48473fbb0070ab6ac76dc93445acc980cfa67647591d5f2322
 0x3F780	0x50	src/game/set_initial_halfword_8003eb80.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	ff73b6b1eff097baf39035041f2094545106ee5c1d51d0c87a55a187322a0f81
+0x3F6A8	0x38	src/game/set_indexed_halfword_field_8003eaa8.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	415a4949eef3b9a45e9085d67e81ef021c3b4f9ce6e2693f408fbac57986eb7a
+0x288C0	0x2C	src/game/update_counter_80027cc0.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	8a4060f17527eddee3766226bd60696181e8f12e399138d00182187bfcde985d
