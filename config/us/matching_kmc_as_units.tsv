@@ -1,6 +1,15 @@
 # KMC GCC 2.7.2 units matching with original assembler scheduling
 # ROM_START SIZE SOURCE FLAGS SHA256
 0x27F4	0xC	src/game/get_global_halfword.c	-O2 -G0 -mips3 -mgp32 -mfp32	db89976a733bc78e7e612b235fd0549a45d6a8a310e2ad12741f00076eb27e87
+0x496F4	0x10	src/game/clear_indexed_byte_80048af4.c	-O2 -G0 -mips3 -mgp32 -mfp32	044158add1c8b22d377c603464619ec14324cacbaa399494b7b69be496df7c7f
+0x60A50	0x10	src/game/clear_pointed_word_8005fe50.c	-O2 -G0 -mips3 -mgp32 -mfp32	e1d58b3797e2652b6f924682d73472ec91145cf6f318f3198bad8f0141713d9b
+0xD070	0x14	src/game/clear_state_8000c470.c	-O2 -G0 -mips3 -mgp32 -mfp32	233a772ea058051e3296ce6528099812a44364eff09ee49f54b2c9bb2bead11e
+0x11400	0x14	src/game/clear_state_80010800.c	-O2 -G0 -mips3 -mgp32 -mfp32	26a20e71ee3e087d6d66a20da0078c8227c944a14fa521d7ddd05267c03acce1
+0x22430	0x10	src/game/clear_word_80021830.c	-O2 -G0 -mips3 -mgp32 -mfp32	4defe11730b62c100d1b49d668d414d31f6823e78bc8a8e1be3818cdd9560ec6
+0x609C0	0x10	src/game/get_global_word_8005fdc0.c	-O2 -G0 -mips3 -mgp32 -mfp32	785d23d75384b5a20dbad06391bd0d9750e66b8c9a5c6ada855d9caeaa789668
+0x49704	0x10	src/game/get_indexed_byte_80048b04.c	-O2 -G0 -mips3 -mgp32 -mfp32	3a9dd44f80665e21112547d50771859f6461029dc682dd8645f2c8a283d8519f
+0x49714	0x10	src/game/get_indexed_byte_80048b14.c	-O2 -G0 -mips3 -mgp32 -mfp32	ff5a2f8ea3a7bbe8aac099455e056d8d9bc042f849e62cfff81efbd7d01f4eb1
+0x5590	0xC	src/game/set_global_halfword_80004990.c	-O2 -G0 -mips3 -mgp32 -mfp32	e8b55fb6c2bea8f4bddb395e29ae1ff057b6e5ca867c21d55f3e408a54c14cbc
 0x8B44	0xC	src/game/clear_byte_80007f44.c	-O2 -G0 -mips3 -mgp32 -mfp32	c80727d79ff639dd930393780101c8d08d063b066fe6e184295f13f5d57aef7e
 0x2DA84	0xC	src/game/clear_byte_8002ce84.c	-O2 -G0 -mips3 -mgp32 -mfp32	ba443abb11bbd9fed5f3c798c9fb2fe0628f65ba86d24c1b44fa3d007e85e621
 0x449EC	0xC	src/game/clear_byte_80043dec.c	-O2 -G0 -mips3 -mgp32 -mfp32	8bdca4f9fbdf9e83cfe96be39c048ea22b2007aff14dce10259bfbb87b115865
