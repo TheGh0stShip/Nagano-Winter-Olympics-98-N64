@@ -1,5 +1,11 @@
 # IDO 5.3 exact matching units
 # ROM_START SIZE SOURCE FLAGS SHA256
+0x144C4	0x2C	src/game/call_pair_800138c4.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	9e59781727563260121c0953c82ec4d17b41713e3504c066a632131be83d7a83
+0xD1AC	0x38	src/game/reset_mode_8000c5ac.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	fb7cbadd27337666a609efed825039cab9b2885715221cad6f53a1ca4329c8c8
+0xCD50	0x20	src/game/store_table_pointer_8000c150.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	373e22c2180dab05c409439a817d08ac5b39b5e258634cceff9b684685141bb9
+0xCD70	0x20	src/game/store_table_pointer_8000c170.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	20401254656c7b070583b4595e60d72a09dbe37af840d0e5b7a0ff7da6e9f0de
+0x5B15C	0x28	src/game/string_length_8005a55c.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	1a0aa68ec64cb0416c51af6928756ae3e13fda25594f3ae75665118951c7f97f
+0x3A144	0x18	src/game/get_indexed_word_80039544.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	14708f51ecdf53f60a824a5f8d4767e6c937fc77a874e8ff6b125e846ddf7a7e
 0x9DFC	0x2C	src/game/build_stack_record_800091fc.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	e37311b34892a4a6ea8edd7beb71fcfab47ecdfce9a89f57422086fafba20b52
 0x9FE8	0x2C	src/game/build_stack_record_800093e8.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	011a43cc980bd0415f10c07c614f5ae2baa7cf174cc481ba37ae39d31a5a53db
 0x3AF30	0x48	src/game/process_remaining_records_8003a330.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	bab74d794a5a4cadea56a98648b97cfbb4f359eb587c5e2c55bb710bb4a7fe8d
