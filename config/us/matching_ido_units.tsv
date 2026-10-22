@@ -203,3 +203,7 @@
 0x42F8	0x50	src/game/set_control_pair_800036f8.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	d83f62a0efb91dabfe9ac13e7cf2b333ab6e1944d6c584144e7c2a9b05003a84
 0x4378	0x50	src/game/set_control_pair_80003778.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	8a26e3af28c38126356f8a6c3f31bb5fed1bdd44d4419b543fc627711d0236f7
 0x43C8	0x50	src/game/set_control_pair_800037c8.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	a7fe33d30f15ea95c984f8c5bdf9980f74867207c02bc1bcd43425db11a076fc
+0x7764	0x44	src/game/dispatch_record_value_80006b64.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	ca97f3d481b18cf8ad4f6fc6f44a56c5c484d33882291d70de60749007001c37
+0x7878	0x44	src/game/dispatch_record_value_80006c78.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	11d4c8bc9157d808830ff04ae5bd48500e72e74e4b8ed165fcb8da404e0fef8f
+0x7984	0x44	src/game/dispatch_record_value_80006d84.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	a108730e1a0a1943916aa1842d2e05cd57919b21b4503bcd7b6a2eadd584609f
+0x7AE0	0x44	src/game/dispatch_record_value_80006ee0.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	9322cb89163fcfa18a89c33f6162d6f615badbc7cacf1aa5baceabedc1f086e5
