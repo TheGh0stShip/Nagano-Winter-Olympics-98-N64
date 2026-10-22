@@ -277,3 +277,7 @@
 0x2A2C0	0x4C	src/game/compare_converted_floats_800296c0.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	920105b2e8ed452f0448d69cc261b53158638642712b39cabc5ce7a59c22ca8c
 0x4C38	0x50	src/game/process_object_links_80004038.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	372639bf80919ac10908e1fe079bf284ea2641ef002e411a49b5d59ab85e8de5
 0x14B98	0x50	src/game/query_indexed_flag_80013f98.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	02ed1d2d8da45bbf179e91db22f28ed10b25c21b292864ddf2b98c2127a61c9a
+0x2E270	0x40	src/game/call_indexed_halfword_8002d670.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	ffe73fa6a900bfe48ea59a1fff3cea569c408f02ce6d55082755426eae3f5ee6
+0x399CC	0x40	src/game/clamp_state_result_80038dcc.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	29d138ad101df008f72a62baeaa39511647688c323bb7b42c6026b677bd1100b
+0x39720	0x30	src/game/bounded_copy_80038b20.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	4e7b2eb6b084d42e095b3bc949e97aae03e931e0304d632c7e4a163af1d4f494
+0x560D0	0x30	src/game/pop_global_node_800554d0.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	4198ab6f8f36c3b3d4f59d41f498a1deef1c575f94fa5ced9241b21fe9c97fd5
