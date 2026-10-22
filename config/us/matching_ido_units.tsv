@@ -331,3 +331,5 @@
 0x4AFF4	0x24	src/game/set_runtime_byte_if_clear_8004a3f4.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	16d228d3e7e7099ede8d669cfc6c805d6e4bbc51e901f476f898f592b98bbb85
 0x4C4BC	0x44	src/game/prepare_stream_record_8004b8bc.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	b1fb0e39b88ef0f4eb8eaba35704f7e29db65231326d9197ff0b4759ad16c114
 0x201D4	0x44	src/game/reset_object_counters_8001f5d4.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	cdb44cc2cbbedbf6756aaa3c7e3d844ddb36ad52fd4cd4b3d89db80898d8acbf
+0x2F4C4	0x48	src/game/play_indexed_sound_if_active_8002e8c4.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	f20252b0bac6fe936e085d772f185dc45b90808260c0b04290703e333fb52c1f
+0x2DF04	0x58	src/game/init_processed_state_8002d304.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	fd1b4f10abac4f7ba3095128679c3d210f5833427ddebc81a4c3cc1b2af2680c
