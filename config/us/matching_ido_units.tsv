@@ -339,3 +339,4 @@
 0x3C1AC	0x24	src/game/adjust_index_if_enabled_8003b5ac.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	cc0e52c82e03958d00c77c4b2c1bac6e2e3a58e0bd0ee58d85b10dea8defa45e
 0x3C1D0	0x24	src/game/adjust_index_if_enabled_8003b5d0.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	cc0e52c82e03958d00c77c4b2c1bac6e2e3a58e0bd0ee58d85b10dea8defa45e
 0x5A2A4	0x2C	src/game/process_with_scratch_byte_800596a4.c	-O1 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	f19b8b17646b88b3fe4f4ca8e2e21d99a73e68485c367ad698854dc54dd672fa
+0x2DF94	0x4C	src/game/init_runtime_selection_8002d394.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	8aa1e8c98589b4a124ad49d76c976dec54b474e03b352df8826d830aac899c5f
