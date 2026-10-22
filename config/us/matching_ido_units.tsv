@@ -157,3 +157,14 @@
 0x2D34C	0x3C	src/game/update_mode_8002c74c.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	ddd2e6fd26b0919d4b6a7a0b8a7008fd94157195341b614335d640d168e6a261
 0x2D3A8	0x38	src/game/update_mode_8002c7a8.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	6c80f50473e84bd1d52309a76d7ba49bc39642a8764db028e6568785e3490d12
 0x21AE4	0x34	src/game/vector_delta_80020ee4.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	99d3c23defba7bf6aeea62ad6eb8e37971fe0a8184a1f1b75cafdabeb2fe5f9a
+0x3A350	0x38	src/game/call_if_two_80039750.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	ee610f6e0edbc8f2ebf6d0a151b544c6ee76ad56d9551bcbd5f81c66284ef15d
+0x30890	0x3C	src/game/call_object_offset_8002fc90.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	0ef231d1e47b6cd088bfc9c8cb94efff324ef04a23941e13ad5ffa77037a9762
+0x308F0	0x3C	src/game/call_object_offset_8002fcf0.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	0ef231d1e47b6cd088bfc9c8cb94efff324ef04a23941e13ad5ffa77037a9762
+0x30950	0x3C	src/game/call_object_offset_8002fd50.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	0ef231d1e47b6cd088bfc9c8cb94efff324ef04a23941e13ad5ffa77037a9762
+0x44870	0x38	src/game/clear_global_buffers_80043c70.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	af0bad1645c6565ab4d6decc6d5beb04f8c08d392e59732d623471c2b64743a6
+0x30580	0x34	src/game/clear_twelve_bytes_8002f980.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	1055a860ed2ad78939714488530d667df8289b2e1a01c0a687e8b8a72dda9121
+0x4F374	0x38	src/game/free_global_8004e774.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	6123744ad3e18c9f3ffcca0afcb93d6e92167823d2235bc5894acd119c2d6c95
+0x4F3AC	0x34	src/game/init_global_8004e7ac.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	686e3ce8a914ba652f32cebb5d1a27278e525d8f42ac4af7352b8386838318a4
+0x32C40	0x34	src/game/init_global_mode_80032040.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	b14a32e4ad7935f51a729015bb0fc82dccac8b6b8b52c9147251b315e883501d
+0x3A954	0x40	src/game/update_global_float_80039d54.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	791409ddc94412b22ee08d5392ebe19832063ae6b0b77f2503ff502a6028e2a0
+0x3A994	0x40	src/game/update_global_float_80039d94.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	791409ddc94412b22ee08d5392ebe19832063ae6b0b77f2503ff502a6028e2a0
