@@ -59,3 +59,6 @@
 0x2D8B8	0x40	src/game/clear_indexed_record_8002ccb8.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	b6e5c102434fbffca259f5e2d0cd8afc99cedee9df0cca0a0361898efba4858e
 0x2F7D0	0x40	src/game/clear_indexed_fields_8002ebd0.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	aea02a9643742327b331959b1c30ee7823f678f0980128d8d3dc993f6b727cfe
 0x36F34	0x40	src/game/clear_pair_state_80036334.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	0dd600ac6fd3f29c0299384f5642d424a9eff54382e521bb2abd8dbb5f024c08
+0x2D0D8	0x44	src/game/clear_indexed_state_8002c4d8.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	f29eac9878af19e75b54383cc35b3b24ea33511fd87c6d3104a3ec198447db0b
+0x2F3C0	0x44	src/game/copy_selected_record_8002e7c0.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	dc2837b3453a41da0a6de3297a06286fcba325c330957659ca6f90f149d78ef6
+0x12994	0x44	src/game/reset_five_records_80011d94.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	1943babfe3d5b2abe623dae7bbdebda48cd56286b4a6469a2a6868b5eea2812e
