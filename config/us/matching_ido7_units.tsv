@@ -14,3 +14,6 @@
 0x6848	0x64	src/game/collect_flags_80005c48.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	ad0035ff1581ae2b56dd1b716dd0afb8bcd10aa8711f55a46b5ba1b7ef49d291
 0x68AC	0x64	src/game/collect_flags_80005cac.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	4784cbc3ed9ab1540817f5e03601d067ec6800e7234a2479b601c996b3e3c207
 0x6910	0x64	src/game/collect_flags_80005d10.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	53a786a620894d0f6695473530dfa213836ec746dc5b4343e199d38275362f47
+0x14048	0x44	src/game/init_range_80013448.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	b155966c2e6e3c8e3e3d4f5ae69e3233558411221f0a2b38139016992f525153
+0x1408C	0x44	src/game/init_range_8001348c.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	f15486c25bc3f4ae8be410860d9070f032ef2d7c65962ab5db04ea10c02ef7ff
+0x140D0	0x44	src/game/init_range_800134d0.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	7b2f2808b0d845d753fec4873a8e7722f3244cdc8c224503d813e616ccaa6d0f
