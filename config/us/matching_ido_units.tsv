@@ -1,5 +1,16 @@
 # IDO 5.3 exact matching units
 # ROM_START SIZE SOURCE FLAGS SHA256
+0xB4DC	0x10	src/game/set_global_byte_8000a8dc.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	aadf123a793f41898d057aa93cf9c15d89ba27bdc6828ab9ff6a3eb3d3f0b131
+0x133A4	0x18	src/game/clear_state_byte_800127a4.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	8d5b712d99f3fd869583999b6242f2ea4c554a789e000961a67329383039a869
+0x31B70	0x18	src/game/get_state_byte_80030f70.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	6f7e1db8435272b5ab0f11ddbd60ef98c32210d91e238dba75617c6ee740e0f4
+0x37328	0x18	src/game/set_state_byte_80036728.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	d0fdc42573ce243fecbf4b8edf8976ca0b9c2ff818f4c00e2640d342947189f9
+0x37314	0x14	src/game/get_global_u64_80036714.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	9f8271ddc2855fbc765e217f117f4c41a857c9cd9eca84f1b402f0620f47ce7e
+0x54E54	0x18	src/game/convert_s64_to_double_80054254.c	-O1 -mips3 -32 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	3ba11f1a28a9802b21e5d730228be65dacb4301cb4c994f6806afc96828168e9
+0x54E6C	0x18	src/game/convert_s64_to_float_8005426c.c	-O1 -mips3 -32 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	2982a1e508fc621881ff0dd7f87fbd3b7c4887c2e03cfb32508c90fe86bb5fe5
+0x4FB20	0x2C	src/game/shift_right_u64_8004ef20.c	-O2 -mips3 -32 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	675cfd7ae5bb2dead54ece083b62caea4b89a02698826dc4ae301701effb8bdd
+0x4FBC4	0x2C	src/game/shift_left_u64_8004efc4.c	-O2 -mips3 -32 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	f77aab92ad5cc45115c9fc3fcd0c3bd0d88c2404de136dae2c80660b21302d7b
+0x4FC2C	0x5C	src/game/divide_s64_8004f02c.c	-O2 -mips3 -32 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	ad1ec2c0626553f19a061562ca4e6a401634710b08c69faef884c6784be1d129
+0x4FDB4	0x2C	src/game/shift_right_s64_8004f1b4.c	-O2 -mips3 -32 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	f947c8dc8dcd2bc0b62bf25945bc1815051fade3c2f24f7454b9420b94c699f6
 0x4FC88	0x30	src/game/multiply_u64_8004f088.c	-O2 -mips3 -32 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	deb3d19732cb6f876f0c3c367210dd4e094a4eee114b0e409a307c64fc292596
 0x566A0	0x44	src/game/init_record_80055aa0.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	bcc56b7e3699e1f7c5eae06b6c5d68563b1758484afcd5249b9a87d502d8e251
 0xA014	0xB4	src/game/apply_record_80009414.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	7178e8e7d5cf1ffb5ffc87748dcdcc26d5b2469bc546aa610ad74a46e92e8242

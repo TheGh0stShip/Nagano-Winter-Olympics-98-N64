@@ -5,7 +5,7 @@ N64DK_PYTHON ?= $(abspath $(N64DK_ROOT))/.venv/bin/python
 N64DK_TOOLCHAIN ?= ../BattleTanx/.toolchain
 N64DK := PYTHONPATH=$(abspath $(N64DK_ROOT)) N64DK_TOOLCHAIN=$(abspath $(N64DK_TOOLCHAIN)) $(N64DK_PYTHON) -m n64dk
 
-.PHONY: check families similar report report-check verify-rom verify-matching survey
+.PHONY: audit check families similar report report-check verify-rom verify-matching survey
 
 check: verify-rom verify-matching report-check
 
@@ -31,4 +31,7 @@ families: verify-rom
 
 similar: verify-rom
 	$(PYTHON) tools/find_function_families.py --rom "$(ROM)" --similar
+
+audit: verify-rom
+	$(PYTHON) tools/audit_full_rom.py --rom "$(ROM)"
 
