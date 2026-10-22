@@ -268,3 +268,5 @@
 0x7878	0x44	src/game/dispatch_record_value_80006c78.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	11d4c8bc9157d808830ff04ae5bd48500e72e74e4b8ed165fcb8da404e0fef8f
 0x7984	0x44	src/game/dispatch_record_value_80006d84.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	a108730e1a0a1943916aa1842d2e05cd57919b21b4503bcd7b6a2eadd584609f
 0x7AE0	0x44	src/game/dispatch_record_value_80006ee0.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	9322cb89163fcfa18a89c33f6162d6f615badbc7cacf1aa5baceabedc1f086e5
+0xE90C	0x34	src/game/reset_and_enable_8000dd0c.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	8acccf8d247246b8b2da3722deacbc426a57880e4d97f8dd8fb58f11ab718289
+0x3BAF4	0x54	src/game/process_five_records_8003aef4.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	b640270e7200b96f88e933f8a62668f51f9cd257907b82a92ff4e6d3cf4f9b69
