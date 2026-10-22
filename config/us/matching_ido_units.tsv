@@ -309,3 +309,5 @@
 0x1EBC0	0x60	src/game/set_quantized_pair_8001dfc0.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	4b391c3062434d09d65fc3d18e0a4f609a85ffea0255fb2dfdb3e44a73f1a611
 0x1EA70	0x90	src/game/set_runtime_bounds_8001de70.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	ba8810806d6350d8cc96f5b1dfc15fb78500b2008733ec1983a84865a2e4ed88
 0x1EA10	0x60	src/game/set_shared_runtime_bounds_8001de10.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	dc3fc105bfb5b6252df53d916dbb8bc0b52967391a4c0fac39247a059e00c899
+0x1ED98	0x30	src/game/clear_runtime_modes_8001e198.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	57028e14226b305a30b9facfd94cd8ba8f0e96fa39531d24f909dc7b3351c208
+0x1EDC8	0x70	src/game/activate_runtime_mode_8001e1c8.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	f5f29b866a55a29f503399fbf2fb14794a73a12038916bfb587a74f740a1f958
