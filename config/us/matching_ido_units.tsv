@@ -312,3 +312,5 @@
 0x1ED98	0x30	src/game/clear_runtime_modes_8001e198.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	57028e14226b305a30b9facfd94cd8ba8f0e96fa39531d24f909dc7b3351c208
 0x1EDC8	0x70	src/game/activate_runtime_mode_8001e1c8.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	f5f29b866a55a29f503399fbf2fb14794a73a12038916bfb587a74f740a1f958
 0x2D014	0x4C	src/game/call_indexed_sound_8002c414.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	b7a2beae3766648c8e8121aa37f8b99c1a2e37e80ceb8c1375fb38335426534d
+0x2CE0C	0x68	src/game/call_runtime_sound_8002c20c.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	28e5def6aa4a4db5f09a23415f34e49d87ccbe217fd6f514323f83fec102c597
+0x2CFA4	0x50	src/game/update_runtime_sound_8002c3a4.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	5adef00a09ed0c4372bf63ab4265d0bd02b9d71c3b7fe4887c17675f1d400d28
