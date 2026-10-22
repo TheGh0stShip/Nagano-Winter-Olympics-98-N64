@@ -168,3 +168,15 @@
 0x32C40	0x34	src/game/init_global_mode_80032040.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	b14a32e4ad7935f51a729015bb0fc82dccac8b6b8b52c9147251b315e883501d
 0x3A954	0x40	src/game/update_global_float_80039d54.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	791409ddc94412b22ee08d5392ebe19832063ae6b0b77f2503ff502a6028e2a0
 0x3A994	0x40	src/game/update_global_float_80039d94.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	791409ddc94412b22ee08d5392ebe19832063ae6b0b77f2503ff502a6028e2a0
+0x4C9B8	0x28	src/game/call_pair_8004bdb8.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	2bc2f3aa5f1db7fbf9f93ae48faad85ad1b1e239465a49e3e184bc420e698ee0
+0x1E968	0x38	src/game/free_transition_resource_8001dd68.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	44cfd6b8bbb511dd0139f6ad37b3555d53149826d03f03eb1e8316e79e7e2a29
+0x4216C	0x2C	src/game/init_nested_8004156c.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	39393f79716476e5ff9e8f5e207d2789ef2e51adaba0a4787c468d621986ceea
+0x42B08	0x2C	src/game/init_nested_80041f08.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	d4c6a62a91d951059182e7df9e8ae6269a53d44645ff2694c2177ee8e246dde6
+0x566E4	0x54	src/game/init_record_80055ae4.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	9855b512bb5f94e0b4c35d9cd1c39ed21c3e779f6e8c77cd709c4142035e40ed
+0x56738	0x54	src/game/init_record_80055b38.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	783e1cb9e851d9816ab52ed566af3d07bd01a3136d18be67fd10c1b0832f1f75
+0x4FB4C	0x3C	src/game/remainder_u64_8004ef4c.c	-O2 -mips3 -32 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	443a882a09623e43e504262ae6c3153bf3380e56defd82b0d9b3a0945cd5b467
+0x4FBF0	0x3C	src/game/remainder_u64_8004eff0.c	-O2 -mips3 -32 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	443a882a09623e43e504262ae6c3153bf3380e56defd82b0d9b3a0945cd5b467
+0x51184	0x2C	src/game/reset_global_object_80050584.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	6cbfe1140d9c9ffdb35b64648ef71bd3b5557f9c7be261b997516154f315b0aa
+0x51664	0x2C	src/game/reset_global_object_80050a64.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	526d84e9c60e5246beba5a3b41f29de5a0a5d4c769a2a1016fa757ca608ee417
+0x4AD20	0x24	src/game/set_if_enabled_8004a120.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	43558e3662c804d33b49fd3497f80e4f426c0a92ffff7c02bbb42234dc6df7f8
+0x4B018	0x24	src/game/set_if_enabled_8004a418.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	effd1d5b85f6043c21fa3cb678c37de734f1e46f41950bc3c7f4ea92c9b8f222
