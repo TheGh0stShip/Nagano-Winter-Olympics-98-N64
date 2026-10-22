@@ -46,3 +46,5 @@
 0x140D0	0x44	src/game/init_range_800134d0.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	7b2f2808b0d845d753fec4873a8e7722f3244cdc8c224503d813e616ccaa6d0f
 0x14004	0x44	src/game/init_range_80013404.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	cb84ef1a7d7dd00b32d78648e36109ec3dc45ae1ae2597b12d5f056cbeb01176
 0x14114	0x44	src/game/init_range_80013514.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	9901f0f5887499ac614a7cb671e3a7c278c7f418d01f602c6e452cbc42d78249
+0x56E4	0x38	src/game/set_indexed_halfword_80004ae4.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	5cee8f03bfbb4efaeb449d7a846fecd1d12745f00ef64c798d2d0d417d0ad17b
+0x13EF4	0x70	src/game/allocate_slot_800132f4.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	63a2e5598e7fe09ecc849579e06671510316cf20b3b013a212c30c81bde68017
