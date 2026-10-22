@@ -333,3 +333,6 @@
 0x201D4	0x44	src/game/reset_object_counters_8001f5d4.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	cdb44cc2cbbedbf6756aaa3c7e3d844ddb36ad52fd4cd4b3d89db80898d8acbf
 0x2F4C4	0x48	src/game/play_indexed_sound_if_active_8002e8c4.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	f20252b0bac6fe936e085d772f185dc45b90808260c0b04290703e333fb52c1f
 0x2DF04	0x58	src/game/init_processed_state_8002d304.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	fd1b4f10abac4f7ba3095128679c3d210f5833427ddebc81a4c3cc1b2af2680c
+0x4C46C	0x50	src/game/prepare_stream_record_if_available_8004b86c.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	7d9fb2f72873b036da15a3abbfb3c82753e4d78c9b44fb0af5c2d924e9d4e621
+0x4C500	0x4C	src/game/start_stream_record_8004b900.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	cbc6022f938d0e3fbeb772b6709946c5bcaaa51388191c8ebfbf0eb4820119f7
+0x4C400	0x6C	src/game/advance_stream_record_8004b800.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	cc09d17028cf76109ac2e90651867cfa9e1990efc54d81207e4369916a625f17
