@@ -62,3 +62,7 @@
 0x2D0D8	0x44	src/game/clear_indexed_state_8002c4d8.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	f29eac9878af19e75b54383cc35b3b24ea33511fd87c6d3104a3ec198447db0b
 0x2F3C0	0x44	src/game/copy_selected_record_8002e7c0.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	dc2837b3453a41da0a6de3297a06286fcba325c330957659ca6f90f149d78ef6
 0x12994	0x44	src/game/reset_five_records_80011d94.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	1943babfe3d5b2abe623dae7bbdebda48cd56286b4a6469a2a6868b5eea2812e
+0xF918	0x50	src/game/load_blob_8000ed18.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	0c675ee01fd17209e8be35b22e5d6e07a0f2bd6a375f3bb75271c22a651ff9f3
+0xF968	0x50	src/game/load_blob_8000ed68.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	e66f0cffce37ade598e403377c3821d1600593aee46f9280bb1fbfadd1ffdb19
+0xFF10	0x50	src/game/store_blob_8000f310.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	1cd43c98730dff33ff0fe502f765b82a531fc6346cd8ce470ee581e20edd7731
+0xFF60	0x50	src/game/store_blob_8000f360.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	93cdecec6118d5c9fa1a8871e6c2b146cf003de29b6e51fa3ae7a471184e591c
