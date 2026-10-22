@@ -49,3 +49,5 @@
 0x56E4	0x38	src/game/set_indexed_halfword_80004ae4.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	5cee8f03bfbb4efaeb449d7a846fecd1d12745f00ef64c798d2d0d417d0ad17b
 0x13EF4	0x70	src/game/allocate_slot_800132f4.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	63a2e5598e7fe09ecc849579e06671510316cf20b3b013a212c30c81bde68017
 0x1E3D8	0x30	src/game/bounded_length_8001d7d8.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	a96613b8b4c1f83e7c891691117a0f1cacaec91968bdc9f132e8e1833b052311
+0x13D6C	0x38	src/game/initialize_slot_8001316c.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	ce76ff7bebea5f84ea4aa0cc7ebca2f57cbdf9cf9b5a06d19d7e20ccdf26dc41
+0x2C41C	0x30	src/game/call_summed_halfwords_8002b81c.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	31db933ea943fbcaaaab844e73bdb3daefcf5966573ebec4e4ae90e7161ffe8e

@@ -284,3 +284,7 @@
 0x3883C	0x34	src/game/init_scaled_record_80037c3c.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	2fd5dc8701308109a6a0117677bb7bd523d4606d65a21e63736dbe4ee7a6b738
 0x3F6E0	0x34	src/game/set_indexed_word_8003eae0.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	3bfe743cae74332fb8d244c907118a7bc2a91d929d07a3890e5e2d11cbfb8c46
 0x3F714	0x34	src/game/get_indexed_word_8003eb14.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	2d635d913f69185b4478e7ebb18fb9bcec186746a970ed0ba9dbe3739dba2043
+0x28E20	0x3C	src/game/update_if_state_80028220.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	5874e2027ddbac91fa27dc3917bb354a5e99d36da8f8e33c3dd2c8181a29b2c1
+0x3D27C	0x38	src/game/create_configured_object_8003c67c.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	8afda533bfa82ce85058a5f72ae4cdc3ba95672d9217ed264e860eedf24bd4ef
+0x56020	0x38	src/game/relink_resource_80055420.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	0f21c329f8314adc74412f41d390d35515d951dfd0e86b79f6b56667a799bf3d
+0x535C8	0x30	src/game/build_and_apply_800529c8.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	86d6e41d102543df7d9440fd1c6c84d17435ebd3b92520dd3d8e853549f972dc
