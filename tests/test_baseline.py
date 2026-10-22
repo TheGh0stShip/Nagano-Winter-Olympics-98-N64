@@ -34,8 +34,8 @@ class BaselineTests(unittest.TestCase):
         ido7_lines = (ROOT / "config/us/matching_ido7_units.tsv").read_text().splitlines()
         all_rows = (rows + [line for line in ido_lines if line and not line.startswith("#")]
                     + [line for line in ido7_lines if line and not line.startswith("#")])
-        self.assertEqual(len(all_rows), 350)
-        self.assertEqual(sum(int(row.split("\t")[1], 0) for row in all_rows), 13740)
+        self.assertEqual(len(all_rows), 354)
+        self.assertEqual(sum(int(row.split("\t")[1], 0) for row in all_rows), 13932)
         row = rows[0]
         fields = row.split("\t")
         self.assertEqual(fields[:3], ["0x27F4", "0xC", "src/game/get_global_halfword.c"])
@@ -46,7 +46,7 @@ class BaselineTests(unittest.TestCase):
                        cwd=ROOT, check=True, capture_output=True, text=True)
         report = json.loads((ROOT / "build/report.json").read_text())
         categories = {item["id"]: item["measures"] for item in report["categories"]}
-        self.assertEqual(report["measures"]["matched_code"], "13740")
+        self.assertEqual(report["measures"]["matched_code"], "13932")
         self.assertEqual(report["measures"]["matched_data"], "0")
         self.assertEqual(categories["assets"]["total_code"], "12047904")
         self.assertEqual(categories["assets"]["matched_code"], "794392")
