@@ -68,3 +68,17 @@
 0x1220C	0x10	src/game/set_halfword_six_8001160c.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	7f26a284d8075cdb92af7fb0dea3f3d2008c0a1a986fdd214f99903fc6573767
 0x37B4C	0xC	src/game/set_struct_halfword_80036f4c.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	f4d0a2281acb0af7ce492cd5830f92bc62f8ecb4c5513e4323d000d1850b3e13
 0x13A68	0x10	src/game/set_word_five_80012e68.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	c09456d4229c14792279040aba13217e2f579fe81e964c3e9a02494eb53c77c3
+0x314D4	0x20	src/game/call_800304ec_800308d4.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	f3e8bf4c9d1939207945a89adda26583443b7be7641a3281b73778846aab9467
+0x2DEB4	0x28	src/game/call_halfword_8002d2b4.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	73d264f4c67f4c55b36b127481fd3f2dc4e84944fc6b12f79eba279d36273a67
+0x2DEDC	0x28	src/game/call_halfword_8002d2dc.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	cfab7df7cb02bdff7e23d40285df0234e2fab7ace846f1ee5031617571f70f05
+0x2A44C	0x24	src/game/call_pair_8002984c.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	4d68becca0f681aa3c795e7e46899b0cf2882f45d21148b93ecb1b080630ec2d
+0x2D32C	0x20	src/game/call_value_8002c72c.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	f6ac19123bc254aa314646cc6ed44dc772c6e859e6cc9ed457f8edb6ed2795b6
+0x2D388	0x20	src/game/call_value_8002c788.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	aac1829f051a6d1738f9cbb33be379367d6013ad364e5a9f5b58c1173c9d7e43
+0x2D3E0	0x20	src/game/call_value_8002c7e0.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	98154311887b960489f73879b2a38169d7bbad762171d4b7ea243c0cdd8f4b25
+0x3055C	0x24	src/game/clear_eight_bytes_8002f95c.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	2d2ac08e3fc0bad2e65b2698714367dcf35553af55f15185cf6c58d093455e49
+0x2A30C	0x1C	src/game/get_indexed_float_8002970c.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	5669096b5f5518a89fe86d51b8fed6ce3b3cc1c190b1e3e453a2cfe98870fcda
+0x2A328	0x1C	src/game/get_indexed_float_80029728.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	6cdd0435e972feb5a7c1dab8740e8591537d44de94b5200e1b844eee5fdd3129
+0x26BD0	0x8	src/game/identity_float_80025fd0.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	ef46e6e0f253f5c854f594328f5bc1b5959fda56afd5beb060ca0ce9a25414f9
+0x2FEA4	0x8	src/game/identity_float_8002f2a4.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	ef46e6e0f253f5c854f594328f5bc1b5959fda56afd5beb060ca0ce9a25414f9
+0x2FEAC	0x8	src/game/identity_float_8002f2ac.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	ef46e6e0f253f5c854f594328f5bc1b5959fda56afd5beb060ca0ce9a25414f9
+0x2DEA4	0x10	src/game/return_halfword_8002d2a4.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	62ebafb394c8449c13157bd82256eba13379dfb2de9e6616186b7e6c55f36f36

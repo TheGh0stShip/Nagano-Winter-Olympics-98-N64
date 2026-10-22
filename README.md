@@ -17,7 +17,7 @@ You must provide your own legally obtained retail ROM.
 - RSP code identified inside the linked text section: 7,296 bytes
 - SDK functions named: 241 (220 high-confidence)
 - Audio: three libaudio bank files and 93 indexed ADPCM sample payloads
-- Matching C: 131 functions / 2,672 bytes
+- Matching C: 147 functions / 3,104 bytes
 - Byte-matched initialized data: 0 / 129,864 bytes
 - Identified post-program asset bytes: 750,216 / 12,047,904 bytes
 - Extracted asset bytes: 0 / 750,216 identified bytes

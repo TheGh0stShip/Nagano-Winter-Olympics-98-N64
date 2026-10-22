@@ -34,7 +34,7 @@ The ByteMatch report intentionally tracks different claims independently:
 
 | Domain | Complete bytes | Total bytes | Meaning |
 |---|---:|---:|---|
-| Byte-matched CPU code | 2,672 | 392,212 | C output verified against retail ROM bytes |
+| Byte-matched CPU code | 3,104 | 392,212 | C output verified against retail ROM bytes |
 | Byte-matched initialized data | 0 | 129,864 | Reconstructed linked data verified byte-for-byte |
 | Asset-region identification | 750,216 | 12,047,904 | Proven audio containers and sample payloads |
 | Asset extraction | 0 | 750,216 | Identified assets emitted by a reproducible extraction pipeline |
