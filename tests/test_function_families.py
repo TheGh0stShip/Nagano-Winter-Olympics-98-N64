@@ -1,7 +1,14 @@
 import struct
 import unittest
 
-from tools.find_function_families import fingerprint, normalize_instruction, shape_instruction
+from tools.find_function_families import (
+    fingerprint,
+    instruction_token,
+    ngrams,
+    normalize_instruction,
+    shape_instruction,
+    token_stream,
+)
 
 
 class FunctionFamilyTests(unittest.TestCase):
@@ -23,6 +30,22 @@ class FunctionFamilyTests(unittest.TestCase):
         self.assertEqual(shape_instruction(0x8C820010), shape_instruction(0x8C830020))
         self.assertEqual(fingerprint(struct.pack(">I", 0x8C820010), relaxed=True),
                          fingerprint(struct.pack(">I", 0x8C830020), relaxed=True))
+
+    def test_similarity_tokens_retain_small_immediates(self):
+        self.assertNotEqual(instruction_token(0x8C820010, 0x80001000, {}),
+                            instruction_token(0x8C820014, 0x80001000, {}))
+
+    def test_similarity_tokens_name_direct_callees(self):
+        target = 0x80002000
+        jal = 0x0C000000 | ((target >> 2) & 0x03FFFFFF)
+        self.assertIn("load_record", instruction_token(
+            jal, 0x80001000, {target: "load_record"}))
+
+    def test_token_stream_and_grams(self):
+        data = struct.pack(">III", 0x24020001, 0x24420002, 0x03E00008)
+        tokens = token_stream(data, 0x80001000, {})
+        self.assertEqual(len(tokens), 3)
+        self.assertEqual(ngrams(tokens), {tuple(tokens)})
 
 
 if __name__ == "__main__":
