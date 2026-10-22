@@ -288,3 +288,6 @@
 0x3D27C	0x38	src/game/create_configured_object_8003c67c.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	8afda533bfa82ce85058a5f72ae4cdc3ba95672d9217ed264e860eedf24bd4ef
 0x56020	0x38	src/game/relink_resource_80055420.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	0f21c329f8314adc74412f41d390d35515d951dfd0e86b79f6b56667a799bf3d
 0x535C8	0x30	src/game/build_and_apply_800529c8.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	86d6e41d102543df7d9440fd1c6c84d17435ebd3b92520dd3d8e853549f972dc
+0x1BC08	0x34	src/game/update_active_object_8001b008.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	540e2dd2787c3546ab8ae2de449285216d8f9968e32e604e4e0f4b5177a35de5
+0x6C80	0x34	src/game/call_mode_zero_80006080.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	5491f8af0b5b7e2267088df4c9fb500fdec49ce87507e32dbafd80ffcba3d388
+0x6CB4	0x34	src/game/call_mode_one_800060b4.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	3da7e544f07d202bc4baf700ebf5b8585c21e72ee63a7da97d36d0c0cba7b50f

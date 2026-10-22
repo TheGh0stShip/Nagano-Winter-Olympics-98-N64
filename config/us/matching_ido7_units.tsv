@@ -51,3 +51,4 @@
 0x1E3D8	0x30	src/game/bounded_length_8001d7d8.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	a96613b8b4c1f83e7c891691117a0f1cacaec91968bdc9f132e8e1833b052311
 0x13D6C	0x38	src/game/initialize_slot_8001316c.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	ce76ff7bebea5f84ea4aa0cc7ebca2f57cbdf9cf9b5a06d19d7e20ccdf26dc41
 0x2C41C	0x30	src/game/call_summed_halfwords_8002b81c.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	31db933ea943fbcaaaab844e73bdb3daefcf5966573ebec4e4ae90e7161ffe8e
+0x354FC	0x30	src/game/call_byte_max_800348fc.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	5c4731c778c31e48473fbb0070ab6ac76dc93445acc980cfa67647591d5f2322
