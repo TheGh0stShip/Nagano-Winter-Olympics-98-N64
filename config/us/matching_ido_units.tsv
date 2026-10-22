@@ -82,3 +82,17 @@
 0x2FEA4	0x8	src/game/identity_float_8002f2a4.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	ef46e6e0f253f5c854f594328f5bc1b5959fda56afd5beb060ca0ce9a25414f9
 0x2FEAC	0x8	src/game/identity_float_8002f2ac.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	ef46e6e0f253f5c854f594328f5bc1b5959fda56afd5beb060ca0ce9a25414f9
 0x2DEA4	0x10	src/game/return_halfword_8002d2a4.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	62ebafb394c8449c13157bd82256eba13379dfb2de9e6616186b7e6c55f36f36
+0x1D590	0x8	src/game/noop_arg_8001c990.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	aab9a3b4a314f107dee9217d6d10144c96feaf7d3f083e0f94c1ee0811c96054
+0x260F0	0x8	src/game/noop_arg_800254f0.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	aab9a3b4a314f107dee9217d6d10144c96feaf7d3f083e0f94c1ee0811c96054
+0x2B478	0x8	src/game/noop_arg_8002a878.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	aab9a3b4a314f107dee9217d6d10144c96feaf7d3f083e0f94c1ee0811c96054
+0x2C0AC	0x8	src/game/noop_arg_8002b4ac.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	aab9a3b4a314f107dee9217d6d10144c96feaf7d3f083e0f94c1ee0811c96054
+0x314F4	0x8	src/game/noop_arg_800308f4.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	aab9a3b4a314f107dee9217d6d10144c96feaf7d3f083e0f94c1ee0811c96054
+0x28E5C	0x8	src/game/noop_float_8002825c.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	e535622444fa17346088410aa568d73c72362a370e532641a3e34defd71f5356
+0x17560	0x14	src/game/noop_four_args_80016960.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	7008cedc7bc7666823ccb635b2fcb91203276ea030284707c9e8f52db2ea3448
+0x25B38	0x14	src/game/noop_four_args_80024f38.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	7008cedc7bc7666823ccb635b2fcb91203276ea030284707c9e8f52db2ea3448
+0x13F64	0x10	src/game/noop_three_args_80013364.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	f9e77de3221db6174e0d87d3101de46b81de1684d1061988be35c3c3951e8a9b
+0x24B90	0x10	src/game/noop_three_args_80023f90.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	f9e77de3221db6174e0d87d3101de46b81de1684d1061988be35c3c3951e8a9b
+0x314FC	0xC	src/game/noop_two_args_800308fc.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	691e766163b1b8288cf1e76b4dc9eb7dde764cde7f749bf5aef916d919300f2b
+0x334C	0xC	src/game/return_one_arg_8000274c.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	d02b773dc99f83e800879bae194b462225d6cc20d8c4fb34062bb63d1fb1c52f
+0x37B40	0xC	src/game/set_float_field_80036f40.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	2d08836db1adc337219d2364ea83812ed4b0ab7ded1d34fa4cfffd8dd1ff2eb6
+0x205C4	0x10	src/game/set_object_bytes_8001f9c4.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	7bb629ed9d648b20292860a7201f99128fb577dba3d034b25d05c15cd3433e43
