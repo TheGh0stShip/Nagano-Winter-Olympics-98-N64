@@ -291,3 +291,5 @@
 0x1BC08	0x34	src/game/update_active_object_8001b008.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	540e2dd2787c3546ab8ae2de449285216d8f9968e32e604e4e0f4b5177a35de5
 0x6C80	0x34	src/game/call_mode_zero_80006080.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	5491f8af0b5b7e2267088df4c9fb500fdec49ce87507e32dbafd80ffcba3d388
 0x6CB4	0x34	src/game/call_mode_one_800060b4.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	3da7e544f07d202bc4baf700ebf5b8585c21e72ee63a7da97d36d0c0cba7b50f
+0x3F748	0x38	src/game/set_indexed_float_8003eb48.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	7e8317f396e76b4f18b587cd4105523a392d457abc20c999f7ccc8ee94084bbf
+0x3F7D0	0x40	src/game/set_indexed_pair_8003ebd0.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	cf822e78e35d37a9afe9c106a1dc6208fc98821466de04215735ed42c3ac6b3d

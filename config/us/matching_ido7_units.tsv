@@ -52,3 +52,4 @@
 0x13D6C	0x38	src/game/initialize_slot_8001316c.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	ce76ff7bebea5f84ea4aa0cc7ebca2f57cbdf9cf9b5a06d19d7e20ccdf26dc41
 0x2C41C	0x30	src/game/call_summed_halfwords_8002b81c.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	31db933ea943fbcaaaab844e73bdb3daefcf5966573ebec4e4ae90e7161ffe8e
 0x354FC	0x30	src/game/call_byte_max_800348fc.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	5c4731c778c31e48473fbb0070ab6ac76dc93445acc980cfa67647591d5f2322
+0x3F780	0x50	src/game/set_initial_halfword_8003eb80.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	ff73b6b1eff097baf39035041f2094545106ee5c1d51d0c87a55a187322a0f81
