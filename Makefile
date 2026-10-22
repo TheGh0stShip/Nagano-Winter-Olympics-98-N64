@@ -14,6 +14,7 @@ verify-rom:
 
 verify-matching: verify-rom
 	$(N64DK) match-batch config/us/matching_kmc_as_units.tsv=kmc+as --project . --symbols analysis/survey/symbol_addrs.txt
+	$(N64DK) match-batch config/us/matching_ido_units.tsv=ido5.3 --project . --symbols analysis/survey/symbol_addrs.txt
 
 report:
 	$(PYTHON) tools/generate_decomp_report.py

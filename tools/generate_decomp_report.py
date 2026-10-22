@@ -6,7 +6,10 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 FUNCTIONS = ROOT / "analysis/survey/functions.toml"
-MANIFEST = ROOT / "config/us/matching_kmc_as_units.tsv"
+MANIFESTS = (
+    ROOT / "config/us/matching_kmc_as_units.tsv",
+    ROOT / "config/us/matching_ido_units.tsv",
+)
 OUTPUT = ROOT / "build/report.json"
 TOTAL_CODE = 392_212
 TOTAL_DATA = 129_864
@@ -29,7 +32,8 @@ def measures(code, matched, functions, matched_functions, data=0, matched_data=0
 
 def main():
     funcs = tomllib.loads(FUNCTIONS.read_text())["section"][0]["functions"]
-    rows = [line.split("\t") for line in MANIFEST.read_text().splitlines()
+    rows = [line.split("\t") for manifest in MANIFESTS
+            for line in manifest.read_text().splitlines()
             if line and not line.startswith("#")]
     matched = {(int(r[0], 0), int(r[1], 0)): r[2] for r in rows}
     units, matched_bytes, matched_count = [], 0, 0

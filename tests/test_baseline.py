@@ -29,8 +29,10 @@ class BaselineTests(unittest.TestCase):
     def test_matching_manifest_shape(self):
         lines = (ROOT / "config/us/matching_kmc_as_units.tsv").read_text().splitlines()
         rows = [line for line in lines if line and not line.startswith("#")]
-        self.assertEqual(len(rows), 33)
-        self.assertEqual(sum(int(row.split("\t")[1], 0) for row in rows), 268)
+        ido_lines = (ROOT / "config/us/matching_ido_units.tsv").read_text().splitlines()
+        all_rows = rows + [line for line in ido_lines if line and not line.startswith("#")]
+        self.assertEqual(len(all_rows), 58)
+        self.assertEqual(sum(int(row.split("\t")[1], 0) for row in all_rows), 592)
         row = rows[0]
         fields = row.split("\t")
         self.assertEqual(fields[:3], ["0x27F4", "0xC", "src/game/get_global_halfword.c"])
