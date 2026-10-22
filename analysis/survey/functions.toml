@@ -1375,7 +1375,7 @@ functions = [
     { name = "func_80059620", vram = 0x80059620, size = 0x84 }, # c
     { name = "func_800596A4", vram = 0x800596a4, size = 0x2c }, # c
     { name = "func_800596D0", vram = 0x800596d0, size = 0x1c }, # c
-    { name = "func_800596EC", vram = 0x800596ec, size = 0x24 }, # c
+    { name = "func_800596EC", vram = 0x800596ec, size = 0x1c }, # c; reviewed: 0x8 trailing alignment
     { name = "func_80059710", vram = 0x80059710, size = 0x670 }, # c
     { name = "func_80059D80", vram = 0x80059d80, size = 0x650 }, # c
     { name = "func_8005A3D0", vram = 0x8005a3d0, size = 0x20 }, # leaf

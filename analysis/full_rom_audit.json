@@ -1360,13 +1360,13 @@
   },
   "functions": {
     "total": 1469,
-    "matched": 487,
-    "matched_bytes": 24112,
-    "total_bytes": 392116,
+    "matched": 488,
+    "matched_bytes": 24140,
+    "total_bytes": 392108,
     "size_buckets": {
       "<=0x10": 96,
-      "<=0x20": 97,
-      "<=0x40": 238,
+      "<=0x20": 98,
+      "<=0x40": 237,
       "<=0x80": 292,
       "<=0x100": 327,
       "<=0x200": 222,
@@ -1375,7 +1375,7 @@
       ">0x800": 13
     },
     "compiler_matches": {
-      "IDO 5.3": 346,
+      "IDO 5.3": 347,
       "KMC GCC 2.7.2 + assembler": 65,
       "IDO 7.1": 76
     },
@@ -1444,10 +1444,10 @@
         "start": 331776,
         "end": 397312,
         "functions": 237,
-        "matched": 45,
-        "matched_bytes": 1848,
+        "matched": 46,
+        "matched_bytes": 1876,
         "compiler_matches": {
-          "IDO 5.3": 36,
+          "IDO 5.3": 37,
           "KMC GCC 2.7.2 + assembler": 9
         }
       },
@@ -1480,10 +1480,10 @@
     "indirect_call_sites": 64,
     "branch_sites": 7046,
     "cop1_instructions": 7233,
-    "exact_duplicate_groups": 27,
-    "shape_duplicate_groups": 95,
+    "exact_duplicate_groups": 28,
+    "shape_duplicate_groups": 96,
     "shape_groups_with_unmatched": 16,
-    "trailing_nop_functions": 864
+    "trailing_nop_functions": 863
   },
   "inventory": {
     "records": 2384,
@@ -1596,15 +1596,6 @@
   },
   "attack_queues": {
     "similar_to_matched": [
-      {
-        "name": "func_800596EC",
-        "vram": 2147849964,
-        "size": 36,
-        "score": 0.875,
-        "jaccard": 0.7142857142857143,
-        "example": "func_800596D0",
-        "source": "src/game/noop_variadic_800596d0.c"
-      },
       {
         "name": "func_8002EC10",
         "vram": 2147675152,
@@ -2495,6 +2486,15 @@
         "jaccard": 0.15,
         "example": "func_8002D1D8",
         "source": "src/game/set_then_call_8002d1d8.c"
+      },
+      {
+        "name": "func_80025F90",
+        "vram": 2147639184,
+        "size": 64,
+        "score": 0.5925925925925926,
+        "jaccard": 0.15,
+        "example": "func_800138C4",
+        "source": "src/game/call_pair_800138c4.c"
       }
     ],
     "small_wrappers": [
