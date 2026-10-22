@@ -187,3 +187,7 @@
 0x5FFE0	0x10	src/game/read_sp_status_8005f3e0.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	791ef91fc4d88fb2cb5c71c47984a82b411f1a747f24c7d50c2034015bdbe3db
 0x2E560	0x20	src/game/reset_shared_state_8002d960.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	fb0c6fa5675903c67a5d87fa536c7704a4ba3b14b7503fcf48155b8979a09dc6
 0x30234	0x20	src/game/reset_shared_state_8002f634.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	fb0c6fa5675903c67a5d87fa536c7704a4ba3b14b7503fcf48155b8979a09dc6
+0x31754	0x58	src/game/toggle_state_80030b54.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	030c9807a89f1679cedabd576e9d9f002355232ac60f84bfac90aa594b31d4bd
+0x317AC	0x58	src/game/toggle_state_80030bac.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	ac31611816ba105a0f65a20e0cc0d7c8bcca17d232ff6e7681616382f933bc77
+0x31804	0x58	src/game/toggle_state_80030c04.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	fe4e7858772482b4c8f3e284cde8162e07857870f05f77468993ba3e7b099aa1
+0x3185C	0x58	src/game/toggle_state_80030c5c.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	12e79e88f264d5c7d48eb8f10a93a92eb6fefe42e76e3b06dbb96541b064848b
