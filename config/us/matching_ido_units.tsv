@@ -304,3 +304,6 @@
 0x4D960	0x3C	src/game/read_stream_state_8004cd60.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	46b416c8a4c4d7bffae3215e3cedeb50ca3fda6b738626068c718d24939e2da4
 0x397C8	0x50	src/game/init_status_flags_80038bc8.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	4608e985f58d0ea482898715df8f2dc0b12f101c41166ac84dc360939ef6caae
 0x474D0	0x58	src/game/reset_runtime_timing_800468d0.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	2a2c767c7206c92b35f066f7354d7aa83ba14d9a0cfb135fefd0ee205df4d70d
+0x1EB00	0x60	src/game/init_indexed_runtime_8001df00.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	56008fa4105ad4817f955557d12f60bd696c829ef91c913121d90afd6af01cce
+0x1EB60	0x60	src/game/set_quantized_pair_8001df60.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	85b97878c477368a6f6297e761bbdc6ad10d6ec83f3c4999ccb364c9900f2f4f
+0x1EBC0	0x60	src/game/set_quantized_pair_8001dfc0.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	4b391c3062434d09d65fc3d18e0a4f609a85ffea0255fb2dfdb3e44a73f1a611
