@@ -1,0 +1,9 @@
+[region]
+name = "Post-program asset identification"
+rom_start = 0x829E0
+rom_end = 0xC00000
+
+# Format identification and extraction are separate claims. No redistributable
+# extracted assets are part of the repository or its reproducible build yet.
+[extraction]
+extracted_bytes = 0

@@ -28,3 +28,19 @@ The address-level ledger is `rom_inventory.tsv`. It covers
 `0x000000..0xC00000` without gaps or overlaps. `survey/report.json` preserves
 the machine-readable evidence and `survey/report.md` documents caveats.
 
+## Progress domains
+
+The ByteMatch report intentionally tracks different claims independently:
+
+| Domain | Complete bytes | Total bytes | Meaning |
+|---|---:|---:|---|
+| Byte-matched CPU code | 2,672 | 392,212 | C output verified against retail ROM bytes |
+| Byte-matched initialized data | 0 | 129,864 | Reconstructed linked data verified byte-for-byte |
+| Asset-region identification | 750,216 | 12,047,904 | Proven audio containers and sample payloads |
+| Asset extraction | 0 | 750,216 | Identified assets emitted by a reproducible extraction pipeline |
+| Physical ROM inventory | 12,582,912 | 12,582,912 | Every byte assigned one non-overlapping ledger interval |
+
+Inventory coverage is not decompilation progress. Loader references prove that
+code consumes a range, but do not identify its format; those bytes therefore
+remain unidentified in the asset category.
+

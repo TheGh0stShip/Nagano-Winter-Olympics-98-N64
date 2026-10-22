@@ -18,6 +18,9 @@ You must provide your own legally obtained retail ROM.
 - SDK functions named: 241 (220 high-confidence)
 - Audio: three libaudio bank files and 93 indexed ADPCM sample payloads
 - Matching C: 131 functions / 2,672 bytes
+- Byte-matched initialized data: 0 / 129,864 bytes
+- Identified post-program asset bytes: 750,216 / 12,047,904 bytes
+- Extracted asset bytes: 0 / 750,216 identified bytes
 - Physical ROM inventory: 12,582,912 / 12,582,912 bytes (100%)
 
 Physical coverage does not mean semantic understanding. The conservative
@@ -38,5 +41,13 @@ The default build reuses `../n64-decomp-kit` and `../BattleTanx/.toolchain`.
 Override `N64DK_ROOT` or `N64DK_TOOLCHAIN` for another installation.
 `make verify-matching` recompiles every manifest row and compares relocated
 bytes directly with the retail ROM. `make report` produces the objdiff v2
-report published as `us_report` for ByteMatch.
+report published as `NH5E_report` for ByteMatch (with the original
+`us_report` artifact retained during migration).
+
+The report keeps separate categories for byte-matched program code,
+byte-matched initialized data, identified bytes in the post-program asset
+region, reproducibly extracted asset bytes, and gap-free physical inventory.
+Only code and initialized data contribute to aggregate decompilation progress.
+Identified audio is not reported as extracted, and loader-referenced ranges do
+not count as identified assets until their formats are decoded.
 

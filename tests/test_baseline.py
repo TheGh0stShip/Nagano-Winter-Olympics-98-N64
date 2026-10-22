@@ -1,5 +1,6 @@
 import csv
 import json
+import subprocess
 import unittest
 from pathlib import Path
 
@@ -37,6 +38,19 @@ class BaselineTests(unittest.TestCase):
         fields = row.split("\t")
         self.assertEqual(fields[:3], ["0x27F4", "0xC", "src/game/get_global_halfword.c"])
         self.assertEqual(len(fields[4]), 64)
+
+    def test_bytematch_domains_are_independent(self):
+        subprocess.run(["python3", "tools/generate_decomp_report.py"],
+                       cwd=ROOT, check=True, capture_output=True, text=True)
+        report = json.loads((ROOT / "build/report.json").read_text())
+        categories = {item["id"]: item["measures"] for item in report["categories"]}
+        self.assertEqual(report["measures"]["matched_code"], "2672")
+        self.assertEqual(report["measures"]["matched_data"], "0")
+        self.assertEqual(categories["assets"]["total_code"], "12047904")
+        self.assertEqual(categories["assets"]["matched_code"], "750216")
+        self.assertEqual(categories["assets_audio"]["matched_code"], "750216")
+        self.assertEqual(categories["assets_extracted"]["matched_code"], "0")
+        self.assertEqual(categories["rom_inventory"]["matched_code"], "12582912")
 
 
 if __name__ == "__main__":
