@@ -322,3 +322,7 @@
 0x144F0	0x44	src/game/reset_then_process_800138f0.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	47c5515038558edc2feb40620945f42e857bc2e36f1bf646581fa039b76f6620
 0x37C40	0x34	src/game/get_runtime_scale_80037040.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	50ab92578413a090231875af654e095e7731ae573bc1e4f8fd40305eed4de9d8
 0x2DF5C	0x38	src/game/set_processed_halfword_8002d35c.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	54ad908d80f93011acf2984d94db53c0e281a45200e6e332b562f2f89ffc9f19
+0x5A2D0	0x1C	src/game/noop_variadic_800596d0.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	86a6a4535af1ec19fb0b88a42573edf274a2e59a52388983ae84f30a2aa8bd8d
+0x308CC	0x24	src/game/init_embedded_effect_8002fccc.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	05ae2a8d09109ca27b9466dfceed713e7aaeacfda55cf28d5eab21f63321c0b1
+0x3092C	0x24	src/game/init_embedded_effect_8002fd2c.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	05ae2a8d09109ca27b9466dfceed713e7aaeacfda55cf28d5eab21f63321c0b1
+0x3098C	0x24	src/game/init_embedded_effect_8002fd8c.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	05ae2a8d09109ca27b9466dfceed713e7aaeacfda55cf28d5eab21f63321c0b1
