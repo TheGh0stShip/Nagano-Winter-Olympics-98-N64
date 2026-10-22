@@ -1,0 +1,37 @@
+import csv
+import json
+import unittest
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+ROM_SIZE = 12_582_912
+
+
+class BaselineTests(unittest.TestCase):
+    def test_inventory_is_gap_free(self):
+        with (ROOT / "analysis/rom_inventory.tsv").open() as stream:
+            rows = list(csv.DictReader(stream, delimiter="\t"))
+        cursor = 0
+        for row in rows:
+            start, end = int(row["start"], 0), int(row["end"], 0)
+            self.assertEqual(start, cursor)
+            self.assertEqual(int(row["size"]), end - start)
+            cursor = end
+        self.assertEqual(cursor, ROM_SIZE)
+
+    def test_survey_totals(self):
+        report = json.loads((ROOT / "analysis/survey/report.json").read_text())
+        self.assertEqual(report["rom"]["size"], ROM_SIZE)
+        self.assertEqual(report["functions"]["functions"], 1469)
+        self.assertEqual(report["unknown_bytes"], 10_372_608)
+        self.assertEqual(sum(report["ledger_totals"].values()), ROM_SIZE)
+
+    def test_matching_manifest_shape(self):
+        row = (ROOT / "config/us/matching_kmc_as_units.tsv").read_text().splitlines()[2]
+        fields = row.split("\t")
+        self.assertEqual(fields[:3], ["0x27F4", "0xC", "src/game/get_global_halfword.c"])
+        self.assertEqual(len(fields[4]), 64)
+
+
+if __name__ == "__main__":
+    unittest.main()

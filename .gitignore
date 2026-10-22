@@ -1,0 +1,9 @@
+Nagano Winter Olympics '98 (USA).z64
+baseroms/
+build/
+.toolchain/
+main_segment.bin
+*:Zone.Identifier
+__pycache__/
+*.pyc
+

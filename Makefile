@@ -1,0 +1,26 @@
+PYTHON ?= python3
+ROM ?= baseroms/us/baserom.z64
+N64DK_ROOT ?= ../n64-decomp-kit
+N64DK_PYTHON ?= $(abspath $(N64DK_ROOT))/.venv/bin/python
+N64DK_TOOLCHAIN ?= ../BattleTanx/.toolchain
+N64DK := PYTHONPATH=$(abspath $(N64DK_ROOT)) N64DK_TOOLCHAIN=$(abspath $(N64DK_TOOLCHAIN)) $(N64DK_PYTHON) -m n64dk
+
+.PHONY: check report report-check verify-rom verify-matching survey
+
+check: verify-rom verify-matching report-check
+
+verify-rom:
+	$(PYTHON) tools/verify_rom.py "$(ROM)"
+
+verify-matching: verify-rom
+	$(N64DK) match-batch config/us/matching_kmc_as_units.tsv=kmc+as --project . --symbols analysis/survey/symbol_addrs.txt
+
+report:
+	$(PYTHON) tools/generate_decomp_report.py
+
+report-check:
+	$(PYTHON) -m unittest discover -s tests
+
+survey: verify-rom
+	$(N64DK) survey "$(ROM)" --out analysis/survey
+

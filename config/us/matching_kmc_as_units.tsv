@@ -1,0 +1,3 @@
+# KMC GCC 2.7.2 units matching with original assembler scheduling
+# ROM_START SIZE SOURCE FLAGS SHA256
+0x27F4	0xC	src/game/get_global_halfword.c	-O2 -G0 -mips3 -mgp32 -mfp32	db89976a733bc78e7e612b235fd0549a45d6a8a310e2ad12741f00076eb27e87
