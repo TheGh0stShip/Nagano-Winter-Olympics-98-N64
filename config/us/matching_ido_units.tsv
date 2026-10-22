@@ -314,3 +314,5 @@
 0x2D014	0x4C	src/game/call_indexed_sound_8002c414.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	b7a2beae3766648c8e8121aa37f8b99c1a2e37e80ceb8c1375fb38335426534d
 0x2CE0C	0x68	src/game/call_runtime_sound_8002c20c.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	28e5def6aa4a4db5f09a23415f34e49d87ccbe217fd6f514323f83fec102c597
 0x2CFA4	0x50	src/game/update_runtime_sound_8002c3a4.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	5adef00a09ed0c4372bf63ab4265d0bd02b9d71c3b7fe4887c17675f1d400d28
+0x2CF2C	0x78	src/game/update_runtime_sound_threshold_8002c32c.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	1badeb16731dc7de31eeb7c664c60dfe7110acdd9241d165b10b36b5c4d8c26a
+0x2CE94	0x98	src/game/update_runtime_sound_limit_8002c294.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	062fcb25f8d588decb8151cda20f75010adc50cc319c7fd6dc2169757d90de3c

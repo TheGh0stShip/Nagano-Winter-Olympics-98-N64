@@ -68,3 +68,4 @@
 0xFF60	0x50	src/game/store_blob_8000f360.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	93cdecec6118d5c9fa1a8871e6c2b146cf003de29b6e51fa3ae7a471184e591c
 0x108F4	0x50	src/game/reset_six_vectors_8000fcf4.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	0953374672b08667405fad194fd0d24c045524e10779b6537d2fbf7ec8bde4a0
 0x1F430	0x98	src/game/calculate_scaled_angles_8001e830.c	--section-base=.rodata:0x8007EDA8 -O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	5968fffdfd618d2b3d55d61a49f56464e391829646d6a5fa659224c6867d0932
+0x2D1DC	0x70	src/game/reset_indexed_runtime_sound_8002c5dc.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	8af5ce8997a4e678422afdc600e7be203fd7643dd2b19accf77d619f09eae47f
