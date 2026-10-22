@@ -297,3 +297,4 @@
 0x1EC20	0x34	src/game/set_indexed_halfword_8001e020.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	d0925ea6e5894376c71f7eea8995bf4e0a2570f40f78edbba872682fc7403f1d
 0x5B3D0	0x34	src/game/set_mode_value_8005a7d0.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	b7b30fe537667c0e5547257b445cba9e23aac12a7c4b9e3c2b0047c5bb57fb71
 0x13A78	0x40	src/game/init_transform_80012e78.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	e22da91b27cff123d2007c9aeafa33e02c8781720f095ba593f90e0280d8f6b5
+0xE530	0x3C	src/game/clear_global_fields_8000d930.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	8bc49a833f6f449a34b3330d3b487d66b14d7aab22c58f8184b474d217652834

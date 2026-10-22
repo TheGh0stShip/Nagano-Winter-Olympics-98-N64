@@ -4,8 +4,8 @@ Retail ROM SHA-1: `eaf543e195731031a84f4136b506449209e3a8f5`. This audit scans a
 
 ## Code census
 
-- Exact matches: 417 functions / 18,736 bytes.
-- Remaining: 1,052 functions / 373,392 surveyed bytes.
+- Exact matches: 421 functions / 18,984 bytes.
+- Remaining: 1,048 functions / 373,144 surveyed bytes.
 - Direct call sites: 3,929; indirect call sites: 64; branch sites: 7,046.
 - COP1 instructions: 7,233.
 - Exact duplicate groups: 26; structural duplicate groups: 95; structural groups with unmatched members: 20.
@@ -25,17 +25,17 @@ Retail ROM SHA-1: `eaf543e195731031a84f4136b506449209e3a8f5`. This audit scans a
 
 ### Verified compiler units
 
-- IDO 5.3: 297
+- IDO 5.3: 298
 - KMC GCC 2.7.2 + assembler: 65
-- IDO 7.1: 55
+- IDO 7.1: 58
 
 ### Program address bands
 
 | ROM range | Functions | Matched | Matched bytes | Verified compiler units |
 |---|---:|---:|---:|---|
-| `0x1000..0x11000` | 234 | 74 | 4792 | IDO 5.3: 41, KMC GCC 2.7.2 + assembler: 12, IDO 7.1: 21 |
+| `0x1000..0x11000` | 234 | 76 | 4912 | IDO 5.3: 42, KMC GCC 2.7.2 + assembler: 12, IDO 7.1: 22 |
 | `0x11000..0x21000` | 243 | 97 | 3896 | KMC GCC 2.7.2 + assembler: 13, IDO 5.3: 72, IDO 7.1: 12 |
-| `0x21000..0x31000` | 274 | 77 | 2748 | KMC GCC 2.7.2 + assembler: 10, IDO 5.3: 59, IDO 7.1: 8 |
+| `0x21000..0x31000` | 274 | 79 | 2876 | KMC GCC 2.7.2 + assembler: 10, IDO 5.3: 59, IDO 7.1: 10 |
 | `0x31000..0x41000` | 239 | 77 | 3076 | IDO 5.3: 58, IDO 7.1: 6, KMC GCC 2.7.2 + assembler: 13 |
 | `0x41000..0x51000` | 242 | 50 | 2480 | IDO 5.3: 34, KMC GCC 2.7.2 + assembler: 8, IDO 7.1: 8 |
 | `0x51000..0x61000` | 237 | 42 | 1744 | IDO 5.3: 33, KMC GCC 2.7.2 + assembler: 9 |
@@ -148,13 +148,13 @@ The ledger has 2,384 gap-free records.
 - `func_8005FF10` (`0x8005FF10`, `0x30` bytes, 0 direct calls, 0 trailing nops)
 - `func_80037040` (`0x80037040`, `0x34` bytes, 0 direct calls, 0 trailing nops)
 - `func_80047F28` (`0x80047F28`, `0x38` bytes, 0 direct calls, 0 trailing nops)
-- `func_800086B0` (`0x800086B0`, `0x3C` bytes, 0 direct calls, 0 trailing nops)
-- `func_8000D930` (`0x8000D930`, `0x3C` bytes, 0 direct calls, 0 trailing nops)
 - `func_8004B9E0` (`0x8004B9E0`, `0x3C` bytes, 0 direct calls, 0 trailing nops)
 - `func_8004CD60` (`0x8004CD60`, `0x3C` bytes, 0 direct calls, 0 trailing nops)
-- `func_8002CCB8` (`0x8002CCB8`, `0x40` bytes, 0 direct calls, 0 trailing nops)
-- `func_8002EBD0` (`0x8002EBD0`, `0x40` bytes, 0 direct calls, 0 trailing nops)
 - `func_800306CC` (`0x800306CC`, `0x40` bytes, 0 direct calls, 0 trailing nops)
+- `func_80036334` (`0x80036334`, `0x40` bytes, 0 direct calls, 0 trailing nops)
+- `func_80039A8C` (`0x80039A8C`, `0x40` bytes, 0 direct calls, 0 trailing nops)
+- `func_80047710` (`0x80047710`, `0x40` bytes, 0 direct calls, 0 trailing nops)
+- `func_8004FAF0` (`0x8004FAF0`, `0x40` bytes, 0 direct calls, 0 trailing nops)
 
 ### Most referenced local functions
 

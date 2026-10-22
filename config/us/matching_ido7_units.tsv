@@ -55,3 +55,6 @@
 0x3F780	0x50	src/game/set_initial_halfword_8003eb80.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	ff73b6b1eff097baf39035041f2094545106ee5c1d51d0c87a55a187322a0f81
 0x3F6A8	0x38	src/game/set_indexed_halfword_field_8003eaa8.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	415a4949eef3b9a45e9085d67e81ef021c3b4f9ce6e2693f408fbac57986eb7a
 0x288C0	0x2C	src/game/update_counter_80027cc0.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	8a4060f17527eddee3766226bd60696181e8f12e399138d00182187bfcde985d
+0x92B0	0x3C	src/game/set_record_fields_800086b0.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	8aeea2c433f034dd175f66cb3356a2ce5e42e7f6de7d25b3eb80dcadcd86fc92
+0x2D8B8	0x40	src/game/clear_indexed_record_8002ccb8.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	b6e5c102434fbffca259f5e2d0cd8afc99cedee9df0cca0a0361898efba4858e
+0x2F7D0	0x40	src/game/clear_indexed_fields_8002ebd0.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	aea02a9643742327b331959b1c30ee7823f678f0980128d8d3dc993f6b727cfe
