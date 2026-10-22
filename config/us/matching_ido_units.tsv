@@ -298,3 +298,7 @@
 0x5B3D0	0x34	src/game/set_mode_value_8005a7d0.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	b7b30fe537667c0e5547257b445cba9e23aac12a7c4b9e3c2b0047c5bb57fb71
 0x13A78	0x40	src/game/init_transform_80012e78.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	e22da91b27cff123d2007c9aeafa33e02c8781720f095ba593f90e0280d8f6b5
 0xE530	0x3C	src/game/clear_global_fields_8000d930.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	8bc49a833f6f449a34b3330d3b487d66b14d7aab22c58f8184b474d217652834
+0x3A68C	0x40	src/game/clear_motion_globals_80039a8c.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	664765ae1d1db35a8a527638ad3b40d13cec6b813060e323fc355d16262c5e7e
+0x48310	0x40	src/game/reset_runtime_globals_80047710.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	e77812bec8ef9ed5f79cc2695ee5e5db7bf3a209e56dc4f1099a76fb3a7c0455
+0x4C5E0	0x3C	src/game/read_stream_fields_8004b9e0.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	b76c0b2c8d0393049b96d9ddf0d77d41993768019d6e871fdb67af0005d4c336
+0x4D960	0x3C	src/game/read_stream_state_8004cd60.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	46b416c8a4c4d7bffae3215e3cedeb50ca3fda6b738626068c718d24939e2da4

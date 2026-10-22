@@ -58,3 +58,4 @@
 0x92B0	0x3C	src/game/set_record_fields_800086b0.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	8aeea2c433f034dd175f66cb3356a2ce5e42e7f6de7d25b3eb80dcadcd86fc92
 0x2D8B8	0x40	src/game/clear_indexed_record_8002ccb8.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	b6e5c102434fbffca259f5e2d0cd8afc99cedee9df0cca0a0361898efba4858e
 0x2F7D0	0x40	src/game/clear_indexed_fields_8002ebd0.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	aea02a9643742327b331959b1c30ee7823f678f0980128d8d3dc993f6b727cfe
+0x36F34	0x40	src/game/clear_pair_state_80036334.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	0dd600ac6fd3f29c0299384f5642d424a9eff54382e521bb2abd8dbb5f024c08
