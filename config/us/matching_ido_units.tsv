@@ -270,3 +270,8 @@
 0x7AE0	0x44	src/game/dispatch_record_value_80006ee0.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	9322cb89163fcfa18a89c33f6162d6f615badbc7cacf1aa5baceabedc1f086e5
 0xE90C	0x34	src/game/reset_and_enable_8000dd0c.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	8acccf8d247246b8b2da3722deacbc426a57880e4d97f8dd8fb58f11ab718289
 0x3BAF4	0x54	src/game/process_five_records_8003aef4.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	b640270e7200b96f88e933f8a62668f51f9cd257907b82a92ff4e6d3cf4f9b69
+0x510B0	0x40	src/game/locked_call_800504b0.c	-O1 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	5fbecb3c1be57c3511d9b0e48fabe0d4bc1af4a5c7da125b1acaf88e9b159593
+0x5E740	0x40	src/game/locked_call_8005db40.c	-O1 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	ef6b5b2bc9c931e193ec5a3f706a6518ab1c11ed59efef895994570c3bc1918d
+0x523B0	0x40	src/game/read_locked_field_800517b0.c	-O1 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	a8cebd5fa2509c33771d201f3e8afbad800fa8a42fd6d5fee5bdc0b8772d0d84
+0x60B40	0x40	src/game/read_locked_field_8005ff40.c	-O1 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	673a2dbcc7c7093829d0c526a42525947d80d1ec6998265059b5fe7d27e5eb39
+0x2A2C0	0x4C	src/game/compare_converted_floats_800296c0.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	920105b2e8ed452f0448d69cc261b53158638642712b39cabc5ce7a59c22ca8c
