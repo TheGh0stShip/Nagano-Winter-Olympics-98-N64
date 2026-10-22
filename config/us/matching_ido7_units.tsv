@@ -1,5 +1,8 @@
 # IDO 7.1 units verified against the retail ROM
 # ROM_START SIZE SOURCE FLAGS SHA256
+0x13DA4	0x70	src/game/allocate_slot_800131a4.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	7f81de6157d58d985e019bb98db52ea54ad2ee8f088bb6823fac0d28224397c7
+0x13E14	0x70	src/game/allocate_slot_80013214.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	b8e5212ff1a27b055528f623e06dae9f9780559067a89d732902865e99c09f9e
+0x13E84	0x70	src/game/allocate_slot_80013284.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	4fc3ec091b0d5b68af611e85e2c127b5837d7e2696f293fae0d09880d98a968f
 0x5750	0x4C	src/game/copy_template_80004b50.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	3745c99a9aa46e1ecf42e8850cbc0cb4ace58227da3c44135bc21ada7d653c2b
 0xE8C0	0x4C	src/game/copy_template_8000dcc0.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	8c0d7da33c18767658831534c20f30602a4f1d3c1acec4a45105b501bb385a5f
 0x108A8	0x4C	src/game/copy_template_8000fca8.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	8c0d7da33c18767658831534c20f30602a4f1d3c1acec4a45105b501bb385a5f
