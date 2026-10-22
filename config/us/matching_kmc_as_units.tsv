@@ -1,6 +1,8 @@
 # KMC GCC 2.7.2 units matching with original assembler scheduling
 # ROM_START SIZE SOURCE FLAGS SHA256
 0x27F4	0xC	src/game/get_global_halfword.c	-O2 -G0 -mips3 -mgp32 -mfp32	db89976a733bc78e7e612b235fd0549a45d6a8a310e2ad12741f00076eb27e87
+0x2121C	0x14	src/game/enable_fields_8002061c.c	-O2 -G0 -mips3 -mgp32 -mfp32	7068ccb6b956a5bce80017e40d4a2c5e4f641d69f20b03ed960818780b4a0659
+0x5AFD0	0x20	src/game/init_record_8005a3d0.c	-O2 -G0 -mips3 -mgp32 -mfp32	fbb508e6a86134d259e851e282169a4b06c0a2c6ff878f0a829346eb89bb4ed1
 0x496F4	0x10	src/game/clear_indexed_byte_80048af4.c	-O2 -G0 -mips3 -mgp32 -mfp32	044158add1c8b22d377c603464619ec14324cacbaa399494b7b69be496df7c7f
 0x60A50	0x10	src/game/clear_pointed_word_8005fe50.c	-O2 -G0 -mips3 -mgp32 -mfp32	e1d58b3797e2652b6f924682d73472ec91145cf6f318f3198bad8f0141713d9b
 0xD070	0x14	src/game/clear_state_8000c470.c	-O2 -G0 -mips3 -mgp32 -mfp32	233a772ea058051e3296ce6528099812a44364eff09ee49f54b2c9bb2bead11e

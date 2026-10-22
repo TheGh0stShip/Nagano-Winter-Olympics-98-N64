@@ -1,6 +1,16 @@
 # IDO 5.3 exact matching units
 # ROM_START SIZE SOURCE FLAGS SHA256
 0x128D4	0x10	src/game/copy_global_byte_80011cd4.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	4f53812f7a46f9db4e0051057ab0b5f50d23ae767bb6ce8116b8c7dbe06b9d23
+0x220AC	0x24	src/game/clear_vector_800214ac.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	851949bba1694566e0a4879682cc67570d82e6ca960015800dedf274ce2d1352
+0x57884	0x18	src/game/conditional_store_80056c84.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	d579f83f1b28d4da1cf5cb4bd9173ba35d58f32ea6afb3e464e181cbd4604775
+0x21E98	0x1C	src/game/copy_vector_80021298.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	4dcf4d5f71afac685b2150a9df043a5641c13620a23f728b2eb64b69cc1fcdaf
+0x1F89C	0xC	src/game/set_float_field_8001ec9c.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	2100e97e3aa4bfd0be30cdf8564f6e37cd16d017ed1a8d30e5842a88bbc31e4d
+0x1F884	0x18	src/game/set_float_fields_8001ec84.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	aedd8bd6c78b37995dc5328f0a5ec9508db86d62105adda97fa3320d20f714f5
+0x1B170	0x20	src/game/set_short_float_8001a570.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	b8dbb42f9bdae9e69c8fb5973c9011b09e91a3c803ffc1a50312d7e05a8ea4bd
+0x9230	0x20	src/game/set_vector_80008630.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	c13bc912799199b36822d19f614ea215b3bbd905105b3d817ef2ddf332b51f1c
+0x9250	0x20	src/game/set_vector_80008650.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	52f9c45f495c67e3d5585e855244add1227cdf08de20ae2522394e591da458d7
+0x9270	0x20	src/game/set_vector_80008670.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	1d81d66d8bf548cd734f81d67d44a2266fe7d9b6d1eaed56c3792647e8f0598b
+0x1F864	0x20	src/game/set_vector_8001ec64.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	b30e4655a7e884542a4779ea394d318584ccb463ba56bdcbb4811796286ad01c
 0x49664	0x14	src/game/clear_byte_pair_80048a64.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	a6e2e681fcec3e4605d3682ed11d4723221d23adae839419ced7fb1409d1e7b3
 0x1E230	0x14	src/game/clear_float_return_one_8001d630.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	1a5197e1af98635b9baf3323f2ee37313341e46846b5afd1dd1743209bf74cec
 0x1E254	0x14	src/game/clear_float_return_one_8001d654.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	1a5197e1af98635b9baf3323f2ee37313341e46846b5afd1dd1743209bf74cec
