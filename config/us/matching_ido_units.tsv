@@ -329,3 +329,5 @@
 0x4E264	0x48	src/game/consume_two_and_dispatch_8004d664.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	5fb0779d6db8614ed20923943101ee3aa19fd75736e28a12aee27b3fcaaea23b
 0x5BA00	0x20	src/game/get_resource_field_8005ae00.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	921bac6c84ea6a339f3d0ffe67908689a8590b382cf854d34d17684ca9f8b4ce
 0x4AFF4	0x24	src/game/set_runtime_byte_if_clear_8004a3f4.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	16d228d3e7e7099ede8d669cfc6c805d6e4bbc51e901f476f898f592b98bbb85
+0x4C4BC	0x44	src/game/prepare_stream_record_8004b8bc.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	b1fb0e39b88ef0f4eb8eaba35704f7e29db65231326d9197ff0b4759ad16c114
+0x201D4	0x44	src/game/reset_object_counters_8001f5d4.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	cdb44cc2cbbedbf6756aaa3c7e3d844ddb36ad52fd4cd4b3d89db80898d8acbf
