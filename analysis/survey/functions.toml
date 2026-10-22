@@ -49,7 +49,7 @@ functions = [
     { name = "func_80003748", vram = 0x80003748, size = 0x30 }, # leaf
     { name = "func_80003778", vram = 0x80003778, size = 0x50 }, # c
     { name = "func_800037C8", vram = 0x800037c8, size = 0x50 }, # c
-    { name = "func_80003818", vram = 0x80003818, size = 0x58 }, # c
+    { name = "func_80003818", vram = 0x80003818, size = 0x50 }, # c; reviewed: 0x8 trailing alignment
     { name = "func_80003870", vram = 0x80003870, size = 0x30 }, # leaf
     { name = "func_800038A0", vram = 0x800038a0, size = 0x134 }, # leaf
     { name = "func_800039D4", vram = 0x800039d4, size = 0x148 }, # leaf
@@ -180,7 +180,7 @@ functions = [
     { name = "func_8000AEB4", vram = 0x8000aeb4, size = 0xa70 }, # c
     { name = "func_8000B924", vram = 0x8000b924, size = 0x70 }, # c
     { name = "func_8000B994", vram = 0x8000b994, size = 0x8 }, # stub
-    { name = "func_8000B99C", vram = 0x8000b99c, size = 0x24 }, # c
+    { name = "func_8000B99C", vram = 0x8000b99c, size = 0x20 }, # c; reviewed: 0x4 trailing alignment
     { name = "func_8000B9C0", vram = 0x8000b9c0, size = 0x154 }, # leaf
     { name = "func_8000BB14", vram = 0x8000bb14, size = 0x500 }, # c
     { name = "func_8000C014", vram = 0x8000c014, size = 0x84 }, # c

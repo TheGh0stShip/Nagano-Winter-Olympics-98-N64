@@ -1,5 +1,7 @@
 # IDO 5.3 exact matching units
 # ROM_START SIZE SOURCE FLAGS SHA256
+0x4418	0x50	src/game/set_control_pair_80003818.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	c8305e6897ef13d81db1a7ce93a1f3a8a3fe96dd8a064719b5f185994587cb32
+0xC59C	0x20	src/game/call_80043c30_8000b99c.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	36badbafb4e606ea5875c544ff6c3423b86834c7d7cdedd1a960ca3cfef3e129
 0x57CF0	0x28	src/game/scale_double_pow2_800570f0.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	d4f85e1c13e30e6ebf5484e05ed872373e395dbd9be5719d923807ecddd6eb6e
 0x56058	0x60	src/game/process_linked_resources_80055458.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	0d845dba1f0231bcb030e7d984d48f9ecbdb24e7c4d5c8e6af4556e7c90712cc
 0x39530	0x84	src/game/init_indexed_effect_80038930.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	7787f13801d89ed0fc8015cc7012c8102427fab41b6a4e07d777b165f20e1d53
