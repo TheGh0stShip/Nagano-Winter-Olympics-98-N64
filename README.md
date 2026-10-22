@@ -18,7 +18,7 @@ You must provide your own legally obtained retail ROM.
 - SDK functions named: 241 (220 high-confidence)
 - Audio: three libaudio bank files and 93 indexed ADPCM sample payloads
 - Music: 23 loader-indexed Konami LZW sequence records decode successfully
-- Matching C: 444 functions / 20,908 bytes
+- Matching C: 445 functions / 20,984 bytes
 - Byte-matched initialized data: 16 / 129,864 bytes
 - Identified post-program asset bytes: 794,392 / 12,047,904 bytes
 - Extracted asset bytes: 0 / 794,392 identified bytes
