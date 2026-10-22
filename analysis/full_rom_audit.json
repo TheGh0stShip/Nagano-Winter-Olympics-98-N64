@@ -1360,8 +1360,8 @@
   },
   "functions": {
     "total": 1469,
-    "matched": 371,
-    "matched_bytes": 15340,
+    "matched": 372,
+    "matched_bytes": 15436,
     "total_bytes": 392128,
     "size_buckets": {
       "<=0x10": 96,
@@ -1375,7 +1375,7 @@
       ">0x800": 13
     },
     "compiler_matches": {
-      "IDO 5.3": 266,
+      "IDO 5.3": 267,
       "KMC GCC 2.7.2 + assembler": 65,
       "IDO 7.1": 40
     },
@@ -1444,10 +1444,10 @@
         "start": 331776,
         "end": 397312,
         "functions": 237,
-        "matched": 32,
-        "matched_bytes": 1148,
+        "matched": 33,
+        "matched_bytes": 1244,
         "compiler_matches": {
-          "IDO 5.3": 23,
+          "IDO 5.3": 24,
           "KMC GCC 2.7.2 + assembler": 9
         }
       },
@@ -2825,31 +2825,6 @@
         "trailing_nops": 0
       },
       {
-        "name": "func_80055458",
-        "vram": 2147832920,
-        "rom": 352344,
-        "size": 96,
-        "matched": false,
-        "source": null,
-        "compiler": null,
-        "direct_calls": [
-          {
-            "address": 2147804960,
-            "name": "func_8004E720"
-          },
-          {
-            "address": 2147805008,
-            "name": "func_8004E750"
-          }
-        ],
-        "indirect_calls": 0,
-        "jumps": 0,
-        "branches": 1,
-        "cop1": 0,
-        "loads_stores": 11,
-        "trailing_nops": 0
-      },
-      {
         "name": "func_8002FCCC",
         "vram": 2147679436,
         "rom": 198860,
@@ -3642,6 +3617,31 @@
         "branches": 0,
         "cop1": 0,
         "loads_stores": 7,
+        "trailing_nops": 1
+      },
+      {
+        "name": "func_80031E7C",
+        "vram": 2147688060,
+        "rom": 207484,
+        "size": 72,
+        "matched": false,
+        "source": null,
+        "compiler": null,
+        "direct_calls": [
+          {
+            "address": 2147688144,
+            "name": "func_80031ED0"
+          },
+          {
+            "address": 2147688324,
+            "name": "func_80031F84"
+          }
+        ],
+        "indirect_calls": 0,
+        "jumps": 0,
+        "branches": 2,
+        "cop1": 0,
+        "loads_stores": 5,
         "trailing_nops": 1
       }
     ],

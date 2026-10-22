@@ -4,8 +4,8 @@ Retail ROM SHA-1: `eaf543e195731031a84f4136b506449209e3a8f5`. This audit scans a
 
 ## Code census
 
-- Exact matches: 371 functions / 15,340 bytes.
-- Remaining: 1,098 functions / 376,788 surveyed bytes.
+- Exact matches: 372 functions / 15,436 bytes.
+- Remaining: 1,097 functions / 376,692 surveyed bytes.
 - Direct call sites: 3,929; indirect call sites: 64; branch sites: 7,046.
 - COP1 instructions: 7,233.
 - Exact duplicate groups: 26; structural duplicate groups: 95; structural groups with unmatched members: 24.
@@ -25,7 +25,7 @@ Retail ROM SHA-1: `eaf543e195731031a84f4136b506449209e3a8f5`. This audit scans a
 
 ### Verified compiler units
 
-- IDO 5.3: 266
+- IDO 5.3: 267
 - KMC GCC 2.7.2 + assembler: 65
 - IDO 7.1: 40
 
@@ -38,7 +38,7 @@ Retail ROM SHA-1: `eaf543e195731031a84f4136b506449209e3a8f5`. This audit scans a
 | `0x21000..0x31000` | 274 | 72 | 2456 | KMC GCC 2.7.2 + assembler: 10, IDO 5.3: 56, IDO 7.1: 6 |
 | `0x31000..0x41000` | 239 | 65 | 2364 | IDO 5.3: 49, IDO 7.1: 3, KMC GCC 2.7.2 + assembler: 13 |
 | `0x41000..0x51000` | 242 | 46 | 1792 | IDO 5.3: 34, KMC GCC 2.7.2 + assembler: 8, IDO 7.1: 4 |
-| `0x51000..0x61000` | 237 | 32 | 1148 | IDO 5.3: 23, KMC GCC 2.7.2 + assembler: 9 |
+| `0x51000..0x61000` | 237 | 33 | 1244 | IDO 5.3: 24, KMC GCC 2.7.2 + assembler: 9 |
 | `0x61000..0x71000` | 0 | 0 | 0 | none |
 | `0x71000..0x81000` | 0 | 0 | 0 | none |
 | `0x81000..0x829E0` | 0 | 0 | 0 | none |
@@ -126,12 +126,12 @@ The ledger has 2,384 gap-free records.
 - `func_8003AEF4` (`0x8003AEF4`, `0x54` bytes, 1 direct calls, 0 trailing nops)
 - `func_8002D304` (`0x8002D304`, `0x58` bytes, 1 direct calls, 0 trailing nops)
 - `func_8003EDF4` (`0x8003EDF4`, `0x58` bytes, 1 direct calls, 0 trailing nops)
-- `func_80055458` (`0x80055458`, `0x60` bytes, 2 direct calls, 0 trailing nops)
 - `func_8002FCCC` (`0x8002FCCC`, `0x24` bytes, 1 direct calls, 1 trailing nops)
 - `func_8002FD2C` (`0x8002FD2C`, `0x24` bytes, 1 direct calls, 1 trailing nops)
 - `func_8002FD8C` (`0x8002FD8C`, `0x24` bytes, 1 direct calls, 1 trailing nops)
 - `func_800529C8` (`0x800529C8`, `0x30` bytes, 2 direct calls, 1 trailing nops)
 - `func_8002B81C` (`0x8002B81C`, `0x30` bytes, 1 direct calls, 1 trailing nops)
+- `func_800348FC` (`0x800348FC`, `0x30` bytes, 1 direct calls, 1 trailing nops)
 
 ### Small leaf functions
 
