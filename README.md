@@ -17,16 +17,17 @@ You must provide your own legally obtained retail ROM.
 - RSP code identified inside the linked text section: 7,296 bytes
 - SDK functions named: 241 (220 high-confidence)
 - Audio: three libaudio bank files and 93 indexed ADPCM sample payloads
+- Music: 23 loader-indexed Konami LZW sequence records decode successfully
 - Matching C: 245 functions / 7,360 bytes
 - Byte-matched initialized data: 0 / 129,864 bytes
-- Identified post-program asset bytes: 750,216 / 12,047,904 bytes
-- Extracted asset bytes: 0 / 750,216 identified bytes
+- Identified post-program asset bytes: 794,392 / 12,047,904 bytes
+- Extracted asset bytes: 0 / 794,392 identified bytes
 - Physical ROM inventory: 12,582,912 / 12,582,912 bytes (100%)
 
 Physical coverage does not mean semantic understanding. The conservative
 inventory leaves 10,372,608 bytes in seven unknown ranges and identifies
-925,080 bytes only through loader references. It does not claim unproven
-texture, model, animation, music, or sound-effect counts. See
+880,904 bytes only through loader references. It does not claim unproven
+texture, model, animation, or sound-effect counts. See
 `analysis/rom_map.md` and the gap-free `analysis/rom_inventory.tsv`.
 
 ## Verification

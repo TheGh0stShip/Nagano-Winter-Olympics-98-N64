@@ -8,9 +8,10 @@ format-evidence counts, not guesses about nested media.
 | ROM metadata | 2 | 4,096 |
 | Program code (CPU and RSP) | 5 | 401,048 |
 | Program initialized data | 3 | 129,864 |
-| Loader-referenced, undecoded | 1,036 | 925,080 |
+| Loader-referenced, undecoded | 1,013 | 880,904 |
 | Audio containers | 1,238 | 59,306 |
 | Audio sample payloads | 93 | 690,910 |
+| Compressed music sequences | 23 | 44,176 |
 | Unknown | 7 | 10,372,608 |
 | **Total** | **2,384** | **12,582,912** |
 
@@ -20,6 +21,8 @@ objects, 216 `f64` objects, 19 strings, 61 jump tables, and 2 unreferenced
 regions. These boundaries remain candidates until manually reviewed.
 
 Audio parsing proves three `ALBankFile` containers and 93 ADPCM sample payloads.
+The table at `0x800736F8` proves 23 aligned sequence records; all decode with
+the Konami LZW command stream implemented by `tools/decode_nagano_lzw.py`.
 It does not yet prove which samples are music or effects. Graphics scanning
 finds 25 candidate F3DEX display lists (10 pooled blobs and 16 standalone
 detections, with overlap); this is not a decoded model or texture count.
@@ -36,8 +39,8 @@ The ByteMatch report intentionally tracks different claims independently:
 |---|---:|---:|---|
 | Byte-matched CPU code | 7,360 | 392,212 | C output verified against retail ROM bytes |
 | Byte-matched initialized data | 0 | 129,864 | Reconstructed linked data verified byte-for-byte |
-| Asset-region identification | 750,216 | 12,047,904 | Proven audio containers and sample payloads |
-| Asset extraction | 0 | 750,216 | Identified assets emitted by a reproducible extraction pipeline |
+| Asset-region identification | 794,392 | 12,047,904 | Proven audio structures, samples, and compressed sequences |
+| Asset extraction | 0 | 794,392 | Identified assets emitted by a reproducible extraction pipeline |
 | Physical ROM inventory | 12,582,912 | 12,582,912 | Every byte assigned one non-overlapping ledger interval |
 
 Inventory coverage is not decompilation progress. Loader references prove that

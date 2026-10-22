@@ -48,6 +48,7 @@ def inventory_progress():
     cursor = 0
     identified = 0
     audio = 0
+    music = 0
     for row in rows:
         start, end = int(row["start"], 0), int(row["end"], 0)
         if start != cursor or end <= start or int(row["size"]) != end - start:
@@ -57,6 +58,8 @@ def inventory_progress():
             identified += end - start
             if row["category"] == "audio":
                 audio += end - start
+            elif row["category"] == "music":
+                music += end - start
     if cursor != ROM_SIZE or ASSET_END != ROM_SIZE:
         raise ValueError(f"{INVENTORY}: inventory does not cover the retail ROM")
     progress = tomllib.loads(ASSET_PROGRESS.read_text())
@@ -66,7 +69,7 @@ def inventory_progress():
     extracted = progress["extraction"]["extracted_bytes"]
     if not 0 <= extracted <= identified:
         raise ValueError(f"{ASSET_PROGRESS}: invalid extracted byte count")
-    return identified, audio, extracted
+    return identified, audio, music, extracted
 
 
 def main():
@@ -95,7 +98,7 @@ def main():
     data = tomllib.loads((ROOT / "config/us/data_progress.toml").read_text())["initialized_data"]
     if data["matched"] + data["unmatched"] != TOTAL_DATA:
         raise ValueError("initialized data progress does not cover the program data")
-    identified, audio, extracted = inventory_progress()
+    identified, audio, music, extracted = inventory_progress()
     asset_total = ASSET_END - ASSET_START
     report = {"measures": measures(TOTAL_CODE, matched_bytes, len(funcs), matched_count,
                                     TOTAL_DATA, data["matched"]),
@@ -108,6 +111,8 @@ def main():
                               "measures": asset_measures(asset_total, identified)},
                              {"id": "assets_audio", "name": "Identified audio banks and samples",
                               "measures": asset_measures(audio, audio)},
+                             {"id": "assets_music", "name": "Identified compressed music sequences",
+                              "measures": asset_measures(music, music)},
                              {"id": "assets_extracted", "name": "Extracted asset bytes",
                               "measures": asset_measures(identified, extracted)},
                              {"id": "rom_inventory", "name": "Physical ROM inventory coverage",

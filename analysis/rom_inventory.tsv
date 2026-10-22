@@ -2359,27 +2359,27 @@ start	end	size	class	category	kind	name	evidence
 0x1AA5E0	0x23C550	597872	unknown	-	-	gap_1AA5E0	-
 0x23C550	0x2E6E60	698640	referenced	loader_range	raw	rom_23C550	records 0x800736B8 in 0x80048080
 0x2E6E60	0x3F1990	1092400	unknown	-	-	gap_2E6E60	-
-0x3F1990	0x3F2440	2736	referenced	loader_range	raw	rom_3F1990	records 0x800736F8 in 0x8004C13C
-0x3F2440	0x3F2DC0	2432	referenced	loader_range	raw	rom_3F2440	records 0x800736FC in 0x8004C13C
-0x3F2DC0	0x3F3320	1376	referenced	loader_range	raw	rom_3F2DC0	records 0x80073700 in 0x8004C13C
-0x3F3320	0x3F38C0	1440	referenced	loader_range	raw	rom_3F3320	records 0x80073704 in 0x8004C13C
-0x3F38C0	0x3F4020	1888	referenced	loader_range	raw	rom_3F38C0	records 0x80073708 in 0x8004C13C
-0x3F4020	0x3F4260	576	referenced	loader_range	raw	rom_3F4020	records 0x8007370C in 0x8004C13C
-0x3F4260	0x3F4430	464	referenced	loader_range	raw	rom_3F4260	records 0x80073710 in 0x8004C13C
-0x3F4430	0x3F4970	1344	referenced	loader_range	raw	rom_3F4430	records 0x80073714 in 0x8004C13C
-0x3F4970	0x3F4B50	480	referenced	loader_range	raw	rom_3F4970	records 0x80073718 in 0x8004C13C
-0x3F4B50	0x3F4D30	480	referenced	loader_range	raw	rom_3F4B50	records 0x8007371C in 0x8004C13C
-0x3F4D30	0x3F4F10	480	referenced	loader_range	raw	rom_3F4D30	records 0x80073720 in 0x8004C13C
-0x3F4F10	0x3F5100	496	referenced	loader_range	raw	rom_3F4F10	records 0x80073724 in 0x8004C13C
-0x3F5100	0x3F5470	880	referenced	loader_range	raw	rom_3F5100	records 0x80073728 in 0x8004C13C
-0x3F5470	0x3F5550	224	referenced	loader_range	raw	rom_3F5470	records 0x8007372C in 0x8004C13C
-0x3F5550	0x3F5FC0	2672	referenced	loader_range	raw	rom_3F5550	records 0x80073730 in 0x8004C13C
-0x3F5FC0	0x3F6E20	3680	referenced	loader_range	raw	rom_3F5FC0	records 0x80073734 in 0x8004C13C
-0x3F6E20	0x3F8DA0	8064	referenced	loader_range	raw	rom_3F6E20	records 0x80073738 in 0x8004C13C
-0x3F8DA0	0x3F93B0	1552	referenced	loader_range	raw	rom_3F8DA0	records 0x8007373C in 0x8004C13C
-0x3F93B0	0x3F9B80	2000	referenced	loader_range	raw	rom_3F93B0	records 0x80073740 in 0x8004C13C
-0x3F9B80	0x3F9FE0	1120	referenced	loader_range	raw	rom_3F9B80	records 0x80073744 in 0x8004C13C
-0x3F9FE0	0x3FAA40	2656	referenced	loader_range	raw	rom_3F9FE0	records 0x80073748 in 0x8004C13C
-0x3FAA40	0x3FB050	1552	referenced	loader_range	raw	rom_3FAA40	records 0x8007374C in 0x8004C13C
-0x3FB050	0x3FC620	5584	referenced	loader_range	raw	rom_3FB050	records 0x800737A8 in 0x8004C13C
+0x3F1990	0x3F2440	2736	container	music	konami_lzw_sequence	sequence_00	decoded=0x14F6 compressed=0xAB0; table 0x800736F8
+0x3F2440	0x3F2DC0	2432	container	music	konami_lzw_sequence	sequence_01	decoded=0xD18 compressed=0x973 plus alignment; table 0x800736FC
+0x3F2DC0	0x3F3320	1376	container	music	konami_lzw_sequence	sequence_02	decoded=0x6EA compressed=0x556 plus alignment; table 0x80073700
+0x3F3320	0x3F38C0	1440	container	music	konami_lzw_sequence	sequence_03	decoded=0xBEA compressed=0x599 plus alignment; table 0x80073704
+0x3F38C0	0x3F4020	1888	container	music	konami_lzw_sequence	sequence_04	decoded=0x14CB compressed=0x753 plus alignment; table 0x80073708
+0x3F4020	0x3F4260	576	container	music	konami_lzw_sequence	sequence_05	decoded=0x413 compressed=0x236 plus alignment; table 0x8007370C
+0x3F4260	0x3F4430	464	container	music	konami_lzw_sequence	sequence_06	decoded=0x26B compressed=0x1C4 plus alignment; table 0x80073710
+0x3F4430	0x3F4970	1344	container	music	konami_lzw_sequence	sequence_07	decoded=0xBD0 compressed=0x53C plus alignment; table 0x80073714
+0x3F4970	0x3F4B50	480	container	music	konami_lzw_sequence	sequence_08	decoded=0x256 compressed=0x1DB plus alignment; table 0x80073718
+0x3F4B50	0x3F4D30	480	container	music	konami_lzw_sequence	sequence_09	decoded=0x259 compressed=0x1DE plus alignment; table 0x8007371C
+0x3F4D30	0x3F4F10	480	container	music	konami_lzw_sequence	sequence_10	decoded=0x256 compressed=0x1DF plus alignment; table 0x80073720
+0x3F4F10	0x3F5100	496	container	music	konami_lzw_sequence	sequence_11	decoded=0x25A compressed=0x1E2 plus alignment; table 0x80073724
+0x3F5100	0x3F5470	880	container	music	konami_lzw_sequence	sequence_12	decoded=0x79D compressed=0x367 plus alignment; table 0x80073728
+0x3F5470	0x3F5550	224	container	music	konami_lzw_sequence	sequence_13	decoded=0x1A0 compressed=0xD1 plus alignment; table 0x8007372C
+0x3F5550	0x3F5FC0	2672	container	music	konami_lzw_sequence	sequence_14	decoded=0x16F0 compressed=0xA6A plus alignment; table 0x80073730
+0x3F5FC0	0x3F6E20	3680	container	music	konami_lzw_sequence	sequence_15	decoded=0x1948 compressed=0xE60; table 0x80073734
+0x3F6E20	0x3F8DA0	8064	container	music	konami_lzw_sequence	sequence_16	decoded=0x391C compressed=0x1F78 plus alignment; table 0x80073738
+0x3F8DA0	0x3F93B0	1552	container	music	konami_lzw_sequence	sequence_17	decoded=0x10FB compressed=0x608 plus alignment; table 0x8007373C
+0x3F93B0	0x3F9B80	2000	container	music	konami_lzw_sequence	sequence_18	decoded=0xD06 compressed=0x7C8 plus alignment; table 0x80073740
+0x3F9B80	0x3F9FE0	1120	container	music	konami_lzw_sequence	sequence_19	decoded=0x841 compressed=0x45F plus alignment; table 0x80073744
+0x3F9FE0	0x3FAA40	2656	container	music	konami_lzw_sequence	sequence_20	decoded=0x1A57 compressed=0xA53 plus alignment; table 0x80073748
+0x3FAA40	0x3FB050	1552	container	music	konami_lzw_sequence	sequence_21	decoded=0x1182 compressed=0x604 plus alignment; table 0x8007374C
+0x3FB050	0x3FC620	5584	container	music	konami_lzw_sequence	sequence_22	decoded=0x2A39 compressed=0x15CC plus alignment; table 0x800737A8
 0x3FC620	0xC00000	8403424	unknown	-	-	gap_3FC620	-
