@@ -4,8 +4,8 @@ Retail ROM SHA-1: `eaf543e195731031a84f4136b506449209e3a8f5`. This audit scans a
 
 ## Code census
 
-- Exact matches: 494 functions / 24,980 bytes.
-- Remaining: 975 functions / 367,128 surveyed bytes.
+- Exact matches: 495 functions / 25,044 bytes.
+- Remaining: 974 functions / 367,064 surveyed bytes.
 - Direct call sites: 3,929; indirect call sites: 64; branch sites: 7,046.
 - COP1 instructions: 7,233.
 - Exact duplicate groups: 28; structural duplicate groups: 96; structural groups with unmatched members: 16.
@@ -25,7 +25,7 @@ Retail ROM SHA-1: `eaf543e195731031a84f4136b506449209e3a8f5`. This audit scans a
 
 ### Verified compiler units
 
-- IDO 5.3: 348
+- IDO 5.3: 349
 - KMC GCC 2.7.2 + assembler: 65
 - IDO 7.1: 81
 
@@ -38,7 +38,7 @@ Retail ROM SHA-1: `eaf543e195731031a84f4136b506449209e3a8f5`. This audit scans a
 | `0x21000..0x31000` | 274 | 100 | 4768 | KMC GCC 2.7.2 + assembler: 10, IDO 5.3: 76, IDO 7.1: 14 |
 | `0x31000..0x41000` | 239 | 85 | 3536 | IDO 5.3: 64, IDO 7.1: 8, KMC GCC 2.7.2 + assembler: 13 |
 | `0x41000..0x51000` | 242 | 62 | 3360 | IDO 5.3: 45, KMC GCC 2.7.2 + assembler: 8, IDO 7.1: 9 |
-| `0x51000..0x61000` | 237 | 46 | 1876 | IDO 5.3: 37, KMC GCC 2.7.2 + assembler: 9 |
+| `0x51000..0x61000` | 237 | 47 | 1940 | IDO 5.3: 38, KMC GCC 2.7.2 + assembler: 9 |
 | `0x61000..0x71000` | 0 | 0 | 0 | none |
 | `0x71000..0x81000` | 0 | 0 | 0 | none |
 | `0x81000..0x829E0` | 0 | 0 | 0 | none |
@@ -107,8 +107,8 @@ The ledger has 2,384 gap-free records.
 - 0.67: `func_8004CC64` at `0x8004CC64` from `func_8004CD60` (src/game/read_stream_state_8004cd60.c).
 - 0.67: `func_80013128` at `0x80013128` from `func_80006080` (src/game/call_mode_zero_80006080.c).
 - 0.67: `func_80013128` at `0x80013128` from `func_800060B4` (src/game/call_mode_one_800060b4.c).
-- 0.67: `func_80051770` at `0x80051770` from `func_80048580` (src/game/call_byte_pair_80048580.c).
-- 0.67: `func_80051770` at `0x80051770` from `func_800485AC` (src/game/call_byte_pair_800485ac.c).
+- 0.67: `func_800060E8` at `0x800060E8` from `func_8002C788` (src/game/call_value_8002c788.c).
+- 0.67: `func_800060E8` at `0x800060E8` from `func_8004D6CC` (src/game/call_8004d78c_8004d6cc.c).
 
 ### Small direct-call functions
 
