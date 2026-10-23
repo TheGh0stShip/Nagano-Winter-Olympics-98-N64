@@ -9,6 +9,19 @@ ROM_SIZE = 12_582_912
 
 
 class BaselineTests(unittest.TestCase):
+    def test_tracker_manifest(self):
+        manifest = json.loads((ROOT / ".recomp.json").read_text())
+        self.assertEqual(manifest["game"], "Nagano Winter Olympics '98")
+        self.assertEqual(manifest["system"], "N64")
+        self.assertEqual(manifest["type"], "decomp")
+        self.assertEqual(manifest["status"], "in-progress")
+        self.assertEqual(manifest["original"], {
+            "region": "USA",
+            "revision": "Rev 0",
+            "serial": "NH5E",
+            "sha1": "eaf543e195731031a84f4136b506449209e3a8f5",
+        })
+
     def test_inventory_is_gap_free(self):
         with (ROOT / "analysis/rom_inventory.tsv").open() as stream:
             rows = list(csv.DictReader(stream, delimiter="\t"))

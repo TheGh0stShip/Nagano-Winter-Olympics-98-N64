@@ -1,6 +1,7 @@
 # Nagano Winter Olympics '98 (USA) decompilation
 
-[![Progress](https://bytematch.dev/TheGh0stShip/Nagano-Winter-Olympics-98-N64.svg?mode=shield&label=Code&measure=matched_code_percent)](https://bytematch.dev/TheGh0stShip/Nagano-Winter-Olympics-98-N64)
+[![Code](https://bytematch.dev/TheGh0stShip/Nagano-Winter-Olympics-98-N64.svg?mode=shield&label=Code&measure=matched_code_percent)](https://bytematch.dev/TheGh0stShip/Nagano-Winter-Olympics-98-N64)
+[![Functions](https://bytematch.dev/TheGh0stShip/Nagano-Winter-Olympics-98-N64.svg?mode=shield&label=Functions&measure=matched_functions)](https://bytematch.dev/TheGh0stShip/Nagano-Winter-Olympics-98-N64)
 [![Report](https://github.com/TheGh0stShip/Nagano-Winter-Olympics-98-N64/actions/workflows/progress.yml/badge.svg)](https://github.com/TheGh0stShip/Nagano-Winter-Olympics-98-N64/actions/workflows/progress.yml)
 
 An in-progress, byte-matching C decompilation of the USA Nintendo 64 release.
@@ -53,6 +54,20 @@ region, reproducibly extracted asset bytes, and gap-free physical inventory.
 Only code and initialized data contribute to aggregate decompilation progress.
 Identified audio is not reported as extracted, and loader-referenced ranges do
 not count as identified assets until their formats are decoded.
+
+## Progress trackers
+
+- [ByteMatch](https://bytematch.dev/TheGh0stShip/Nagano-Winter-Olympics-98-N64)
+  consumes the `NH5E_report` artifact published by every successful push to
+  `main`. The legacy `us_report` artifact carries the same report so its
+  retained history stays accurate.
+- [recomp.fyi](https://recomp.fyi/) and compatible project directories consume
+  the root [`.recomp.json`](.recomp.json) manifest. It records the exact USA
+  revision, ROM identity, project status, method, maintainership, and live
+  ByteMatch report without conflating decompilation with asset inventory.
+
+The machine-readable report is also available directly from
+[ByteMatch as JSON](https://bytematch.dev/TheGh0stShip/Nagano-Winter-Olympics-98-N64.json).
 
 `make families` compares mnemonic-level instruction fingerprints across the
 function catalogue and reports unmatched functions that share a shape with

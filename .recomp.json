@@ -1,0 +1,47 @@
+{
+  "$schema": "https://recomp.fyi/schema/v1.json",
+  "game": "Nagano Winter Olympics '98",
+  "wikidata": "Q1523264",
+  "system": "N64",
+  "type": "decomp",
+  "original": {
+    "region": "USA",
+    "revision": "Rev 0",
+    "serial": "NH5E",
+    "sha1": "eaf543e195731031a84f4136b506449209e3a8f5"
+  },
+  "project": "Nagano Winter Olympics '98 (N64) matching decompilation",
+  "status": "in-progress",
+  "toolchain": [
+    "n64-decomp-kit",
+    "Objdiff"
+  ],
+  "approach": "Byte-matching C decompilation with relocation-aware verification against the USA retail ROM.",
+  "notes": "Progress is measured from byte-verified code and initialized data. Asset identification, extraction, and physical ROM inventory are reported separately.",
+  "maintainers": [
+    {
+      "name": "TheGh0stShip",
+      "link": "https://github.com/TheGh0stShip"
+    }
+  ],
+  "links": [
+    {
+      "label": "Repository",
+      "url": "https://github.com/TheGh0stShip/Nagano-Winter-Olympics-98-N64"
+    },
+    {
+      "label": "ByteMatch progress",
+      "url": "https://bytematch.dev/TheGh0stShip/Nagano-Winter-Olympics-98-N64"
+    }
+  ],
+  "help": [
+    "Matching remaining game functions",
+    "Identifying initialized data",
+    "Documenting asset formats"
+  ],
+  "tags": [
+    "matching",
+    "MIPS",
+    "byte-exact"
+  ]
+}
