@@ -385,3 +385,8 @@
 0x39410	0x18	src/game/store_halfword_if_present_80038810.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	b0b81cc048477efb298c9469186123b836f82d472c1e6ab08564ab311e9157d1
 0x4ACFC	0x24	src/game/update_mode_byte_8004a0fc.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	bd6108ba9700a405b95cfe8c67e058135361221e51a87e8686fdf1f4ece2a5dd
 0x4AFB8	0x24	src/game/enable_mode_for_small_value_8004a3b8.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	e2692f53af04565df65bb3e96d6c6fac9b600361ab3bbd8008c8d4fd807079a8
+0x2A380	0x28	src/game/is_nonpositive_float_80029780.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	c4fbac664729bc811546fac54d083026555943a1ab4fb59a3ae181afc68f1d63
+0x5B1D0	0x30	src/game/init_buffer_record_8005a5d0.c	-O1 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	103bda79fb73048f39de0fd1044ca9a5ebf1c9e0a67ea5b3a704772051f888dd
+0x5D410	0x30	src/game/set_global_pair_8005c810.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	8b8467b2f545d1ff5023e3a361ec74497688d40d71f35f0f44ae4f41d0c245ef
+0x5B770	0x30	src/game/is_sp_device_busy_8005ab70.c	-O1 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	a44aec60d9645024aa1a70288e3337586a6634058e77d1d7cc8f99bc5363c031
+0x5B7A0	0x30	src/game/is_si_device_busy_8005aba0.c	-O1 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	2e32a122560dc0bf5f956dab44ea34bd34c62194b39f957ded83be5694a5667c

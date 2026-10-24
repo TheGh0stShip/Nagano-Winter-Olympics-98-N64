@@ -1360,8 +1360,8 @@
   },
   "functions": {
     "total": 1469,
-    "matched": 554,
-    "matched_bytes": 30536,
+    "matched": 559,
+    "matched_bytes": 30768,
     "total_bytes": 392096,
     "size_buckets": {
       "<=0x10": 96,
@@ -1375,7 +1375,7 @@
       ">0x800": 13
     },
     "compiler_matches": {
-      "IDO 5.3": 385,
+      "IDO 5.3": 390,
       "KMC GCC 2.7.2 + assembler": 67,
       "IDO 7.1": 102
     },
@@ -1408,11 +1408,11 @@
         "start": 135168,
         "end": 200704,
         "functions": 274,
-        "matched": 106,
-        "matched_bytes": 5348,
+        "matched": 107,
+        "matched_bytes": 5388,
         "compiler_matches": {
           "KMC GCC 2.7.2 + assembler": 10,
-          "IDO 5.3": 79,
+          "IDO 5.3": 80,
           "IDO 7.1": 17
         }
       },
@@ -1444,10 +1444,10 @@
         "start": 331776,
         "end": 397312,
         "functions": 237,
-        "matched": 51,
-        "matched_bytes": 2224,
+        "matched": 55,
+        "matched_bytes": 2416,
         "compiler_matches": {
-          "IDO 5.3": 42,
+          "IDO 5.3": 46,
           "KMC GCC 2.7.2 + assembler": 9
         }
       },
@@ -1482,7 +1482,7 @@
     "cop1_instructions": 7233,
     "exact_duplicate_groups": 28,
     "shape_duplicate_groups": 96,
-    "shape_groups_with_unmatched": 16,
+    "shape_groups_with_unmatched": 15,
     "trailing_nop_functions": 863
   },
   "inventory": {
@@ -1622,6 +1622,24 @@
         "jaccard": 0.2857142857142857,
         "example": "func_8000FCA8",
         "source": "src/game/copy_template_8000fca8.c"
+      },
+      {
+        "name": "func_8005FF10",
+        "vram": 2147876624,
+        "size": 48,
+        "score": 0.75,
+        "jaccard": 0.3333333333333333,
+        "example": "func_8005AB70",
+        "source": "src/game/is_sp_device_busy_8005ab70.c"
+      },
+      {
+        "name": "func_8005FF10",
+        "vram": 2147876624,
+        "size": 48,
+        "score": 0.75,
+        "jaccard": 0.3333333333333333,
+        "example": "func_8005ABA0",
+        "source": "src/game/is_si_device_busy_8005aba0.c"
       },
       {
         "name": "func_8004BA1C",
@@ -1876,15 +1894,6 @@
         "source": "src/game/get_indexed_word_8003eb14.c"
       },
       {
-        "name": "func_8005C810",
-        "vram": 2147862544,
-        "size": 48,
-        "score": 0.6,
-        "jaccard": 0.25,
-        "example": "func_80047750",
-        "source": "src/game/clear_state_words_80047750.c"
-      },
-      {
         "name": "func_8004B774",
         "vram": 2147792756,
         "size": 140,
@@ -2072,6 +2081,15 @@
         "jaccard": 0.14285714285714285,
         "example": "func_8000DB7C",
         "source": "src/game/reset_pair_records_8000db7c.c"
+      },
+      {
+        "name": "func_8005FF80",
+        "vram": 2147876736,
+        "size": 64,
+        "score": 0.5714285714285714,
+        "jaccard": 0.14285714285714285,
+        "example": "func_8005AB70",
+        "source": "src/game/is_sp_device_busy_8005ab70.c"
       },
       {
         "name": "func_80003C68",
