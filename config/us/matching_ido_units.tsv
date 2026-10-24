@@ -434,3 +434,6 @@
 0x2B6CC	0x60	src/game/get_mode_float_8002aacc.c	-O3 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	3e0c0243946e03b65c9e37f638be36f94841cac8345737d67041b4dc9d88cfd4
 0x1E014	0x5C	src/game/initialize_transition_8001d414.c	-O3 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	39efd2a533db6103dc6928a69c17115a389b1de1ba08544feae0289d294b41c3
 0x1E908	0x60	src/game/initialize_once_8001dd08.c	-O3 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	d1c256b74a8ec48613609339cda17e78d3fda03ab52b24901f4d6dbb2aaea751
+0x2250	0x5C	src/game/initialize_cartridge_registers_80001650.c	-O3 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	10bbaed6e7fe0a52cc0b207ee373bdc746a391ee3b9918ac35542382609fb4c2
+0x47B0	0x60	src/game/initialize_runtime_storage_80003bb0.c	-O3 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	f1427c62a5f7817e6d9acaf041152701887d340cceae59e903370a9af2fa155b
+0x52CC0	0x60	src/game/build_matrix_800520c0.c	-O3 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	46bb94b66b179903be788e2ba4dbc10897e2ad118adb99e0f1a453f47c1c3fa3

@@ -1360,8 +1360,8 @@
   },
   "functions": {
     "total": 1469,
-    "matched": 607,
-    "matched_bytes": 35280,
+    "matched": 610,
+    "matched_bytes": 35564,
     "total_bytes": 392096,
     "size_buckets": {
       "<=0x10": 96,
@@ -1375,7 +1375,7 @@
       ">0x800": 13
     },
     "compiler_matches": {
-      "IDO 5.3": 434,
+      "IDO 5.3": 437,
       "KMC GCC 2.7.2 + assembler": 67,
       "IDO 7.1": 106
     },
@@ -1384,10 +1384,10 @@
         "start": 4096,
         "end": 69632,
         "functions": 234,
-        "matched": 102,
-        "matched_bytes": 7252,
+        "matched": 104,
+        "matched_bytes": 7440,
         "compiler_matches": {
-          "IDO 5.3": 52,
+          "IDO 5.3": 54,
           "KMC GCC 2.7.2 + assembler": 12,
           "IDO 7.1": 38
         }
@@ -1444,10 +1444,10 @@
         "start": 331776,
         "end": 397312,
         "functions": 237,
-        "matched": 85,
-        "matched_bytes": 5432,
+        "matched": 86,
+        "matched_bytes": 5528,
         "compiler_matches": {
-          "IDO 5.3": 76,
+          "IDO 5.3": 77,
           "KMC GCC 2.7.2 + assembler": 9
         }
       },
@@ -1596,6 +1596,24 @@
   },
   "attack_queues": {
     "similar_to_matched": [
+      {
+        "name": "func_8005B020",
+        "vram": 2147856416,
+        "size": 112,
+        "score": 0.8846153846153846,
+        "jaccard": 0.5,
+        "example": "func_800520C0",
+        "source": "src/game/build_matrix_800520c0.c"
+      },
+      {
+        "name": "func_8005BF64",
+        "vram": 2147860324,
+        "size": 108,
+        "score": 0.8627450980392157,
+        "jaccard": 0.46875,
+        "example": "func_800520C0",
+        "source": "src/game/build_matrix_800520c0.c"
+      },
       {
         "name": "func_8002EC10",
         "vram": 2147675152,
@@ -2394,35 +2412,6 @@
         "trailing_nops": 1
       },
       {
-        "name": "func_80001650",
-        "vram": 2147489360,
-        "rom": 8784,
-        "size": 92,
-        "matched": false,
-        "source": null,
-        "compiler": null,
-        "direct_calls": [
-          {
-            "address": 2147867456,
-            "name": "func_8005DB40"
-          },
-          {
-            "address": 2147867456,
-            "name": "func_8005DB40"
-          },
-          {
-            "address": 2147867456,
-            "name": "func_8005DB40"
-          }
-        ],
-        "indirect_calls": 0,
-        "jumps": 0,
-        "branches": 1,
-        "cop1": 0,
-        "loads_stores": 3,
-        "trailing_nops": 1
-      },
-      {
         "name": "func_80037AA0",
         "vram": 2147711648,
         "rom": 231072,
@@ -2494,31 +2483,6 @@
         "trailing_nops": 3
       },
       {
-        "name": "func_800520C0",
-        "vram": 2147819712,
-        "rom": 339136,
-        "size": 96,
-        "matched": false,
-        "source": null,
-        "compiler": null,
-        "direct_calls": [
-          {
-            "address": 2147819152,
-            "name": "func_80051E90"
-          },
-          {
-            "address": 2147821632,
-            "name": "func_80052840"
-          }
-        ],
-        "indirect_calls": 0,
-        "jumps": 0,
-        "branches": 0,
-        "cop1": 4,
-        "loads_stores": 10,
-        "trailing_nops": 3
-      },
-      {
         "name": "func_8004E974",
         "vram": 2147805556,
         "rom": 324980,
@@ -2541,31 +2505,6 @@
         "branches": 0,
         "cop1": 6,
         "loads_stores": 6,
-        "trailing_nops": 4
-      },
-      {
-        "name": "func_80003BB0",
-        "vram": 2147498928,
-        "rom": 18352,
-        "size": 96,
-        "matched": false,
-        "source": null,
-        "compiler": null,
-        "direct_calls": [
-          {
-            "address": 2147499024,
-            "name": "func_80003C10"
-          },
-          {
-            "address": 2147533136,
-            "name": "func_8000C150"
-          }
-        ],
-        "indirect_calls": 0,
-        "jumps": 0,
-        "branches": 0,
-        "cop1": 0,
-        "loads_stores": 4,
         "trailing_nops": 4
       }
     ],
