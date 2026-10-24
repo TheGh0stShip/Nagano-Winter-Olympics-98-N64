@@ -356,3 +356,4 @@
 0x48B28	0x38	src/game/get_initialized_callback_80047f28.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	95e05908037397f231fe0f48651c6cf7653b4911543c9cc95bcedd4967f69a70
 0x4896C	0x40	src/game/clear_pi_busy_flag_80047d6c.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	73ca85fc6b40eb3b5cad4946f072565e9dfa09dc8b351cffadd126e58c4accfd
 0x38870	0x3C	src/game/update_scaled_field_80037c70.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	a7e19ec42ec286901fdfe4c537a6e91b59672b1d1332bf1552d1316d8980d8a6
+0x146C8	0x44	src/game/process_indexed_record_80013ac8.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	ad2ce00d30d1301534885338fbb00b9cb72b99bbdb485e394a1c1fc921bd76ba
