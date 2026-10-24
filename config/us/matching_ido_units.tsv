@@ -423,3 +423,6 @@
 0x59F90	0x70	src/game/set_callback_pair_80059390.c	-O1 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	556dbb6f5735fb998c6c28cbed10dce2e0b59ed9f070132b47aef2823af35193
 0x517E0	0xC4	src/game/cont_start_read_data_80050be0.c	-O1 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	0ec1f8c7845378ec6d5361f530c88463fc64dd26f661fd75c7fbe3d8e26149ba
 0x568BC	0xA4	src/game/env_mixer_new_80055cbc.c	-O3 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	530afb6f24494c21d9f0c30723df91a39c3bb2efea9c40c426cd5976be5220f4
+0x60B80	0x40	src/game/sp_set_pc_8005ff80.c	-O1 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	fd6ecd757ad01e76c749ca4cd15a076ba07c44fa8c5689d5b31b9ff6c3ea51c6
+0x539D8	0x78	src/game/look_at_80052dd8.c	-O3 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	41477effd761d9e1b0018769e7fc9ae5956336fdf4fde1f2de79bdeafc486b87
+0x4BB0	0x88	src/game/remove_scheduler_client_80003fb0.c	-O3 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	0e6b2deb052e001d2d3f7e9923ce3de235151f857a6c6b92a3c8be86e099873d

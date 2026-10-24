@@ -1360,8 +1360,8 @@
   },
   "functions": {
     "total": 1469,
-    "matched": 594,
-    "matched_bytes": 34060,
+    "matched": 597,
+    "matched_bytes": 34380,
     "total_bytes": 392096,
     "size_buckets": {
       "<=0x10": 96,
@@ -1375,7 +1375,7 @@
       ">0x800": 13
     },
     "compiler_matches": {
-      "IDO 5.3": 423,
+      "IDO 5.3": 426,
       "KMC GCC 2.7.2 + assembler": 67,
       "IDO 7.1": 104
     },
@@ -1384,10 +1384,10 @@
         "start": 4096,
         "end": 69632,
         "functions": 234,
-        "matched": 100,
-        "matched_bytes": 7028,
+        "matched": 101,
+        "matched_bytes": 7164,
         "compiler_matches": {
-          "IDO 5.3": 50,
+          "IDO 5.3": 51,
           "KMC GCC 2.7.2 + assembler": 12,
           "IDO 7.1": 38
         }
@@ -1444,10 +1444,10 @@
         "start": 331776,
         "end": 397312,
         "functions": 237,
-        "matched": 83,
-        "matched_bytes": 5248,
+        "matched": 85,
+        "matched_bytes": 5432,
         "compiler_matches": {
-          "IDO 5.3": 74,
+          "IDO 5.3": 76,
           "KMC GCC 2.7.2 + assembler": 9
         }
       },
@@ -1973,15 +1973,6 @@
         "jaccard": 0.14285714285714285,
         "example": "func_8000DB7C",
         "source": "src/game/reset_pair_records_8000db7c.c"
-      },
-      {
-        "name": "func_8005FF80",
-        "vram": 2147876736,
-        "size": 64,
-        "score": 0.5714285714285714,
-        "jaccard": 0.14285714285714285,
-        "example": "func_8005AB70",
-        "source": "src/game/is_sp_device_busy_8005ab70.c"
       },
       {
         "name": "func_80003C68",
