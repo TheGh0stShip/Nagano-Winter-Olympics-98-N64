@@ -89,3 +89,4 @@
 0x4D5E4	0xA0	src/game/calculate_stream_motion_step_8004c9e4.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	40d25e8474f193cf1e085f77a41b39d645632351b5ed6b96b86fac54f9e426b3
 0x4D764	0x98	src/game/update_stream_motion_command_8004cb64.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	a2a4cea847a1455fe5aaf345c3a616a29b3838fd268aa00efeaf12062f6f735c
 0x4D7FC	0x68	src/game/advance_stream_motion_command_8004cbfc.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	322145fb1f7989de8687a99867f0841445d3e52c574138cea07a269f3bd3bdeb
+0x4D8D0	0x90	src/game/start_stream_motion_8004ccd0.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	1c66f441fde00f27fa0fd2ca2f8a5a27fe8675d79f6a34e3b266b8ca1b319a30
