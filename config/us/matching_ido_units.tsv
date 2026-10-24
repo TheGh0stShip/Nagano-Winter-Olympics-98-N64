@@ -393,3 +393,7 @@
 0x54E84	0x34	src/game/convert_u64_to_double_80054284.c	-O1 -mips3 -32 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	2bf204310a357d143eb371fdd8ccdae79321899f20602753fb72e84f0f3a4962
 0x2F2C8	0x38	src/game/reset_runtime_entry_8002e6c8.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	2ea5ffc14a9b19d43a66b323cd74444bcadbe229c836f6d6efbcccc2b6e1c8d7
 0x2A344	0x3C	src/game/add_mode_offset_80029744.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	4bfef23e9c2e8093b736dbe17bb25800cca5bb9accd8f30946a8b99e3500d6c8
+0x5AFF0	0x40	src/game/init_aligned_buffer_8005a3f0.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	0adbf5a4b2125a84c057db632ef94fc48aad8c2aad231a14fe2d24186208af4c
+0x28578	0x40	src/game/is_runtime_record_ready_80027978.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	72215b136bb86bf9584affd0ab45980d5ab752c5bc9bbec0ea2d153e2f0a921a
+0x506F0	0x40	src/game/unlink_node_8004faf0.c	-O1 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	6950f1d67e7328147547bdd321085cf5f0e2327d377a5d6ae2dfca3d5a3c6708
+0x60B10	0x30	src/game/is_ai_device_busy_8005ff10.c	-O1 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	94d8674f022e85b272c7575b4a263fd32588717bb737e3a99536d3c589db394f

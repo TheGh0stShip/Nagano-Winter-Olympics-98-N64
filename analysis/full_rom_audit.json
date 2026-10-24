@@ -1360,8 +1360,8 @@
   },
   "functions": {
     "total": 1469,
-    "matched": 563,
-    "matched_bytes": 30992,
+    "matched": 568,
+    "matched_bytes": 31296,
     "total_bytes": 392096,
     "size_buckets": {
       "<=0x10": 96,
@@ -1375,9 +1375,9 @@
       ">0x800": 13
     },
     "compiler_matches": {
-      "IDO 5.3": 393,
+      "IDO 5.3": 397,
       "KMC GCC 2.7.2 + assembler": 67,
-      "IDO 7.1": 103
+      "IDO 7.1": 104
     },
     "address_bands": [
       {
@@ -1408,11 +1408,11 @@
         "start": 135168,
         "end": 200704,
         "functions": 274,
-        "matched": 110,
-        "matched_bytes": 5560,
+        "matched": 111,
+        "matched_bytes": 5624,
         "compiler_matches": {
           "KMC GCC 2.7.2 + assembler": 10,
-          "IDO 5.3": 82,
+          "IDO 5.3": 83,
           "IDO 7.1": 18
         }
       },
@@ -1432,11 +1432,11 @@
         "start": 266240,
         "end": 331776,
         "functions": 242,
-        "matched": 90,
-        "matched_bytes": 6376,
+        "matched": 92,
+        "matched_bytes": 6504,
         "compiler_matches": {
-          "IDO 7.1": 22,
-          "IDO 5.3": 58,
+          "IDO 7.1": 23,
+          "IDO 5.3": 59,
           "KMC GCC 2.7.2 + assembler": 10
         }
       },
@@ -1444,10 +1444,10 @@
         "start": 331776,
         "end": 397312,
         "functions": 237,
-        "matched": 56,
-        "matched_bytes": 2468,
+        "matched": 58,
+        "matched_bytes": 2580,
         "compiler_matches": {
-          "IDO 5.3": 47,
+          "IDO 5.3": 49,
           "KMC GCC 2.7.2 + assembler": 9
         }
       },
@@ -1622,24 +1622,6 @@
         "jaccard": 0.2857142857142857,
         "example": "func_8000FCA8",
         "source": "src/game/copy_template_8000fca8.c"
-      },
-      {
-        "name": "func_8005FF10",
-        "vram": 2147876624,
-        "size": 48,
-        "score": 0.75,
-        "jaccard": 0.3333333333333333,
-        "example": "func_8005AB70",
-        "source": "src/game/is_sp_device_busy_8005ab70.c"
-      },
-      {
-        "name": "func_8005FF10",
-        "vram": 2147876624,
-        "size": 48,
-        "score": 0.75,
-        "jaccard": 0.3333333333333333,
-        "example": "func_8005ABA0",
-        "source": "src/game/is_si_device_busy_8005aba0.c"
       },
       {
         "name": "func_8004BA1C",
@@ -3242,22 +3224,6 @@
         "trailing_nops": 0
       },
       {
-        "name": "func_8005FF10",
-        "vram": 2147876624,
-        "rom": 396048,
-        "size": 48,
-        "matched": false,
-        "source": null,
-        "compiler": null,
-        "direct_calls": [],
-        "indirect_calls": 0,
-        "jumps": 0,
-        "branches": 2,
-        "cop1": 0,
-        "loads_stores": 1,
-        "trailing_nops": 0
-      },
-      {
         "name": "func_800306CC",
         "vram": 2147681996,
         "rom": 201420,
@@ -3271,22 +3237,6 @@
         "branches": 0,
         "cop1": 0,
         "loads_stores": 6,
-        "trailing_nops": 0
-      },
-      {
-        "name": "func_8004FAF0",
-        "vram": 2147810032,
-        "rom": 329456,
-        "size": 64,
-        "matched": false,
-        "source": null,
-        "compiler": null,
-        "direct_calls": [],
-        "indirect_calls": 0,
-        "jumps": 0,
-        "branches": 4,
-        "cop1": 0,
-        "loads_stores": 4,
         "trailing_nops": 0
       },
       {
@@ -3959,6 +3909,38 @@
         "branches": 7,
         "cop1": 0,
         "loads_stores": 14,
+        "trailing_nops": 0
+      },
+      {
+        "name": "func_800541B8",
+        "vram": 2147828152,
+        "rom": 347576,
+        "size": 156,
+        "matched": false,
+        "source": null,
+        "compiler": null,
+        "direct_calls": [],
+        "indirect_calls": 0,
+        "jumps": 0,
+        "branches": 5,
+        "cop1": 12,
+        "loads_stores": 1,
+        "trailing_nops": 0
+      },
+      {
+        "name": "func_80054118",
+        "vram": 2147827992,
+        "rom": 347416,
+        "size": 160,
+        "matched": false,
+        "source": null,
+        "compiler": null,
+        "direct_calls": [],
+        "indirect_calls": 0,
+        "jumps": 0,
+        "branches": 5,
+        "cop1": 13,
+        "loads_stores": 1,
         "trailing_nops": 0
       }
     ],

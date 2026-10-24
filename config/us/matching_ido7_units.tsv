@@ -103,3 +103,4 @@
 0xB488	0x54	src/game/call_shifted_effect_8000a888.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	8b29ba5ba910759603e680797354bb0aa22837e29dca2041ece3507298ebff66
 0x21E78	0x20	src/game/test_high_bit_80021278.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	03fd08c850efc686696779b2ea19d66f8e38c23539e4900e0603dfb1b8acae07
 0x24678	0x38	src/game/is_small_pair_80023a78.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	8cdf8a13ab1bd18ad7f73bfac7f6f1c055ef410de02e5c8d3b15c58fe2a868d3
+0x44830	0x40	src/game/next_random_80043c30.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	07a20ecb2d2a18e24d33c86f5a357dc66254c11593ad139bc5bd9452f8f46bcd
