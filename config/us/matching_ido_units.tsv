@@ -429,3 +429,7 @@
 0x3F9F4	0x58	src/game/start_effect_8003edf4.c	-O3 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	4e8a5eb60ed282d65ecd8c937b2ac1906a0ae560dda8df5a1b9e9aa9ab8ea7ea
 0x2056C	0x58	src/game/get_runtime_mode_8001f96c.c	-O3 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	64e640480656c35cc63541cff0e68cead40e4885a3bf4e6cd2cf9f5684d5c4a8
 0x3A6CC	0x58	src/game/clamped_sine_80039acc.c	--section-base=.rodata:0x80080698 -O3 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	82120a9715118e113d3902fd8467bdf7457534fe120c1cff9b59f4fdb3d8546f
+0x6A18	0x58	src/game/resolve_address_80005e18.c	-O3 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	5e2a1913343e6de2d3f01e7a981de21c260f40f1115611e95612b2a461498bf9
+0x30500	0x5C	src/game/build_repeated_record_8002f900.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	1b85cabfd738d77e54927855b4a576774f164cda68b79bd5a7ef90d8dcda7f1b
+0x2B6CC	0x60	src/game/get_mode_float_8002aacc.c	-O3 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	3e0c0243946e03b65c9e37f638be36f94841cac8345737d67041b4dc9d88cfd4
+0x1E014	0x5C	src/game/initialize_transition_8001d414.c	-O3 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	39efd2a533db6103dc6928a69c17115a389b1de1ba08544feae0289d294b41c3

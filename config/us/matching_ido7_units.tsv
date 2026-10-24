@@ -105,3 +105,4 @@
 0x24678	0x38	src/game/is_small_pair_80023a78.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	8cdf8a13ab1bd18ad7f73bfac7f6f1c055ef410de02e5c8d3b15c58fe2a868d3
 0x44830	0x40	src/game/next_random_80043c30.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	07a20ecb2d2a18e24d33c86f5a357dc66254c11593ad139bc5bd9452f8f46bcd
 0x32E7C	0x58	src/game/reset_runtime_table_8003227c.c	-O3 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	12c3d27749184ce40f17040bf8ffc892da6f97c3bc70f6666dead02e579de3e8
+0x41870	0x54	src/game/query_shifted_byte_80040c70.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	b05bca04a4531567dc7fa9ec123e2a139139c979631a151213a09ed3e6b05c87
