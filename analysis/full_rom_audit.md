@@ -4,8 +4,8 @@ Retail ROM SHA-1: `eaf543e195731031a84f4136b506449209e3a8f5`. This audit scans a
 
 ## Code census
 
-- Exact matches: 606 functions / 35,184 bytes.
-- Remaining: 863 functions / 356,912 surveyed bytes.
+- Exact matches: 607 functions / 35,280 bytes.
+- Remaining: 862 functions / 356,816 surveyed bytes.
 - Direct call sites: 3,929; indirect call sites: 64; branch sites: 7,046.
 - COP1 instructions: 7,233.
 - Exact duplicate groups: 28; structural duplicate groups: 96; structural groups with unmatched members: 15.
@@ -25,7 +25,7 @@ Retail ROM SHA-1: `eaf543e195731031a84f4136b506449209e3a8f5`. This audit scans a
 
 ### Verified compiler units
 
-- IDO 5.3: 433
+- IDO 5.3: 434
 - KMC GCC 2.7.2 + assembler: 67
 - IDO 7.1: 106
 
@@ -34,7 +34,7 @@ Retail ROM SHA-1: `eaf543e195731031a84f4136b506449209e3a8f5`. This audit scans a
 | ROM range | Functions | Matched | Matched bytes | Verified compiler units |
 |---|---:|---:|---:|---|
 | `0x1000..0x11000` | 234 | 102 | 7252 | IDO 5.3: 52, KMC GCC 2.7.2 + assembler: 12, IDO 7.1: 38 |
-| `0x11000..0x21000` | 243 | 117 | 5664 | KMC GCC 2.7.2 + assembler: 13, IDO 5.3: 88, IDO 7.1: 16 |
+| `0x11000..0x21000` | 243 | 118 | 5760 | KMC GCC 2.7.2 + assembler: 13, IDO 5.3: 89, IDO 7.1: 16 |
 | `0x21000..0x31000` | 274 | 113 | 5812 | KMC GCC 2.7.2 + assembler: 10, IDO 5.3: 85, IDO 7.1: 18 |
 | `0x31000..0x41000` | 239 | 95 | 4340 | IDO 5.3: 72, IDO 7.1: 10, KMC GCC 2.7.2 + assembler: 13 |
 | `0x41000..0x51000` | 242 | 94 | 6684 | IDO 7.1: 24, IDO 5.3: 60, KMC GCC 2.7.2 + assembler: 10 |
@@ -119,7 +119,6 @@ The ledger has 2,384 gap-free records.
 - `func_80037348` (`0x80037348`, `0x50` bytes, 2 direct calls, 1 trailing nops)
 - `func_8003F9E0` (`0x8003F9E0`, `0x58` bytes, 1 direct calls, 1 trailing nops)
 - `func_80001650` (`0x80001650`, `0x5C` bytes, 3 direct calls, 1 trailing nops)
-- `func_8001DD08` (`0x8001DD08`, `0x60` bytes, 2 direct calls, 1 trailing nops)
 - `func_80037AA0` (`0x80037AA0`, `0x60` bytes, 1 direct calls, 1 trailing nops)
 - `func_8004EEDC` (`0x8004EEDC`, `0x44` bytes, 3 direct calls, 2 trailing nops)
 - `func_8003FF50` (`0x8003FF50`, `0x50` bytes, 1 direct calls, 3 trailing nops)

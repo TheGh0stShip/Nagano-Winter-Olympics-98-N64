@@ -433,3 +433,4 @@
 0x30500	0x5C	src/game/build_repeated_record_8002f900.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	1b85cabfd738d77e54927855b4a576774f164cda68b79bd5a7ef90d8dcda7f1b
 0x2B6CC	0x60	src/game/get_mode_float_8002aacc.c	-O3 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	3e0c0243946e03b65c9e37f638be36f94841cac8345737d67041b4dc9d88cfd4
 0x1E014	0x5C	src/game/initialize_transition_8001d414.c	-O3 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	39efd2a533db6103dc6928a69c17115a389b1de1ba08544feae0289d294b41c3
+0x1E908	0x60	src/game/initialize_once_8001dd08.c	-O3 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	d1c256b74a8ec48613609339cda17e78d3fda03ab52b24901f4d6dbb2aaea751
