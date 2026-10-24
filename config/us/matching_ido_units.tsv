@@ -442,3 +442,6 @@
 0x3DACC	0x80	src/game/update_motion_angle_8003cecc.c	-O3 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	43919256c892425cfe55d1ce98174c6886e79a00f1b0c7e2191670baea79bd01
 0x312CC	0x40	src/game/reset_runtime_selection_800306cc.c	-O3 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	d9c704e34c984e1c47020b83b77fa7af3639cefa2f8a4a2e0e4ae1bbfd9a8675
 0x5A010	0xA0	src/game/transform_point_80059410.c	-O3 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	ec5bc225baf6c5b426a7a126d1448d04e80da0a67c84200870933a97bed00b10
+0xD2AC	0x64	src/game/reset_runtime_globals_8000c6ac.c	-O3 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	d437aa1cf37ce1f8d360dfe3d245979bcc140b92be1a3de116545561e8990d41
+0x38360	0x88	src/game/initialize_runtime_descriptor_80037760.c	-O3 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	c3f5444ef2573d17086c3825b66365724ecb842ddcca4aff52fba70c5666f611
+0x54DB8	0x9C	src/game/convert_float_to_u64_800541b8.c	--section-base=.rodata:0x80081028 -O1 -mips3 -32 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	ad84c99e032b7a4000f629a5cbc4065eab17db3d2065ac43674ef9ef9d6e6f3a

@@ -4,6 +4,9 @@
 0x1292C	0x68	src/game/initialize_five_runtime_records_80011d2c.c	-O3 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	041f726cf06fad57f04ea86c8eb76437ea8b0ad077c63a2f344908057be27fa0
 0x1C9B8	0x68	src/game/initialize_packed_record_8001bdb8.c	-O3 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	cf82c9754dd0bb91d4047fa6d59bfb90a5bbf144f7a225cbdd46e6350e25a6cc
 0x23D94	0x8C	src/game/load_mode_vector_80023194.c	-O3 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	4b3c72d13faabc69d4178cfdf788ac79c2f976e1550498dac7a673c8ea00c15e
+0x19D48	0x8C	src/game/initialize_float_emitter_80019148.c	-O3 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	025d42fc0fe0fc8da00502af51871f3f8663d49210824f57f530dbc901950613
+0x1B108	0x68	src/game/copy_indexed_payload_8001a508.c	-O3 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	9790490b1296ceff8fa499d8acb1506dfd620d0505364879976883be90224003
+0x2CABC	0x98	src/game/convert_float_to_u16_8002bebc.c	-O3 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	bc08f128434e7e7fe5e10be383d81d254421f93e879bd1c0d9b1272618259c14
 0x559C	0x68	src/game/copy_selected_template_8000499c.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	03e55275f6a1fe64fd801e1747412485bf52674807e44b89055d3a58880d2868
 0x9CCC	0xA0	src/game/build_indexed_record_800090cc.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	e9365a13f74427c29dc28a424d925b4a6d255ca7b92e66483fa19e4c03edf025
 0x9D6C	0x90	src/game/build_indexed_record_8000916c.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	aa07f896f7b068730534601700774e10e78f23c62f716aa1e59ce054536a3806
