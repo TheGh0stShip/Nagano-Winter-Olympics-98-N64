@@ -1360,8 +1360,8 @@
   },
   "functions": {
     "total": 1469,
-    "matched": 506,
-    "matched_bytes": 25652,
+    "matched": 508,
+    "matched_bytes": 25792,
     "total_bytes": 392108,
     "size_buckets": {
       "<=0x10": 96,
@@ -1375,9 +1375,9 @@
       ">0x800": 13
     },
     "compiler_matches": {
-      "IDO 5.3": 357,
+      "IDO 5.3": 358,
       "KMC GCC 2.7.2 + assembler": 67,
-      "IDO 7.1": 82
+      "IDO 7.1": 83
     },
     "address_bands": [
       {
@@ -1420,10 +1420,10 @@
         "start": 200704,
         "end": 266240,
         "functions": 239,
-        "matched": 86,
-        "matched_bytes": 3596,
+        "matched": 87,
+        "matched_bytes": 3668,
         "compiler_matches": {
-          "IDO 5.3": 65,
+          "IDO 5.3": 66,
           "IDO 7.1": 8,
           "KMC GCC 2.7.2 + assembler": 13
         }
@@ -1432,12 +1432,12 @@
         "start": 266240,
         "end": 331776,
         "functions": 242,
-        "matched": 67,
-        "matched_bytes": 3628,
+        "matched": 68,
+        "matched_bytes": 3696,
         "compiler_matches": {
+          "IDO 7.1": 10,
           "IDO 5.3": 48,
-          "KMC GCC 2.7.2 + assembler": 10,
-          "IDO 7.1": 9
+          "KMC GCC 2.7.2 + assembler": 10
         }
       },
       {
@@ -1622,6 +1622,15 @@
         "jaccard": 0.2857142857142857,
         "example": "func_8000FCA8",
         "source": "src/game/copy_template_8000fca8.c"
+      },
+      {
+        "name": "func_80040A80",
+        "vram": 2147748480,
+        "size": 96,
+        "score": 0.7317073170731707,
+        "jaccard": 0.27586206896551724,
+        "example": "func_80040A3C",
+        "source": "src/game/query_byte_fallback_80040a3c.c"
       },
       {
         "name": "func_8002CA88",
@@ -1885,15 +1894,6 @@
         "source": "src/game/consume_and_dispatch_byte_8004d624.c"
       },
       {
-        "name": "func_80036ED0",
-        "vram": 2147708624,
-        "size": 72,
-        "score": 0.6285714285714286,
-        "jaccard": 0.10714285714285714,
-        "example": "func_80055AA0",
-        "source": "src/game/init_record_80055aa0.c"
-      },
-      {
         "name": "func_8002C670",
         "vram": 2147665520,
         "size": 124,
@@ -1928,15 +1928,6 @@
         "jaccard": 0.16666666666666666,
         "example": "func_8001D3DC",
         "source": "src/game/transition_if_idle_8001d3dc.c"
-      },
-      {
-        "name": "func_80036ED0",
-        "vram": 2147708624,
-        "size": 72,
-        "score": 0.6206896551724138,
-        "jaccard": 0.13636363636363635,
-        "example": "func_8002E9DC",
-        "source": "src/game/call_global_pair_8002e9dc.c"
       },
       {
         "name": "func_8003C55C",
@@ -2488,13 +2479,22 @@
         "source": "src/game/call_pair_8004bdb8.c"
       },
       {
-        "name": "func_80036ED0",
-        "vram": 2147708624,
-        "size": 72,
+        "name": "func_800306CC",
+        "vram": 2147681996,
+        "size": 64,
         "score": 0.5714285714285714,
-        "jaccard": 0.19230769230769232,
-        "example": "func_800138F0",
-        "source": "src/game/reset_then_process_800138f0.c"
+        "jaccard": 0.14285714285714285,
+        "example": "func_8000DB7C",
+        "source": "src/game/reset_pair_records_8000db7c.c"
+      },
+      {
+        "name": "func_80003C68",
+        "vram": 2147499112,
+        "size": 24,
+        "score": 0.5714285714285714,
+        "jaccard": 0.14285714285714285,
+        "example": "func_8001A570",
+        "source": "src/game/set_short_float_8001a570.c"
       }
     ],
     "small_wrappers": [
@@ -2633,31 +2633,6 @@
         "trailing_nops": 1
       },
       {
-        "name": "func_80040A3C",
-        "vram": 2147748412,
-        "rom": 267836,
-        "size": 68,
-        "matched": false,
-        "source": null,
-        "compiler": null,
-        "direct_calls": [
-          {
-            "address": 2147748864,
-            "name": "func_80040C00"
-          },
-          {
-            "address": 2147749400,
-            "name": "func_80040E18"
-          }
-        ],
-        "indirect_calls": 0,
-        "jumps": 0,
-        "branches": 1,
-        "cop1": 0,
-        "loads_stores": 5,
-        "trailing_nops": 1
-      },
-      {
         "name": "func_80037074",
         "vram": 2147709044,
         "rom": 228468,
@@ -2726,31 +2701,6 @@
         "branches": 2,
         "cop1": 0,
         "loads_stores": 5,
-        "trailing_nops": 1
-      },
-      {
-        "name": "func_80036ED0",
-        "vram": 2147708624,
-        "rom": 228048,
-        "size": 72,
-        "matched": false,
-        "source": null,
-        "compiler": null,
-        "direct_calls": [
-          {
-            "address": 2147708760,
-            "name": "func_80036F58"
-          },
-          {
-            "address": 2147715088,
-            "name": "func_80038810"
-          }
-        ],
-        "indirect_calls": 0,
-        "jumps": 0,
-        "branches": 0,
-        "cop1": 0,
-        "loads_stores": 4,
         "trailing_nops": 1
       },
       {
@@ -3707,6 +3657,56 @@
         "cop1": 0,
         "loads_stores": 11,
         "trailing_nops": 3
+      },
+      {
+        "name": "func_8004E974",
+        "vram": 2147805556,
+        "rom": 324980,
+        "size": 92,
+        "matched": false,
+        "source": null,
+        "compiler": null,
+        "direct_calls": [
+          {
+            "address": 2147805152,
+            "name": "func_8004E7E0"
+          },
+          {
+            "address": 2147821632,
+            "name": "func_80052840"
+          }
+        ],
+        "indirect_calls": 0,
+        "jumps": 0,
+        "branches": 0,
+        "cop1": 6,
+        "loads_stores": 6,
+        "trailing_nops": 4
+      },
+      {
+        "name": "func_80003BB0",
+        "vram": 2147498928,
+        "rom": 18352,
+        "size": 96,
+        "matched": false,
+        "source": null,
+        "compiler": null,
+        "direct_calls": [
+          {
+            "address": 2147499024,
+            "name": "func_80003C10"
+          },
+          {
+            "address": 2147533136,
+            "name": "func_8000C150"
+          }
+        ],
+        "indirect_calls": 0,
+        "jumps": 0,
+        "branches": 0,
+        "cop1": 0,
+        "loads_stores": 4,
+        "trailing_nops": 4
       }
     ],
     "small_leaf_functions": [
