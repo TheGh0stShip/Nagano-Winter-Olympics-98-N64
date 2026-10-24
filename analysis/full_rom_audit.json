@@ -1360,8 +1360,8 @@
   },
   "functions": {
     "total": 1469,
-    "matched": 515,
-    "matched_bytes": 26428,
+    "matched": 516,
+    "matched_bytes": 26576,
     "total_bytes": 392108,
     "size_buckets": {
       "<=0x10": 96,
@@ -1375,7 +1375,7 @@
       ">0x800": 13
     },
     "compiler_matches": {
-      "IDO 5.3": 363,
+      "IDO 5.3": 364,
       "KMC GCC 2.7.2 + assembler": 67,
       "IDO 7.1": 85
     },
@@ -1420,10 +1420,10 @@
         "start": 200704,
         "end": 266240,
         "functions": 239,
-        "matched": 87,
-        "matched_bytes": 3668,
+        "matched": 88,
+        "matched_bytes": 3816,
         "compiler_matches": {
-          "IDO 5.3": 66,
+          "IDO 5.3": 67,
           "IDO 7.1": 8,
           "KMC GCC 2.7.2 + assembler": 13
         }
@@ -1831,15 +1831,6 @@
         "source": "src/game/copy_template_8000fca8.c"
       },
       {
-        "name": "func_8003BF34",
-        "vram": 2147729204,
-        "size": 148,
-        "score": 0.631578947368421,
-        "jaccard": 0.2619047619047619,
-        "example": "func_8003BEE4",
-        "source": "src/game/process_three_records_8003bee4.c"
-      },
-      {
         "name": "func_8004D3CC",
         "vram": 2147800012,
         "size": 92,
@@ -2117,15 +2108,6 @@
         "jaccard": 0.1111111111111111,
         "example": "func_80055420",
         "source": "src/game/relink_resource_80055420.c"
-      },
-      {
-        "name": "func_8003BF34",
-        "vram": 2147729204,
-        "size": 148,
-        "score": 0.5862068965517241,
-        "jaccard": 0.2,
-        "example": "func_8003AEF4",
-        "source": "src/game/process_five_records_8003aef4.c"
       },
       {
         "name": "func_8001E054",
@@ -2495,6 +2477,24 @@
         "jaccard": 0.12,
         "example": "func_80048608",
         "source": "src/game/call_byte_pair_80048608.c"
+      },
+      {
+        "name": "func_8002A6C4",
+        "vram": 2147657412,
+        "size": 284,
+        "score": 0.5614035087719298,
+        "jaccard": 0.25882352941176473,
+        "example": "func_800462DC",
+        "source": "src/game/convert_scaled_byte_800462dc.c"
+      },
+      {
+        "name": "func_8002A6C4",
+        "vram": 2147657412,
+        "size": 284,
+        "score": 0.5614035087719298,
+        "jaccard": 0.25882352941176473,
+        "example": "func_80046550",
+        "source": "src/game/convert_scaled_byte_80046550.c"
       }
     ],
     "small_wrappers": [
