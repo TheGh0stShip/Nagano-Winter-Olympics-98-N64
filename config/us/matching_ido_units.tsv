@@ -405,3 +405,8 @@
 0x52ED0	0x50	src/game/si_raw_read_io_800522d0.c	-O1 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	eb98078b1c30095585b151dc42beef16a327d0d9d0ba200356932ae956ddfcdb
 0x5FF80	0x50	src/game/si_raw_write_io_8005f380.c	-O1 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	e48d35e89da1c951290f5b1a561c896eb9c408ac56290fe8ac0a80a22a33ea35
 0x5BA20	0x50	src/game/vi_swap_buffer_8005ae20.c	-O1 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	d0a11418d46c49c9420b88827410317bd06abe191a73ab817f576f0d513be1fd
+0x52E60	0x70	src/game/vi_black_80052260.c	-O1 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	ff5f72cd14cfdc8422026ef07aadbde632401f5ac4034a60354abeb46e410f7b
+0x53540	0x88	src/game/mtx_identity_float_80052940.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	8325b24de93e8818fe1d58e4d181e272f6bb2ad475863afed99d3a024438b2db
+0x54F90	0x5C	src/game/pfs_sum_80054390.c	-O1 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	b0bd16a938ace6cc15173eaa521d073515ab4f6f57c999650c91545c6223d96c
+0x54FEC	0x68	src/game/pfs_id_checksum_800543ec.c	-O1 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	6af53aa37bbc984589264392e1d170b4b923726c4736d69f61867edfbf93fd92
+0x5BEC0	0x80	src/game/sp_task_yielded_8005b2c0.c	-O1 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	e838a42ffd7c850f2cf57cc569a2dcc65246da7b301f518591605cc8d5a5c2fd
