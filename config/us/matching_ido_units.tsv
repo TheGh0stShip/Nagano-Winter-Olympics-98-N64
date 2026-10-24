@@ -368,3 +368,4 @@
 0x4B60	0x50	src/game/link_record_under_lock_80003f60.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	b5b3f52a07710b6e6809180d2f84aadda693e8e93d9167a0fdbee0867cbec8cf
 0x2C32C	0x50	src/game/update_indexed_mode_8002b72c.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	d37a61cd9ae9a2c097c128f1391171954507e28ec0c94c8ba8f17a0741b96e7c
 0x4CE7C	0x58	src/game/read_stream_field_8004c27c.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	ec94fed928b86d5ee4b5220bb59f6492994dba06e316a47ccc675121326464a2
+0x4D200	0x58	src/game/reset_stream_motion_8004c600.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	ebdae5c7136451cd36aa8af6fcc1c8159bd56549c98b7e4acddcfa6f3dfffded
