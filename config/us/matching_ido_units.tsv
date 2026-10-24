@@ -416,3 +416,10 @@
 0x4FCB8	0x60	src/game/divide_u64_immediate_8004f0b8.c	-O1 -mips3 -32 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	b5999d5b01a6650ebf056b9106a465b2fc5dd3de630e1b20ffed19a52458ec30
 0x511B0	0x60	src/game/pi_read_io_800505b0.c	-O1 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	9f1ab3de2e96d48af376dfb5b87bc1e7a06805fd3a7a673b9d8c27301f73a807
 0x5C3D0	0x50	src/game/or_interrupt_mask_8005b7d0.c	-O1 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	7bc6d1c08d9059f846a66ccaf6c1c4f7f35dee1bd8a0b932eba3c959258fa2c7
+0x5C9B0	0x60	src/game/clear_interrupt_mask_8005bdb0.c	-O1 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	14394a8a5f2066b261181c1b808afd3ea3827a13504570ddb79ab07ec68d6b31
+0x536B0	0x70	src/game/set_manager_task_80052ab0.c	-O1 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	74815b337d9aaafd863dac220a297cf1d1144360b147f45be8ec4496806714b4
+0x5D440	0x70	src/game/set_manager_fields_8005c840.c	-O1 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	f4591b39ec36338891f493c36ecb7f2c320421993da989eec39e1670c4699e57
+0x60560	0x60	src/game/set_manager_float_8005f960.c	-O1 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	7e47a5173bf9e99e5cd0164333f3ddd927cb20e1116ece8573a3d81875a28730
+0x59F90	0x70	src/game/set_callback_pair_80059390.c	-O1 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	556dbb6f5735fb998c6c28cbed10dce2e0b59ed9f070132b47aef2823af35193
+0x517E0	0xC4	src/game/cont_start_read_data_80050be0.c	-O1 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	0ec1f8c7845378ec6d5361f530c88463fc64dd26f661fd75c7fbe3d8e26149ba
+0x568BC	0xA4	src/game/env_mixer_new_80055cbc.c	-O3 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	530afb6f24494c21d9f0c30723df91a39c3bb2efea9c40c426cd5976be5220f4

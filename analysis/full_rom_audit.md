@@ -4,8 +4,8 @@ Retail ROM SHA-1: `eaf543e195731031a84f4136b506449209e3a8f5`. This audit scans a
 
 ## Code census
 
-- Exact matches: 587 functions / 33,172 bytes.
-- Remaining: 882 functions / 358,924 surveyed bytes.
+- Exact matches: 594 functions / 34,060 bytes.
+- Remaining: 875 functions / 358,036 surveyed bytes.
 - Direct call sites: 3,929; indirect call sites: 64; branch sites: 7,046.
 - COP1 instructions: 7,233.
 - Exact duplicate groups: 28; structural duplicate groups: 96; structural groups with unmatched members: 15.
@@ -25,7 +25,7 @@ Retail ROM SHA-1: `eaf543e195731031a84f4136b506449209e3a8f5`. This audit scans a
 
 ### Verified compiler units
 
-- IDO 5.3: 416
+- IDO 5.3: 423
 - KMC GCC 2.7.2 + assembler: 67
 - IDO 7.1: 104
 
@@ -38,7 +38,7 @@ Retail ROM SHA-1: `eaf543e195731031a84f4136b506449209e3a8f5`. This audit scans a
 | `0x21000..0x31000` | 274 | 111 | 5624 | KMC GCC 2.7.2 + assembler: 10, IDO 5.3: 83, IDO 7.1: 18 |
 | `0x31000..0x41000` | 239 | 92 | 4076 | IDO 5.3: 70, IDO 7.1: 9, KMC GCC 2.7.2 + assembler: 13 |
 | `0x41000..0x51000` | 242 | 93 | 6600 | IDO 7.1: 23, IDO 5.3: 60, KMC GCC 2.7.2 + assembler: 10 |
-| `0x51000..0x61000` | 237 | 76 | 4360 | IDO 5.3: 67, KMC GCC 2.7.2 + assembler: 9 |
+| `0x51000..0x61000` | 237 | 83 | 5248 | IDO 5.3: 74, KMC GCC 2.7.2 + assembler: 9 |
 | `0x61000..0x71000` | 0 | 0 | 0 | none |
 | `0x71000..0x81000` | 0 | 0 | 0 | none |
 | `0x81000..0x829E0` | 0 | 0 | 0 | none |
@@ -89,26 +89,26 @@ The ledger has 2,384 gap-free records.
 
 ### Highest similarity to verified C
 
-- 0.82: `func_8005BDB0` at `0x8005BDB0` from `func_8005B7D0` (src/game/or_interrupt_mask_8005b7d0.c).
 - 0.80: `func_8002EC10` at `0x8002EC10` from `func_80004B50` (src/game/copy_template_80004b50.c).
 - 0.80: `func_8002EC10` at `0x8002EC10` from `func_8000DCC0` (src/game/copy_template_8000dcc0.c).
 - 0.80: `func_8002EC10` at `0x8002EC10` from `func_8000FCA8` (src/game/copy_template_8000fca8.c).
-- 0.76: `func_80050BE0` at `0x80050BE0` from `func_80059620` (src/game/cont_start_query_80059620.c).
-- 0.71: `func_80052AB0` at `0x80052AB0` from `func_8005B7D0` (src/game/or_interrupt_mask_8005b7d0.c).
-- 0.71: `func_8005C840` at `0x8005C840` from `func_8005B7D0` (src/game/or_interrupt_mask_8005b7d0.c).
 - 0.71: `func_8004BA1C` at `0x8004BA1C` from `func_8004C804` (src/game/read_stream_motion_duration_8004c804.c).
 - 0.71: `func_8004BE6C` at `0x8004BE6C` from `func_8004C804` (src/game/read_stream_motion_duration_8004c804.c).
 - 0.71: `func_8000DA60` at `0x8000DA60` from `func_80005D74` (src/game/collect_flags_80005d74.c).
 - 0.70: `func_8003CECC` at `0x8003CECC` from `func_8003CE68` (src/game/update_motion_angle_8003ce68.c).
 - 0.69: `func_8002D5AC` at `0x8002D5AC` from `func_80029274` (src/game/store_scaled_unsigned_80029274.c).
-- 0.68: `func_8005BDB0` at `0x8005BDB0` from `func_8005DC80` (src/game/init_pi_access_queue_8005dc80.c).
-- 0.68: `func_8005F960` at `0x8005F960` from `func_8005B7D0` (src/game/or_interrupt_mask_8005b7d0.c).
-- 0.68: `func_8005F960` at `0x8005F960` from `func_8005DC80` (src/game/init_pi_access_queue_8005dc80.c).
 - 0.68: `func_8002EC10` at `0x8002EC10` from `func_8000499C` (src/game/copy_selected_template_8000499c.c).
 - 0.67: `func_8002D5AC` at `0x8002D5AC` from `func_800462DC` (src/game/convert_scaled_byte_800462dc.c).
 - 0.67: `func_8002D5AC` at `0x8002D5AC` from `func_80046550` (src/game/convert_scaled_byte_80046550.c).
 - 0.67: `func_8002D5AC` at `0x8002D5AC` from `func_800466E0` (src/game/convert_scaled_byte_800466e0.c).
 - 0.67: `func_8002D5AC` at `0x8002D5AC` from `func_8004678C` (src/game/convert_scaled_byte_8004678c.c).
+- 0.65: `func_8000DA60` at `0x8000DA60` from `func_80005C48` (src/game/collect_flags_80005c48.c).
+- 0.65: `func_8000DA60` at `0x8000DA60` from `func_80005CAC` (src/game/collect_flags_80005cac.c).
+- 0.65: `func_8000DA60` at `0x8000DA60` from `func_80005D10` (src/game/collect_flags_80005d10.c).
+- 0.65: `func_8004872C` at `0x8004872C` from `func_8004D70C` (src/game/queue_stream_event_8004d70c.c).
+- 0.64: `func_8004EEDC` at `0x8004EEDC` from `func_800138C4` (src/game/call_pair_800138c4.c).
+- 0.64: `func_8002EC10` at `0x8002EC10` from `func_8000ECBC` (src/game/load_indexed_blob_8000ecbc.c).
+- 0.64: `func_8002EC10` at `0x8002EC10` from `func_8000F2B4` (src/game/store_indexed_blob_8000f2b4.c).
 
 ### Small direct-call functions
 
