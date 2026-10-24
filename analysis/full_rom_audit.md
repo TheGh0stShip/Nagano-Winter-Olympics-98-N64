@@ -4,8 +4,8 @@ Retail ROM SHA-1: `eaf543e195731031a84f4136b506449209e3a8f5`. This audit scans a
 
 ## Code census
 
-- Exact matches: 541 functions / 29,648 bytes.
-- Remaining: 928 functions / 362,448 surveyed bytes.
+- Exact matches: 542 functions / 29,732 bytes.
+- Remaining: 927 functions / 362,364 surveyed bytes.
 - Direct call sites: 3,929; indirect call sites: 64; branch sites: 7,046.
 - COP1 instructions: 7,233.
 - Exact duplicate groups: 28; structural duplicate groups: 96; structural groups with unmatched members: 16.
@@ -27,14 +27,14 @@ Retail ROM SHA-1: `eaf543e195731031a84f4136b506449209e3a8f5`. This audit scans a
 
 - IDO 5.3: 376
 - KMC GCC 2.7.2 + assembler: 67
-- IDO 7.1: 98
+- IDO 7.1: 99
 
 ### Program address bands
 
 | ROM range | Functions | Matched | Matched bytes | Verified compiler units |
 |---|---:|---:|---:|---|
 | `0x1000..0x11000` | 234 | 97 | 6776 | IDO 5.3: 49, KMC GCC 2.7.2 + assembler: 12, IDO 7.1: 36 |
-| `0x11000..0x21000` | 243 | 112 | 5224 | KMC GCC 2.7.2 + assembler: 13, IDO 5.3: 84, IDO 7.1: 15 |
+| `0x11000..0x21000` | 243 | 113 | 5308 | KMC GCC 2.7.2 + assembler: 13, IDO 5.3: 84, IDO 7.1: 16 |
 | `0x21000..0x31000` | 274 | 104 | 5236 | KMC GCC 2.7.2 + assembler: 10, IDO 5.3: 78, IDO 7.1: 16 |
 | `0x31000..0x41000` | 239 | 91 | 4052 | IDO 5.3: 69, IDO 7.1: 9, KMC GCC 2.7.2 + assembler: 13 |
 | `0x41000..0x51000` | 242 | 88 | 6304 | IDO 7.1: 22, IDO 5.3: 56, KMC GCC 2.7.2 + assembler: 10 |
@@ -114,7 +114,6 @@ The ledger has 2,384 gap-free records.
 
 - `func_800366E0` (`0x800366E0`, `0x34` bytes, 1 direct calls, 0 trailing nops)
 - `func_8001C3F0` (`0x8001C3F0`, `0x54` bytes, 2 direct calls, 0 trailing nops)
-- `func_8001C89C` (`0x8001C89C`, `0x54` bytes, 1 direct calls, 0 trailing nops)
 - `func_8003EDF4` (`0x8003EDF4`, `0x58` bytes, 1 direct calls, 0 trailing nops)
 - `func_80037074` (`0x80037074`, `0x44` bytes, 1 direct calls, 1 trailing nops)
 - `func_80011CE4` (`0x80011CE4`, `0x48` bytes, 2 direct calls, 1 trailing nops)
@@ -132,6 +131,7 @@ The ledger has 2,384 gap-free records.
 - `func_80005E18` (`0x80005E18`, `0x58` bytes, 1 direct calls, 1 trailing nops)
 - `func_8001F96C` (`0x8001F96C`, `0x58` bytes, 1 direct calls, 1 trailing nops)
 - `func_80039ACC` (`0x80039ACC`, `0x58` bytes, 1 direct calls, 1 trailing nops)
+- `func_8003F9E0` (`0x8003F9E0`, `0x58` bytes, 1 direct calls, 1 trailing nops)
 
 ### Small leaf functions
 
