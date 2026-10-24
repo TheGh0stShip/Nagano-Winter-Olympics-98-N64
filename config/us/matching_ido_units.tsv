@@ -398,3 +398,7 @@
 0x506F0	0x40	src/game/unlink_node_8004faf0.c	-O1 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	6950f1d67e7328147547bdd321085cf5f0e2327d377a5d6ae2dfca3d5a3c6708
 0x60B10	0x30	src/game/is_ai_device_busy_8005ff10.c	-O1 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	94d8674f022e85b272c7575b4a263fd32588717bb737e3a99536d3c589db394f
 0x5E7D0	0x50	src/game/epi_raw_read_io_8005dbd0.c	-O1 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	a49df28dd1009fab8a6de0da391eb3c9906cc3c372f9118728dcb861a08b0baf
+0x5E780	0x50	src/game/pi_raw_write_io_8005db80.c	-O1 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	277acc841b23634b81260c8e722db2f71d23ff5904679f811c307d6df5461e31
+0x5E880	0x50	src/game/init_pi_access_queue_8005dc80.c	-O1 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	95654142586fdc6697f0df2911a0c26d5a0995f8e4b3fbfc70fbcb8b3a12fb43
+0x5E918	0x58	src/game/apply_positioned_record_8005dd18.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	a446720656d55903aaf621177f7ed39c1d79cbf8ff95c7ff028c158863b5d8f5
+0x5EF60	0x50	src/game/epi_raw_write_io_8005e360.c	-O1 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	8c551c974d74f94c0986de91da32d8a76b28070898200ea03212553acd4c970f
