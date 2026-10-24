@@ -1360,8 +1360,8 @@
   },
   "functions": {
     "total": 1469,
-    "matched": 516,
-    "matched_bytes": 26576,
+    "matched": 517,
+    "matched_bytes": 26660,
     "total_bytes": 392108,
     "size_buckets": {
       "<=0x10": 96,
@@ -1375,7 +1375,7 @@
       ">0x800": 13
     },
     "compiler_matches": {
-      "IDO 5.3": 364,
+      "IDO 5.3": 365,
       "KMC GCC 2.7.2 + assembler": 67,
       "IDO 7.1": 85
     },
@@ -1384,10 +1384,10 @@
         "start": 4096,
         "end": 69632,
         "functions": 234,
-        "matched": 96,
-        "matched_bytes": 6692,
+        "matched": 97,
+        "matched_bytes": 6776,
         "compiler_matches": {
-          "IDO 5.3": 48,
+          "IDO 5.3": 49,
           "KMC GCC 2.7.2 + assembler": 12,
           "IDO 7.1": 36
         }
@@ -1901,15 +1901,6 @@
         "jaccard": 0.15789473684210525,
         "example": "func_8004BDB8",
         "source": "src/game/call_pair_8004bdb8.c"
-      },
-      {
-        "name": "func_80001C00",
-        "vram": 2147490816,
-        "size": 84,
-        "score": 0.6111111111111112,
-        "jaccard": 0.28,
-        "example": "func_80008098",
-        "source": "src/game/call_if_runtime_clear_80008098.c"
       },
       {
         "name": "func_8005DC80",
@@ -2495,6 +2486,15 @@
         "jaccard": 0.25882352941176473,
         "example": "func_80046550",
         "source": "src/game/convert_scaled_byte_80046550.c"
+      },
+      {
+        "name": "func_8002A6C4",
+        "vram": 2147657412,
+        "size": 284,
+        "score": 0.5614035087719298,
+        "jaccard": 0.25882352941176473,
+        "example": "func_800466E0",
+        "source": "src/game/convert_scaled_byte_800466e0.c"
       }
     ],
     "small_wrappers": [
@@ -2818,35 +2818,6 @@
         "branches": 2,
         "cop1": 0,
         "loads_stores": 8,
-        "trailing_nops": 1
-      },
-      {
-        "name": "func_80001C00",
-        "vram": 2147490816,
-        "rom": 10240,
-        "size": 84,
-        "matched": false,
-        "source": null,
-        "compiler": null,
-        "direct_calls": [
-          {
-            "address": 2147563716,
-            "name": "func_800138C4"
-          },
-          {
-            "address": 2147515996,
-            "name": "func_80007E5C"
-          },
-          {
-            "address": 2147682568,
-            "name": "func_80030908"
-          }
-        ],
-        "indirect_calls": 0,
-        "jumps": 0,
-        "branches": 0,
-        "cop1": 0,
-        "loads_stores": 6,
         "trailing_nops": 1
       },
       {

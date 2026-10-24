@@ -32,6 +32,7 @@
 0x106E0	0x44	src/game/init_state_8000fae0.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	c7b7565cb3075289fb4a46821819d84013dbf99636274c4a63d8ecd1b27b3893
 0x3CAE4	0x50	src/game/process_three_records_8003bee4.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	3b23dba5a67f2d597d6c2d4ffa44dd1b70a586e8730d0138d9f4a3035bac1a5f
 0x3CB34	0x94	src/game/process_variable_records_8003bf34.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	f126d1e5c163eb7ad955fa697a0804b9c3f391c9147aa9cc1da230bc9b4e8a17
+0x2800	0x54	src/game/reset_runtime_and_subsystems_80001c00.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	ac5c2da1fd4e759af70dcfbad12d87782d5dfca2f01f7625655948dffd20cb5b
 0x14158	0x2C	src/game/set_indexed_flag_80013558.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	224829b3beb6debf6de01ada7fe2343838b9b7c03611b20e87db5e34ecdfae63
 0x142DC	0x28	src/game/clear_indexed_flag_800136dc.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	e6bda97b2da4663fb48ccedac7a535dd79ccab6608daae774e14617fb3ec8285
 0x4DDF8	0x2C	src/game/consume_source_byte_8004d1f8.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	efdfdedcf83fae2696e58ee046efd0ba80a26d9b1b88a9e7ab7916637ba6039f
