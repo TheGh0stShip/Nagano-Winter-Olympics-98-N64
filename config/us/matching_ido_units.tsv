@@ -354,3 +354,5 @@
 0x2E338	0x64	src/game/calculate_runtime_distance_8002d738.c	--section-base=.rodata:0x80080168 -O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	58dac549c0d5346f653f8eb16caebacfa8b2f74fa3d2162121db502c4a19c05e
 0x2E39C	0x48	src/game/init_runtime_float_fields_8002d79c.c	--section-base=.rodata:0x80080170 -O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	c31e1e77551cfac7fa348270e2e2092e2fdf82e75edbed0d750119e0f0dea791
 0x48B28	0x38	src/game/get_initialized_callback_80047f28.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	95e05908037397f231fe0f48651c6cf7653b4911543c9cc95bcedd4967f69a70
+0x4896C	0x40	src/game/clear_pi_busy_flag_80047d6c.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	73ca85fc6b40eb3b5cad4946f072565e9dfa09dc8b351cffadd126e58c4accfd
+0x38870	0x3C	src/game/update_scaled_field_80037c70.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	a7e19ec42ec286901fdfe4c537a6e91b59672b1d1332bf1552d1316d8980d8a6
