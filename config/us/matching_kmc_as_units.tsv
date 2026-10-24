@@ -30,6 +30,8 @@
 0x37248	0xC	src/game/set_global_float_80036648.c	-O2 -G0 -mips3 -mgp32 -mfp32	af43ea5f27ff9b8ef3c0f7980e8cb00f1ce56d50fd738f2330876d771004f054
 0x44824	0xC	src/game/set_global_word_80043c24.c	-O2 -G0 -mips3 -mgp32 -mfp32	642dd1cbd05f42df4d1a1b010a43909c2c06821b999a19fba8317e91938bd20d
 0x38700	0x8	src/game/set_struct_word_80037b00.c	-O2 -G0 -mips3 -mgp32 -mfp32	8090edef6bfc280c2c49239a0db5c9d4a83e2f946383114992f26187a9744ff3
+0x50554	0x10	src/game/advance_link_8004f954.c	-O2 -G0 -mips3 -mgp32 -mfp32	9cfacc440af965d2989166dd711ef58ae5a92e68c6ef3cf399a0403e1fd36afe
+0x4AFDC	0x18	src/game/clear_runtime_pair_8004a3dc.c	-O2 -G0 -mips3 -mgp32 -mfp32	daae15aca6aad86290e2213b10d166393b653e523adbe7c989b891d0e395b0c1
 0x38708	0x8	src/game/set_struct_word_80037b08.c	-O2 -G0 -mips3 -mgp32 -mfp32	76ce3685b1b772a236724efde5e0ad264f47d9f0b44f7770da53d920bc83a53d
 0x4AA0	0x8	src/game/add4_80003ea0.c	-O2 -G0 -mips3 -mgp32 -mfp32	590255ef084339244a11bac51be404a1f0b5ca01553e8703bc0b9cab9259ba53
 0x4AA8	0x8	src/game/add348_80003ea8.c	-O2 -G0 -mips3 -mgp32 -mfp32	fa31f3ab2aa4a8d1945a53bd4c4093aa557649098335aa9c2cc93130fffbb9da
