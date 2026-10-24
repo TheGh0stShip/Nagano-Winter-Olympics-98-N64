@@ -97,3 +97,4 @@
 0x4DEE0	0xEC	src/game/read_stream_intensity_8004d2e0.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	5623c977530c08f4bb1c9d7d9643dc3d4b04d92c58f918ad493c52936836bee0
 0x4E30C	0x80	src/game/queue_stream_event_8004d70c.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	a57ea5d4b49da2acd5c90990b0d18b6cfc6b48b9949ab02bf95edadfcf69a475
 0x4E3F4	0x80	src/game/reset_stream_target_8004d7f4.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	5e1d09dd89c9c12fbc0d995421d6861d9cd1b607968acf503cb15dedf63af8bb
+0x32A7C	0x48	src/game/dispatch_binary_mode_80031e7c.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	8817320622719b9657ebd58cfce7c88adfa90e432852ca1795a4e3fe4209a39e
