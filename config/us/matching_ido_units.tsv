@@ -397,3 +397,4 @@
 0x28578	0x40	src/game/is_runtime_record_ready_80027978.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	72215b136bb86bf9584affd0ab45980d5ab752c5bc9bbec0ea2d153e2f0a921a
 0x506F0	0x40	src/game/unlink_node_8004faf0.c	-O1 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	6950f1d67e7328147547bdd321085cf5f0e2327d377a5d6ae2dfca3d5a3c6708
 0x60B10	0x30	src/game/is_ai_device_busy_8005ff10.c	-O1 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	94d8674f022e85b272c7575b4a263fd32588717bb737e3a99536d3c589db394f
+0x5E7D0	0x50	src/game/epi_raw_read_io_8005dbd0.c	-O1 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	a49df28dd1009fab8a6de0da391eb3c9906cc3c372f9118728dcb861a08b0baf
