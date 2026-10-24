@@ -1360,8 +1360,8 @@
   },
   "functions": {
     "total": 1469,
-    "matched": 514,
-    "matched_bytes": 26268,
+    "matched": 515,
+    "matched_bytes": 26428,
     "total_bytes": 392108,
     "size_buckets": {
       "<=0x10": 96,
@@ -1377,7 +1377,7 @@
     "compiler_matches": {
       "IDO 5.3": 363,
       "KMC GCC 2.7.2 + assembler": 67,
-      "IDO 7.1": 84
+      "IDO 7.1": 85
     },
     "address_bands": [
       {
@@ -1408,12 +1408,12 @@
         "start": 135168,
         "end": 200704,
         "functions": 274,
-        "matched": 101,
-        "matched_bytes": 4848,
+        "matched": 102,
+        "matched_bytes": 5008,
         "compiler_matches": {
           "KMC GCC 2.7.2 + assembler": 10,
           "IDO 5.3": 77,
-          "IDO 7.1": 14
+          "IDO 7.1": 15
         }
       },
       {
@@ -1622,15 +1622,6 @@
         "jaccard": 0.2857142857142857,
         "example": "func_8000FCA8",
         "source": "src/game/copy_template_8000fca8.c"
-      },
-      {
-        "name": "func_8002CA88",
-        "vram": 2147666568,
-        "size": 160,
-        "score": 0.7272727272727273,
-        "jaccard": 0.14814814814814814,
-        "example": "func_8002D878",
-        "source": "src/game/advance_runtime_counter_8002d878.c"
       },
       {
         "name": "func_8000DA60",
@@ -2495,6 +2486,15 @@
         "jaccard": 0.12,
         "example": "func_800485D8",
         "source": "src/game/call_byte_pair_800485d8.c"
+      },
+      {
+        "name": "func_8005F380",
+        "vram": 2147873664,
+        "size": 80,
+        "score": 0.5625,
+        "jaccard": 0.12,
+        "example": "func_80048608",
+        "source": "src/game/call_byte_pair_80048608.c"
       }
     ],
     "small_wrappers": [
