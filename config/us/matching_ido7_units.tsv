@@ -99,3 +99,5 @@
 0x4E3F4	0x80	src/game/reset_stream_target_8004d7f4.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	5e1d09dd89c9c12fbc0d995421d6861d9cd1b607968acf503cb15dedf63af8bb
 0x32A7C	0x48	src/game/dispatch_binary_mode_80031e7c.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	8817320622719b9657ebd58cfce7c88adfa90e432852ca1795a4e3fe4209a39e
 0x1D49C	0x54	src/game/init_clock_record_8001c89c.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	16cd8194887d95f519dda4d48c05bcb12cf1e6b5bd5f7d158aa6933a1ea9a78c
+0xB434	0x54	src/game/call_configured_effect_8000a834.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	04d036e2dad5e905c9fd150dd37ab715265b6dbc53b4905b1de4d826a528cf60
+0xB488	0x54	src/game/call_shifted_effect_8000a888.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	8b29ba5ba910759603e680797354bb0aa22837e29dca2041ece3507298ebff66
