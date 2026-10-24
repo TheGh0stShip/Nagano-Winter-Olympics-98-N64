@@ -360,3 +360,5 @@
 0x37AD0	0x48	src/game/configure_runtime_object_80036ed0.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	c7f66a5ee16698d54663750b0cfeadf3367fdcbca683813c529e8e0ab193029b
 0x4C970	0x48	src/game/apply_stream_table_entry_8004bd70.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	d883b849d504c0d9e7207c3982b0fd243a39a3e55f6a50348bc355b0123fbeb8
 0x5E8D0	0x48	src/game/init_positioned_object_8005dcd0.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	f46f3b371707166e8026ddfa92c03858a5b8538c6c323f4513f1bd20c71244e4
+0x109B0	0x4C	src/game/initialize_mode_8000fdb0.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	006bebf2f1ec77ad50dc6dffd2b5b133ba0170ce9ec563128c1ef1304e7319a8
+0x4B60	0x50	src/game/link_record_under_lock_80003f60.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	b5b3f52a07710b6e6809180d2f84aadda693e8e93d9167a0fdbee0867cbec8cf
