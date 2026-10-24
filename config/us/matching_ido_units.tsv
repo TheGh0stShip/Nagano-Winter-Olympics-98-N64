@@ -382,3 +382,4 @@
 0x13C58	0x58	src/game/copy_indexed_words_80013058.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	a9456d5faafaca6aa280305d0c86a7761a31a2e1af1ba2d4b845364f33566d71
 0x55FC8	0x58	src/game/calculate_aligned_scale_800553c8.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	d7e26c38d4b123320f945474746bf9b9f046fb7914eee731c3cf4ae2ffd61818
 0x4D510	0xBC	src/game/advance_stream_motion_8004c910.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	5d9a8314be4742d1c0291e0cff66f519fdf54a96a4ebfa289dd30bb144e43701
+0x39410	0x18	src/game/store_halfword_if_present_80038810.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	b0b81cc048477efb298c9469186123b836f82d472c1e6ab08564ab311e9157d1
