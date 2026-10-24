@@ -378,4 +378,6 @@
 0x5D4B0	0x50	src/game/link_runtime_record_8005c8b0.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	b527fdf3873c46e80b826f7fcfe99bd4c23dc3ee574b0be113f15c8846fea8ef
 0x30324	0x50	src/game/build_repeated_triplet_8002f724.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	b9994302d65ce2b6b4416873b481facc72d583023c40b1c634923b765fbe7629
 0x2368	0x54	src/game/build_color_command_80001768.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	53e64b13d0c2e164a40767faf8dd68cd4671ef7b05b251f37c2476576b6ada95
+0x13F74	0x58	src/game/reset_indexed_control_80013374.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	952f0d71630e4617b0a8c59657b36ea564a8e889c312e1d1a48710d8a34dd95c
+0x13C58	0x58	src/game/copy_indexed_words_80013058.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	a9456d5faafaca6aa280305d0c86a7761a31a2e1af1ba2d4b845364f33566d71
 0x4D510	0xBC	src/game/advance_stream_motion_8004c910.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	5d9a8314be4742d1c0291e0cff66f519fdf54a96a4ebfa289dd30bb144e43701
