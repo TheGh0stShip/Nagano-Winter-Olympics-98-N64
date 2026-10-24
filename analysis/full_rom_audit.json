@@ -1360,8 +1360,8 @@
   },
   "functions": {
     "total": 1469,
-    "matched": 513,
-    "matched_bytes": 26172,
+    "matched": 514,
+    "matched_bytes": 26268,
     "total_bytes": 392108,
     "size_buckets": {
       "<=0x10": 96,
@@ -1377,7 +1377,7 @@
     "compiler_matches": {
       "IDO 5.3": 363,
       "KMC GCC 2.7.2 + assembler": 67,
-      "IDO 7.1": 83
+      "IDO 7.1": 84
     },
     "address_bands": [
       {
@@ -1432,10 +1432,10 @@
         "start": 266240,
         "end": 331776,
         "functions": 242,
-        "matched": 69,
-        "matched_bytes": 3768,
+        "matched": 70,
+        "matched_bytes": 3864,
         "compiler_matches": {
-          "IDO 7.1": 10,
+          "IDO 7.1": 11,
           "IDO 5.3": 49,
           "KMC GCC 2.7.2 + assembler": 10
         }
@@ -1622,15 +1622,6 @@
         "jaccard": 0.2857142857142857,
         "example": "func_8000FCA8",
         "source": "src/game/copy_template_8000fca8.c"
-      },
-      {
-        "name": "func_80040A80",
-        "vram": 2147748480,
-        "size": 96,
-        "score": 0.7317073170731707,
-        "jaccard": 0.27586206896551724,
-        "example": "func_80040A3C",
-        "source": "src/game/query_byte_fallback_80040a3c.c"
       },
       {
         "name": "func_8002CA88",
@@ -2495,6 +2486,15 @@
         "jaccard": 0.12,
         "example": "func_80048608",
         "source": "src/game/call_byte_pair_80048608.c"
+      },
+      {
+        "name": "func_8005F380",
+        "vram": 2147873664,
+        "size": 80,
+        "score": 0.5625,
+        "jaccard": 0.12,
+        "example": "func_800485D8",
+        "source": "src/game/call_byte_pair_800485d8.c"
       }
     ],
     "small_wrappers": [
@@ -3202,35 +3202,6 @@
         "branches": 0,
         "cop1": 0,
         "loads_stores": 14,
-        "trailing_nops": 1
-      },
-      {
-        "name": "func_80040A80",
-        "vram": 2147748480,
-        "rom": 267904,
-        "size": 96,
-        "matched": false,
-        "source": null,
-        "compiler": null,
-        "direct_calls": [
-          {
-            "address": 2147748752,
-            "name": "func_80040B90"
-          },
-          {
-            "address": 2147748976,
-            "name": "func_80040C70"
-          },
-          {
-            "address": 2147749308,
-            "name": "func_80040DBC"
-          }
-        ],
-        "indirect_calls": 0,
-        "jumps": 0,
-        "branches": 2,
-        "cop1": 0,
-        "loads_stores": 8,
         "trailing_nops": 1
       },
       {
