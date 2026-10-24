@@ -390,3 +390,6 @@
 0x5D410	0x30	src/game/set_global_pair_8005c810.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	8b8467b2f545d1ff5023e3a361ec74497688d40d71f35f0f44ae4f41d0c245ef
 0x5B770	0x30	src/game/is_sp_device_busy_8005ab70.c	-O1 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	a44aec60d9645024aa1a70288e3337586a6634058e77d1d7cc8f99bc5363c031
 0x5B7A0	0x30	src/game/is_si_device_busy_8005aba0.c	-O1 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	2e32a122560dc0bf5f956dab44ea34bd34c62194b39f957ded83be5694a5667c
+0x54E84	0x34	src/game/convert_u64_to_double_80054284.c	-O1 -mips3 -32 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	2bf204310a357d143eb371fdd8ccdae79321899f20602753fb72e84f0f3a4962
+0x2F2C8	0x38	src/game/reset_runtime_entry_8002e6c8.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	2ea5ffc14a9b19d43a66b323cd74444bcadbe229c836f6d6efbcccc2b6e1c8d7
+0x2A344	0x3C	src/game/add_mode_offset_80029744.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	4bfef23e9c2e8093b736dbe17bb25800cca5bb9accd8f30946a8b99e3500d6c8
