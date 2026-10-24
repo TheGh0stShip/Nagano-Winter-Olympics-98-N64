@@ -372,4 +372,5 @@
 0x4D258	0x7C	src/game/update_stream_motion_8004c658.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	5401b32baae757113ca94f60f2f6ea7a9ef1bdee2e4f2963ad0cf56a23db3c1b
 0x4D404	0x74	src/game/read_stream_motion_duration_8004c804.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	b15c7ef957a033e9b7e3f6877eec2773d472e97e4631c67ae1301d3654322dee
 0x4D478	0x98	src/game/read_stream_motion_value_8004c878.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	15eb239de98b8535152c7d08524da5f212953eb475a5ad4bd1a661c5cde200bd
+0x26B90	0x40	src/game/dispatch_mode_one_80025f90.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	c8e48284ff7a724a062b394999446de7a7dd3b650f8ac013ba0cd30c7aadbe5d
 0x4D510	0xBC	src/game/advance_stream_motion_8004c910.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	5d9a8314be4742d1c0291e0cff66f519fdf54a96a4ebfa289dd30bb144e43701
