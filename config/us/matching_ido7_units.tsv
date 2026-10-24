@@ -95,3 +95,4 @@
 0x4DE24	0x20	src/game/clear_mode_seven_state_8004d224.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	9dc04c5a065a1f063b5f01338946c20f2150e1679cf4580b81ff56423afb893e
 0x4DE44	0x9C	src/game/read_stream_activation_8004d244.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	90f9bab6129ea8d17f7b7867910a2659f3e5a55c63187e885aaf93aaa0e9755b
 0x4DEE0	0xEC	src/game/read_stream_intensity_8004d2e0.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	5623c977530c08f4bb1c9d7d9643dc3d4b04d92c58f918ad493c52936836bee0
+0x4E3F4	0x80	src/game/reset_stream_target_8004d7f4.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	5e1d09dd89c9c12fbc0d995421d6861d9cd1b607968acf503cb15dedf63af8bb
