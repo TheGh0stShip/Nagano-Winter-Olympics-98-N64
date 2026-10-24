@@ -384,3 +384,4 @@
 0x4D510	0xBC	src/game/advance_stream_motion_8004c910.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	5d9a8314be4742d1c0291e0cff66f519fdf54a96a4ebfa289dd30bb144e43701
 0x39410	0x18	src/game/store_halfword_if_present_80038810.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	b0b81cc048477efb298c9469186123b836f82d472c1e6ab08564ab311e9157d1
 0x4ACFC	0x24	src/game/update_mode_byte_8004a0fc.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	bd6108ba9700a405b95cfe8c67e058135361221e51a87e8686fdf1f4ece2a5dd
+0x4AFB8	0x24	src/game/enable_mode_for_small_value_8004a3b8.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	e2692f53af04565df65bb3e96d6c6fac9b600361ab3bbd8008c8d4fd807079a8

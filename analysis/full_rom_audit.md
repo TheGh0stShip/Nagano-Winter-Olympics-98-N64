@@ -4,8 +4,8 @@ Retail ROM SHA-1: `eaf543e195731031a84f4136b506449209e3a8f5`. This audit scans a
 
 ## Code census
 
-- Exact matches: 553 functions / 30,500 bytes.
-- Remaining: 916 functions / 361,596 surveyed bytes.
+- Exact matches: 554 functions / 30,536 bytes.
+- Remaining: 915 functions / 361,560 surveyed bytes.
 - Direct call sites: 3,929; indirect call sites: 64; branch sites: 7,046.
 - COP1 instructions: 7,233.
 - Exact duplicate groups: 28; structural duplicate groups: 96; structural groups with unmatched members: 16.
@@ -25,7 +25,7 @@ Retail ROM SHA-1: `eaf543e195731031a84f4136b506449209e3a8f5`. This audit scans a
 
 ### Verified compiler units
 
-- IDO 5.3: 384
+- IDO 5.3: 385
 - KMC GCC 2.7.2 + assembler: 67
 - IDO 7.1: 102
 
@@ -37,7 +37,7 @@ Retail ROM SHA-1: `eaf543e195731031a84f4136b506449209e3a8f5`. This audit scans a
 | `0x11000..0x21000` | 243 | 115 | 5484 | KMC GCC 2.7.2 + assembler: 13, IDO 5.3: 86, IDO 7.1: 16 |
 | `0x21000..0x31000` | 274 | 106 | 5348 | KMC GCC 2.7.2 + assembler: 10, IDO 5.3: 79, IDO 7.1: 17 |
 | `0x31000..0x41000` | 239 | 92 | 4076 | IDO 5.3: 70, IDO 7.1: 9, KMC GCC 2.7.2 + assembler: 13 |
-| `0x41000..0x51000` | 242 | 89 | 6340 | IDO 7.1: 22, IDO 5.3: 57, KMC GCC 2.7.2 + assembler: 10 |
+| `0x41000..0x51000` | 242 | 90 | 6376 | IDO 7.1: 22, IDO 5.3: 58, KMC GCC 2.7.2 + assembler: 10 |
 | `0x51000..0x61000` | 237 | 51 | 2224 | IDO 5.3: 42, KMC GCC 2.7.2 + assembler: 9 |
 | `0x61000..0x71000` | 0 | 0 | 0 | none |
 | `0x71000..0x81000` | 0 | 0 | 0 | none |
@@ -102,13 +102,13 @@ The ledger has 2,384 gap-free records.
 - 0.67: `func_8002D5AC` at `0x8002D5AC` from `func_80046550` (src/game/convert_scaled_byte_80046550.c).
 - 0.67: `func_8002D5AC` at `0x8002D5AC` from `func_800466E0` (src/game/convert_scaled_byte_800466e0.c).
 - 0.67: `func_8002D5AC` at `0x8002D5AC` from `func_8004678C` (src/game/convert_scaled_byte_8004678c.c).
-- 0.67: `func_8004A3B8` at `0x8004A3B8` from `func_8004A0FC` (src/game/update_mode_byte_8004a0fc.c).
 - 0.65: `func_8000DA60` at `0x8000DA60` from `func_80005C48` (src/game/collect_flags_80005c48.c).
 - 0.65: `func_8000DA60` at `0x8000DA60` from `func_80005CAC` (src/game/collect_flags_80005cac.c).
 - 0.65: `func_8000DA60` at `0x8000DA60` from `func_80005D10` (src/game/collect_flags_80005d10.c).
 - 0.65: `func_8004872C` at `0x8004872C` from `func_8004D70C` (src/game/queue_stream_event_8004d70c.c).
 - 0.64: `func_8004EEDC` at `0x8004EEDC` from `func_800138C4` (src/game/call_pair_800138c4.c).
 - 0.64: `func_8002EC10` at `0x8002EC10` from `func_8000ECBC` (src/game/load_indexed_blob_8000ecbc.c).
+- 0.64: `func_8002EC10` at `0x8002EC10` from `func_8000F2B4` (src/game/store_indexed_blob_8000f2b4.c).
 
 ### Small direct-call functions
 
