@@ -1,5 +1,10 @@
 # IDO 5.3 exact matching units
 # ROM_START SIZE SOURCE FLAGS SHA256
+0x54D18	0xA0	src/game/convert_double_to_u64_80054118.c	--section-base=.rodata:0x80081020 -O1 -mips3 -32 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	d81d3052be21f1b2f761d0c428440f9111b762674338019e8c3f3ebcf45b206c
+0x22008	0xA4	src/game/calculate_planar_cosine_80021408.c	-O3 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	2fb39e155ecde3382cca87307bfb4ba5f34b93caf67f2cd0e25c2070f93623e8
+0x5A000	0x10	src/game/square_root_80059400.c	-O3 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	4ea14d5f89379ec41118bbacbd120dec7513472a303805a5461b4438f53a0626
+0x5C580	0x90	src/game/normalize_three_scalars_8005b980.c	-O3 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	bbe534b123471fab1b24035543286dc6122b031ae8795a56bd0264b3e560d9d5
+0x2F300	0x28	src/game/get_event_mode_8002e700.c	-O3 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	f53c8ff4f13f4cda44965a64483a0578cddadf6ad10be41c009ca384d2e16db1
 0x5B130	0x2C	src/game/copy_bytes_8005a530.c	-O2 -Wo,-loopunroll,0 -mips2 -non_shared -G 0	770c81b6c68fa85d2b98688a09dd33a41366dd56288fda754c24eb3247e8763d
 0x69E0	0x30	src/game/add_masked_indexed_word_80005de0.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	07997d65ea0d342b731c8227fbb9262fe838459911a308dc6189ef9d88f94fdf
 0x13D28	0x44	src/game/configure_and_apply_object_80013128.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	4af34a390db89b07a4848b48a6b9c746eea18eabd1b0d7592b8f67078469dc85

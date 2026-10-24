@@ -22,3 +22,8 @@ Inventory claims must distinguish physical byte coverage from decoded asset
 counts. Unknown bytes and loader-referenced ranges remain explicitly unknown
 until their formats and nested records are proven.
 
+Work unknown functions in consolidated batches. Sweep and validate multiple
+candidates before updating manifests, reports, tests, commits, or remote
+trackers; do not publish one-function progress cycles. Keep rejected and
+near-matching candidates out of tracked source and progress totals.
+
