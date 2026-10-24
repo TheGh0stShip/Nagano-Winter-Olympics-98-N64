@@ -1360,8 +1360,8 @@
   },
   "functions": {
     "total": 1469,
-    "matched": 543,
-    "matched_bytes": 29812,
+    "matched": 544,
+    "matched_bytes": 29892,
     "total_bytes": 392096,
     "size_buckets": {
       "<=0x10": 96,
@@ -1375,7 +1375,7 @@
       ">0x800": 13
     },
     "compiler_matches": {
-      "IDO 5.3": 377,
+      "IDO 5.3": 378,
       "KMC GCC 2.7.2 + assembler": 67,
       "IDO 7.1": 99
     },
@@ -1408,11 +1408,11 @@
         "start": 135168,
         "end": 200704,
         "functions": 274,
-        "matched": 104,
-        "matched_bytes": 5236,
+        "matched": 105,
+        "matched_bytes": 5316,
         "compiler_matches": {
           "KMC GCC 2.7.2 + assembler": 10,
-          "IDO 5.3": 78,
+          "IDO 5.3": 79,
           "IDO 7.1": 16
         }
       },
@@ -2119,24 +2119,6 @@
         "source": "src/game/store_scaled_unsigned_80029274.c"
       },
       {
-        "name": "func_8002F724",
-        "vram": 2147677988,
-        "size": 80,
-        "score": 0.5625,
-        "jaccard": 0.16666666666666666,
-        "example": "func_800485D8",
-        "source": "src/game/call_byte_pair_800485d8.c"
-      },
-      {
-        "name": "func_8002F724",
-        "vram": 2147677988,
-        "size": 80,
-        "score": 0.5625,
-        "jaccard": 0.16666666666666666,
-        "example": "func_80048608",
-        "source": "src/game/call_byte_pair_80048608.c"
-      },
-      {
         "name": "func_800522D0",
         "vram": 2147820240,
         "size": 80,
@@ -2587,27 +2569,6 @@
         "branches": 0,
         "cop1": 0,
         "loads_stores": 11,
-        "trailing_nops": 1
-      },
-      {
-        "name": "func_8002F724",
-        "vram": 2147677988,
-        "rom": 197412,
-        "size": 80,
-        "matched": false,
-        "source": null,
-        "compiler": null,
-        "direct_calls": [
-          {
-            "address": 2147816256,
-            "name": "func_80051340"
-          }
-        ],
-        "indirect_calls": 0,
-        "jumps": 0,
-        "branches": 0,
-        "cop1": 0,
-        "loads_stores": 13,
         "trailing_nops": 1
       },
       {

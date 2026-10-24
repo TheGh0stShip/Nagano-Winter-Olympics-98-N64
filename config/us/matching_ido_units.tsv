@@ -376,4 +376,5 @@
 0x133BC	0x54	src/game/reset_control_state_800127bc.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	f4f4fa686633be791d00deaf6feb2e52d8c742194a60e3c04a8aa0ca4f851613
 0x39BC4	0x40	src/game/query_mode_result_80038fc4.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	e4aabdef82fb60971b2d864053180d48caf43b9e97bbe7346d0a93970630e8d6
 0x5D4B0	0x50	src/game/link_runtime_record_8005c8b0.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	b527fdf3873c46e80b826f7fcfe99bd4c23dc3ee574b0be113f15c8846fea8ef
+0x30324	0x50	src/game/build_repeated_triplet_8002f724.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	b9994302d65ce2b6b4416873b481facc72d583023c40b1c634923b765fbe7629
 0x4D510	0xBC	src/game/advance_stream_motion_8004c910.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	5d9a8314be4742d1c0291e0cff66f519fdf54a96a4ebfa289dd30bb144e43701
