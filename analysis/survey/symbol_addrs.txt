@@ -1467,6 +1467,9 @@ func_8005FF40 = 0x8005FF40; // type:func size:0x40
 func_8005FF80 = 0x8005FF80; // type:func size:0x40
 func_8005FFF0 = 0x8005FFF0; // type:func size:0xC
 func_8005FFFC = 0x8005FFFC; // type:func size:0x18
+D_8013CB08 = 0x8013CB08; // type:data
+D_8013CB18 = 0x8013CB18; // type:data
+
 jtbl_8007DC40 = 0x8007DC40; // type:jtbl size:0x64
 jtbl_8007DCA4 = 0x8007DCA4; // type:jtbl size:0x14
 jtbl_8007DCB8 = 0x8007DCB8; // type:jtbl size:0x30
