@@ -1360,8 +1360,8 @@
   },
   "functions": {
     "total": 1469,
-    "matched": 517,
-    "matched_bytes": 26660,
+    "matched": 518,
+    "matched_bytes": 26760,
     "total_bytes": 392108,
     "size_buckets": {
       "<=0x10": 96,
@@ -1375,7 +1375,7 @@
       ">0x800": 13
     },
     "compiler_matches": {
-      "IDO 5.3": 365,
+      "IDO 5.3": 366,
       "KMC GCC 2.7.2 + assembler": 67,
       "IDO 7.1": 85
     },
@@ -1420,10 +1420,10 @@
         "start": 200704,
         "end": 266240,
         "functions": 239,
-        "matched": 88,
-        "matched_bytes": 3816,
+        "matched": 89,
+        "matched_bytes": 3916,
         "compiler_matches": {
-          "IDO 5.3": 67,
+          "IDO 5.3": 68,
           "IDO 7.1": 8,
           "KMC GCC 2.7.2 + assembler": 13
         }
@@ -1633,6 +1633,15 @@
         "source": "src/game/collect_flags_80005d74.c"
       },
       {
+        "name": "func_8003CECC",
+        "vram": 2147733196,
+        "size": 128,
+        "score": 0.7017543859649122,
+        "jaccard": 0.23255813953488372,
+        "example": "func_8003CE68",
+        "source": "src/game/update_motion_angle_8003ce68.c"
+      },
+      {
         "name": "func_8002D5AC",
         "vram": 2147669420,
         "size": 196,
@@ -1793,24 +1802,6 @@
         "jaccard": 0.21212121212121213,
         "example": "func_8000F2B4",
         "source": "src/game/store_indexed_blob_8000f2b4.c"
-      },
-      {
-        "name": "func_8003CE68",
-        "vram": 2147733096,
-        "size": 100,
-        "score": 0.6341463414634146,
-        "jaccard": 0.23333333333333334,
-        "example": "func_80039D54",
-        "source": "src/game/update_global_float_80039d54.c"
-      },
-      {
-        "name": "func_8003CE68",
-        "vram": 2147733096,
-        "size": 100,
-        "score": 0.6341463414634146,
-        "jaccard": 0.23333333333333334,
-        "example": "func_80039D94",
-        "source": "src/game/update_global_float_80039d94.c"
       },
       {
         "name": "func_8002D200",
@@ -2099,6 +2090,15 @@
         "jaccard": 0.1111111111111111,
         "example": "func_80055420",
         "source": "src/game/relink_resource_80055420.c"
+      },
+      {
+        "name": "func_8003D06C",
+        "vram": 2147733612,
+        "size": 132,
+        "score": 0.5862068965517241,
+        "jaccard": 0.10416666666666667,
+        "example": "func_8003CE68",
+        "source": "src/game/update_motion_angle_8003ce68.c"
       },
       {
         "name": "func_8001E054",
