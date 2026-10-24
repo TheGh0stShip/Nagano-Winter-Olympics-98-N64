@@ -427,3 +427,5 @@
 0x539D8	0x78	src/game/look_at_80052dd8.c	-O3 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	41477effd761d9e1b0018769e7fc9ae5956336fdf4fde1f2de79bdeafc486b87
 0x4BB0	0x88	src/game/remove_scheduler_client_80003fb0.c	-O3 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	0e6b2deb052e001d2d3f7e9923ce3de235151f857a6c6b92a3c8be86e099873d
 0x3F9F4	0x58	src/game/start_effect_8003edf4.c	-O3 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	4e8a5eb60ed282d65ecd8c937b2ac1906a0ae560dda8df5a1b9e9aa9ab8ea7ea
+0x2056C	0x58	src/game/get_runtime_mode_8001f96c.c	-O3 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	64e640480656c35cc63541cff0e68cead40e4885a3bf4e6cd2cf9f5684d5c4a8
+0x3A6CC	0x58	src/game/clamped_sine_80039acc.c	--section-base=.rodata:0x80080698 -O3 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	82120a9715118e113d3902fd8467bdf7457534fe120c1cff9b59f4fdb3d8546f
