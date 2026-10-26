@@ -1,5 +1,8 @@
 # IDO 5.3 exact matching units
 # ROM_START SIZE SOURCE FLAGS SHA256
+0x23E20	0x50	src/game/calculate_clamped_height_80023220.c	-O3 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	f9fb5734f3c82061690888ea94096a7706a46d17083e9c1f389800decfcbca4d
+0x29D50	0x48	src/game/clamp_runtime_float_80029150.c	-O3 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	d95649d5a221a902ef7041e30efe194784f5e14dd354c266523d137b6b28df7c
+0x2B5B0	0x68	src/game/update_runtime_minimum_8002a9b0.c	-O3 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	df95e49a276bad8fb8eee16413ecfb524ac5a99d3835aa112d96e60d8a10c7d3
 0x23D44	0x50	src/game/wrap_angle_80023144.c	-O3 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	9fb38cc0dfcf9bd8acba8046e0eda5358ae9e5d8780fdc6f5f983e12e568b9ad
 0x32B84	0x50	src/game/advance_runtime_stream_index_80031f84.c	-O3 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	e5bdc6a235816f9b8114e0629042c4eaff8499aa2dab871010f8c2edd570751b
 0x355F0	0x54	src/game/is_special_runtime_mode_800349f0.c	-O3 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	8668f59940faf3406d92593af0807aef137f5f1a54d16f0e675cd9e721b240b2
