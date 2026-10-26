@@ -1,5 +1,10 @@
 # IDO 7.1 units verified against the retail ROM
 # ROM_START SIZE SOURCE FLAGS SHA256
+0x32A20	0x5C	src/game/read_and_advance_runtime_byte_80031e20.c	-O3 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	014dffd1074d81cefbe7085b1a1b905b02449ff3c25a0a8a3561509a23ce5138
+0x46E80	0x5C	src/game/call_float_callback_80046280.c	-O3 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	3c4b6003c5e68e4b7be379cd24d30f61135593dd51d94a8f7da1bf4f79e7db49
+0x40B50	0x50	src/game/build_runtime_matrix_8003ff50.c	-O3 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	4b4035e4d24ad25a6a820e34817cab8c83428ae3e483bbcd833117a50086d469
+0x49614	0x50	src/game/set_controller_limit_80048a14.c	-O3 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	885dacccb6c6d0804f035d315237c8933e18d2c7f241b837faaa7f82eab82a13
+0x28E64	0x4C	src/game/add_to_active_runtime_values_80028264.c	-O3 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	203adbe2e450c9f51074110f474c090bc6933a6af3009f548a917275eb0f7cd3
 0x2C880	0x5C	src/game/select_runtime_code_8002bc80.c	-O3 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	e4c555ebca5e13af589dde0d68254274ae2a575adfb8ce9bc9850d462584d42c
 0x2C8DC	0x5C	src/game/get_runtime_variant_8002bcdc.c	-O3 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	19ea533bc0ae7c81918d8affbe5bf953236c40175559557fc0b4ed177f5a3f4f
 0x2C1D0	0x54	src/game/find_next_runtime_index_8002b5d0.c	-O3 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	fa17f3e11eb7afb49cec5250b2d4378e9d7ce884b97797b90537d05b6c75e309
