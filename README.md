@@ -19,7 +19,7 @@ You must provide your own legally obtained retail ROM.
 - SDK functions named: 241 (220 high-confidence)
 - Audio: three libaudio bank files and 93 indexed ADPCM sample payloads
 - Music: 23 loader-indexed Konami LZW sequence records decode successfully
-- Matching C: 650 functions / 39,696 bytes
+- Matching C: 652 functions / 39,876 bytes
 - Byte-matched initialized data: 56 / 129,864 bytes
 - Identified post-program asset bytes: 794,392 / 12,047,904 bytes
 - Extracted asset bytes: 0 / 794,392 identified bytes
@@ -73,4 +73,8 @@ The machine-readable report is also available directly from
 function catalogue and reports unmatched functions that share a shape with
 verified C. Its output is candidate evidence only; every promoted result must
 still pass `make verify-matching`.
+
+`make unmatched` prints the remaining function queue in stable size/address
+order across every matching manifest. This prevents already verified units
+from being re-investigated when selecting batch candidates.
 

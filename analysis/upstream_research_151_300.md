@@ -180,3 +180,17 @@ byte-identical re-encoding before calling compressed records round-tripped.
 The reporting survey continues to support the current ByteMatch contract.
 Exact code bytes, exact data bytes, physically classified ROM bytes, decoded
 record counts, and reproducibly extracted bytes remain separate quantities.
+
+## 2026-10-25 quick upstream follow-up
+
+The completed Rugrats: Scavenger Hunt project supplied one immediate workflow
+improvement: a range-aware, size-ranked unmatched queue covering every compiler
+manifest. Nagano now exposes the adapted queue as `make unmatched`, eliminating
+duplicate candidate work across KMC, IDO 5.3, and IDO 7.1 manifests.
+
+Recent upstream checks also found three techniques worth retaining for later
+campaigns: gameDecomp's whole-program object-exact state map, BeetleDecomp's
+per-module quick verification and candidate scoring, and 1080 Snowboarding's
+separate exact/fuzzy accounting. Only the queue was adopted today. Fuzzy
+similarity remains research evidence and cannot increase Nagano's public
+matching totals.

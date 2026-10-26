@@ -457,3 +457,5 @@
 0xD2AC	0x64	src/game/reset_runtime_globals_8000c6ac.c	-O3 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	d437aa1cf37ce1f8d360dfe3d245979bcc140b92be1a3de116545561e8990d41
 0x38360	0x88	src/game/initialize_runtime_descriptor_80037760.c	-O3 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	c3f5444ef2573d17086c3825b66365724ecb842ddcca4aff52fba70c5666f611
 0x54DB8	0x9C	src/game/convert_float_to_u64_800541b8.c	--section-base=.rodata:0x80081028 -O1 -mips3 -32 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	ad84c99e032b7a4000f629a5cbc4065eab17db3d2065ac43674ef9ef9d6e6f3a
+0x2C224	0x58	src/game/update_runtime_mode_byte_8002b624.c	-O3 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	fd74243d2d54cf55da4988f1dff30c1a50f4bb69baf77db2aa93ec392f3b406f
+0x1109C	0x5C	src/game/get_menu_state_code_8001049c.c	-O3 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	085074f1aa39645fa9b8ef28c5edad9ebd90f4fb008e0a89a7c3678bb65b7b2c
