@@ -1,4 +1,9 @@
 # Hand-written libultra assembly units (ROM_START SIZE SOURCE FLAGS SHA256)
+0x4F280	0xA0	src/libultra/os_set_int_mask_8004e680.s	-O2 -G0 -mips3 -mgp32 -mfp32	0ab8f1fceeb4b5ed4a2b56493a6e1553b0f767f26c9025ad14a8f24480687d7d
+0x5040C	0x100	src/libultra/os_enqueue_and_yield_8004f80c.s	-O2 -G0 -mips3 -mgp32 -mfp32	a2ac99efac9edfb00e785d616ce049429d4bce6b3db650914cfc02471a56959f
+0x5050C	0x58	src/libultra/os_thread_queue_8004f90c.s	-O2 -G0 -mips3 -mgp32 -mfp32	143747b0b9bddd749687b0aa560ad891a817e90336a2bcb7801fc391ee97fc2b
+0x50564	0x17C	src/libultra/os_dispatch_thread_8004f964.s	-O2 -G0 -mips3 -mgp32 -mfp32	32e728c83e07c2e7cbfefe56147156b724f6dc56263c85148755bf0d25c04963
+0x54C20	0xC0	src/libultra/os_probe_tlb_80054020.s	-O2 -G0 -mips3 -mgp32 -mfp32	349227b84b51cb246abaf9de4bf56eba78054d85575e1bfb09acfdb8d1bc0c28
 0x51F40	0x80	src/libultra/os_writeback_dcache_80051340.s	-O2 -G0 -mips3 -mgp32 -mfp32	21514538b715f668861f169883c91749feb94cb501d5dfd9a24b67f782fa1b69
 0x52350	0x10	src/libultra/os_set_sr_80051750.s	-O2 -G0 -mips3 -mgp32 -mfp32	8c9798aafb630c54a679991a2a686c3379687a94f8b3c8c14e5eafe1cd8cb961
 0x52360	0x10	src/libultra/os_get_sr_80051760.s	-O2 -G0 -mips3 -mgp32 -mfp32	98eb78e5220bcc1e31ff049202bde4471c76ac15ebbc22d818771f741671fe0a

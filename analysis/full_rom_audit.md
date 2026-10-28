@@ -4,8 +4,8 @@ Retail ROM SHA-1: `eaf543e195731031a84f4136b506449209e3a8f5`. This audit scans a
 
 ## Code census
 
-- Exact matches: 975 functions / 117,108 bytes.
-- Remaining: 494 functions / 274,988 surveyed bytes.
+- Exact matches: 980 functions / 118,168 bytes.
+- Remaining: 489 functions / 273,928 surveyed bytes.
 - Direct call sites: 3,929; indirect call sites: 64; branch sites: 7,046.
 - COP1 instructions: 7,233.
 - Exact duplicate groups: 28; structural duplicate groups: 96; structural groups with unmatched members: 4.
@@ -26,9 +26,9 @@ Retail ROM SHA-1: `eaf543e195731031a84f4136b506449209e3a8f5`. This audit scans a
 ### Verified compiler units
 
 - IDO 5.3: 700
-- KMC GCC 2.7.2 + assembler: 60
+- KMC GCC 2.7.2 + assembler: 59
 - IDO 7.1: 203
-- hand-written assembly: 12
+- hand-written assembly: 18
 
 ### Program address bands
 
@@ -38,8 +38,8 @@ Retail ROM SHA-1: `eaf543e195731031a84f4136b506449209e3a8f5`. This audit scans a
 | `0x11000..0x21000` | 243 | 160 | 10836 | IDO 5.3: 116, KMC GCC 2.7.2 + assembler: 13, IDO 7.1: 31 |
 | `0x21000..0x31000` | 274 | 172 | 13252 | KMC GCC 2.7.2 + assembler: 10, IDO 5.3: 104, IDO 7.1: 58 |
 | `0x31000..0x41000` | 239 | 147 | 10620 | IDO 7.1: 27, IDO 5.3: 107, KMC GCC 2.7.2 + assembler: 13 |
-| `0x41000..0x51000` | 242 | 141 | 14708 | IDO 7.1: 35, IDO 5.3: 96, KMC GCC 2.7.2 + assembler: 10 |
-| `0x51000..0x61000` | 237 | 221 | 56488 | IDO 5.3: 204, hand-written assembly: 12, KMC GCC 2.7.2 + assembler: 5 |
+| `0x41000..0x51000` | 242 | 145 | 15576 | IDO 7.1: 35, IDO 5.3: 96, KMC GCC 2.7.2 + assembler: 9, hand-written assembly: 5 |
+| `0x51000..0x61000` | 237 | 222 | 56680 | IDO 5.3: 204, hand-written assembly: 13, KMC GCC 2.7.2 + assembler: 5 |
 | `0x61000..0x71000` | 0 | 0 | 0 | none |
 | `0x71000..0x81000` | 0 | 0 | 0 | none |
 | `0x81000..0x829E0` | 0 | 0 | 0 | none |
@@ -120,7 +120,6 @@ The ledger has 2,384 gap-free records.
 - `func_8005FFFC` (`0x8005FFFC`, `0x18` bytes, 0 direct calls, 0 trailing nops)
 - `func_8004F7EC` (`0x8004F7EC`, `0x20` bytes, 0 direct calls, 0 trailing nops)
 - `func_8004F1F0` (`0x8004F1F0`, `0x2C` bytes, 0 direct calls, 0 trailing nops)
-- `func_8004F90C` (`0x8004F90C`, `0x48` bytes, 0 direct calls, 0 trailing nops)
 - `func_80040DBC` (`0x80040DBC`, `0x5C` bytes, 0 direct calls, 0 trailing nops)
 - `func_80020E70` (`0x80020E70`, `0x74` bytes, 0 direct calls, 0 trailing nops)
 - `func_800212B4` (`0x800212B4`, `0x74` bytes, 0 direct calls, 0 trailing nops)
@@ -136,6 +135,7 @@ The ledger has 2,384 gap-free records.
 - `func_80024478` (`0x80024478`, `0xD4` bytes, 0 direct calls, 0 trailing nops)
 - `func_8002CBE4` (`0x8002CBE4`, `0xD4` bytes, 0 direct calls, 0 trailing nops)
 - `func_8002BD84` (`0x8002BD84`, `0xDC` bytes, 0 direct calls, 0 trailing nops)
+- `func_80004A04` (`0x80004A04`, `0xE0` bytes, 0 direct calls, 0 trailing nops)
 
 ### Most referenced local functions
 
