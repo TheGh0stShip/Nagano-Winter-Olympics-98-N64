@@ -592,3 +592,8 @@
 0x535F8	0xB8	src/game/convert_fixed_matrix_800529f8.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	eb93d9488fce997fa8dd2043ca2a9980f08303faa1158c9b6ed509c0bd42bbeb
 0x549C0	0x1D0	src/game/pfs_request_data_80053dc0.c	-O1 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	1d5c16a54f6cc29c896e09c912ae0f19cef27dbca3294db9d8ef20738718d550
 0x59EB0	0xE0	src/game/start_pi_dma_800592b0.c	-O1 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	5c9c71cdde5ecf80a2148c99a63938e34cc251914f8aacf451e5d9627588db66
+0x4EEA0	0x150	src/game/send_message_8004e2a0.c	-O1 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	8f5a13d79e4add0c344ee7720d1cc87fd0c510c21b39913a640fcb3af0257a34
+0x4EFF0	0x150	src/game/pfs_free_blocks_8004e3f0.c	-O1 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	3bef50772a2229e830bd3004233e7e5a1205e166574905ab4d6bdd451ad52d34
+0x4F140	0x140	src/game/receive_message_8004e540.c	-O1 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	4a24d5df8629748333a86c4023a3c39496d85b3201cd225b4df8efc737e3b7e1
+0x5B7D0	0x150	src/game/jam_message_8005abd0.c	-O1 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	682d996e4da742abc7e8acf3b2c2a2fc050d81303ee9c9f54d68a331da58dcc7
+0x60410	0x150	src/game/start_thread_8005f810.c	-O1 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	d0b6abbab2e2690590890f12b4f9000bd65d618cb15723dc58e3f821268790ca
