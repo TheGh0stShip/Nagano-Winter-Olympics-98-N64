@@ -601,3 +601,8 @@
 0x51690	0x150	src/game/create_thread_80050a90.c	-O1 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	78649fb108ddbfdd117ee08276dea11d82d2492b0876896cdb86397a91f8b2b1
 0x5D500	0x150	src/game/pfs_num_files_8005c900.c	-O1 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	ae274cf5517b6ecca7eeba11d1d080bd6e2de67bf68f8c088fec62fe27fccf27
 0x5D660	0x2F0	src/game/pfs_file_state_8005ca60.c	-O1 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	3f4430a6f1f5f046b01147f0d009944957311d0acbe0ffb3f2fc62f48bebde50
+0x53440	0x100	src/game/convert_float_matrix_80052840.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	766ecf1975b0b289ca1034155d694cc04c33d95ea7f69907505b4173ed0ed7d8
+0x52A90	0x230	src/game/build_perspective_matrix_80051e90.c	--section-base=.rodata:0x80081010 -O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	00495acd7013be2ccdb6af8375a2c4814c8cff2157889b2682abe8e506f58968
+0x53720	0x2B8	src/game/build_look_at_matrix_80052b20.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	e42141044f2c701e0de84274478f0a80f9e472c9e0286cc74948fda71127e6fb
+0x5A0B0	0x170	src/game/concatenate_float_matrices_800594b0.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	41bd4f6e73417fe1068851ec78bda3d672cb40c216f9317efc07f65787141f13
+0x5BA70	0x1B0	src/game/build_position_matrix_8005ae70.c	--section-base=.rodata:0x80081250 --section-base=.bss:0x80194230 -O3 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	a045bda7799c894738b02a287661f38acb1a7e070b4f2339e6d8f4fbf3b65512
