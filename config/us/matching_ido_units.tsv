@@ -578,3 +578,7 @@
 0x4B0C0	0xA0	src/game/stop_sound_slot_8004a4c0.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	ce0d51f6248ac1c63d6bbb5c6b5bd4fb642be3422a19aa1e31e8decbaf310aa7
 0xCD90	0x44	src/game/push_runtime_value_8000c190.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	5cc6cf3dcd63d07ac8e3ac04da9fc35e273f953d5e9d351f457a40e88ca9b7bf
 0x14648	0x80	src/game/load_sound_slot_80013a48.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	9dc73707f0ee5cfd1d8d407a8acd451a196e23178cdeb667c5ca48c4ce9d5bff
+0x111A4	0xB0	src/game/poll_runtime_input_800105a4.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	c7cc68ff271f81e8eec33bcb118cca9e525ad498b347eaaa8661389a706b3d7c
+0x39C04	0xB0	src/game/initialize_runtime_record_80039004.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	02daeb56c942129525c24887edba70741d4b11b405c0cd999bfc0091e5e8f26f
+0x426D0	0xB0	src/game/process_runtime_block_80041ad0.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	7a0cbba9bccf6524d81ec77516f8ec05a15a164222dedb4c0b71550acaf5861e
+0x60A60	0xB0	src/game/start_device_dma_8005fe60.c	-O1 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	29b647b34e8128fca148fb310f1cf86a017723c847d07282610c4d26181a451f
