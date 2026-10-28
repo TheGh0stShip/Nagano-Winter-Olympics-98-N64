@@ -78,12 +78,15 @@ def main():
     rows = [line.split("\t") for manifest in MANIFESTS
             for line in manifest.read_text().splitlines()
             if line and not line.startswith("#")]
-    matched = {(int(r[0], 0), int(r[1], 0)): r[2] for r in rows}
+    # A unit may hold several functions of one translation unit; a function is
+    # complete when one verified manifest range covers all of its bytes.
+    matched = [(int(r[0], 0), int(r[0], 0) + int(r[1], 0), r[2]) for r in rows]
     units, matched_bytes, matched_count = [], 0, 0
     for fn in funcs:
         start = fn["vram"] - 0x80000400 + 0x1000
         size = fn["size"]
-        source = matched.get((start, size))
+        source = next((src for lo, hi, src in matched
+                       if lo <= start and start + size <= hi), None)
         complete = source is not None
         matched_bytes += size if complete else 0
         matched_count += complete

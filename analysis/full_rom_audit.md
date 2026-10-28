@@ -4,11 +4,11 @@ Retail ROM SHA-1: `eaf543e195731031a84f4136b506449209e3a8f5`. This audit scans a
 
 ## Code census
 
-- Exact matches: 652 functions / 39,876 bytes.
-- Remaining: 817 functions / 352,220 surveyed bytes.
+- Exact matches: 740 functions / 49,520 bytes.
+- Remaining: 729 functions / 342,576 surveyed bytes.
 - Direct call sites: 3,929; indirect call sites: 64; branch sites: 7,046.
 - COP1 instructions: 7,233.
-- Exact duplicate groups: 28; structural duplicate groups: 96; structural groups with unmatched members: 15.
+- Exact duplicate groups: 28; structural duplicate groups: 96; structural groups with unmatched members: 10.
 - Functions ending in one or more zero words: 863. These need boundary/padding review; a zero word is not automatically compiler-owned code.
 
 ### Size distribution
@@ -25,19 +25,19 @@ Retail ROM SHA-1: `eaf543e195731031a84f4136b506449209e3a8f5`. This audit scans a
 
 ### Verified compiler units
 
-- IDO 5.3: 459
+- IDO 5.3: 508
 - KMC GCC 2.7.2 + assembler: 67
-- IDO 7.1: 126
+- IDO 7.1: 165
 
 ### Program address bands
 
 | ROM range | Functions | Matched | Matched bytes | Verified compiler units |
 |---|---:|---:|---:|---|
-| `0x1000..0x11000` | 234 | 105 | 7540 | IDO 5.3: 55, KMC GCC 2.7.2 + assembler: 12, IDO 7.1: 38 |
-| `0x11000..0x21000` | 243 | 125 | 6548 | IDO 5.3: 90, KMC GCC 2.7.2 + assembler: 13, IDO 7.1: 22 |
-| `0x21000..0x31000` | 274 | 127 | 7180 | KMC GCC 2.7.2 + assembler: 10, IDO 5.3: 92, IDO 7.1: 25 |
-| `0x31000..0x41000` | 239 | 104 | 5176 | IDO 5.3: 78, IDO 7.1: 13, KMC GCC 2.7.2 + assembler: 13 |
-| `0x41000..0x51000` | 242 | 98 | 7048 | IDO 7.1: 28, IDO 5.3: 60, KMC GCC 2.7.2 + assembler: 10 |
+| `0x1000..0x11000` | 234 | 121 | 9092 | IDO 5.3: 63, KMC GCC 2.7.2 + assembler: 12, IDO 7.1: 46 |
+| `0x11000..0x21000` | 243 | 143 | 8388 | IDO 5.3: 100, KMC GCC 2.7.2 + assembler: 13, IDO 7.1: 30 |
+| `0x21000..0x31000` | 274 | 148 | 9448 | KMC GCC 2.7.2 + assembler: 10, IDO 5.3: 97, IDO 7.1: 41 |
+| `0x31000..0x41000` | 239 | 126 | 7524 | IDO 5.3: 94, IDO 7.1: 19, KMC GCC 2.7.2 + assembler: 13 |
+| `0x41000..0x51000` | 242 | 109 | 8684 | IDO 7.1: 29, IDO 5.3: 70, KMC GCC 2.7.2 + assembler: 10 |
 | `0x51000..0x61000` | 237 | 93 | 6384 | IDO 5.3: 84, KMC GCC 2.7.2 + assembler: 9 |
 | `0x61000..0x71000` | 0 | 0 | 0 | none |
 | `0x71000..0x81000` | 0 | 0 | 0 | none |
@@ -89,36 +89,31 @@ The ledger has 2,384 gap-free records.
 
 ### Highest similarity to verified C
 
-- 0.80: `func_8002EC10` at `0x8002EC10` from `func_80004B50` (src/game/copy_template_80004b50.c).
-- 0.80: `func_8002EC10` at `0x8002EC10` from `func_8000DCC0` (src/game/copy_template_8000dcc0.c).
-- 0.80: `func_8002EC10` at `0x8002EC10` from `func_8000FCA8` (src/game/copy_template_8000fca8.c).
-- 0.73: `func_80040C00` at `0x80040C00` from `func_80040C70` (src/game/query_shifted_byte_80040c70.c).
+- 0.97: `func_80013E88` at `0x80013E88` from `func_80013E04` (src/game/dispatch_slot_5243c_80013e04.c).
+- 0.87: `func_80013C24` at `0x80013C24` from `func_80013BA4` (src/game/dispatch_slot_request_80013ba4.c).
+- 0.87: `func_80013F0C` at `0x80013F0C` from `func_80013BA4` (src/game/dispatch_slot_request_80013ba4.c).
+- 0.74: `func_80013C24` at `0x80013C24` from `func_80013E04` (src/game/dispatch_slot_5243c_80013e04.c).
+- 0.74: `func_80013F0C` at `0x80013F0C` from `func_80013E04` (src/game/dispatch_slot_5243c_80013e04.c).
 - 0.71: `func_8002A898` at `0x8002A898` from `func_8002A948` (src/game/update_minimum_runtime_value_8002a948.c).
 - 0.71: `func_8002BD84` at `0x8002BD84` from `func_8002BEBC` (src/game/convert_float_to_u16_8002bebc.c).
+- 0.71: `func_80013E88` at `0x80013E88` from `func_80013BA4` (src/game/dispatch_slot_request_80013ba4.c).
 - 0.71: `func_8004BA1C` at `0x8004BA1C` from `func_8004C804` (src/game/read_stream_motion_duration_8004c804.c).
 - 0.71: `func_8004BE6C` at `0x8004BE6C` from `func_8004C804` (src/game/read_stream_motion_duration_8004c804.c).
-- 0.71: `func_8000DA60` at `0x8000DA60` from `func_80005D74` (src/game/collect_flags_80005d74.c).
 - 0.69: `func_8002D5AC` at `0x8002D5AC` from `func_80029274` (src/game/store_scaled_unsigned_80029274.c).
-- 0.69: `func_80040B90` at `0x80040B90` from `func_80040C70` (src/game/query_shifted_byte_80040c70.c).
-- 0.68: `func_8002EC10` at `0x8002EC10` from `func_8000499C` (src/game/copy_selected_template_8000499c.c).
+- 0.68: `func_80030EEC` at `0x80030EEC` from `func_80030E78` (src/game/select_mode_configuration_80030e78.c).
 - 0.67: `func_8002D5AC` at `0x8002D5AC` from `func_800462DC` (src/game/convert_scaled_byte_800462dc.c).
 - 0.67: `func_8002D5AC` at `0x8002D5AC` from `func_80046550` (src/game/convert_scaled_byte_80046550.c).
 - 0.67: `func_8002D5AC` at `0x8002D5AC` from `func_800466E0` (src/game/convert_scaled_byte_800466e0.c).
 - 0.67: `func_8002D5AC` at `0x8002D5AC` from `func_8004678C` (src/game/convert_scaled_byte_8004678c.c).
-- 0.65: `func_8000DA60` at `0x8000DA60` from `func_80005C48` (src/game/collect_flags_80005c48.c).
-- 0.65: `func_8000DA60` at `0x8000DA60` from `func_80005CAC` (src/game/collect_flags_80005cac.c).
-- 0.65: `func_8000DA60` at `0x8000DA60` from `func_80005D10` (src/game/collect_flags_80005d10.c).
-- 0.65: `func_8004872C` at `0x8004872C` from `func_8004D70C` (src/game/queue_stream_event_8004d70c.c).
+- 0.64: `func_8004EEDC` at `0x8004EEDC` from `func_800138C4` (src/game/call_pair_800138c4.c).
+- 0.64: `func_8002D7E4` at `0x8002D7E4` from `func_8002D8E0` (src/game/advance_scene_value_8002d8e0.c).
+- 0.63: `func_8002CB28` at `0x8002CB28` from `func_8002D8E0` (src/game/advance_scene_value_8002d8e0.c).
+- 0.63: `func_80046388` at `0x80046388` from `func_8002BEBC` (src/game/convert_float_to_u16_8002bebc.c).
 
 ### Small direct-call functions
 
-- `func_800366E0` (`0x800366E0`, `0x34` bytes, 1 direct calls, 0 trailing nops)
 - `func_8001C3F0` (`0x8001C3F0`, `0x54` bytes, 2 direct calls, 0 trailing nops)
-- `func_80037074` (`0x80037074`, `0x44` bytes, 1 direct calls, 1 trailing nops)
-- `func_80011CE4` (`0x80011CE4`, `0x48` bytes, 2 direct calls, 1 trailing nops)
 - `func_80037348` (`0x80037348`, `0x50` bytes, 2 direct calls, 1 trailing nops)
-- `func_80037AA0` (`0x80037AA0`, `0x60` bytes, 1 direct calls, 1 trailing nops)
-- `func_8004EEDC` (`0x8004EEDC`, `0x44` bytes, 3 direct calls, 2 trailing nops)
 - `func_8004E974` (`0x8004E974`, `0x5C` bytes, 2 direct calls, 4 trailing nops)
 
 ### Small leaf functions
@@ -126,23 +121,23 @@ The ledger has 2,384 gap-free records.
 - `func_8005FFF0` (`0x8005FFF0`, `0xC` bytes, 0 direct calls, 0 trailing nops)
 - `func_8005FFFC` (`0x8005FFFC`, `0x18` bytes, 0 direct calls, 0 trailing nops)
 - `func_8004F7EC` (`0x8004F7EC`, `0x20` bytes, 0 direct calls, 0 trailing nops)
-- `func_80000FA0` (`0x80000FA0`, `0x2C` bytes, 0 direct calls, 0 trailing nops)
 - `func_8004F1F0` (`0x8004F1F0`, `0x2C` bytes, 0 direct calls, 0 trailing nops)
 - `func_8000C190` (`0x8000C190`, `0x44` bytes, 0 direct calls, 0 trailing nops)
-- `func_8001805C` (`0x8001805C`, `0x44` bytes, 0 direct calls, 0 trailing nops)
 - `func_8004F90C` (`0x8004F90C`, `0x48` bytes, 0 direct calls, 0 trailing nops)
-- `func_8001CBA8` (`0x8001CBA8`, `0x50` bytes, 0 direct calls, 0 trailing nops)
-- `func_8002EC10` (`0x8002EC10`, `0x54` bytes, 0 direct calls, 0 trailing nops)
-- `func_80046BA4` (`0x80046BA4`, `0x58` bytes, 0 direct calls, 0 trailing nops)
 - `func_8002BE60` (`0x8002BE60`, `0x5C` bytes, 0 direct calls, 0 trailing nops)
 - `func_80040DBC` (`0x80040DBC`, `0x5C` bytes, 0 direct calls, 0 trailing nops)
-- `func_8004BE10` (`0x8004BE10`, `0x5C` bytes, 0 direct calls, 0 trailing nops)
-- `func_8002F5D4` (`0x8002F5D4`, `0x60` bytes, 0 direct calls, 0 trailing nops)
-- `func_8002A29C` (`0x8002A29C`, `0x64` bytes, 0 direct calls, 0 trailing nops)
-- `func_8002A660` (`0x8002A660`, `0x64` bytes, 0 direct calls, 0 trailing nops)
-- `func_8001E054` (`0x8001E054`, `0x6C` bytes, 0 direct calls, 0 trailing nops)
 - `func_80020E70` (`0x80020E70`, `0x74` bytes, 0 direct calls, 0 trailing nops)
 - `func_800212B4` (`0x800212B4`, `0x74` bytes, 0 direct calls, 0 trailing nops)
+- `func_8003D0F0` (`0x8003D0F0`, `0x80` bytes, 0 direct calls, 0 trailing nops)
+- `func_8004BF88` (`0x8004BF88`, `0x84` bytes, 0 direct calls, 0 trailing nops)
+- `func_8001CD08` (`0x8001CD08`, `0x88` bytes, 0 direct calls, 0 trailing nops)
+- `func_8005B3D0` (`0x8005B3D0`, `0x8C` bytes, 0 direct calls, 0 trailing nops)
+- `func_80047124` (`0x80047124`, `0x90` bytes, 0 direct calls, 0 trailing nops)
+- `func_80018704` (`0x80018704`, `0x94` bytes, 0 direct calls, 0 trailing nops)
+- `func_80030634` (`0x80030634`, `0x98` bytes, 0 direct calls, 0 trailing nops)
+- `func_8004F118` (`0x8004F118`, `0x9C` bytes, 0 direct calls, 0 trailing nops)
+- `func_80050CA4` (`0x80050CA4`, `0xA8` bytes, 0 direct calls, 0 trailing nops)
+- `func_80000EF4` (`0x80000EF4`, `0xAC` bytes, 0 direct calls, 0 trailing nops)
 
 ### Most referenced local functions
 

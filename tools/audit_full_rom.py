@@ -100,11 +100,19 @@ def audit(rom: bytes) -> dict:
     names = {function["vram"]: function["name"] for function in functions}
     matched = matched_sources()
     manifest_origins = {}
+    manifest_ranges = []
     for path in (ROOT / "config/us").glob("matching*_units.tsv"):
         for line in path.read_text().splitlines():
             if line and not line.startswith("#"):
                 fields = line.split("\t")
                 manifest_origins[(int(fields[0], 0), int(fields[1], 0))] = compiler_for(path.name)
+                manifest_ranges.append((int(fields[0], 0), int(fields[0], 0) + int(fields[1], 0),
+                                        fields[2], compiler_for(path.name)))
+
+    def covering_unit(start, size):
+        # A unit may hold several functions of one translation unit.
+        return next(((source, compiler) for lo, hi, source, compiler in manifest_ranges
+                     if lo <= start and start + size <= hi), (None, None))
 
     records = []
     callers = Counter()
@@ -119,9 +127,12 @@ def audit(rom: bytes) -> dict:
             if call["name"]:
                 callers[call["name"]] += 1
         source = matched.get((start, size))
+        compiler = manifest_origins.get((start, size))
+        if source is None:
+            source, compiler = covering_unit(start, size)
         record = {"name": function["name"], "vram": function["vram"],
                   "rom": start, "size": size, "matched": source is not None,
-                  "source": source, "compiler": manifest_origins.get((start, size)),
+                  "source": source, "compiler": compiler,
                   **scan}
         records.append(record)
         exact_groups[hashlib.sha256(data).hexdigest()].append(record)
