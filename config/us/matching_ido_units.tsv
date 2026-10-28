@@ -618,3 +618,6 @@
 0x54070	0x484	src/game/allocate_controller_pak_file_80053470.c	-O1 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	c4346db9475bc622acd0b9d2ac10dfaf018398d64b7323f8d64aa3991922fe5f
 0x54820	0x1A0	src/game/detect_controller_paks_80053c20.c	--symbol=D_80192A31:0x80192A31 --symbol=D_80192EA0:0x80192EA0 -O1 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	15ef9b7dbaa6e304f8a50babb1718a536f80d76a1a61754e1d59147ec7b5d0a5
 0x53A50	0x620	src/game/controller_pak_motor_80052e50.c	--section-base=.bss:0x80192C60 --symbol=D_80192A30:0x80192A30 --symbol=D_80192EA0:0x80192EA0 -O1 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	d778327c4c9f48e5abe94e3c47787a06ca771ae63914306960bcdc7b6954eebb
+0x55CF0	0x110	src/game/start_pi_dma_800550f0.c	-O1 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	ba333650c962c9b156af85b94cef0466e7dc27bfd3f9d86d42719253559e9c6f
+0x4F5D0	0x1C0	src/game/sine_8004e9d0.c	--section-base=.rodata:0x80080F70 --symbol=D_800812B0:0x800812B0 -O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	eef6b2a89564586d0d5998654a939b713e793475240b313886247f9e1acd720b
+0x5D0E0	0x170	src/game/cosine_8005c4e0.c	--section-base=.rodata:0x80081260 --symbol=D_800812B0:0x800812B0 -O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	7a479aba23017b0b05499c4ae2845b81c884eedfd6fdfb0626525d64983229cb
