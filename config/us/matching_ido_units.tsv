@@ -612,5 +612,7 @@
 0x5DBC0	0x110	src/game/get_controller_pak_status_8005cfc0.c	--section-base=.bss:0x80192EA0 -O1 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	1d3996c17936b8270ee7a826affe3154ecf72f24e825ebb1c63d7356e223ba5d
 0x55E00	0x1C0	src/game/find_controller_pak_file_80055200.c	-O1 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	8cd4329d3430e2c5a1a9a6e60db8c39a2b71491927426883efcae7832e89bb2e
 0x523F0	0x2E0	src/game/delete_controller_pak_file_800517f0.c	-O1 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	37c655f61c7c434f0cf1be3bd19f2615184b50039b6eb620bf9e376399d18229
-0x526D0	0x238	src/game/release_controller_pak_pages_80051ad0.c	-O1 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	f6739f9dd0c84dcd55c1b83b2422185300fda358bc7a66d54f78f74b907fae00
+0x526D0	0x330	src/game/release_controller_pak_pages_80051ad0.c	-O1 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	973117348d1234d248fd958663d0b24e11a784d353b368d151f8f2ed6fa92a7f
 0x52F40	0x500	src/game/read_write_controller_pak_file_80052340.c	-O1 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	75aa190bbc32f4434d9483f41c5cd5421d695ed9547ed60ee3eb56e238b1641c
+0x544F4	0x32C	src/game/declare_controller_pak_pages_800538f4.c	-O1 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	9f825b9463f8a4235ae804db6492663cbd0bd056277c7b21f676e187bd9972ba
+0x54070	0x484	src/game/allocate_controller_pak_file_80053470.c	-O1 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	c4346db9475bc622acd0b9d2ac10dfaf018398d64b7323f8d64aa3991922fe5f

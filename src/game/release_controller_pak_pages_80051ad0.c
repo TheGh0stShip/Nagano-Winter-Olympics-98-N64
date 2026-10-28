@@ -45,3 +45,29 @@ s32 func_80051AD0(Pfs *pfs, Inode *inode, u8 startPage, u16 *sum,
     *finalPage = nextPage;
     return 0;
 }
+
+extern s32 func_8005507C(Pfs *pfs);
+extern s32 func_8005F480(void *queue, s32 channel, u16 address, u8 *buffer);
+extern u16 func_80054390(u8 *data, s32 length);
+
+s32 func_80051D08(Pfs *pfs, u8 page, u16 *sum, u8 bank) {
+    int index;
+    s32 result = 0;
+    u8 data[32];
+
+    pfs->activeBank = bank;
+    result = func_8005507C(pfs);
+    if (result != 0) return result;
+    for (index = 0; index < 8; index++) {
+        result = func_8005F480(pfs->queue, pfs->channel, page * 8 + index, data);
+        if (result != 0) {
+            pfs->activeBank = 0;
+            func_8005507C(pfs);
+            return result;
+        }
+        *sum = *sum + func_80054390(data, 32);
+    }
+    pfs->activeBank = 0;
+    result = func_8005507C(pfs);
+    return result;
+}
