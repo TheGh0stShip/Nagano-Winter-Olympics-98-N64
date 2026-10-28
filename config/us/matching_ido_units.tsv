@@ -587,3 +587,8 @@
 0x5EDE0	0xB0	src/game/controller_address_crc_8005e1e0.c	-O1 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	319998fd133973f4cd3526a0c0980d764034ad6ae652895f7b18bac0f4b89d93
 0x5EE90	0xD0	src/game/controller_data_crc_8005e290.c	-O1 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	bbfa6798a2048b18ffe28c5d1b22a152d7274c197ac4e90fff8f7aed13ac3fdf
 0x5EFB0	0xE0	src/game/set_timer_8005e3b0.c	-O1 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	6a7c4594116ee6783525bc8b39778448f01d75df5a51684b6e301ffb33259915
+0x51408	0xD0	src/game/get_controller_init_data_80050808.c	-O1 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	8e57c47bc78ac1a5398d876631831b693877efe50538c43128eb99f6365ea495
+0x514D8	0xF8	src/game/pack_controller_request_800508d8.c	-O1 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	63e5450a1b7079256676f67593a0778d337bc576f84d7274520bdb95f096db04
+0x535F8	0xB8	src/game/convert_fixed_matrix_800529f8.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	eb93d9488fce997fa8dd2043ca2a9980f08303faa1158c9b6ed509c0bd42bbeb
+0x549C0	0x1D0	src/game/pfs_request_data_80053dc0.c	-O1 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	1d5c16a54f6cc29c896e09c912ae0f19cef27dbca3294db9d8ef20738718d550
+0x59EB0	0xE0	src/game/start_pi_dma_800592b0.c	-O1 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	5c9c71cdde5ecf80a2148c99a63938e34cc251914f8aacf451e5d9627588db66
