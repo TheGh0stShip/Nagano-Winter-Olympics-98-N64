@@ -1,4 +1,5 @@
 # Hand-written libultra assembly units (ROM_START SIZE SOURCE FLAGS SHA256)
+0x1000	0x38	src/game/entry_80000400.s	-O2 -G0 -mips3 -mgp32 -mfp32	25d022f75efcd43c0558b724a9b00a4f82faa6aef4609cf34d4744b880f22f40
 0x4F280	0xA0	src/libultra/os_set_int_mask_8004e680.s	-O2 -G0 -mips3 -mgp32 -mfp32	0ab8f1fceeb4b5ed4a2b56493a6e1553b0f767f26c9025ad14a8f24480687d7d
 0x5040C	0x100	src/libultra/os_enqueue_and_yield_8004f80c.s	-O2 -G0 -mips3 -mgp32 -mfp32	a2ac99efac9edfb00e785d616ce049429d4bce6b3db650914cfc02471a56959f
 0x5050C	0x58	src/libultra/os_thread_queue_8004f90c.s	-O2 -G0 -mips3 -mgp32 -mfp32	143747b0b9bddd749687b0aa560ad891a817e90336a2bcb7801fc391ee97fc2b

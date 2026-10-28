@@ -7,7 +7,7 @@ vram = 0x80000400
 size = 0x5FC14
 
 functions = [
-    { name = "func_80000400", vram = 0x80000400, size = 0x60 }, # asm
+    { name = "entrypoint", vram = 0x80000400, size = 0x38 }, # asm
     { name = "func_80000460", vram = 0x80000460, size = 0x64 }, # c
     { name = "func_800004C4", vram = 0x800004c4, size = 0x8c }, # c
     { name = "func_80000550", vram = 0x80000550, size = 0x248 }, # c

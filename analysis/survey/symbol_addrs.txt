@@ -1,4 +1,4 @@
-func_80000400 = 0x80000400; // type:func size:0x60
+entrypoint = 0x80000400; // type:func size:0x38
 func_80000460 = 0x80000460; // type:func size:0x64
 func_800004C4 = 0x800004C4; // type:func size:0x8C
 func_80000550 = 0x80000550; // type:func size:0x248

@@ -13,13 +13,13 @@ You must provide your own legally obtained retail ROM.
 - Big-endian `.z64`, 12,582,912 bytes, CIC 6102, game code `NH5E`
 - Initial program: ROM `0x1000..0x829E0`, VRAM `0x80000400..0x80081DE0`
 - BSS: `0x80081DE0..0x801954A0`
-- CPU text catalogue: 1,469 candidate functions / 392,212 bytes
+- CPU text catalogue: 1,469 candidate functions / 392,172 bytes
 - Program initialized data: 129,864 bytes
 - RSP code identified inside the linked text section: 7,296 bytes
 - SDK functions named: 241 (220 high-confidence)
 - Audio: four libaudio bank files and 327 indexed VADPCM sample payloads
 - Music: 23 loader-indexed Konami LZ sequence records decode and re-encode exactly
-- Matching source: 980 functions / 118,168 bytes in 914 verified units
+- Matching source: 981 functions / 118,224 bytes in 915 verified units
 - Byte-matched initialized data: 129,824 / 129,864 bytes
 - Identified post-program asset bytes: 794,392 / 12,047,904 bytes
 - Extracted asset bytes: 0 / 794,392 identified bytes
