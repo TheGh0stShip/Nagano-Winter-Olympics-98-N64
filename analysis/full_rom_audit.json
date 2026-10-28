@@ -1360,8 +1360,8 @@
   },
   "functions": {
     "total": 1469,
-    "matched": 989,
-    "matched_bytes": 119628,
+    "matched": 992,
+    "matched_bytes": 121804,
     "total_bytes": 392056,
     "size_buckets": {
       "<=0x10": 96,
@@ -1376,7 +1376,7 @@
     },
     "compiler_matches": {
       "hand-written assembly": 23,
-      "IDO 5.3": 703,
+      "IDO 5.3": 706,
       "KMC GCC 2.7.2 + assembler": 59,
       "IDO 7.1": 204
     },
@@ -1434,11 +1434,11 @@
         "start": 266240,
         "end": 331776,
         "functions": 242,
-        "matched": 148,
-        "matched_bytes": 15908,
+        "matched": 151,
+        "matched_bytes": 18084,
         "compiler_matches": {
           "IDO 7.1": 35,
-          "IDO 5.3": 97,
+          "IDO 5.3": 100,
           "KMC GCC 2.7.2 + assembler": 9,
           "hand-written assembly": 7
         }
@@ -1725,6 +1725,15 @@
         "jaccard": 0.13043478260869565,
         "example": "func_8002A7E0",
         "source": "src/game/get_ranking_cell_value_8002a7e0.c"
+      },
+      {
+        "name": "func_8004F724",
+        "vram": 2147809060,
+        "size": 180,
+        "score": 0.5849056603773585,
+        "jaccard": 0.14942528735632185,
+        "example": "func_800503BC",
+        "source": "src/game/leo_interrupt_8004fc30.c"
       },
       {
         "name": "func_8002CBE4",
