@@ -12,9 +12,9 @@ from collections import Counter, defaultdict
 from pathlib import Path
 
 try:
-    from tools.find_function_families import fingerprint, matched_sources, similar_functions
+    from tools.find_function_families import fingerprint, similar_functions
 except ModuleNotFoundError:  # direct execution adds tools/, not the project root
-    from find_function_families import fingerprint, matched_sources, similar_functions
+    from find_function_families import fingerprint, similar_functions
 
 ROOT = Path(__file__).resolve().parents[1]
 FUNCTIONS = ROOT / "analysis/survey/functions.toml"
@@ -100,14 +100,11 @@ def audit(rom: bytes) -> dict:
         raise ValueError(f"wrong ROM SHA-1: {digest}")
     functions = tomllib.loads(FUNCTIONS.read_text())["section"][0]["functions"]
     names = {function["vram"]: function["name"] for function in functions}
-    matched = matched_sources()
-    manifest_origins = {}
     manifest_ranges = []
     for path in (ROOT / "config/us").glob("matching*_units.tsv"):
         for line in path.read_text().splitlines():
             if line and not line.startswith("#"):
                 fields = line.split("\t")
-                manifest_origins[(int(fields[0], 0), int(fields[1], 0))] = compiler_for(path.name)
                 manifest_ranges.append((int(fields[0], 0), int(fields[0], 0) + int(fields[1], 0),
                                         fields[2], compiler_for(path.name)))
 
@@ -128,10 +125,7 @@ def audit(rom: bytes) -> dict:
         for call in scan["direct_calls"]:
             if call["name"]:
                 callers[call["name"]] += 1
-        source = matched.get((start, size))
-        compiler = manifest_origins.get((start, size))
-        if source is None:
-            source, compiler = covering_unit(start, size)
+        source, compiler = covering_unit(start, size)
         record = {"name": function["name"], "vram": function["vram"],
                   "rom": start, "size": size, "matched": source is not None,
                   "source": source, "compiler": compiler,
