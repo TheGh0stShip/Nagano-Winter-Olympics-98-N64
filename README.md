@@ -17,19 +17,21 @@ You must provide your own legally obtained retail ROM.
 - Program initialized data: 129,864 bytes
 - RSP code identified inside the linked text section: 7,296 bytes
 - SDK functions named: 241 (220 high-confidence)
-- Audio: three libaudio bank files and 93 indexed ADPCM sample payloads
-- Music: 23 loader-indexed Konami LZW sequence records decode successfully
+- Audio: four libaudio bank files and 327 indexed VADPCM sample payloads
+- Music: 23 loader-indexed Konami LZ sequence records decode and re-encode exactly
 - Matching C: 963 functions / 116,388 bytes in 898 verified units
-- Byte-matched initialized data: 56 / 129,864 bytes
+- Byte-matched initialized data: 129,824 / 129,864 bytes
 - Identified post-program asset bytes: 794,392 / 12,047,904 bytes
 - Extracted asset bytes: 0 / 794,392 identified bytes
 - Physical ROM inventory: 12,582,912 / 12,582,912 bytes (100%)
 
-Physical coverage does not mean semantic understanding. The conservative
-inventory leaves 10,372,608 bytes in seven unknown ranges and identifies
-880,904 bytes only through loader references. It does not claim unproven
-texture, model, animation, or sound-effect counts. See
-`analysis/rom_map.md` and the gap-free `analysis/rom_inventory.tsv`.
+Physical coverage does not mean semantic understanding. The exact physical
+ledger classifies every ROM byte and reconstructs every non-code range, while
+its nested asset audit still leaves 787,597 decoded bytes structurally unknown
+across 236 files, plus 874,747 unreferenced zero bytes that are not yet proven
+padding. See `analysis/data_map/README.md` and the gap-free
+`analysis/data_map/rom_map.tsv`; the earlier conservative inventory remains as
+historical evidence rather than the authoritative data map.
 The generated [full-ROM audit](analysis/full_rom_audit.md) records structural
 metrics and prioritized function queues without promoting heuristic findings.
 

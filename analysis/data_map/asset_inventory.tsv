@@ -1,0 +1,1147 @@
+category	fmt	key	count	frames	kind	rom	size	hint	decoded
+sample	vadpcm	bank0_sample000	0x1	0x346	physical	0x1019f0	0x1d76
+sample	vadpcm	bank0_sample001	0x1	0x180	physical	0x103768	0xd80
+sample	vadpcm	bank0_sample002	0x1	0x52c	physical	0x1044e8	0x2e8c
+sample	vadpcm	bank0_sample003	0x1	0x180	physical	0x107378	0xd80
+sample	vadpcm	bank0_sample004	0x1	0x1c0	physical	0x1080f8	0xfc0
+sample	vadpcm	bank0_sample005	0x1	0x4ef	physical	0x1090b8	0x2c68
+sample	vadpcm	bank0_sample006	0x1	0x140	physical	0x10bd20	0xb40
+sample	vadpcm	bank0_sample007	0x1	0x2f2	physical	0x10c860	0x1a82
+sample	vadpcm	bank0_sample008	0x1	0x248	physical	0x10e2e8	0x1488
+sample	vadpcm	bank0_sample009	0x1	0x85	physical	0x10f770	0x4ae
+sample	vadpcm	bank0_sample010	0x1	0x180	physical	0x10fc20	0xd80
+sample	vadpcm	bank0_sample011	0x1	0x304	physical	0x1109a0	0x1b24
+sample	vadpcm	bank0_sample012	0x1	0x3a2	physical	0x1124c8	0x20b2
+sample	vadpcm	bank0_sample013	0x1	0x240	physical	0x114580	0x1440
+sample	vadpcm	bank0_sample014	0x1	0x240	physical	0x1159c0	0x1440
+sample	vadpcm	bank0_sample015	0x1	0x300	physical	0x116e00	0x1b00
+sample	vadpcm	bank0_sample016	0x1	0x121	physical	0x118900	0xa2a
+sample	vadpcm	bank0_sample017	0x1	0x17d	physical	0x119330	0xd66
+sample	vadpcm	bank0_sample018	0x1	0x263	physical	0x11a098	0x157c
+sample	vadpcm	bank0_sample019	0x1	0x223	physical	0x11b618	0x133c
+sample	vadpcm	bank0_sample020	0x1	0x249	physical	0x11c958	0x1492
+sample	vadpcm	bank0_sample021	0x1	0x22f	physical	0x11ddf0	0x13a8
+sample	vadpcm	bank0_sample022	0x1	0xd3	physical	0x11f198	0x76c
+sample	vadpcm	bank0_sample023	0x1	0x316	physical	0x11f908	0x1bc6
+sample	vadpcm	bank0_sample024	0x1	0x1ae	physical	0x1214d0	0xf1e
+sample	vadpcm	bank0_sample025	0x1	0x24a	physical	0x1223f0	0x149a
+sample	vadpcm	bank0_sample026	0x1	0x179	physical	0x123890	0xd42
+sample	vadpcm	bank0_sample027	0x1	0x36e	physical	0x1245d8	0x1ede
+sample	vadpcm	bank0_sample028	0x1	0x394	physical	0x1264b8	0x2034
+sample	vadpcm	bank0_sample029	0x1	0x343	physical	0x1284f0	0x1d5c
+sample	vadpcm	bank0_sample030	0x1	0x336	physical	0x12a250	0x1ce6
+sample	vadpcm	bank0_sample031	0x1	0x184	physical	0x12bf38	0xda4
+sample	vadpcm	bank0_sample032	0x1	0x248	physical	0x12cce0	0x1488
+sample	vadpcm	bank0_sample033	0x1	0x1dc	physical	0x12e168	0x10bc
+sample	vadpcm	bank0_sample034	0x1	0x1aa	physical	0x12f228	0xefa
+sample	vadpcm	bank0_sample035	0x1	0x348	physical	0x130128	0x1d88
+sample	vadpcm	bank0_sample036	0x1	0x29f	physical	0x131eb0	0x1798
+sample	vadpcm	bank0_sample037	0x1	0x201	physical	0x133648	0x120a
+sample	vadpcm	bank0_sample038	0x1	0xec	physical	0x134858	0x84c
+sample	vadpcm	bank0_sample039	0x1	0x37d	physical	0x1350a8	0x1f66
+sample	vadpcm	bank0_sample040	0x1	0x37f	physical	0x137010	0x1f78
+sample	vadpcm	bank0_sample041	0x1	0x52b	physical	0x138f88	0x2e84
+sample	vadpcm	bank0_sample042	0x1	0x452	physical	0x13be10	0x26e2
+sample	vadpcm	bank0_sample043	0x1	0x4da	physical	0x13e4f8	0x2baa
+sample	vadpcm	bank0_sample044	0x1	0x350	physical	0x1410a8	0x1dd0
+sample	vadpcm	bank0_sample045	0x1	0x33d	physical	0x142e78	0x1d26
+sample	vadpcm	bank0_sample046	0x1	0x3d1	physical	0x144ba0	0x225a
+sample	vadpcm	bank0_sample047	0x1	0x2c0	physical	0x146e00	0x18c0
+sample	vadpcm	bank0_sample048	0x1	0x17e	physical	0x1486c0	0xd6e
+sample	vadpcm	bank0_sample049	0x1	0x18a	physical	0x149430	0xdda
+sample	vadpcm	bank0_sample050	0x1	0x392	physical	0x14a210	0x2022
+sample	vadpcm	bank0_sample051	0x1	0x23d	physical	0x14c238	0x1426
+sample	vadpcm	bank0_sample052	0x1	0x292	physical	0x14d660	0x1722
+sample	vadpcm	bank0_sample053	0x1	0x342	physical	0x14ed88	0x1d52
+sample	vadpcm	bank0_sample054	0x1	0x258	physical	0x150ae0	0x1518
+sample	vadpcm	bank0_sample055	0x1	0x1f4	physical	0x151ff8	0x1194
+sample	vadpcm	bank0_sample056	0x1	0x29a	physical	0x153190	0x176a
+sample	vadpcm	bank0_sample057	0x1	0x202	physical	0x154900	0x1212
+sample	vadpcm	bank0_sample058	0x1	0x384	physical	0x155b18	0x1fa4
+sample	vadpcm	bank0_sample059	0x1	0x432	physical	0x157ac0	0x25c2
+sample	vadpcm	bank0_sample060	0x1	0x316	physical	0x15a088	0x1bc6
+sample	vadpcm	bank0_sample061	0x1	0x322	physical	0x15bc50	0x1c32
+sample	vadpcm	bank0_sample062	0x1	0x2b3	physical	0x15d888	0x184c
+sample	vadpcm	bank0_sample063	0x1	0x2f9	physical	0x15f0d8	0x1ac2
+sample	vadpcm	bank0_sample064	0x1	0x543	physical	0x160ba0	0x2f5c
+sample	vadpcm	bank0_sample065	0x1	0x28d	physical	0x163b00	0x16f6
+sample	vadpcm	bank0_sample066	0x1	0x888	physical	0x1651f8	0x4cc8
+sample	vadpcm	bank0_sample067	0x1	0x2c0	physical	0x169ec0	0x18c0
+sample	vadpcm	bank0_sample068	0x1	0x23f	physical	0x16b780	0x1438
+sample	vadpcm	bank0_sample069	0x1	0x140	physical	0x16cbb8	0xb40
+sample	vadpcm	bank0_sample070	0x1	0xcd8	physical	0x16d6f8	0x7398
+sample	vadpcm	bank0_sample071	0x1	0x958	physical	0x174a90	0x5418
+sample	vadpcm	bank0_sample072	0x1	0x3a8	physical	0x179ea8	0x20e8
+sample	vadpcm	bank0_sample073	0x1	0x2d1	physical	0x17bf90	0x195a
+sample	vadpcm	bank0_sample074	0x1	0x200	physical	0x17d8f0	0x1200
+sample	vadpcm	bank0_sample075	0x1	0x1f2	physical	0x17eaf0	0x1182
+sample	vadpcm	bank0_sample076	0x1	0x157	physical	0x17fc78	0xc10
+sample	vadpcm	bank0_sample077	0x1	0x41a	physical	0x180888	0x24ea
+sample	vadpcm	bank0_sample078	0x1	0x28a	physical	0x182d78	0x16da
+sample	vadpcm	bank0_sample079	0x1	0x47d	physical	0x184458	0x2866
+sample	vadpcm	bank0_sample080	0x1	0x5a7	physical	0x186cc0	0x32e0
+sample	vadpcm	bank0_sample081	0x1	0x579	physical	0x189fa0	0x3142
+sample	vadpcm	bank0_sample082	0x1	0x4be	physical	0x18d0e8	0x2aae
+sample	vadpcm	bank0_sample083	0x1	0x50d	physical	0x18fb98	0x2d76
+sample	vadpcm	bank0_sample084	0x1	0x4eb	physical	0x192910	0x2c44
+sample	vadpcm	bank0_sample085	0x1	0x508	physical	0x195558	0x2d48
+sample	vadpcm	bank0_sample086	0x1	0x4f4	physical	0x1982a0	0x2c94
+sample	vadpcm	bank0_sample087	0x1	0x53a	physical	0x19af38	0x2f0a
+sample	vadpcm	bank0_sample088	0x1	0x4e6	physical	0x19de48	0x2c16
+sample	vadpcm	bank0_sample089	0x1	0x585	physical	0x1a0a60	0x31ae
+sample	vadpcm	bank0_sample090	0x1	0x484	physical	0x1a3c10	0x28a4
+sample	vadpcm	bank0_sample091	0x1	0x3a9	physical	0x1a64b8	0x20f2
+sample	vadpcm	bank0_sample092	0x1	0x393	physical	0x1a85b0	0x202c
+ALBankFile	libaudio	bank0	0x1		physical	0xef040
+ALBank	libaudio	bank0	0x1		physical	0xef040
+ALInstrument	libaudio	bank0	0x5d		physical	0xef040
+ALSound	libaudio	bank0	0x5d		physical	0xef040
+ALEnvelope	libaudio	bank0	0x1		physical	0xef040
+ALKeyMap	libaudio	bank0	0x1		physical	0xef040
+ALWaveTable	libaudio	bank0	0x5d		physical	0xef040
+ALADPCMBook	libaudio	bank0	0x5d		physical	0xef040
+ALADPCMloop	libaudio	bank0	0x40		physical	0xef040
+sample	vadpcm	bank1_sample000	0x1	0xf35	physical	0x1aa5e0	0x88de
+sample	vadpcm	bank1_sample001	0x1	0x12f0	physical	0x1b2ec0	0xaa70
+sample	vadpcm	bank1_sample002	0x1	0x908	physical	0x1bd930	0x5148
+sample	vadpcm	bank1_sample003	0x1	0x586	physical	0x1c2a78	0x31b6
+sample	vadpcm	bank1_sample004	0x1	0x49f	physical	0x1c5c30	0x2998
+sample	vadpcm	bank1_sample005	0x1	0x171	physical	0x1c85c8	0xcfa
+sample	vadpcm	bank1_sample006	0x1	0x35	physical	0x1c92c8	0x1de
+sample	vadpcm	bank1_sample007	0x1	0x10a1	physical	0x1c94a8	0x95aa
+sample	vadpcm	bank1_sample008	0x1	0x611	physical	0x1d2a58	0x369a
+sample	vadpcm	bank1_sample009	0x1	0x4a5	physical	0x1d60f8	0x29ce
+sample	vadpcm	bank1_sample010	0x1	0x4e7	physical	0x1d8ac8	0x2c20
+sample	vadpcm	bank1_sample011	0x1	0xab3	physical	0x1db6e8	0x604c
+sample	vadpcm	bank1_sample012	0x1	0x9f8	physical	0x1e1738	0x59b8
+sample	vadpcm	bank1_sample013	0x1	0xba	physical	0x1e70f0	0x68a
+sample	vadpcm	bank1_sample014	0x1	0x7f	physical	0x1e7780	0x478
+sample	vadpcm	bank1_sample015	0x1	0x2ba	physical	0x1e7bf8	0x188a
+sample	vadpcm	bank1_sample016	0x1	0x405	physical	0x1e9488	0x242e
+sample	vadpcm	bank1_sample017	0x1	0x14f	physical	0x1eb8b8	0xbc8
+sample	vadpcm	bank1_sample018	0x1	0x237	physical	0x1ec480	0x13f0
+sample	vadpcm	bank1_sample019	0x1	0x849	physical	0x1ed870	0x4a92
+sample	vadpcm	bank1_sample020	0x1	0x100e	physical	0x1f2308	0x907e
+sample	vadpcm	bank1_sample021	0x1	0xe55	physical	0x1fb388	0x80fe
+sample	vadpcm	bank1_sample022	0x1	0x377	physical	0x203488	0x1f30
+sample	vadpcm	bank1_sample023	0x1	0x3d1	physical	0x2053b8	0x225a
+sample	vadpcm	bank1_sample024	0x1	0x42c	physical	0x207618	0x258c
+sample	vadpcm	bank1_sample025	0x1	0x757	physical	0x209ba8	0x4210
+sample	vadpcm	bank1_sample026	0x1	0x3e4	physical	0x20ddb8	0x2304
+sample	vadpcm	bank1_sample027	0x1	0x8c	physical	0x2100c0	0x4ec
+sample	vadpcm	bank1_sample028	0x1	0x67	physical	0x2105b0	0x3a0
+sample	vadpcm	bank1_sample029	0x1	0x31e	physical	0x210950	0x1c0e
+sample	vadpcm	bank1_sample030	0x1	0x3e2	physical	0x212560	0x22f2
+sample	vadpcm	bank1_sample031	0x1	0x7d7	physical	0x214858	0x4690
+sample	vadpcm	bank1_sample032	0x1	0x515	physical	0x218ee8	0x2dbe
+sample	vadpcm	bank1_sample033	0x1	0x1c4	physical	0x21bca8	0xfe4
+sample	vadpcm	bank1_sample034	0x1	0x315	physical	0x21cc90	0x1bbe
+sample	vadpcm	bank1_sample035	0x1	0x2d8	physical	0x21e850	0x1998
+sample	vadpcm	bank1_sample036	0x1	0x303	physical	0x2201e8	0x1b1c
+sample	vadpcm	bank1_sample037	0x1	0x4ca	physical	0x221d08	0x2b1a
+sample	vadpcm	bank1_sample038	0x1	0x845	physical	0x224828	0x4a6e
+sample	vadpcm	bank1_sample039	0x1	0x73	physical	0x229298	0x40c
+sample	vadpcm	bank1_sample040	0x1	0xb1	physical	0x2296a8	0x63a
+sample	vadpcm	bank1_sample041	0x1	0xf2	physical	0x229ce8	0x882
+sample	vadpcm	bank1_sample042	0x1	0x6a5	physical	0x22a570	0x3bce
+sample	vadpcm	bank1_sample043	0x1	0x827	physical	0x22e140	0x4960
+sample	vadpcm	bank1_sample044	0x1	0x831	physical	0x232aa0	0x49ba
+sample	vadpcm	bank1_sample045	0x1	0x8fe	physical	0x237460	0x50ee
+ALBankFile	libaudio	bank1	0x1		physical	0xf4980
+ALBank	libaudio	bank1	0x1		physical	0xf4980
+ALInstrument	libaudio	bank1	0x35		physical	0xf4980
+ALSound	libaudio	bank1	0x35		physical	0xf4980
+ALEnvelope	libaudio	bank1	0x1		physical	0xf4980
+ALKeyMap	libaudio	bank1	0x1		physical	0xf4980
+ALWaveTable	libaudio	bank1	0x2e		physical	0xf4980
+ALADPCMBook	libaudio	bank1	0x2e		physical	0xf4980
+ALADPCMloop	libaudio	bank1	0x27		physical	0xf4980
+sample	vadpcm	bank2_sample000	0x1	0xef8	physical	0x23c550	0x86b8
+sample	vadpcm	bank2_sample001	0x1	0x2549	physical	0x244c08	0x14f92
+sample	vadpcm	bank2_sample002	0x1	0x35	physical	0x259ba0	0x1de
+sample	vadpcm	bank2_sample003	0x1	0x7eb	physical	0x259d80	0x4744
+sample	vadpcm	bank2_sample004	0x1	0xec8	physical	0x25e4c8	0x8508
+sample	vadpcm	bank2_sample005	0x1	0x90d	physical	0x2669d0	0x5176
+sample	vadpcm	bank2_sample006	0x1	0x16d7	physical	0x26bb48	0xcd90
+sample	vadpcm	bank2_sample007	0x1	0x98e	physical	0x2788d8	0x55fe
+sample	vadpcm	bank2_sample008	0x1	0x98e	physical	0x27ded8	0x55fe
+sample	vadpcm	bank2_sample009	0x1	0x6b5	physical	0x2834d8	0x3c5e
+sample	vadpcm	bank2_sample010	0x1	0x268	physical	0x287138	0x15a8
+sample	vadpcm	bank2_sample011	0x1	0x1f6	physical	0x2886e0	0x11a6
+sample	vadpcm	bank2_sample012	0x1	0x38a	physical	0x289888	0x1fda
+sample	vadpcm	bank2_sample013	0x1	0x33b	physical	0x28b868	0x1d14
+sample	vadpcm	bank2_sample014	0x1	0x7eb	physical	0x28d580	0x4744
+sample	vadpcm	bank2_sample015	0x1	0xfdd	physical	0x291cc8	0x8ec6
+sample	vadpcm	bank2_sample016	0x1	0x1fc	physical	0x29ab90	0x11dc
+sample	vadpcm	bank2_sample017	0x1	0xff9	physical	0x29bd70	0x8fc2
+sample	vadpcm	bank2_sample018	0x1	0x71e	physical	0x2a4d38	0x400e
+sample	vadpcm	bank2_sample019	0x1	0x2d8	physical	0x2a8d48	0x1998
+sample	vadpcm	bank2_sample020	0x1	0x28e	physical	0x2aa6e0	0x16fe
+sample	vadpcm	bank2_sample021	0x1	0x2f4	physical	0x2abde0	0x1a94
+sample	vadpcm	bank2_sample022	0x1	0x1d0	physical	0x2ad878	0x1050
+sample	vadpcm	bank2_sample023	0x1	0x2aa	physical	0x2ae8c8	0x17fa
+sample	vadpcm	bank2_sample024	0x1	0x442	physical	0x2b00c8	0x2652
+sample	vadpcm	bank2_sample025	0x1	0x59e	physical	0x2b2720	0x328e
+sample	vadpcm	bank2_sample026	0x1	0x8a4	physical	0x2b59b0	0x4dc4
+sample	vadpcm	bank2_sample027	0x1	0x363	physical	0x2ba778	0x1e7c
+sample	vadpcm	bank2_sample028	0x1	0x38e	physical	0x2bc5f8	0x1ffe
+sample	vadpcm	bank2_sample029	0x1	0xb58	physical	0x2be5f8	0x6618
+sample	vadpcm	bank2_sample030	0x1	0x2bf	physical	0x2c4c10	0x18b8
+sample	vadpcm	bank2_sample031	0x1	0x4cc	physical	0x2c64c8	0x2b2c
+sample	vadpcm	bank2_sample032	0x1	0xd0	physical	0x2c8ff8	0x750
+sample	vadpcm	bank2_sample033	0x1	0xda	physical	0x2c9748	0x7aa
+sample	vadpcm	bank2_sample034	0x1	0x95	physical	0x2c9ef8	0x53e
+sample	vadpcm	bank2_sample035	0x1	0x14e	physical	0x2ca438	0xbbe
+sample	vadpcm	bank2_sample036	0x1	0x46e	physical	0x2caff8	0x27de
+sample	vadpcm	bank2_sample037	0x1	0x6cc	physical	0x2cd7d8	0x3d2c
+sample	vadpcm	bank2_sample038	0x1	0xa08	physical	0x2d1508	0x5a48
+sample	vadpcm	bank2_sample039	0x1	0x4b0	physical	0x2d6f50	0x2a30
+sample	vadpcm	bank2_sample040	0x1	0x648	physical	0x2d9980	0x3888
+sample	vadpcm	bank2_sample041	0x1	0x115e	physical	0x2dd208	0x9c4e
+ALBankFile	libaudio	bank2	0x1		physical	0xf7850
+ALBank	libaudio	bank2	0x1		physical	0xf7850
+ALInstrument	libaudio	bank2	0x2a		physical	0xf7850
+ALSound	libaudio	bank2	0x2a		physical	0xf7850
+ALEnvelope	libaudio	bank2	0x1		physical	0xf7850
+ALKeyMap	libaudio	bank2	0x1		physical	0xf7850
+ALWaveTable	libaudio	bank2	0x2a		physical	0xf7850
+ALADPCMBook	libaudio	bank2	0x2a		physical	0xf7850
+ALADPCMloop	libaudio	bank2	0x14		physical	0xf7850
+sample	vadpcm	bank3_sample000	0x1	0x2cc	physical	0x2e6e60	0x192c
+sample	vadpcm	bank3_sample001	0x1	0x374	physical	0x2e8790	0x1f14
+sample	vadpcm	bank3_sample002	0x1	0x2aa	physical	0x2ea6a8	0x17fa
+sample	vadpcm	bank3_sample003	0x1	0x2b8	physical	0x2ebea8	0x1878
+sample	vadpcm	bank3_sample004	0x1	0x348	physical	0x2ed720	0x1d88
+sample	vadpcm	bank3_sample005	0x1	0x2be	physical	0x2ef4a8	0x18ae
+sample	vadpcm	bank3_sample006	0x1	0x3da	physical	0x2f0d58	0x22aa
+sample	vadpcm	bank3_sample007	0x1	0x3fe	physical	0x2f3008	0x23ee
+sample	vadpcm	bank3_sample008	0x1	0x326	physical	0x2f53f8	0x1c56
+sample	vadpcm	bank3_sample009	0x1	0x214	physical	0x2f7050	0x12b4
+sample	vadpcm	bank3_sample010	0x1	0x53e	physical	0x2f8308	0x2f2e
+sample	vadpcm	bank3_sample011	0x1	0x2a4	physical	0x2fb238	0x17c4
+sample	vadpcm	bank3_sample012	0x1	0x4d8	physical	0x2fca00	0x2b98
+sample	vadpcm	bank3_sample013	0x1	0x274	physical	0x2ff598	0x1614
+sample	vadpcm	bank3_sample014	0x1	0x31e	physical	0x300bb0	0x1c0e
+sample	vadpcm	bank3_sample015	0x1	0x312	physical	0x3027c0	0x1ba2
+sample	vadpcm	bank3_sample016	0x1	0x2a5	physical	0x304368	0x17ce
+sample	vadpcm	bank3_sample017	0x1	0x48c	physical	0x305b38	0x28ec
+sample	vadpcm	bank3_sample018	0x1	0x31d	physical	0x308428	0x1c06
+sample	vadpcm	bank3_sample019	0x1	0x6f8	physical	0x30a030	0x3eb8
+sample	vadpcm	bank3_sample020	0x1	0x2ba	physical	0x30dee8	0x188a
+sample	vadpcm	bank3_sample021	0x1	0x6f2	physical	0x30f778	0x3e82
+sample	vadpcm	bank3_sample022	0x1	0x40a	physical	0x313600	0x245a
+sample	vadpcm	bank3_sample023	0x1	0x798	physical	0x315a60	0x4458
+sample	vadpcm	bank3_sample024	0x1	0x4f4	physical	0x319eb8	0x2c94
+sample	vadpcm	bank3_sample025	0x1	0x77c	physical	0x31cb50	0x435c
+sample	vadpcm	bank3_sample026	0x1	0x23a	physical	0x320eb0	0x140a
+sample	vadpcm	bank3_sample027	0x1	0x3ea	physical	0x3222c0	0x233a
+sample	vadpcm	bank3_sample028	0x1	0x26a	physical	0x324600	0x15ba
+sample	vadpcm	bank3_sample029	0x1	0x3d8	physical	0x325bc0	0x2298
+sample	vadpcm	bank3_sample030	0x1	0x254	physical	0x327e58	0x14f4
+sample	vadpcm	bank3_sample031	0x1	0x376	physical	0x329350	0x1f26
+sample	vadpcm	bank3_sample032	0x1	0x282	physical	0x32b278	0x1692
+sample	vadpcm	bank3_sample033	0x1	0x396	physical	0x32c910	0x2046
+sample	vadpcm	bank3_sample034	0x1	0x2a6	physical	0x32e958	0x17d6
+sample	vadpcm	bank3_sample035	0x1	0x2db	physical	0x330130	0x19b4
+sample	vadpcm	bank3_sample036	0x1	0x2a0	physical	0x331ae8	0x17a0
+sample	vadpcm	bank3_sample037	0x1	0x450	physical	0x333288	0x26d0
+sample	vadpcm	bank3_sample038	0x1	0x276	physical	0x335958	0x1626
+sample	vadpcm	bank3_sample039	0x1	0x380	physical	0x336f80	0x1f80
+sample	vadpcm	bank3_sample040	0x1	0x26e	physical	0x338f00	0x15de
+sample	vadpcm	bank3_sample041	0x1	0x370	physical	0x33a4e0	0x1ef0
+sample	vadpcm	bank3_sample042	0x1	0x284	physical	0x33c3d0	0x16a4
+sample	vadpcm	bank3_sample043	0x1	0x20c	physical	0x33da78	0x126c
+sample	vadpcm	bank3_sample044	0x1	0x29d	physical	0x33ece8	0x1786
+sample	vadpcm	bank3_sample045	0x1	0x391	physical	0x340470	0x201a
+sample	vadpcm	bank3_sample046	0x1	0x26c	physical	0x342490	0x15cc
+sample	vadpcm	bank3_sample047	0x1	0x2b4	physical	0x343a60	0x1854
+sample	vadpcm	bank3_sample048	0x1	0x28c	physical	0x3452b8	0x16ec
+sample	vadpcm	bank3_sample049	0x1	0x304	physical	0x3469a8	0x1b24
+sample	vadpcm	bank3_sample050	0x1	0x334	physical	0x3484d0	0x1cd4
+sample	vadpcm	bank3_sample051	0x1	0x378	physical	0x34a1a8	0x1f38
+sample	vadpcm	bank3_sample052	0x1	0x372	physical	0x34c0e0	0x1f02
+sample	vadpcm	bank3_sample053	0x1	0x328	physical	0x34dfe8	0x1c68
+sample	vadpcm	bank3_sample054	0x1	0x30b	physical	0x34fc50	0x1b64
+sample	vadpcm	bank3_sample055	0x1	0x2e8	physical	0x3517b8	0x1a28
+sample	vadpcm	bank3_sample056	0x1	0x2c2	physical	0x3531e0	0x18d2
+sample	vadpcm	bank3_sample057	0x1	0x2c2	physical	0x354ab8	0x18d2
+sample	vadpcm	bank3_sample058	0x1	0x2de	physical	0x356390	0x19ce
+sample	vadpcm	bank3_sample059	0x1	0x2b2	physical	0x357d60	0x1842
+sample	vadpcm	bank3_sample060	0x1	0x32c	physical	0x3595a8	0x1c8c
+sample	vadpcm	bank3_sample061	0x1	0x2e4	physical	0x35b238	0x1a04
+sample	vadpcm	bank3_sample062	0x1	0x253	physical	0x35cc40	0x14ec
+sample	vadpcm	bank3_sample063	0x1	0x30a	physical	0x35e130	0x1b5a
+sample	vadpcm	bank3_sample064	0x1	0x20c	physical	0x35fc90	0x126c
+sample	vadpcm	bank3_sample065	0x1	0x251	physical	0x360f00	0x14da
+sample	vadpcm	bank3_sample066	0x1	0x2ba	physical	0x3623e0	0x188a
+sample	vadpcm	bank3_sample067	0x1	0x296	physical	0x363c70	0x1746
+sample	vadpcm	bank3_sample068	0x1	0x2ab	physical	0x3653b8	0x1804
+sample	vadpcm	bank3_sample069	0x1	0x2ae	physical	0x366bc0	0x181e
+sample	vadpcm	bank3_sample070	0x1	0x5d2	physical	0x3683e0	0x3462
+sample	vadpcm	bank3_sample071	0x1	0x55a	physical	0x36b848	0x302a
+sample	vadpcm	bank3_sample072	0x1	0x61e	physical	0x36e878	0x370e
+sample	vadpcm	bank3_sample073	0x1	0x678	physical	0x371f88	0x3a38
+sample	vadpcm	bank3_sample074	0x1	0x2ad	physical	0x3759c0	0x1816
+sample	vadpcm	bank3_sample075	0x1	0x444	physical	0x3771d8	0x2664
+sample	vadpcm	bank3_sample076	0x1	0x4b	physical	0x379840	0x2a4
+sample	vadpcm	bank3_sample077	0x1	0x61	physical	0x379ae8	0x36a
+sample	vadpcm	bank3_sample078	0x1	0xe1	physical	0x379e58	0x7ea
+sample	vadpcm	bank3_sample079	0x1	0x721	physical	0x37a648	0x402a
+sample	vadpcm	bank3_sample080	0x1	0x98	physical	0x37e678	0x558
+sample	vadpcm	bank3_sample081	0x1	0x345	physical	0x37ebd0	0x1d6e
+sample	vadpcm	bank3_sample082	0x1	0xb3	physical	0x380940	0x64c
+sample	vadpcm	bank3_sample083	0x1	0x15d	physical	0x380f90	0xc46
+sample	vadpcm	bank3_sample084	0x1	0x2ee	physical	0x381bd8	0x1a5e
+sample	vadpcm	bank3_sample085	0x1	0x2b2	physical	0x383638	0x1842
+sample	vadpcm	bank3_sample086	0x1	0x24a	physical	0x384e80	0x149a
+sample	vadpcm	bank3_sample087	0x1	0x2a0	physical	0x386320	0x17a0
+sample	vadpcm	bank3_sample088	0x1	0x2b2	physical	0x387ac0	0x1842
+sample	vadpcm	bank3_sample089	0x1	0x288	physical	0x389308	0x16c8
+sample	vadpcm	bank3_sample090	0x1	0x292	physical	0x38a9d0	0x1722
+sample	vadpcm	bank3_sample091	0x1	0x246	physical	0x38c0f8	0x1476
+sample	vadpcm	bank3_sample092	0x1	0x2ea	physical	0x38d570	0x1a3a
+sample	vadpcm	bank3_sample093	0x1	0x296	physical	0x38efb0	0x1746
+sample	vadpcm	bank3_sample094	0x1	0x2c4	physical	0x3906f8	0x18e4
+sample	vadpcm	bank3_sample095	0x1	0x3e0	physical	0x391fe0	0x22e0
+sample	vadpcm	bank3_sample096	0x1	0x296	physical	0x3942c0	0x1746
+sample	vadpcm	bank3_sample097	0x1	0x242	physical	0x395a08	0x1452
+sample	vadpcm	bank3_sample098	0x1	0x308	physical	0x396e60	0x1b48
+sample	vadpcm	bank3_sample099	0x1	0x4f4	physical	0x3989a8	0x2c94
+sample	vadpcm	bank3_sample100	0x1	0x29c	physical	0x39b640	0x177c
+sample	vadpcm	bank3_sample101	0x1	0x394	physical	0x39cdc0	0x2034
+sample	vadpcm	bank3_sample102	0x1	0x2d6	physical	0x39edf8	0x1986
+sample	vadpcm	bank3_sample103	0x1	0x2e4	physical	0x3a0780	0x1a04
+sample	vadpcm	bank3_sample104	0x1	0x268	physical	0x3a2188	0x15a8
+sample	vadpcm	bank3_sample105	0x1	0x2ab	physical	0x3a3730	0x1804
+sample	vadpcm	bank3_sample106	0x1	0x2f8	physical	0x3a4f38	0x1ab8
+sample	vadpcm	bank3_sample107	0x1	0x304	physical	0x3a69f0	0x1b24
+sample	vadpcm	bank3_sample108	0x1	0x30e	physical	0x3a8518	0x1b7e
+sample	vadpcm	bank3_sample109	0x1	0x32e	physical	0x3aa098	0x1c9e
+sample	vadpcm	bank3_sample110	0x1	0x4d8	physical	0x3abd38	0x2b98
+sample	vadpcm	bank3_sample111	0x1	0x306	physical	0x3ae8d0	0x1b36
+sample	vadpcm	bank3_sample112	0x1	0x384	physical	0x3b0408	0x1fa4
+sample	vadpcm	bank3_sample113	0x1	0x308	physical	0x3b23b0	0x1b48
+sample	vadpcm	bank3_sample114	0x1	0x580	physical	0x3b3ef8	0x3180
+sample	vadpcm	bank3_sample115	0x1	0x28c	physical	0x3b7078	0x16ec
+sample	vadpcm	bank3_sample116	0x1	0x4b0	physical	0x3b8768	0x2a30
+sample	vadpcm	bank3_sample117	0x1	0x4b8	physical	0x3bb198	0x2a78
+sample	vadpcm	bank3_sample118	0x1	0x35	physical	0x3bdc10	0x1de
+sample	vadpcm	bank3_sample119	0x1	0x52c	physical	0x3bddf0	0x2e8c
+sample	vadpcm	bank3_sample120	0x1	0x594	physical	0x3c0c80	0x3234
+sample	vadpcm	bank3_sample121	0x1	0x41e	physical	0x3c3eb8	0x250e
+sample	vadpcm	bank3_sample122	0x1	0x374	physical	0x3c63c8	0x1f14
+sample	vadpcm	bank3_sample123	0x1	0x3c6	physical	0x3c82e0	0x21f6
+sample	vadpcm	bank3_sample124	0x1	0x4fa	physical	0x3ca4d8	0x2cca
+sample	vadpcm	bank3_sample125	0x1	0x3bb	physical	0x3cd1a8	0x2194
+sample	vadpcm	bank3_sample126	0x1	0x3a4	physical	0x3cf340	0x20c4
+sample	vadpcm	bank3_sample127	0x1	0x306	physical	0x3d1408	0x1b36
+sample	vadpcm	bank3_sample128	0x1	0x4dc	physical	0x3d2f40	0x2bbc
+sample	vadpcm	bank3_sample129	0x1	0x5b8	physical	0x3d5b00	0x3378
+sample	vadpcm	bank3_sample130	0x1	0x5a2	physical	0x3d8e78	0x32b2
+sample	vadpcm	bank3_sample131	0x1	0x270	physical	0x3dc130	0x15f0
+sample	vadpcm	bank3_sample132	0x1	0x1f2	physical	0x3dd720	0x1182
+sample	vadpcm	bank3_sample133	0x1	0x1aa	physical	0x3de8a8	0xefa
+sample	vadpcm	bank3_sample134	0x1	0x22c	physical	0x3df7a8	0x138c
+sample	vadpcm	bank3_sample135	0x1	0x1c1	physical	0x3e0b38	0xfca
+sample	vadpcm	bank3_sample136	0x1	0x204	physical	0x3e1b08	0x1224
+sample	vadpcm	bank3_sample137	0x1	0x1db	physical	0x3e2d30	0x10b4
+sample	vadpcm	bank3_sample138	0x1	0x1a9	physical	0x3e3de8	0xef2
+sample	vadpcm	bank3_sample139	0x1	0x238	physical	0x3e4ce0	0x13f8
+sample	vadpcm	bank3_sample140	0x1	0x38d	physical	0x3e60d8	0x1ff6
+sample	vadpcm	bank3_sample141	0x1	0x3a1	physical	0x3e80d0	0x20aa
+sample	vadpcm	bank3_sample142	0x1	0x142	physical	0x3ea180	0xb52
+sample	vadpcm	bank3_sample143	0x1	0x20d	physical	0x3eacd8	0x1276
+sample	vadpcm	bank3_sample144	0x1	0x56a	physical	0x3ebf50	0x30ba
+sample	vadpcm	bank3_sample145	0x1	0x49c	physical	0x3ef010	0x297c
+ALBankFile	libaudio	bank3	0x1		physical	0xf9f10
+ALBank	libaudio	bank3	0x1		physical	0xf9f10
+ALInstrument	libaudio	bank3	0x9a		physical	0xf9f10
+ALSound	libaudio	bank3	0x9a		physical	0xf9f10
+ALEnvelope	libaudio	bank3	0x1		physical	0xf9f10
+ALKeyMap	libaudio	bank3	0x1		physical	0xf9f10
+ALWaveTable	libaudio	bank3	0x92		physical	0xf9f10
+ALADPCMBook	libaudio	bank3	0x92		physical	0xf9f10
+ALADPCMloop	libaudio	bank3	0x2		physical	0xf9f10
+music_sequence	konami_lz(seq)	seq00	0x1		physical	0x3f1990	0xab0
+music_sequence	konami_lz(seq)	seq01	0x1		physical	0x3f2440	0x980
+music_sequence	konami_lz(seq)	seq02	0x1		physical	0x3f2dc0	0x560
+music_sequence	konami_lz(seq)	seq03	0x1		physical	0x3f3320	0x5a0
+music_sequence	konami_lz(seq)	seq04	0x1		physical	0x3f38c0	0x760
+music_sequence	konami_lz(seq)	seq05	0x1		physical	0x3f4020	0x240
+music_sequence	konami_lz(seq)	seq06	0x1		physical	0x3f4260	0x1d0
+music_sequence	konami_lz(seq)	seq07	0x1		physical	0x3f4430	0x540
+music_sequence	konami_lz(seq)	seq08	0x1		physical	0x3f4970	0x1e0
+music_sequence	konami_lz(seq)	seq09	0x1		physical	0x3f4b50	0x1e0
+music_sequence	konami_lz(seq)	seq10	0x1		physical	0x3f4d30	0x1e0
+music_sequence	konami_lz(seq)	seq11	0x1		physical	0x3f4f10	0x1f0
+music_sequence	konami_lz(seq)	seq12	0x1		physical	0x3f5100	0x370
+music_sequence	konami_lz(seq)	seq13	0x1		physical	0x3f5470	0xe0
+music_sequence	konami_lz(seq)	seq14	0x1		physical	0x3f5550	0xa70
+music_sequence	konami_lz(seq)	seq15	0x1		physical	0x3f5fc0	0xe60
+music_sequence	konami_lz(seq)	seq16	0x1		physical	0x3f6e20	0x1f80
+music_sequence	konami_lz(seq)	seq17	0x1		physical	0x3f8da0	0x610
+music_sequence	konami_lz(seq)	seq18	0x1		physical	0x3f93b0	0x7d0
+music_sequence	konami_lz(seq)	seq19	0x1		physical	0x3f9b80	0x460
+music_sequence	konami_lz(seq)	seq20	0x1		physical	0x3f9fe0	0xa60
+music_sequence	konami_lz(seq)	seq21	0x1		physical	0x3faa40	0x610
+music_sequence	konami_lz(seq)	seq22	0x1		physical	0x3fb050	0x15d0
+compressed_file	konami_lz	file001	0x1		physical	0x3fc620	0x426c	mixed_with_display_lists_candidate	0xd640
+compressed_file	konami_lz	file002	0x1		physical	0x40088c	0x26bc	unclassified	0xe600
+compressed_file	konami_lz	file003	0x1		physical	0x402f48	0x6672	mixed_with_display_lists_candidate	0x14210
+compressed_file	konami_lz	file004	0x1		physical	0x4095ba	0x32a1c	mixed_with_display_lists_candidate	0x68020
+compressed_file	konami_lz	file005	0x1		physical	0x43bfd6	0x1a4b2	mixed_with_display_lists_candidate	0x2ca20
+compressed_file	konami_lz	file007	0x1		physical	0x456488	0xdc28	mixed_with_display_lists_candidate	0x21130
+compressed_file	konami_lz	file008	0x1		physical	0x4640b0	0xa47e	mixed_with_display_lists_candidate	0x19380
+compressed_file	konami_lz	file009	0x1		physical	0x46e52e	0x12036	mixed_with_display_lists_candidate	0x2a6b0
+compressed_file	konami_lz	file010	0x1		physical	0x480564	0x463e6	mixed_with_display_lists_candidate	0x87ff0
+compressed_file	konami_lz	file011	0x1		physical	0x4c694a	0x405a	unclassified	0x5ba0
+compressed_file	konami_lz	file012	0x1		physical	0x4ca9a4	0x84d4	f3dex_display_list_candidate	0x22af0
+compressed_file	konami_lz	file013	0x1		physical	0x4d2e78	0x352e	f3dex_display_list_candidate	0xd8d0
+compressed_file	konami_lz	file014	0x1		physical	0x4d63a6	0x25ba	mixed_with_display_lists_candidate	0x9980
+compressed_file	konami_lz	file015	0x1		physical	0x4d8960	0x23f6	mixed_with_display_lists_candidate	0x30c0
+compressed_file	konami_lz	file016	0x1		physical	0x4dad56	0x1fa2	unclassified	0x5840
+compressed_file	konami_lz	file017	0x1		physical	0x4dccf8	0x116e6	mixed_with_display_lists_candidate	0x20c60
+compressed_file	konami_lz	file018	0x1		physical	0x4ee3de	0x9868	mixed_with_display_lists_candidate	0x23710
+compressed_file	konami_lz	file019	0x1		physical	0x4f7c46	0xd99c	unclassified	0x25070
+compressed_file	konami_lz	file020	0x1		physical	0x5055e2	0x41ee	mixed_with_display_lists_candidate	0x8930
+compressed_file	konami_lz	file021	0x1		physical	0x5097d0	0x4d88e	mixed_with_display_lists_candidate	0x95850
+compressed_file	konami_lz	file022	0x1		physical	0x55705e	0x41892	f3dex_display_list_candidate	0x87720
+compressed_file	konami_lz	file023	0x1		physical	0x5988f0	0x49a66	mixed_with_display_lists_candidate	0x836d0
+compressed_file	konami_lz	file024	0x1		physical	0x5e2356	0x353de	mixed_with_display_lists_candidate	0x6d3b0
+compressed_file	konami_lz	file025	0x1		physical	0x617734	0x1854	f3dex_display_list_candidate	0x4090
+compressed_file	konami_lz	file026	0x1		physical	0x618f88	0x276e8	f3dex_display_list_candidate	0x4a920
+compressed_file	konami_lz	file027	0x1		physical	0x640670	0x53154	f3dex_display_list_candidate	0x95910
+compressed_file	konami_lz	file028	0x1		physical	0x6937c4	0x30014	f3dex_display_list_candidate	0x4fcf0
+compressed_file	konami_lz	file029	0x1		physical	0x6c37d8	0x4f3e6	f3dex_display_list_candidate	0x8f070
+compressed_file	konami_lz	file030	0x1		physical	0x712bbe	0x293b6	mixed_with_display_lists_candidate	0x4c5d0
+compressed_file	konami_lz	file031	0x1		physical	0x73bf74	0x2a44	mixed_with_display_lists_candidate	0x4d20
+compressed_file	konami_lz	file032	0x1		physical	0x73e9b8	0x3d210	s16_record_stream_candidate	0x3ff10
+compressed_file	konami_lz	file034	0x1		physical	0x77bbc8	0x2df5a	s16_record_stream_candidate	0x2f490
+compressed_file	konami_lz	file035	0x1		physical	0x7a9b22	0x231c	s16_record_stream_candidate	0x2330
+s16x6_record_stream	s16[6]	file036	0xe10		physical	0x7abe3e	0xa8c0
+s16x6_record_stream	s16[6]	file037	0xe10		physical	0x7b66fe	0xa8c0
+compressed_file	konami_lz	file039	0x1		physical	0x7c0fbe	0x2a596	s16_record_stream_candidate	0x2d440
+compressed_file	konami_lz	file040	0x1		physical	0x7eb554	0x6d28	s16_record_stream_candidate	0x72a0
+compressed_file	konami_lz	file044	0x1		physical	0x7f227c	0x3f658	s16_record_stream_candidate	0x40a50
+compressed_file	konami_lz	file045	0x1		physical	0x8318d4	0x59d4	s16_record_stream_candidate	0x6e70
+compressed_file	konami_lz	file046	0x1		physical	0x8372a8	0x5bd2	s16_record_stream_candidate	0x6e70
+compressed_file	konami_lz	file047	0x1		physical	0x83ce7a	0x586c	s16_record_stream_candidate	0x6e70
+compressed_file	konami_lz	file048	0x1		physical	0x8426e6	0x61fc	s16_record_stream_candidate	0x6e70
+compressed_file	konami_lz	file049	0x1		physical	0x8488e2	0x6486	s16_record_stream_candidate	0x6e70
+compressed_file	konami_lz	file050	0x1		physical	0x84ed68	0x66f0	s16_record_stream_candidate	0x6e70
+compressed_file	konami_lz	file051	0x1		physical	0x855458	0x2ed30	s16_record_stream_candidate	0x340f0
+compressed_file	konami_lz	file053	0x1		physical	0x884188	0x48f4	unclassified	0x6700
+compressed_file	konami_lz	file054	0x1		physical	0x888a7c	0x3a874	s16_record_stream_candidate	0x3d590
+compressed_file	konami_lz	file059	0x1		physical	0x8c32f0	0x1f776	s16_record_stream_candidate	0x233f0
+compressed_file	konami_lz	file060	0x1		physical	0x8e2a66	0x10718	s16_record_stream_candidate	0x147b0
+compressed_file	konami_lz	file061	0x1		physical	0x8f317e	0x35b4a	s16_record_stream_candidate	0x38de0
+compressed_file	konami_lz	file063	0x1		physical	0x928cc8	0x3f08a	s16_record_stream_candidate	0x40a50
+compressed_file	konami_lz	file064	0x1		physical	0x967d52	0x1e8ac	s16_record_stream_candidate	0x20200
+compressed_file	konami_lz	file065	0x1		physical	0x9865fe	0x4686	mixed_with_display_lists_candidate	0x19220
+compressed_file	konami_lz	file066	0x1		physical	0x98ac84	0x3cc6	mixed_with_display_lists_candidate	0x18570
+compressed_file	konami_lz	file067	0x1		physical	0x98e94a	0x42c2	mixed_with_display_lists_candidate	0x186b0
+compressed_file	konami_lz	file068	0x1		physical	0x992c0c	0x4a0a	mixed_with_display_lists_candidate	0x19720
+compressed_file	konami_lz	file069	0x1		physical	0x997616	0x43e6	mixed_with_display_lists_candidate	0x18cb0
+compressed_file	konami_lz	file070	0x1		physical	0x99b9fc	0x4bee	mixed_with_display_lists_candidate	0x19cf0
+compressed_file	konami_lz	file071	0x1		physical	0x9a05ea	0x68d4	mixed_with_display_lists_candidate	0x28f10
+compressed_file	konami_lz	file072	0x1		physical	0x9a6ebe	0x388a	mixed_with_display_lists_candidate	0x18b80
+compressed_file	konami_lz	file073	0x1		physical	0x9aa748	0x6926	mixed_with_display_lists_candidate	0x1bf60
+compressed_file	konami_lz	file074	0x1		physical	0x9b106e	0x37d8	mixed_with_display_lists_candidate	0x17bf0
+compressed_file	konami_lz	file075	0x1		physical	0x9b4846	0x36ce	mixed_with_display_lists_candidate	0x6c20
+compressed_file	konami_lz	file076	0x1		physical	0x9b7f14	0x4d8	unclassified	0x17a0
+compressed_file	konami_lz	file077	0x1		physical	0x9b83ec	0x8c2	unclassified	0x1280
+compressed_file	konami_lz	file078	0x1		physical	0x9b8cae	0x11e2	unclassified	0x4150
+compressed_file	konami_lz	file079	0x1		physical	0x9b9e90	0x9d8	mixed_with_display_lists_candidate	0x1b90
+compressed_file	konami_lz	file080	0x1		physical	0x9ba868	0x6dc	unclassified	0x17a0
+compressed_file	konami_lz	file081	0x1		physical	0x9baf44	0x13c2	mixed_with_display_lists_candidate	0x2bd0
+compressed_file	konami_lz	file082	0x1		physical	0x9bc306	0x940	mixed_with_display_lists_candidate	0x1290
+compressed_file	konami_lz	file083	0x1		physical	0x9bcc46	0x154e	unclassified	0x4150
+compressed_file	konami_lz	file084	0x1		physical	0x9be194	0x44a	unclassified	0xaf0
+compressed_file	konami_lz	file085	0x1		physical	0x9be5de	0x384	unclassified	0x17a0
+compressed_file	konami_lz	file086	0x1		physical	0x9be962	0x1338	mixed_with_display_lists_candidate	0x2100
+compressed_file	konami_lz	file087	0x1		physical	0x9bfc9a	0x3b2	unclassified	0xfa0
+compressed_file	konami_lz	file088	0x1		physical	0x9c004c	0x167a	f3dex_display_list_candidate	0x3e70
+compressed_file	konami_lz	file089	0x1		physical	0x9c16c6	0x3c6	unclassified	0xaf0
+compressed_file	konami_lz	file090	0x1		physical	0x9c1a8c	0x2ba	f3dex_display_list_candidate	0x17a0
+compressed_file	konami_lz	file091	0x1		physical	0x9c1d46	0xe52	mixed_with_display_lists_candidate	0x2100
+compressed_file	konami_lz	file092	0x1		physical	0x9c2b98	0x48e	unclassified	0xfa0
+compressed_file	konami_lz	file093	0x1		physical	0x9c3026	0x13c6	unclassified	0x3c70
+compressed_file	konami_lz	file094	0x1		physical	0x9c43ec	0x408	unclassified	0xaf0
+compressed_file	konami_lz	file095	0x1		physical	0x9c47f4	0x49e	unclassified	0x17a0
+compressed_file	konami_lz	file096	0x1		physical	0x9c4c92	0x12da	mixed_with_display_lists_candidate	0x2100
+compressed_file	konami_lz	file097	0x1		physical	0x9c5f6c	0x506	unclassified	0xfa0
+compressed_file	konami_lz	file098	0x1		physical	0x9c6472	0x1d9e	mixed_with_display_lists_candidate	0x4960
+compressed_file	konami_lz	file099	0x1		physical	0x9c8210	0x175e	mixed_with_display_lists_candidate	0x2570
+compressed_file	konami_lz	file100	0x1		physical	0x9c996e	0xdf4	mixed_with_display_lists_candidate	0x13c0
+compressed_file	konami_lz	file101	0x1		physical	0x9ca762	0xb4e	f3dex_display_list_candidate	0x1370
+compressed_file	konami_lz	file102	0x1		physical	0x9cb2b0	0x1474	unclassified	0x3c70
+compressed_file	konami_lz	file103	0x1		physical	0x9cc724	0x332	f3dex_display_list_candidate	0x17a0
+compressed_file	konami_lz	file104	0x1		physical	0x9cca56	0x650	unclassified	0xfa0
+compressed_file	konami_lz	file105	0x1		physical	0x9cd0a6	0x1824	unclassified	0x4350
+compressed_file	konami_lz	file106	0x1		physical	0x9ce8ca	0x230	unclassified	0x17a0
+compressed_file	konami_lz	file107	0x1		physical	0x9ceafa	0x206	unclassified	0xfa0
+compressed_file	konami_lz	file108	0x1		physical	0x9ced00	0x2352	unclassified	0x46d0
+compressed_file	konami_lz	file109	0x1		physical	0x9d1052	0x7c6	unclassified	0x17a0
+compressed_file	konami_lz	file110	0x1		physical	0x9d1818	0xb26	mixed_with_display_lists_candidate	0x1290
+compressed_file	konami_lz	file111	0x1		physical	0x9d233e	0x2442	mixed_with_display_lists_candidate	0x4b60
+compressed_file	konami_lz	file112	0x1		physical	0x9d4780	0x3a0	unclassified	0xaf0
+compressed_file	konami_lz	file113	0x1		physical	0x9d4b20	0x12b0	mixed_with_display_lists_candidate	0x2570
+compressed_file	konami_lz	file114	0x1		physical	0x9d5dd0	0x1568	f3dex_display_list_candidate	0x2370
+compressed_file	konami_lz	file115	0x1		physical	0x9d7338	0x988	unclassified	0xfa0
+compressed_file	konami_lz	file116	0x1		physical	0x9d7cc0	0x2456	unclassified	0x43f0
+compressed_file	konami_lz	file117	0x1		physical	0x9da116	0x2d2	unclassified	0x17a0
+compressed_file	konami_lz	file118	0x1		physical	0x9da3e8	0x72c	unclassified	0xfa0
+compressed_file	konami_lz	file119	0x1		physical	0x9dab14	0x147e	unclassified	0x3c70
+compressed_file	konami_lz	file120	0x1		physical	0x9dbf92	0x37e	f3dex_display_list_candidate	0xaf0
+compressed_file	konami_lz	file121	0x1		physical	0x9dc310	0x366	unclassified	0x17a0
+compressed_file	konami_lz	file122	0x1		physical	0x9dc676	0x594	unclassified	0xfa0
+compressed_file	konami_lz	file123	0x1		physical	0x9dcc0a	0x4bc4	mixed_with_display_lists_candidate	0x6740
+compressed_file	konami_lz	file124	0x1		physical	0x9e17ce	0x18c4	mixed_with_display_lists_candidate	0x2570
+compressed_file	konami_lz	file125	0x1		physical	0x9e3092	0xd4c	f3dex_display_list_candidate	0x1370
+compressed_file	konami_lz	file126	0x1		physical	0x9e3dde	0x2480	mixed_with_display_lists_candidate	0x4d60
+compressed_file	konami_lz	file127	0x1		physical	0x9e625e	0x4ae	unclassified	0x17a0
+compressed_file	konami_lz	file128	0x1		physical	0x9e670c	0x442	unclassified	0xf40
+compressed_file	konami_lz	file129	0x1		physical	0x9e6b4e	0x44c	unclassified	0xfa0
+compressed_file	konami_lz	file130	0x1		physical	0x9e6f9a	0x1150	unclassified	0x3a70
+compressed_file	konami_lz	file131	0x1		physical	0x9e80ea	0x866	unclassified	0x17a0
+compressed_file	konami_lz	file132	0x1		physical	0x9e8950	0x386	unclassified	0xfa0
+compressed_file	konami_lz	file133	0x1		physical	0x9e8cd6	0x2822	unclassified	0x43f0
+compressed_file	konami_lz	file134	0x1		physical	0x9eb4f8	0x272	unclassified	0x17a0
+compressed_file	konami_lz	file135	0x1		physical	0x9eb76a	0x87e	unclassified	0xfa0
+compressed_file	konami_lz	file136	0x1		physical	0x9ebfe8	0x1dfe	mixed_with_display_lists_candidate	0x3f60
+compressed_file	konami_lz	file137	0x1		physical	0x9edde6	0x243a	mixed_with_display_lists_candidate	0x46a0
+compressed_file	konami_lz	file138	0x1		physical	0x9f0220	0x1a3c	mixed_with_display_lists_candidate	0x3810
+compressed_file	konami_lz	file139	0x1		physical	0x9f1c5c	0x290	unclassified	0x960
+compressed_file	konami_lz	file140	0x1		physical	0x9f1eec	0x408	unclassified	0xde0
+compressed_file	konami_lz	file141	0x1		physical	0x9f22f4	0x260c	mixed_with_display_lists_candidate	0x46a0
+compressed_file	konami_lz	file142	0x1		physical	0x9f4900	0x4d6	unclassified	0x960
+compressed_file	konami_lz	file143	0x1		physical	0x9f4dd6	0x6bc	unclassified	0xde0
+compressed_file	konami_lz	file144	0x1		physical	0x9f5492	0x2b06	mixed_with_display_lists_candidate	0x46a0
+compressed_file	konami_lz	file145	0x1		physical	0x9f7f98	0x1d94	f3dex_display_list_candidate	0x3810
+compressed_file	konami_lz	file146	0x1		physical	0x9f9d2c	0x1b2e	mixed_with_display_lists_candidate	0x3810
+compressed_file	konami_lz	file147	0x1		physical	0x9fb85a	0x4b6	unclassified	0x960
+compressed_file	konami_lz	file148	0x1		physical	0x9fbd10	0x702	f3dex_display_list_candidate	0xde0
+compressed_file	konami_lz	file149	0x1		physical	0x9fc412	0x182e	mixed_with_display_lists_candidate	0x3810
+compressed_file	konami_lz	file150	0x1		physical	0x9fdc40	0x3e6	unclassified	0x960
+compressed_file	konami_lz	file151	0x1		physical	0x9fe026	0x568	unclassified	0xde0
+compressed_file	konami_lz	file152	0x1		physical	0x9fe58e	0x2076	mixed_with_display_lists_candidate	0x3f60
+compressed_file	konami_lz	file153	0x1		physical	0xa00604	0x4e0	unclassified	0x960
+compressed_file	konami_lz	file154	0x1		physical	0xa00ae4	0x6f4	f3dex_display_list_candidate	0xde0
+compressed_file	konami_lz	file155	0x1		physical	0xa011d8	0x1a56	f3dex_display_list_candidate	0x3810
+compressed_file	konami_lz	file156	0x1		physical	0xa02c2e	0x2f2c	mixed_with_display_lists_candidate	0x46a0
+compressed_file	konami_lz	file157	0x1		physical	0xa05b5a	0x530	unclassified	0x960
+compressed_file	konami_lz	file158	0x1		physical	0xa0608a	0x9be	mixed_with_display_lists_candidate	0x1590
+compressed_file	konami_lz	file159	0x1		physical	0xa06a48	0x20b0	mixed_with_display_lists_candidate	0x3f60
+compressed_file	konami_lz	file160	0x1		physical	0xa08af8	0x2058	mixed_with_display_lists_candidate	0x3f60
+compressed_file	konami_lz	file161	0x1		physical	0xa0ab50	0x1dce	f3dex_display_list_candidate	0x3a10
+compressed_file	konami_lz	file162	0x1		physical	0xa0c91e	0x1f78	mixed_with_display_lists_candidate	0x3810
+compressed_file	konami_lz	file163	0x1		physical	0xa0e896	0x1e5a	mixed_with_display_lists_candidate	0x3f60
+compressed_file	konami_lz	file164	0x1		physical	0xa106f0	0x482	unclassified	0x960
+compressed_file	konami_lz	file165	0x1		physical	0xa10b72	0x688	unclassified	0xde0
+compressed_file	konami_lz	file166	0x1		physical	0xa111fa	0x29de	mixed_with_display_lists_candidate	0x4340
+compressed_file	konami_lz	file167	0x1		physical	0xa13bd8	0x1ef0	mixed_with_display_lists_candidate	0x3e80
+compressed_file	konami_lz	file168	0x1		physical	0xa15ac8	0x604	unclassified	0xba0
+compressed_file	konami_lz	file169	0x1		physical	0xa160cc	0x6de	unclassified	0x11e0
+compressed_file	konami_lz	file170	0x1		physical	0xa167aa	0xe7a	unclassified	0x2330
+compressed_file	konami_lz	file171	0x1		physical	0xa17624	0x406	unclassified	0xfe0
+compressed_file	konami_lz	file172	0x1		physical	0xa17a2a	0x2d5c	mixed_with_display_lists_candidate	0x4340
+compressed_file	konami_lz	file173	0x1		physical	0xa1a786	0x2c56	mixed_with_display_lists_candidate	0x4460
+compressed_file	konami_lz	file174	0x1		physical	0xa1d3dc	0x580	unclassified	0xba0
+compressed_file	konami_lz	file175	0x1		physical	0xa1d95c	0xf6c	mixed_with_display_lists_candidate	0x1790
+compressed_file	konami_lz	file176	0x1		physical	0xa1e8c8	0x105c	mixed_with_display_lists_candidate	0x25e0
+compressed_file	konami_lz	file177	0x1		physical	0xa1f924	0x4fa	unclassified	0xfe0
+compressed_file	konami_lz	file178	0x1		physical	0xa1fe1e	0x2e76	mixed_with_display_lists_candidate	0x4340
+compressed_file	konami_lz	file179	0x1		physical	0xa22c94	0x1932	unclassified	0x3230
+compressed_file	konami_lz	file180	0x1		physical	0xa245c6	0x386	unclassified	0xba0
+compressed_file	konami_lz	file181	0x1		physical	0xa2494c	0x5fe	unclassified	0x11e0
+compressed_file	konami_lz	file182	0x1		physical	0xa24f4a	0xb26	mixed_with_display_lists_candidate	0x1b70
+compressed_file	konami_lz	file183	0x1		physical	0xa25a70	0x2e2	unclassified	0xfe0
+compressed_file	konami_lz	file184	0x1		physical	0xa25d52	0x2b88	mixed_with_display_lists_candidate	0x3b70
+compressed_file	konami_lz	file185	0x1		physical	0xa288da	0x295a	mixed_with_display_lists_candidate	0x41e0
+compressed_file	konami_lz	file186	0x1		physical	0xa2b234	0x1288	mixed_with_display_lists_candidate	0x1f30
+compressed_file	konami_lz	file187	0x1		physical	0xa2c4bc	0x8c2	f3dex_display_list_candidate	0x2040
+compressed_file	konami_lz	file188	0x1		physical	0xa2cd7e	0x4de	unclassified	0xfe0
+compressed_file	konami_lz	file189	0x1		physical	0xa2d25c	0x2b62	mixed_with_display_lists_candidate	0x3b70
+compressed_file	konami_lz	file190	0x1		physical	0xa2fdbe	0x250a	mixed_with_display_lists_candidate	0x41e0
+compressed_file	konami_lz	file191	0x1		physical	0xa322c8	0x33a	unclassified	0xba0
+compressed_file	konami_lz	file192	0x1		physical	0xa32602	0xf64	mixed_with_display_lists_candidate	0x1990
+compressed_file	konami_lz	file193	0x1		physical	0xa33566	0xe66	f3dex_display_list_candidate	0x1b70
+compressed_file	konami_lz	file194	0x1		physical	0xa343cc	0xaa2	mixed_with_display_lists_candidate	0x1590
+compressed_file	konami_lz	file195	0x1		physical	0xa34e6e	0x2da0	mixed_with_display_lists_candidate	0x4340
+compressed_file	konami_lz	file196	0x1		physical	0xa37c0e	0x2b2c	mixed_with_display_lists_candidate	0x4e10
+compressed_file	konami_lz	file197	0x1		physical	0xa3a73a	0x54a	unclassified	0xba0
+compressed_file	konami_lz	file198	0x1		physical	0xa3ac84	0x154a	mixed_with_display_lists_candidate	0x1f30
+compressed_file	konami_lz	file199	0x1		physical	0xa3c1ce	0x87a	unclassified	0x1760
+compressed_file	konami_lz	file200	0x1		physical	0xa3ca48	0x642	unclassified	0xfe0
+compressed_file	konami_lz	file201	0x1		physical	0xa3d08a	0x255c	mixed_with_display_lists_candidate	0x4340
+compressed_file	konami_lz	file202	0x1		physical	0xa3f5e6	0x22e6	mixed_with_display_lists_candidate	0x3de0
+compressed_file	konami_lz	file203	0x1		physical	0xa418cc	0x894	unclassified	0x11e0
+compressed_file	konami_lz	file204	0x1		physical	0xa42160	0xda4	mixed_with_display_lists_candidate	0x1b70
+compressed_file	konami_lz	file205	0x1		physical	0xa42f04	0x1c6	unclassified	0x8f0
+compressed_file	konami_lz	file206	0x1		physical	0xa430ca	0x288c	mixed_with_display_lists_candidate	0x3b70
+compressed_file	konami_lz	file207	0x1		physical	0xa45956	0x2448	mixed_with_display_lists_candidate	0x41e0
+compressed_file	konami_lz	file208	0x1		physical	0xa47d9e	0xb48	unclassified	0x11e0
+compressed_file	konami_lz	file209	0x1		physical	0xa488e6	0x254	unclassified	0x13d0
+compressed_file	konami_lz	file210	0x1		physical	0xa48b3a	0x7ce	unclassified	0xfe0
+compressed_file	konami_lz	file211	0x1		physical	0xa49308	0x2ec8	mixed_with_display_lists_candidate	0x4340
+compressed_file	konami_lz	file212	0x1		physical	0xa4c1d0	0x21ac	mixed_with_display_lists_candidate	0x3c10
+compressed_file	konami_lz	file213	0x1		physical	0xa4e37c	0xe8e	mixed_with_display_lists_candidate	0x1790
+compressed_file	konami_lz	file214	0x1		physical	0xa4f20a	0x104c	mixed_with_display_lists_candidate	0x1b70
+compressed_file	konami_lz	file215	0x1		physical	0xa50256	0x114e	mixed_with_display_lists_candidate	0x1b30
+compressed_file	konami_lz	file216	0x1		physical	0xa513a4	0x306c	mixed_with_display_lists_candidate	0x4340
+compressed_file	konami_lz	file217	0x1		physical	0xa54410	0x2bce	mixed_with_display_lists_candidate	0x3fe0
+compressed_file	konami_lz	file218	0x1		physical	0xa56fde	0x770	mixed_with_display_lists_candidate	0x990
+compressed_file	konami_lz	file219	0x1		physical	0xa5774e	0x15f0	mixed_with_display_lists_candidate	0x1f30
+compressed_file	konami_lz	file220	0x1		physical	0xa58d3e	0x250	unclassified	0x13d0
+compressed_file	konami_lz	file221	0x1		physical	0xa58f8e	0x3010	mixed_with_display_lists_candidate	0x4340
+compressed_file	konami_lz	file222	0x1		physical	0xa5bf9e	0x2b06	mixed_with_display_lists_candidate	0x4460
+compressed_file	konami_lz	file223	0x1		physical	0xa5eaa4	0xd3a	mixed_with_display_lists_candidate	0x1790
+compressed_file	konami_lz	file224	0x1		physical	0xa5f7de	0x730	unclassified	0x13d0
+compressed_file	konami_lz	file225	0x1		physical	0xa5ff0e	0xa3c	unclassified	0xfe0
+compressed_file	konami_lz	file226	0x1		physical	0xa6094a	0x30b2	mixed_with_display_lists_candidate	0x4340
+compressed_file	konami_lz	file227	0x1		physical	0xa639fc	0x2752	mixed_with_display_lists_candidate	0x41e0
+compressed_file	konami_lz	file228	0x1		physical	0xa6614e	0xcee	mixed_with_display_lists_candidate	0x1790
+compressed_file	konami_lz	file229	0x1		physical	0xa66e3c	0x394	f3dex_display_list_candidate	0x13d0
+compressed_file	konami_lz	file230	0x1		physical	0xa671d0	0x616	unclassified	0xfe0
+compressed_file	konami_lz	file231	0x1		physical	0xa677e6	0x34e8	mixed_with_display_lists_candidate	0x4340
+compressed_file	konami_lz	file232	0x1		physical	0xa6acce	0x3138	mixed_with_display_lists_candidate	0x53e0
+compressed_file	konami_lz	file233	0x1		physical	0xa6de06	0x145e	mixed_with_display_lists_candidate	0x1f30
+compressed_file	konami_lz	file234	0x1		physical	0xa6f264	0x9c8	mixed_with_display_lists_candidate	0x1290
+compressed_file	konami_lz	file235	0x1		physical	0xa6fc2c	0x13ec	mixed_with_display_lists_candidate	0x1b30
+compressed_file	konami_lz	file236	0x1		physical	0xa71018	0x2a9c	mixed_with_display_lists_candidate	0x4340
+compressed_file	konami_lz	file237	0x1		physical	0xa73ab4	0x2934	mixed_with_display_lists_candidate	0x45c0
+compressed_file	konami_lz	file238	0x1		physical	0xa763e8	0x12de	mixed_with_display_lists_candidate	0x1f30
+compressed_file	konami_lz	file239	0x1		physical	0xa776c6	0x8aa	mixed_with_display_lists_candidate	0x1290
+compressed_file	konami_lz	file240	0x1		physical	0xa77f70	0x21da	mixed_with_display_lists_candidate	0x3b70
+compressed_file	konami_lz	file241	0x1		physical	0xa7a14a	0x2470	mixed_with_display_lists_candidate	0x4340
+compressed_file	konami_lz	file242	0x1		physical	0xa7c5ba	0x518	unclassified	0x9c0
+compressed_file	konami_lz	file243	0x1		physical	0xa7cad2	0x956	mixed_with_display_lists_candidate	0x1990
+compressed_file	konami_lz	file244	0x1		physical	0xa7d428	0xf8a	mixed_with_display_lists_candidate	0x1b70
+compressed_file	konami_lz	file245	0x1		physical	0xa7e3b2	0x308a	mixed_with_display_lists_candidate	0x4340
+compressed_file	konami_lz	file246	0x1		physical	0xa8143c	0x30ac	mixed_with_display_lists_candidate	0x4c10
+compressed_file	konami_lz	file247	0x1		physical	0xa844e8	0xee8	mixed_with_display_lists_candidate	0x1790
+compressed_file	konami_lz	file248	0x1		physical	0xa853d0	0xe0c	mixed_with_display_lists_candidate	0x1b70
+compressed_file	konami_lz	file249	0x1		physical	0xa861dc	0x1550	mixed_with_display_lists_candidate	0x1b30
+compressed_file	konami_lz	file250	0x1		physical	0xa8772c	0x316	unclassified	0xf60
+compressed_file	konami_lz	file251	0x1		physical	0xa87a42	0x13a4	f3dex_display_list_candidate	0x3080
+compressed_file	konami_lz	file252	0x1		physical	0xa88de6	0x1082	f3dex_display_list_candidate	0x3080
+compressed_file	konami_lz	file253	0x1		physical	0xa89e68	0xd4a	mixed_with_display_lists_candidate	0x2c30
+compressed_file	konami_lz	file254	0x1		physical	0xa8abb2	0xde4	f3dex_display_list_candidate	0x3080
+compressed_file	konami_lz	file255	0x1		physical	0xa8b996	0xf86	f3dex_display_list_candidate	0x3080
+compressed_file	konami_lz	file256	0x1		physical	0xa8c91c	0xe38	f3dex_display_list_candidate	0x3080
+compressed_file	konami_lz	file257	0x1		physical	0xa8d754	0xe8a	f3dex_display_list_candidate	0x3080
+compressed_file	konami_lz	file258	0x1		physical	0xa8e5de	0xe48	f3dex_display_list_candidate	0x3080
+compressed_file	konami_lz	file259	0x1		physical	0xa8f426	0xa06	f3dex_display_list_candidate	0x3080
+compressed_file	konami_lz	file260	0x1		physical	0xa8fe2c	0xec6	f3dex_display_list_candidate	0x3080
+compressed_file	konami_lz	file261	0x1		physical	0xa90cf2	0x132a	f3dex_display_list_candidate	0x3080
+compressed_file	konami_lz	file262	0x1		physical	0xa9201c	0xa72	f3dex_display_list_candidate	0x3080
+compressed_file	konami_lz	file263	0x1		physical	0xa92a8e	0xd02	f3dex_display_list_candidate	0x3080
+compressed_file	konami_lz	file264	0x1		physical	0xa93790	0xda8	f3dex_display_list_candidate	0x3080
+compressed_file	konami_lz	file265	0x1		physical	0xa94538	0xa16	f3dex_display_list_candidate	0x3080
+compressed_file	konami_lz	file266	0x1		physical	0xa94f4e	0x11a4	f3dex_display_list_candidate	0x3080
+compressed_file	konami_lz	file267	0x1		physical	0xa960f2	0xc28	unclassified	0x23e0
+compressed_file	konami_lz	file268	0x1		physical	0xa96d1a	0x3b34	mixed_with_display_lists_candidate	0x5fd0
+compressed_file	konami_lz	file269	0x1		physical	0xa9a84e	0x774	unclassified	0x15a0
+compressed_file	konami_lz	file270	0x1		physical	0xa9afc2	0xb76	unclassified	0x15a0
+compressed_file	konami_lz	file271	0x1		physical	0xa9bb38	0xfd6	unclassified	0x2bc0
+compressed_file	konami_lz	file272	0x1		physical	0xa9cb0e	0x1e28	mixed_with_display_lists_candidate	0x4960
+compressed_file	konami_lz	file273	0x1		physical	0xa9e936	0x9c0	unclassified	0x15a0
+compressed_file	konami_lz	file274	0x1		physical	0xa9f2f6	0xbbc	unclassified	0x15a0
+compressed_file	konami_lz	file275	0x1		physical	0xa9feb2	0xb34	unclassified	0x23e0
+compressed_file	konami_lz	file276	0x1		physical	0xaa09e6	0x188c	unclassified	0x41f0
+compressed_file	konami_lz	file277	0x1		physical	0xaa2272	0x532	unclassified	0x15a0
+compressed_file	konami_lz	file278	0x1		physical	0xaa27a4	0x44e	unclassified	0x13a0
+compressed_file	konami_lz	file279	0x1		physical	0xaa2bf2	0xcc8	unclassified	0x23e0
+compressed_file	konami_lz	file280	0x1		physical	0xaa38ba	0x1f58	mixed_with_display_lists_candidate	0x4960
+compressed_file	konami_lz	file281	0x1		physical	0xaa5812	0x9a4	mixed_with_display_lists_candidate	0x1c90
+compressed_file	konami_lz	file282	0x1		physical	0xaa61b6	0x6ce	unclassified	0xc70
+compressed_file	konami_lz	file283	0x1		physical	0xaa6884	0x424	unclassified	0x13a0
+compressed_file	konami_lz	file284	0x1		physical	0xaa6ca8	0xa94	unclassified	0x23e0
+compressed_file	konami_lz	file285	0x1		physical	0xaa773c	0x392a	mixed_with_display_lists_candidate	0x5fd0
+compressed_file	konami_lz	file286	0x1		physical	0xaab066	0x71a	unclassified	0x15a0
+compressed_file	konami_lz	file287	0x1		physical	0xaab780	0x8cc	unclassified	0xe70
+compressed_file	konami_lz	file288	0x1		physical	0xaac04c	0x5e0	unclassified	0x13a0
+compressed_file	konami_lz	file289	0x1		physical	0xaac62c	0xc86	unclassified	0x25e0
+compressed_file	konami_lz	file290	0x1		physical	0xaad2b2	0x4de2	f3dex_display_list_candidate	0x6540
+compressed_file	konami_lz	file291	0x1		physical	0xab2094	0x972	mixed_with_display_lists_candidate	0x1c90
+compressed_file	konami_lz	file292	0x1		physical	0xab2a06	0xfec	mixed_with_display_lists_candidate	0x1d70
+compressed_file	konami_lz	file293	0x1		physical	0xab39f2	0x1016	unclassified	0x2bc0
+compressed_file	konami_lz	file294	0x1		physical	0xab4a08	0x1db4	mixed_with_display_lists_candidate	0x45f0
+compressed_file	konami_lz	file295	0x1		physical	0xab67bc	0x406	unclassified	0x15a0
+compressed_file	konami_lz	file296	0x1		physical	0xab6bc2	0x3c8	unclassified	0x13a0
+compressed_file	konami_lz	file297	0x1		physical	0xab6f8a	0xdf4	unclassified	0x25e0
+compressed_file	konami_lz	file298	0x1		physical	0xab7d7e	0x212c	unclassified	0x43f0
+compressed_file	konami_lz	file299	0x1		physical	0xab9eaa	0x560	unclassified	0x15a0
+compressed_file	konami_lz	file300	0x1		physical	0xaba40a	0x524	f3dex_display_list_candidate	0x13a0
+compressed_file	konami_lz	file301	0x1		physical	0xaba92e	0x8f4	unclassified	0x23e0
+compressed_file	konami_lz	file302	0x1		physical	0xabb222	0x3066	mixed_with_display_lists_candidate	0x5850
+compressed_file	konami_lz	file303	0x1		physical	0xabe288	0xa54	unclassified	0x15a0
+compressed_file	konami_lz	file304	0x1		physical	0xabecdc	0x80c	unclassified	0x13a0
+compressed_file	konami_lz	file305	0x1		physical	0xabf4e8	0x11c4	mixed_with_display_lists_candidate	0x3390
+compressed_file	konami_lz	file306	0x1		physical	0xac06ac	0x28ae	mixed_with_display_lists_candidate	0x4b60
+compressed_file	konami_lz	file307	0x1		physical	0xac2f5a	0xd72	mixed_with_display_lists_candidate	0x12a0
+compressed_file	konami_lz	file308	0x1		physical	0xac3ccc	0xd8e	mixed_with_display_lists_candidate	0x1c90
+compressed_file	konami_lz	file309	0x1		physical	0xac4a5a	0x8dc	unclassified	0x1160
+compressed_file	konami_lz	file310	0x1		physical	0xac5336	0x342	unclassified	0x13a0
+compressed_file	konami_lz	file311	0x1		physical	0xac5678	0xe42	unclassified	0x25e0
+compressed_file	konami_lz	file312	0x1		physical	0xac64ba	0x1d32	mixed_with_display_lists_candidate	0x4960
+compressed_file	konami_lz	file313	0x1		physical	0xac81ec	0x518	unclassified	0x15a0
+compressed_file	konami_lz	file314	0x1		physical	0xac8704	0x3ca	unclassified	0x13a0
+compressed_file	konami_lz	file315	0x1		physical	0xac8ace	0xd66	unclassified	0x2bc0
+compressed_file	konami_lz	file316	0x1		physical	0xac9834	0x142e	unclassified	0x41f0
+compressed_file	konami_lz	file317	0x1		physical	0xacac62	0x4c4	unclassified	0x15a0
+compressed_file	konami_lz	file318	0x1		physical	0xacb126	0x160	unclassified	0x13a0
+compressed_file	konami_lz	file319	0x1		physical	0xacb286	0xe20	unclassified	0x25e0
+compressed_file	konami_lz	file320	0x1		physical	0xacc0a6	0x2852	unclassified	0x43f0
+compressed_file	konami_lz	file321	0x1		physical	0xace8f8	0x52a	unclassified	0x15a0
+compressed_file	konami_lz	file322	0x1		physical	0xacee22	0x4b6	unclassified	0x13a0
+compressed_file	konami_lz	file323	0x1		physical	0xacf2d8	0xfbc	unclassified	0x2bc0
+compressed_file	konami_lz	file324	0x1		physical	0xad0294	0x1fca	mixed_with_display_lists_candidate	0x4b60
+compressed_file	konami_lz	file325	0x1		physical	0xad225e	0x3e2	unclassified	0x15a0
+compressed_file	konami_lz	file326	0x1		physical	0xad2640	0x190	unclassified	0x13a0
+compressed_file	konami_lz	file327	0x1		physical	0xad27d0	0xc06	unclassified	0x23e0
+compressed_file	konami_lz	file328	0x1		physical	0xad33d6	0x1bb4	unclassified	0x45f0
+compressed_file	konami_lz	file329	0x1		physical	0xad4f8a	0x390	unclassified	0x15a0
+compressed_file	konami_lz	file330	0x1		physical	0xad531a	0x2c8	unclassified	0x13a0
+compressed_file	konami_lz	file331	0x1		physical	0xad55e2	0xf78	unclassified	0x25e0
+compressed_file	konami_lz	file332	0x1		physical	0xad655a	0x2728	mixed_with_display_lists_candidate	0x4b60
+compressed_file	konami_lz	file333	0x1		physical	0xad8c82	0x758	unclassified	0x15a0
+compressed_file	konami_lz	file334	0x1		physical	0xad93da	0x376	unclassified	0x13a0
+compressed_file	konami_lz	file335	0x1		physical	0xad9750	0x1262	f3dex_display_list_candidate	0x18a0
+compressed_file	konami_lz	file336	0x1		physical	0xada9b2	0x11c0	f3dex_display_list_candidate	0x18a0
+compressed_file	konami_lz	file337	0x1		physical	0xadbb72	0x1344	f3dex_display_list_candidate	0x18a0
+compressed_file	konami_lz	file338	0x1		physical	0xadceb6	0x1300	f3dex_display_list_candidate	0x18a0
+compressed_file	konami_lz	file339	0x1		physical	0xade1b6	0x122a	f3dex_display_list_candidate	0x18a0
+compressed_file	konami_lz	file340	0x1		physical	0xadf3e0	0x13c0	f3dex_display_list_candidate	0x18a0
+compressed_file	konami_lz	file341	0x1		physical	0xae07a0	0x12b6	f3dex_display_list_candidate	0x18a0
+compressed_file	konami_lz	file342	0x1		physical	0xae1a56	0xc1c	unclassified	0x10f0
+compressed_file	konami_lz	file343	0x1		physical	0xae2672	0x1226	f3dex_display_list_candidate	0x18a0
+compressed_file	konami_lz	file344	0x1		physical	0xae3898	0x11b8	f3dex_display_list_candidate	0x18a0
+compressed_file	konami_lz	file345	0x1		physical	0xae4a50	0xf58	mixed_with_display_lists_candidate	0x14d0
+compressed_file	konami_lz	file346	0x1		physical	0xae59a8	0x13c8	f3dex_display_list_candidate	0x18a0
+compressed_file	konami_lz	file347	0x1		physical	0xae6d70	0x1362	f3dex_display_list_candidate	0x18a0
+compressed_file	konami_lz	file348	0x1		physical	0xae80d2	0x117a	f3dex_display_list_candidate	0x18a0
+compressed_file	konami_lz	file349	0x1		physical	0xae924c	0x1008	mixed_with_display_lists_candidate	0x14d0
+compressed_file	konami_lz	file350	0x1		physical	0xaea254	0x127e	f3dex_display_list_candidate	0x18a0
+compressed_file	konami_lz	file351	0x1		physical	0xaeb4d2	0x24d6	unclassified	0x3780
+compressed_file	konami_lz	file352	0x1		physical	0xaed9a8	0x23e4	mixed_with_display_lists_candidate	0x3c10
+compressed_file	konami_lz	file353	0x1		physical	0xaefd8c	0x2498	unclassified	0x4140
+compressed_file	konami_lz	file354	0x1		physical	0xaf2224	0x24c	unclassified	0x4b0
+compressed_file	konami_lz	file355	0x1		physical	0xaf2470	0x9ea	unclassified	0x13c0
+compressed_file	konami_lz	file356	0x1		physical	0xaf2e5a	0xa54	mixed_with_display_lists_candidate	0x11b0
+compressed_file	konami_lz	file357	0x1		physical	0xaf38ae	0x532	unclassified	0x11c0
+compressed_file	konami_lz	file358	0x1		physical	0xaf3de0	0x208a	mixed_with_display_lists_candidate	0x3460
+compressed_file	konami_lz	file359	0x1		physical	0xaf5e6a	0x3c04	mixed_with_display_lists_candidate	0x5640
+compressed_file	konami_lz	file360	0x1		physical	0xaf9a6e	0x126	unclassified	0x4b0
+compressed_file	konami_lz	file361	0x1		physical	0xaf9b94	0x156e	mixed_with_display_lists_candidate	0x2050
+compressed_file	konami_lz	file362	0x1		physical	0xafb102	0xb44	mixed_with_display_lists_candidate	0x1370
+compressed_file	konami_lz	file363	0x1		physical	0xafbc46	0x618	unclassified	0x11c0
+compressed_file	konami_lz	file364	0x1		physical	0xafc25e	0x276e	mixed_with_display_lists_candidate	0x3660
+compressed_file	konami_lz	file365	0x1		physical	0xafe9cc	0x2d88	mixed_with_display_lists_candidate	0x48f0
+compressed_file	konami_lz	file366	0x1		physical	0xb01754	0xc8	unclassified	0x4b0
+compressed_file	konami_lz	file367	0x1		physical	0xb0181c	0x1154	mixed_with_display_lists_candidate	0x1b10
+compressed_file	konami_lz	file368	0x1		physical	0xb02970	0x2250	unclassified	0x3090
+compressed_file	konami_lz	file369	0x1		physical	0xb04bc0	0x2e90	unclassified	0x48e0
+compressed_file	konami_lz	file370	0x1		physical	0xb07a50	0x108	f3dex_display_list_candidate	0x4b0
+compressed_file	konami_lz	file371	0x1		physical	0xb07b58	0x1100	mixed_with_display_lists_candidate	0x1910
+compressed_file	konami_lz	file372	0x1		physical	0xb08c58	0xa84	mixed_with_display_lists_candidate	0x11b0
+compressed_file	konami_lz	file373	0x1		physical	0xb096dc	0x48a	unclassified	0x11c0
+compressed_file	konami_lz	file374	0x1		physical	0xb09b66	0x234c	mixed_with_display_lists_candidate	0x3660
+compressed_file	konami_lz	file375	0x1		physical	0xb0beb2	0x4200	unclassified	0x6360
+compressed_file	konami_lz	file376	0x1		physical	0xb100b2	0xf8	unclassified	0x4b0
+compressed_file	konami_lz	file377	0x1		physical	0xb101aa	0x11f0	mixed_with_display_lists_candidate	0x2050
+compressed_file	konami_lz	file378	0x1		physical	0xb1139a	0x712	unclassified	0x11c0
+compressed_file	konami_lz	file379	0x1		physical	0xb11aac	0x2bee	mixed_with_display_lists_candidate	0x3c10
+compressed_file	konami_lz	file380	0x1		physical	0xb1469a	0x45d0	mixed_with_display_lists_candidate	0x5640
+compressed_file	konami_lz	file381	0x1		physical	0xb18c6a	0xf4	unclassified	0x4b0
+compressed_file	konami_lz	file382	0x1		physical	0xb18d5e	0x171c	mixed_with_display_lists_candidate	0x2050
+compressed_file	konami_lz	file383	0x1		physical	0xb1a47a	0x1296	mixed_with_display_lists_candidate	0x1aa0
+compressed_file	konami_lz	file384	0x1		physical	0xb1b710	0x2116	unclassified	0x3f50
+compressed_file	konami_lz	file385	0x1		physical	0xb1d826	0xf2	unclassified	0x4b0
+compressed_file	konami_lz	file386	0x1		physical	0xb1d918	0x86c	unclassified	0x13c0
+compressed_file	konami_lz	file387	0x1		physical	0xb1e184	0x498	unclassified	0x11c0
+compressed_file	konami_lz	file388	0x1		physical	0xb1e61c	0x232a	unclassified	0x3460
+compressed_file	konami_lz	file389	0x1		physical	0xb20946	0x2efa	mixed_with_display_lists_candidate	0x48f0
+compressed_file	konami_lz	file390	0x1		physical	0xb23840	0xf6	unclassified	0x4b0
+compressed_file	konami_lz	file391	0x1		physical	0xb23936	0xb30	unclassified	0x13c0
+compressed_file	konami_lz	file392	0x1		physical	0xb24466	0x77c	unclassified	0x11c0
+compressed_file	konami_lz	file393	0x1		physical	0xb24be2	0x26ba	mixed_with_display_lists_candidate	0x3c10
+compressed_file	konami_lz	file394	0x1		physical	0xb2729c	0x3526	unclassified	0x48e0
+compressed_file	konami_lz	file395	0x1		physical	0xb2a7c2	0xf6	unclassified	0x4b0
+compressed_file	konami_lz	file396	0x1		physical	0xb2a8b8	0x14d8	mixed_with_display_lists_candidate	0x2050
+compressed_file	konami_lz	file397	0x1		physical	0xb2bd90	0x1200	mixed_with_display_lists_candidate	0x1c50
+compressed_file	konami_lz	file398	0x1		physical	0xb2cf90	0x2346	mixed_with_display_lists_candidate	0x3460
+compressed_file	konami_lz	file399	0x1		physical	0xb2f2d6	0x26ca	unclassified	0x48e0
+compressed_file	konami_lz	file400	0x1		physical	0xb319a0	0x296	unclassified	0x4b0
+compressed_file	konami_lz	file401	0x1		physical	0xb31c36	0xf14	mixed_with_display_lists_candidate	0x1b10
+compressed_file	konami_lz	file402	0x1		physical	0xb32b4a	0xdb6	mixed_with_display_lists_candidate	0x1710
+compressed_file	konami_lz	file403	0x1		physical	0xb33900	0x273e	mixed_with_display_lists_candidate	0x3c10
+compressed_file	konami_lz	file404	0x1		physical	0xb3603e	0x3096	mixed_with_display_lists_candidate	0x48f0
+compressed_file	konami_lz	file405	0x1		physical	0xb390d4	0xd6	unclassified	0x4b0
+compressed_file	konami_lz	file406	0x1		physical	0xb391aa	0x107a	mixed_with_display_lists_candidate	0x1910
+compressed_file	konami_lz	file407	0x1		physical	0xb3a224	0x1052	mixed_with_display_lists_candidate	0x1710
+compressed_file	konami_lz	file408	0x1		physical	0xb3b276	0x2d5c	mixed_with_display_lists_candidate	0x3c10
+compressed_file	konami_lz	file409	0x1		physical	0xb3dfd2	0x20b4	unclassified	0x37a0
+compressed_file	konami_lz	file410	0x1		physical	0xb40086	0xe8	unclassified	0x4b0
+compressed_file	konami_lz	file411	0x1		physical	0xb4016e	0xa9e	unclassified	0x13c0
+compressed_file	konami_lz	file412	0x1		physical	0xb40c0c	0x90c	unclassified	0x11c0
+compressed_file	konami_lz	file413	0x1		physical	0xb41518	0x2980	mixed_with_display_lists_candidate	0x3e10
+compressed_file	konami_lz	file414	0x1		physical	0xb43e98	0x47ec	mixed_with_display_lists_candidate	0x6590
+compressed_file	konami_lz	file415	0x1		physical	0xb48684	0xe8	unclassified	0x4b0
+compressed_file	konami_lz	file416	0x1		physical	0xb4876c	0x1502	f3dex_display_list_candidate	0x1e50
+compressed_file	konami_lz	file417	0x1		physical	0xb49c6e	0xba2	mixed_with_display_lists_candidate	0x1370
+compressed_file	konami_lz	file418	0x1		physical	0xb4a810	0x1100	mixed_with_display_lists_candidate	0x1c50
+compressed_file	konami_lz	file419	0x1		physical	0xb4b910	0x21b2	f3dex_display_list_candidate	0x3660
+compressed_file	konami_lz	file420	0x1		physical	0xb4dac2	0x3ee2	mixed_with_display_lists_candidate	0x5840
+compressed_file	konami_lz	file421	0x1		physical	0xb519a4	0xfe	unclassified	0x4b0
+compressed_file	konami_lz	file422	0x1		physical	0xb51aa2	0xe38	unclassified	0x13c0
+compressed_file	konami_lz	file423	0x1		physical	0xb528da	0x9a0	unclassified	0x11c0
+compressed_file	konami_lz	file424	0x1		physical	0xb5327a	0x2268	unclassified	0x2cb0
+compressed_file	konami_lz	file425	0x1		physical	0xb554e2	0x25aa	mixed_with_display_lists_candidate	0x46f0
+compressed_file	konami_lz	file426	0x1		physical	0xb57a8c	0xec	unclassified	0x4b0
+compressed_file	konami_lz	file427	0x1		physical	0xb57b78	0x17e4	mixed_with_display_lists_candidate	0x2050
+compressed_file	konami_lz	file428	0x1		physical	0xb5935c	0x976	unclassified	0x12a0
+compressed_file	konami_lz	file429	0x1		physical	0xb59cd2	0x25a	unclassified	0x9e0
+compressed_file	konami_lz	file430	0x1		physical	0xb59f2c	0x24f4	mixed_with_display_lists_candidate	0x3460
+compressed_file	konami_lz	file431	0x1		physical	0xb5c420	0x4828	mixed_with_display_lists_candidate	0x6590
+compressed_file	konami_lz	file432	0x1		physical	0xb60c48	0xdc	unclassified	0x4b0
+compressed_file	konami_lz	file433	0x1		physical	0xb60d24	0x140a	mixed_with_display_lists_candidate	0x2050
+compressed_file	konami_lz	file434	0x1		physical	0xb6212e	0xf84	mixed_with_display_lists_candidate	0x2910
+compressed_file	konami_lz	file435	0x1		physical	0xb630b2	0x2cfe	mixed_with_display_lists_candidate	0x60e0
+compressed_file	konami_lz	file436	0x1		physical	0xb65db0	0xa84	mixed_with_display_lists_candidate	0x1d10
+compressed_file	konami_lz	file437	0x1		physical	0xb66834	0xade	f3dex_display_list_candidate	0x17c0
+compressed_file	konami_lz	file438	0x1		physical	0xb67312	0x146e	f3dex_display_list_candidate	0x39a0
+compressed_file	konami_lz	file439	0x1		physical	0xb68780	0x966	mixed_with_display_lists_candidate	0x12a0
+compressed_file	konami_lz	file440	0x1		physical	0xb690e6	0x852	unclassified	0x15c0
+compressed_file	konami_lz	file441	0x1		physical	0xb69938	0x8d4	unclassified	0x1160
+compressed_file	konami_lz	file442	0x1		physical	0xb6a20c	0x2cc	f3dex_display_list_candidate	0x15c0
+compressed_file	konami_lz	file443	0x1		physical	0xb6a4d8	0x136e	unclassified	0x39a0
+compressed_file	konami_lz	file444	0x1		physical	0xb6b846	0x902	mixed_with_display_lists_candidate	0x12a0
+compressed_file	konami_lz	file445	0x1		physical	0xb6c148	0x1bc	unclassified	0x15c0
+compressed_file	konami_lz	file446	0x1		physical	0xb6c304	0x5da	unclassified	0xc70
+compressed_file	konami_lz	file447	0x1		physical	0xb6c8de	0x16e	unclassified	0x15c0
+compressed_file	konami_lz	file448	0x1		physical	0xb6ca4c	0x14e8	f3dex_display_list_candidate	0x39a0
+compressed_file	konami_lz	file449	0x1		physical	0xb6df34	0x938	mixed_with_display_lists_candidate	0x12a0
+compressed_file	konami_lz	file450	0x1		physical	0xb6e86c	0x1ce	unclassified	0x15c0
+compressed_file	konami_lz	file451	0x1		physical	0xb6ea3a	0x6b6	unclassified	0xc70
+compressed_file	konami_lz	file452	0x1		physical	0xb6f0f0	0x376	f3dex_display_list_candidate	0x15c0
+compressed_file	konami_lz	file453	0x1		physical	0xb6f466	0x15b6	unclassified	0x39a0
+compressed_file	konami_lz	file454	0x1		physical	0xb70a1c	0x3b8	unclassified	0x15c0
+compressed_file	konami_lz	file455	0x1		physical	0xb70dd4	0x5e4	unclassified	0xc70
+compressed_file	konami_lz	file456	0x1		physical	0xb713b8	0x282	unclassified	0x15c0
+compressed_file	konami_lz	file457	0x1		physical	0xb7163a	0x1574	unclassified	0x39a0
+compressed_file	konami_lz	file458	0x1		physical	0xb72bae	0x49e	unclassified	0xaf0
+compressed_file	konami_lz	file459	0x1		physical	0xb7304c	0x442	unclassified	0x15c0
+compressed_file	konami_lz	file460	0x1		physical	0xb7348e	0x294	unclassified	0x15c0
+compressed_file	konami_lz	file461	0x1		physical	0xb73722	0x18c4	unclassified	0x39a0
+compressed_file	konami_lz	file462	0x1		physical	0xb74fe6	0x50a	unclassified	0xaf0
+compressed_file	konami_lz	file463	0x1		physical	0xb754f0	0x374	unclassified	0x15c0
+compressed_file	konami_lz	file464	0x1		physical	0xb75864	0x260	unclassified	0x15c0
+compressed_file	konami_lz	file465	0x1		physical	0xb75ac4	0x1766	unclassified	0x3ba0
+compressed_file	konami_lz	file466	0x1		physical	0xb7722a	0x4c4	unclassified	0xaf0
+compressed_file	konami_lz	file467	0x1		physical	0xb776ee	0x20e	unclassified	0x15c0
+compressed_file	konami_lz	file468	0x1		physical	0xb778fc	0xcc0	mixed_with_display_lists_candidate	0x1d10
+compressed_file	konami_lz	file469	0x1		physical	0xb785bc	0x1610	unclassified	0x39a0
+compressed_file	konami_lz	file470	0x1		physical	0xb79bcc	0x4e4	unclassified	0xaf0
+compressed_file	konami_lz	file471	0x1		physical	0xb7a0b0	0x6cc	f3dex_display_list_candidate	0x15c0
+compressed_file	konami_lz	file472	0x1		physical	0xb7a77c	0x29a	f3dex_display_list_candidate	0x15c0
+compressed_file	konami_lz	file473	0x1		physical	0xb7aa16	0x132e	unclassified	0x39a0
+compressed_file	konami_lz	file474	0x1		physical	0xb7bd44	0x2e6	unclassified	0x15c0
+compressed_file	konami_lz	file475	0x1		physical	0xb7c02a	0x79e	unclassified	0xc70
+compressed_file	konami_lz	file476	0x1		physical	0xb7c7c8	0x29a	unclassified	0x15c0
+compressed_file	konami_lz	file477	0x1		physical	0xb7ca62	0x1538	unclassified	0x39a0
+compressed_file	konami_lz	file478	0x1		physical	0xb7df9a	0x4be	unclassified	0xaf0
+compressed_file	konami_lz	file479	0x1		physical	0xb7e458	0x4cc	unclassified	0x15c0
+compressed_file	konami_lz	file480	0x1		physical	0xb7e924	0x27a	unclassified	0x15c0
+compressed_file	konami_lz	file481	0x1		physical	0xb7eb9e	0x155e	unclassified	0x39a0
+compressed_file	konami_lz	file482	0x1		physical	0xb800fc	0x4c4	unclassified	0xaf0
+compressed_file	konami_lz	file483	0x1		physical	0xb805c0	0x2c2	unclassified	0x15c0
+compressed_file	konami_lz	file484	0x1		physical	0xb80882	0x1e4	unclassified	0x15c0
+compressed_file	konami_lz	file485	0x1		physical	0xb80a66	0x15cc	unclassified	0x39a0
+compressed_file	konami_lz	file486	0x1		physical	0xb82032	0x4c4	unclassified	0xaf0
+compressed_file	konami_lz	file487	0x1		physical	0xb824f6	0x3ea	unclassified	0x15c0
+compressed_file	konami_lz	file488	0x1		physical	0xb828e0	0x17c	unclassified	0x15c0
+compressed_file	konami_lz	file489	0x1		physical	0xb82a5c	0x15ce	unclassified	0x39a0
+compressed_file	konami_lz	file490	0x1		physical	0xb8402a	0x1be	unclassified	0x15c0
+compressed_file	konami_lz	file491	0x1		physical	0xb841e8	0x258	unclassified	0x15c0
+compressed_file	konami_lz	file492	0x1		physical	0xb84440	0x137e	unclassified	0x39a0
+compressed_file	konami_lz	file493	0x1		physical	0xb857be	0x268	unclassified	0x15c0
+compressed_file	konami_lz	file494	0x1		physical	0xb85a26	0x266	unclassified	0x15c0
+compressed_file	konami_lz	file495	0x1		physical	0xb85c8c	0x1512	unclassified	0x39a0
+compressed_file	konami_lz	file496	0x1		physical	0xb8719e	0x66e	unclassified	0x15c0
+compressed_file	konami_lz	file497	0x1		physical	0xb8780c	0x938	unclassified	0x15c0
+compressed_file	konami_lz	file498	0x1		physical	0xb88144	0xeec	unclassified	0x1ed0
+compressed_file	konami_lz	file499	0x1		physical	0xb89030	0x9be	mixed_with_display_lists_candidate	0x15b0
+compressed_file	konami_lz	file500	0x1		physical	0xb899ee	0x1470	f3dex_display_list_candidate	0x2c20
+compressed_file	konami_lz	file501	0x1		physical	0xb8ae5e	0x14a6	mixed_with_display_lists_candidate	0x2c20
+compressed_file	konami_lz	file502	0x1		physical	0xb8c304	0x1626	mixed_with_display_lists_candidate	0x2c20
+compressed_file	konami_lz	file503	0x1		physical	0xb8d92a	0x12c8	mixed_with_display_lists_candidate	0x2c20
+compressed_file	konami_lz	file504	0x1		physical	0xb8ebf2	0x9f4	mixed_with_display_lists_candidate	0x1330
+compressed_file	konami_lz	file505	0x1		physical	0xb8f5e6	0x280	unclassified	0xe50
+compressed_file	konami_lz	file506	0x1		physical	0xb8f866	0x17c0	mixed_with_display_lists_candidate	0x2c20
+compressed_file	konami_lz	file507	0x1		physical	0xb91026	0x372	unclassified	0xe50
+compressed_file	konami_lz	file508	0x1		physical	0xb91398	0x16e2	mixed_with_display_lists_candidate	0x2c20
+compressed_file	konami_lz	file509	0x1		physical	0xb92a7a	0xe5c	unclassified	0x1ed0
+compressed_file	konami_lz	file510	0x1		physical	0xb938d6	0x1638	mixed_with_display_lists_candidate	0x2c20
+compressed_file	konami_lz	file511	0x1		physical	0xb94f0e	0x1310	mixed_with_display_lists_candidate	0x2c20
+compressed_file	konami_lz	file512	0x1		physical	0xb9621e	0x15b0	mixed_with_display_lists_candidate	0x2c20
+compressed_file	konami_lz	file513	0x1		physical	0xb977ce	0x13ce	mixed_with_display_lists_candidate	0x2c20
+compressed_file	konami_lz	file514	0x1		physical	0xb98b9c	0x170c	mixed_with_display_lists_candidate	0x2c20
+compressed_file	konami_lz	file515	0x1		physical	0xb9a2a8	0x17ca	mixed_with_display_lists_candidate	0x2c20
+compressed_file	konami_lz	file516	0x1		physical	0xb9ba72	0x14d8	mixed_with_display_lists_candidate	0x2c20
+compressed_file	konami_lz	file517	0x1		physical	0xb9cf4a	0x1442	f3dex_display_list_candidate	0x2c20
+compressed_file	konami_lz	file518	0x1		physical	0xb9e38c	0xaa0	unclassified	0x12f0
+compressed_file	konami_lz	file519	0x1		physical	0xb9ee2c	0x2ca	unclassified	0xaf0
+compressed_file	konami_lz	file520	0x1		physical	0xb9f0f6	0x778	unclassified	0xf60
+compressed_file	konami_lz	file521	0x1		physical	0xb9f86e	0x15d0	mixed_with_display_lists_candidate	0x3390
+compressed_file	konami_lz	file522	0x1		physical	0xba0e3e	0x10bc	mixed_with_display_lists_candidate	0x22a0
+compressed_file	konami_lz	file523	0x1		physical	0xba1efa	0x1410	unclassified	0x2dc0
+compressed_file	konami_lz	file524	0x1		physical	0xba330a	0xa26	mixed_with_display_lists_candidate	0x12a0
+compressed_file	konami_lz	file525	0x1		physical	0xba3d30	0x10b6	mixed_with_display_lists_candidate	0x22a0
+compressed_file	konami_lz	file526	0x1		physical	0xba4de6	0x11fa	mixed_with_display_lists_candidate	0x22a0
+compressed_file	konami_lz	file527	0x1		physical	0xba5fe0	0x126a	mixed_with_display_lists_candidate	0x22a0
+compressed_file	konami_lz	file528	0x1		physical	0xba724a	0xae2	unclassified	0x12f0
+compressed_file	konami_lz	file529	0x1		physical	0xba7d2c	0x1218	mixed_with_display_lists_candidate	0x22a0
+compressed_file	konami_lz	file530	0x1		physical	0xba8f44	0x302	unclassified	0xaf0
+compressed_file	konami_lz	file531	0x1		physical	0xba9246	0x1356	mixed_with_display_lists_candidate	0x22a0
+compressed_file	konami_lz	file532	0x1		physical	0xbaa59c	0x28e	unclassified	0xaf0
+compressed_file	konami_lz	file533	0x1		physical	0xbaa82a	0x10c4	mixed_with_display_lists_candidate	0x22a0
+compressed_file	konami_lz	file534	0x1		physical	0xbab8ee	0x11e2	mixed_with_display_lists_candidate	0x22a0
+compressed_file	konami_lz	file535	0x1		physical	0xbacad0	0x1224	mixed_with_display_lists_candidate	0x22a0
+compressed_file	konami_lz	file536	0x1		physical	0xbadcf4	0xafe	unclassified	0x12f0
+compressed_file	konami_lz	file537	0x1		physical	0xbae7f2	0x10fc	mixed_with_display_lists_candidate	0x22a0
+compressed_file	konami_lz	file538	0x1		physical	0xbaf8ee	0x1132	mixed_with_display_lists_candidate	0x22a0
+# ---- nested logical counts (decoded LZ payloads; structural F3DEX walk; candidate, not semantically verified)
+display_list	F3DEX1.21	all_files	6007		nested_candidate		1752968
+dl_commands	F3DEX1.21	all_files	219121		nested_reference_count
+dl_vtx_commands	F3DEX1.21	all_files	7051		nested_reference_count
+dl_vertices_loaded	F3DEX1.21	all_files	111470		nested_reference_count
+dl_triangles	F3DEX1.21	all_files	64859		nested_reference_count
+dl_tri1	F3DEX1.21	all_files	1521		nested_reference_count
+dl_tri2	F3DEX1.21	all_files	31669		nested_reference_count
+dl_settimg	F3DEX1.21	all_files	12191		nested_reference_count
+dl_loadtlut	F3DEX1.21	all_files	4218		nested_reference_count
+dl_dl_calls	F3DEX1.21	all_files	11872		nested_reference_count
+dl_matrix_loads	F3DEX1.21	all_files	4215		nested_reference_count
+texture_tile_setup	CI8 64x32	all_files	1568		nested_reference_count
+texture_tile_setup	CI8 32x64	all_files	814		nested_reference_count
+texture_tile_setup	RGBA16 32x64	all_files	717		nested_reference_count
+texture_tile_setup	RGBA16 64x32	all_files	568		nested_reference_count
+texture_tile_setup	CI8 32x32	all_files	420		nested_reference_count
+texture_tile_setup	CI8 48x32	all_files	313		nested_reference_count
+texture_tile_setup	CI8 16x32	all_files	218		nested_reference_count
+texture_tile_setup	CI8 32x48	all_files	150		nested_reference_count
+texture_tile_setup	RGBA16 128x16	all_files	115		nested_reference_count
+texture_tile_setup	RGBA16 32x48	all_files	111		nested_reference_count
+texture_tile_setup	RGBA16 32x32	all_files	110		nested_reference_count
+texture_tile_setup	CI8 16x16	all_files	105		nested_reference_count
+texture_tile_setup	CI8 32x20	all_files	80		nested_reference_count
+texture_tile_setup	RGBA16 40x51	all_files	70		nested_reference_count
+texture_tile_setup	CI8 40x30	all_files	69		nested_reference_count
+texture_tile_setup	CI8 32x16	all_files	59		nested_reference_count
+texture_tile_setup	CI8 64x16	all_files	58		nested_reference_count
+texture_tile_setup	CI8 104x20	all_files	57		nested_reference_count
+texture_tile_setup	RGBA16 48x32	all_files	56		nested_reference_count
+texture_tile_setup	CI8 16x50	all_files	54		nested_reference_count
+texture_tile_setup	CI8 72x28	all_files	48		nested_reference_count
+texture_tile_setup	CI8 64x15	all_files	48		nested_reference_count
+texture_tile_setup	RGBA16 16x128	all_files	46		nested_reference_count
+texture_tile_setup	CI8 48x42	all_files	44		nested_reference_count
+texture_tile_setup	CI8 56x25	all_files	42		nested_reference_count
+texture_tile_setup	CI8 24x85	all_files	40		nested_reference_count
+texture_tile_setup	CI8 8x8	all_files	32		nested_reference_count
+texture_tile_setup	CI8 64x21	all_files	32		nested_reference_count
+texture_tile_setup	CI8 8x32	all_files	32		nested_reference_count
+texture_tile_setup	RGBA16 16x64	all_files	31		nested_reference_count
+texture_tile_setup	CI8 16x128	all_files	28		nested_reference_count
+texture_tile_setup	RGBA16 100x20	all_files	25		nested_reference_count
+texture_tile_setup	RGBA16 28x73	all_files	25		nested_reference_count
+texture_tile_setup	RGBA16 16x50	all_files	24		nested_reference_count
+texture_tile_setup	RGBA16 32x16	all_files	23		nested_reference_count
+texture_tile_setup	CI8 16x15	all_files	22		nested_reference_count
+texture_tile_setup	RGBA16 52x25	all_files	22		nested_reference_count
+texture_tile_setup	RGBA32 32x32	all_files	22		nested_reference_count
+texture_tile_setup	CI8 72x15	all_files	21		nested_reference_count
+texture_tile_setup	CI8 64x8	all_files	21		nested_reference_count
+texture_tile_setup	RGBA16 64x22	all_files	20		nested_reference_count
+texture_tile_setup	CI8 40x29	all_files	20		nested_reference_count
+texture_tile_setup	CI8 16x64	all_files	20		nested_reference_count
+texture_tile_setup	CI8 8x24	all_files	19		nested_reference_count
+texture_tile_setup	CI8 64x13	all_files	18		nested_reference_count
+texture_tile_setup	CI8 56x26	all_files	18		nested_reference_count
+texture_tile_setup	RGBA16 24x85	all_files	18		nested_reference_count
+texture_tile_setup	RGBA16 100x15	all_files	17		nested_reference_count
+texture_tile_setup	RGBA16 28x13	all_files	16		nested_reference_count
+texture_tile_setup	CI8 8x30	all_files	16		nested_reference_count
+texture_tile_setup	RGBA16 20x102	all_files	16		nested_reference_count
+texture_tile_setup	CI8 112x2	all_files	14		nested_reference_count
+texture_tile_setup	RGBA16 64x17	all_files	14		nested_reference_count
+texture_tile_setup	CI8 40x45	all_files	14		nested_reference_count
+texture_tile_setup	CI8 40x26	all_files	14		nested_reference_count
+texture_tile_setup	CI8 24x24	all_files	14		nested_reference_count
+texture_tile_setup	CI8 16x13	all_files	14		nested_reference_count
+texture_tile_setup	CI8 16x48	all_files	14		nested_reference_count
+texture_tile_setup	CI8 16x12	all_files	13		nested_reference_count
+texture_tile_setup	CI8 48x14	all_files	13		nested_reference_count
+texture_tile_setup	fmt716 972x189	all_files	12		nested_reference_count
+texture_tile_setup	RGBA32 64x16	all_files	12		nested_reference_count
+texture_tile_setup	CI8 24x15	all_files	12		nested_reference_count
+texture_tile_setup	RGBA16 40x30	all_files	12		nested_reference_count
+texture_tile_setup	CI8 128x16	all_files	12		nested_reference_count
+texture_tile_setup	RGBA16 32x20	all_files	12		nested_reference_count
+texture_tile_setup	CI8 48x20	all_files	11		nested_reference_count
+texture_tile_setup	RGBA32 4x15	all_files	10		nested_reference_count
+texture_tile_setup	CI8 40x44	all_files	10		nested_reference_count
+texture_tile_setup	CI8 24x74	all_files	10		nested_reference_count
+texture_tile_setup	RGBA16 24x64	all_files	10		nested_reference_count
+texture_tile_setup	RGBA32 32x15	all_files	9		nested_reference_count
+texture_tile_setup	fmt716 976x253	all_files	9		nested_reference_count
+texture_tile_setup	RGBA16 76x15	all_files	9		nested_reference_count
+texture_tile_setup	CI8 56x15	all_files	9		nested_reference_count
+texture_tile_setup	CI8 104x15	all_files	9		nested_reference_count
+texture_tile_setup	CI8 40x46	all_files	9		nested_reference_count
+texture_tile_setup	CI8 40x51	all_files	8		nested_reference_count
+texture_tile_setup	CI8 32x40	all_files	8		nested_reference_count
+texture_tile_setup	RGBA16 16x32	all_files	8		nested_reference_count
+texture_tile_setup	CI8 8x256	all_files	7		nested_reference_count
+texture_tile_setup	CI8 8x1	all_files	7		nested_reference_count
+texture_tile_setup	CI8 24x32	all_files	7		nested_reference_count
+texture_tile_setup	RGBA16 48x42	all_files	7		nested_reference_count
+texture_tile_setup	CI8 40x11	all_files	6		nested_reference_count
+texture_tile_setup	CI8 16x11	all_files	6		nested_reference_count
+texture_tile_setup	CI8 24x14	all_files	6		nested_reference_count
+texture_tile_setup	RGBA16 40x20	all_files	6		nested_reference_count
+texture_tile_setup	CI8 84x15	all_files	6		nested_reference_count
+texture_tile_setup	CI8 32x60	all_files	6		nested_reference_count
+texture_tile_setup	CI8 56x14	all_files	6		nested_reference_count
+texture_tile_setup	CI8 48x25	all_files	6		nested_reference_count
+texture_tile_setup	RGBA16 48x29	all_files	6		nested_reference_count
+texture_tile_setup	RGBA16 52x20	all_files	6		nested_reference_count
+texture_tile_setup	CI8 16x54	all_files	6		nested_reference_count
+texture_tile_setup	RGBA32 16x16	all_files	6		nested_reference_count
+texture_tile_setup	RGBA16 16x16	all_files	5		nested_reference_count
+texture_tile_setup	CI8 48x9	all_files	5		nested_reference_count
+texture_tile_setup	CI8 64x14	all_files	5		nested_reference_count
+texture_tile_setup	CI8 56x11	all_files	5		nested_reference_count
+texture_tile_setup	CI8 48x38	all_files	5		nested_reference_count
+texture_tile_setup	CI8 16x55	all_files	5		nested_reference_count
+texture_tile_setup	CI8 56x36	all_files	5		nested_reference_count
+texture_tile_setup	CI8 64x24	all_files	4		nested_reference_count
+texture_tile_setup	CI8 8x4	all_files	4		nested_reference_count
+texture_tile_setup	RGBA16 60x16	all_files	4		nested_reference_count
+texture_tile_setup	RGBA16 56x13	all_files	4		nested_reference_count
+texture_tile_setup	CI8 80x15	all_files	4		nested_reference_count
+texture_tile_setup	CI8 24x19	all_files	4		nested_reference_count
+texture_tile_setup	CI8 64x29	all_files	4		nested_reference_count
+texture_tile_setup	RGBA16 100x11	all_files	4		nested_reference_count
+texture_tile_setup	CI8 40x13	all_files	4		nested_reference_count
+texture_tile_setup	CI8 8x80	all_files	4		nested_reference_count
+texture_tile_setup	CI8 8x11	all_files	4		nested_reference_count
+texture_tile_setup	CI8 32x73	all_files	4		nested_reference_count
+texture_tile_setup	fmt716 960x1020	all_files	3		nested_reference_count
+texture_tile_setup	CI8 32x11	all_files	3		nested_reference_count
+texture_tile_setup	CI8 48x12	all_files	3		nested_reference_count
+texture_tile_setup	CI8 72x16	all_files	3		nested_reference_count
+texture_tile_setup	CI8 32x9	all_files	3		nested_reference_count
+texture_tile_setup	CI8 48x30	all_files	3		nested_reference_count
+texture_tile_setup	CI8 48x40	all_files	3		nested_reference_count
+texture_tile_setup	CI8 104x8	all_files	3		nested_reference_count
+texture_tile_setup	CI8 40x32	all_files	3		nested_reference_count
+texture_tile_setup	RGBA32 16x18	all_files	3		nested_reference_count
+texture_tile_setup	RGBA16 36x40	all_files	3		nested_reference_count
+texture_tile_setup	CI8 4x4	all_files	3		nested_reference_count
+texture_tile_setup	RGBA16 60x11	all_files	2		nested_reference_count
+texture_tile_setup	fmt716 984x382	all_files	2		nested_reference_count
+texture_tile_setup	fmt716 968x1020	all_files	2		nested_reference_count
+texture_tile_setup	fmt716 976x382	all_files	2		nested_reference_count
+texture_tile_setup	fmt716 976x318	all_files	2		nested_reference_count
+texture_tile_setup	CI8 64x11	all_files	2		nested_reference_count
+texture_tile_setup	CI8 64x12	all_files	2		nested_reference_count
+texture_tile_setup	RGBA16 68x12	all_files	2		nested_reference_count
+texture_tile_setup	CI8 24x12	all_files	2		nested_reference_count
+texture_tile_setup	RGBA16 60x15	all_files	2		nested_reference_count
+texture_tile_setup	RGBA32 4x17	all_files	2		nested_reference_count
+texture_tile_setup	RGBA16 64x16	all_files	2		nested_reference_count
+texture_tile_setup	RGBA16 56x14	all_files	2		nested_reference_count
+texture_tile_setup	CI8 40x14	all_files	2		nested_reference_count
+texture_tile_setup	CI8 16x18	all_files	2		nested_reference_count
+texture_tile_setup	CI8 72x22	all_files	2		nested_reference_count
+texture_tile_setup	RGBA16 48x40	all_files	2		nested_reference_count
+texture_tile_setup	RGBA32 16x59	all_files	2		nested_reference_count
+texture_tile_setup	RGBA16 4x1	all_files	2		nested_reference_count
+texture_tile_setup	CI8 48x34	all_files	2		nested_reference_count
+texture_tile_setup	RGBA16 36x32	all_files	2		nested_reference_count
+texture_tile_setup	RGBA16 32x11	all_files	2		nested_reference_count
+texture_tile_setup	RGBA16 4x4	all_files	2		nested_reference_count
+texture_tile_setup	CI8 24x64	all_files	2		nested_reference_count
+texture_tile_setup	CI8 40x33	all_files	2		nested_reference_count
+texture_tile_setup	RGBA16 72x28	all_files	2		nested_reference_count
+texture_tile_setup	CI8 32x30	all_files	2		nested_reference_count
+texture_tile_setup	CI8 16x23	all_files	2		nested_reference_count
+texture_tile_setup	CI8 24x49	all_files	2		nested_reference_count
+texture_tile_setup	CI8 16x41	all_files	2		nested_reference_count
+texture_tile_setup	CI8 16x77	all_files	2		nested_reference_count
+texture_tile_setup	CI8 48x18	all_files	2		nested_reference_count
+texture_tile_setup	CI8 88x9	all_files	2		nested_reference_count
+texture_tile_setup	RGBA32 12x16	all_files	1		nested_reference_count
+texture_tile_setup	fmt716 976x317	all_files	1		nested_reference_count
+texture_tile_setup	fmt716 972x1021	all_files	1		nested_reference_count
+texture_tile_setup	fmt716 972x253	all_files	1		nested_reference_count
+texture_tile_setup	fmt716 960x189	all_files	1		nested_reference_count
+texture_tile_setup	fmt716 956x956	all_files	1		nested_reference_count
+texture_tile_setup	CI8 48x11	all_files	1		nested_reference_count
+texture_tile_setup	CI8 24x11	all_files	1		nested_reference_count
+texture_tile_setup	CI8 56x13	all_files	1		nested_reference_count
+texture_tile_setup	RGBA16 60x19	all_files	1		nested_reference_count
+texture_tile_setup	CI8 32x24	all_files	1		nested_reference_count
+texture_tile_setup	RGBA16 32x17	all_files	1		nested_reference_count
+texture_tile_setup	RGBA16 40x17	all_files	1		nested_reference_count
+texture_tile_setup	RGBA16 40x45	all_files	1		nested_reference_count
+texture_tile_setup	CI8 8x45	all_files	1		nested_reference_count
+texture_tile_setup	RGBA16 84x15	all_files	1		nested_reference_count
+texture_tile_setup	RGBA32 16x64	all_files	1		nested_reference_count
+texture_tile_setup	RGBA16 32x60	all_files	1		nested_reference_count
+texture_tile_setup	CI8 64x9	all_files	1		nested_reference_count
+texture_tile_setup	RGBA16 76x26	all_files	1		nested_reference_count
+texture_tile_setup	CI8 56x9	all_files	1		nested_reference_count
+texture_tile_setup	CI8 56x10	all_files	1		nested_reference_count
+texture_tile_setup	CI8 72x14	all_files	1		nested_reference_count
+texture_tile_setup	CI8 56x20	all_files	1		nested_reference_count
+texture_tile_setup	CI8 24x8	all_files	1		nested_reference_count
+texture_tile_setup	RGBA16 108x18	all_files	1		nested_reference_count
+texture_tile_setup	CI8 16x8	all_files	1		nested_reference_count
+texture_tile_setup	CI8 8x33	all_files	1		nested_reference_count
+texture_tile_setup	CI8 16x20	all_files	1		nested_reference_count
+texture_tile_setup	CI8 32x56	all_files	1		nested_reference_count
+texture_tile_setup	RGBA16 12x125	all_files	1		nested_reference_count
+texture_tile_setup	RGBA16 12x136	all_files	1		nested_reference_count
+texture_tile_setup	RGBA16 44x12	all_files	1		nested_reference_count
+texture_tile_setup	RGBA16 32x31	all_files	1		nested_reference_count
+texture_tile_setup	RGBA32 12x25	all_files	1		nested_reference_count
+texture_tile_setup	RGBA16 12x27	all_files	1		nested_reference_count
+texture_tile_setup	CI8 16x24	all_files	1		nested_reference_count
+texture_tile_setup	RGBA16 48x34	all_files	1		nested_reference_count
+texture_tile_setup	CI8 28x73	all_files	1		nested_reference_count
+texture_tile_setup	RGBA16 4x16	all_files	1		nested_reference_count
+texture_tile_setup	CI8 40x40	all_files	1		nested_reference_count
+texture_tile_setup	CI8 80x22	all_files	1		nested_reference_count
+texture_tile_setup	RGBA16 56x36	all_files	1		nested_reference_count
+texture_tile_setup	RGBA32 32x16	all_files	1		nested_reference_count
+texture_tile_setup	RGBA16 48x26	all_files	1		nested_reference_count
+texture_tile_setup	RGBA16 12x12	all_files	1		nested_reference_count
+texture_tile_setup	CI8 32x8	all_files	1		nested_reference_count
+texture_tile_setup	RGBA16 40x33	all_files	1		nested_reference_count
+texture_tile_setup	RGBA32 12x11	all_files	1		nested_reference_count
+texture_tile_setup	RGBA16 68x13	all_files	1		nested_reference_count
+texture_tile_setup	CI8 72x13	all_files	1		nested_reference_count
+texture_tile_setup	CI8 8x13	all_files	1		nested_reference_count
+texture_tile_setup	CI8 16x40	all_files	1		nested_reference_count
+texture_tile_setup	CI8 24x40	all_files	1		nested_reference_count
+texture_tile_setup	CI8 24x51	all_files	1		nested_reference_count
+texture_tile_setup	CI8 32x51	all_files	1		nested_reference_count
+texture_tile_setup	CI8 24x80	all_files	1		nested_reference_count
+texture_tile_setup	RGBA8 64x32	all_files	1		nested_reference_count
+texture_tile_setup	IA8 8x100	all_files	1		nested_reference_count
+texture_tile_setup	fmt78 8x265	all_files	1		nested_reference_count
+texture_tile_setup	fmt78 536x430	all_files	1		nested_reference_count
+texture_tile_setup	fmt58 8x232	all_files	1		nested_reference_count

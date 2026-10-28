@@ -1,0 +1,20 @@
+name	rom_start	rom_end	dest	comp	decoded	children	align	sites	records
+overlay_00	0x829e0	0x8a5f0	0x801954a0	none	0x7c10	text 0x6b04, data 0x1100	0x10	func_80002188/func_80002538/func_80002758/func_80003000/func_800033E0 via table 0x80063558	0x80063598
+overlay_01	0x8a5f0	0x931a0	0x801954a0	none	0x8bb0	text 0x75d8, data 0x15d0	0x10	func_80002188/func_80002538/func_80002758/func_80003000/func_800033E0 via table 0x80063558	0x800635a8
+overlay_02	0x931a0	0xa15f0	0x801954a0	none	0xe450	text 0xd75c, data 0xcf0	0x10	func_80002188/func_80002538/func_80002758/func_80003000/func_800033E0 via table 0x80063558	0x800635c8,0x800635d8
+overlay_03	0xa15f0	0xacb40	0x801954a0	none	0xb550	text 0xa5d0, data 0xf80	0x10	func_80002188/func_80002538/func_80002758/func_80003000/func_800033E0 via table 0x80063558	0x800635e8,0x800635f8
+overlay_04	0xacb40	0xb5110	0x801954a0	none	0x85d0	text 0x7214, data 0x13b0	0x10	func_80002188/func_80002538/func_80002758/func_80003000/func_800033E0 via table 0x80063558	0x80063558,0x80063568,0x800635b8
+overlay_05	0xb5110	0xc84d0	0x801954a0	none	0x133c0	text 0x12290, data 0x1130	0x10	func_80002188/func_80002538/func_80002758/func_80003000/func_800033E0 via table 0x80063558	0x80063608
+overlay_06	0xc84d0	0xd8cc0	0x801954a0	none	0x107f0	text 0xc048, data 0x47a0	0x10	func_80002188/func_80002538/func_80002758/func_80003000/func_800033E0 via table 0x80063558	0x80063578,0x80063588
+overlay_07	0xd8cc0	0xda200	0x801954a0	none	0x1540	text 0x14a0, data 0xa0	0x10	func_80002188/func_80002538/func_80002758/func_80003000/func_800033E0 via table 0x80063558	0x80063658
+overlay_08	0xda200	0xdfb40	0x801954a0	none	0x5940	text 0x5658, data 0x2e0	0x10	func_80002188/func_80002538/func_80002758/func_80003000/func_800033E0 via table 0x80063558	0x80063668
+overlay_09	0xdfb40	0xe4480	0x801954a0	none	0x4940	text 0x46ac, data 0x290	0x10	func_80002188/func_80002538/func_80002758/func_80003000/func_800033E0 via table 0x80063558	0x80063628
+overlay_10	0xe4480	0xe74c0	0x801954a0	none	0x3040	text 0x2f88, data 0xb0	0x10	func_80002188/func_80002538/func_80002758/func_80003000/func_800033E0 via table 0x80063558	0x80063618
+overlay_11	0xe74c0	0xeb3b0	0x801954a0	none	0x3ef0	text 0x3b30, data 0x3c0	0x10	func_80002188/func_80002538/func_80002758/func_80003000/func_800033E0 via table 0x80063558	0x80063648
+overlay_12	0xeb3b0	0xef040	0x801954a0	none	0x3c90	text 0x38e8, data 0x3a0	0x10	func_80002188/func_80002538/func_80002758/func_80003000/func_800033E0 via table 0x80063558	0x80063638
+audio_bank_0	0xef040	0xf4980	heap	none	0x5940	93 instruments, tbl 0x1019f0..0x1aa5e0	0x10	func_80048080 via table 0x80073690	0x80073690
+audio_bank_1	0xf4980	0xf7850	heap	none	0x2ed0	53 instruments, tbl 0x1aa5e0..0x23c550	0x10	func_80048080 via table 0x80073690	0x80073690
+audio_bank_2	0xf7850	0xf9f10	heap	none	0x26c0	42 instruments, tbl 0x23c550..0x2e6e60	0x10	func_80048080 via table 0x80073690	0x80073690
+audio_bank_3	0xf9f10	0x1019f0	heap	none	0x7ae0	154 instruments, tbl 0x2e6e60..0x3f1990	0x10	func_80048080 via table 0x80073690	0x80073690
+music_sequences	0x3f1990	0x3fc620	heap	konami_lz	see containers	23 sequences	0x10	func_800499CC	0x800736F8/0x80073754
+asset_file_table	0x3fc620	0xbb0a20	caller buffer	konami_lz (bit31) / raw DMA	see containers	538 entries	0x2	func_800014D8 -> func_8000BB14 (LZ) / func_800015C4 (DMA)	ROM 0x62ef8
