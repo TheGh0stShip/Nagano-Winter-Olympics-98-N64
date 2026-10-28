@@ -1360,8 +1360,8 @@
   },
   "functions": {
     "total": 1469,
-    "matched": 932,
-    "matched_bytes": 98452,
+    "matched": 937,
+    "matched_bytes": 103524,
     "total_bytes": 392096,
     "size_buckets": {
       "<=0x10": 96,
@@ -1375,7 +1375,7 @@
       ">0x800": 13
     },
     "compiler_matches": {
-      "IDO 5.3": 669,
+      "IDO 5.3": 674,
       "KMC GCC 2.7.2 + assembler": 60,
       "IDO 7.1": 203
     },
@@ -1444,10 +1444,10 @@
         "start": 331776,
         "end": 397312,
         "functions": 237,
-        "matched": 178,
-        "matched_bytes": 37832,
+        "matched": 183,
+        "matched_bytes": 42904,
         "compiler_matches": {
-          "IDO 5.3": 173,
+          "IDO 5.3": 178,
           "KMC GCC 2.7.2 + assembler": 5
         }
       },
@@ -1703,6 +1703,15 @@
         "jaccard": 0.3333333333333333,
         "example": "func_80029274",
         "source": "src/game/store_scaled_unsigned_80029274.c"
+      },
+      {
+        "name": "func_8005FA60",
+        "vram": 2147875424,
+        "size": 392,
+        "score": 0.7171717171717171,
+        "jaccard": 0.3511450381679389,
+        "example": "func_80058BA0",
+        "source": "src/game/create_pi_manager_80058ba0.c"
       },
       {
         "name": "func_8002BD84",

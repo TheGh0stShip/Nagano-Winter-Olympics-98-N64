@@ -4,8 +4,8 @@ Retail ROM SHA-1: `eaf543e195731031a84f4136b506449209e3a8f5`. This audit scans a
 
 ## Code census
 
-- Exact matches: 932 functions / 98,452 bytes.
-- Remaining: 537 functions / 293,644 surveyed bytes.
+- Exact matches: 937 functions / 103,524 bytes.
+- Remaining: 532 functions / 288,572 surveyed bytes.
 - Direct call sites: 3,929; indirect call sites: 64; branch sites: 7,046.
 - COP1 instructions: 7,233.
 - Exact duplicate groups: 28; structural duplicate groups: 96; structural groups with unmatched members: 6.
@@ -25,7 +25,7 @@ Retail ROM SHA-1: `eaf543e195731031a84f4136b506449209e3a8f5`. This audit scans a
 
 ### Verified compiler units
 
-- IDO 5.3: 669
+- IDO 5.3: 674
 - KMC GCC 2.7.2 + assembler: 60
 - IDO 7.1: 203
 
@@ -38,7 +38,7 @@ Retail ROM SHA-1: `eaf543e195731031a84f4136b506449209e3a8f5`. This audit scans a
 | `0x21000..0x31000` | 274 | 172 | 13252 | KMC GCC 2.7.2 + assembler: 10, IDO 5.3: 104, IDO 7.1: 58 |
 | `0x31000..0x41000` | 239 | 147 | 10620 | IDO 7.1: 27, IDO 5.3: 107, KMC GCC 2.7.2 + assembler: 13 |
 | `0x41000..0x51000` | 242 | 141 | 14708 | IDO 7.1: 35, IDO 5.3: 96, KMC GCC 2.7.2 + assembler: 10 |
-| `0x51000..0x61000` | 237 | 178 | 37832 | IDO 5.3: 173, KMC GCC 2.7.2 + assembler: 5 |
+| `0x51000..0x61000` | 237 | 183 | 42904 | IDO 5.3: 178, KMC GCC 2.7.2 + assembler: 5 |
 | `0x61000..0x71000` | 0 | 0 | 0 | none |
 | `0x71000..0x81000` | 0 | 0 | 0 | none |
 | `0x81000..0x829E0` | 0 | 0 | 0 | none |
@@ -101,6 +101,7 @@ The ledger has 2,384 gap-free records.
 - 0.77: `func_8004B900` at `0x8004B900` from `func_8004B86C` (src/game/prepare_stream_record_if_available_8004b86c.c).
 - 0.72: `func_800466E0` at `0x800466E0` from `func_80029274` (src/game/store_scaled_unsigned_80029274.c).
 - 0.72: `func_8004678C` at `0x8004678C` from `func_80029274` (src/game/store_scaled_unsigned_80029274.c).
+- 0.72: `func_8005FA60` at `0x8005FA60` from `func_80058BA0` (src/game/create_pi_manager_80058ba0.c).
 - 0.71: `func_8002BD84` at `0x8002BD84` from `func_8002BEBC` (src/game/convert_float_to_u16_8002bebc.c).
 - 0.70: `func_80020BF0` at `0x80020BF0` from `func_8005AE70` (src/game/build_position_matrix_8005ae70.c).
 - 0.70: `func_8004B900` at `0x8004B900` from `func_8004B800` (src/game/advance_stream_record_8004b800.c).
@@ -108,7 +109,6 @@ The ledger has 2,384 gap-free records.
 - 0.67: `func_8002D5AC` at `0x8002D5AC` from `func_800462DC` (src/game/convert_scaled_byte_800462dc.c).
 - 0.67: `func_8002D5AC` at `0x8002D5AC` from `func_80046550` (src/game/convert_scaled_byte_80046550.c).
 - 0.67: `func_8004AFD8` at `0x8004AFD8` from `func_8004B1C8` (src/game/dispatch_stream_updates_8004b1c8.c).
-- 0.64: `func_8004EEDC` at `0x8004EEDC` from `func_800138C4` (src/game/call_pair_800138c4.c).
 
 ### Small direct-call functions
 
