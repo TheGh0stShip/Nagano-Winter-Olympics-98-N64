@@ -581,4 +581,9 @@
 0x111A4	0xB0	src/game/poll_runtime_input_800105a4.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	c7cc68ff271f81e8eec33bcb118cca9e525ad498b347eaaa8661389a706b3d7c
 0x39C04	0xB0	src/game/initialize_runtime_record_80039004.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	02daeb56c942129525c24887edba70741d4b11b405c0cd999bfc0091e5e8f26f
 0x426D0	0xB0	src/game/process_runtime_block_80041ad0.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	7a0cbba9bccf6524d81ec77516f8ec05a15a164222dedb4c0b71550acaf5861e
-0x60A60	0xB0	src/game/start_device_dma_8005fe60.c	-O1 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	29b647b34e8128fca148fb310f1cf86a017723c847d07282610c4d26181a451f
+0x60A60	0xB0	src/game/ai_set_next_buffer_8005fe60.c	-O1 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	29b647b34e8128fca148fb310f1cf86a017723c847d07282610c4d26181a451f
+0x52DB0	0xB0	src/game/start_si_dma_800521b0.c	-O1 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	d889db4cc10bedf62f70882a1046b6b3fec330d2739f08a9458d02c9236152a1
+0x5B920	0xE0	src/game/set_thread_priority_8005ad20.c	-O1 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	07a20603decc5f8b5d61f5082d2beb0db1f85ee446c49288ee94fc0265c307fc
+0x5EDE0	0xB0	src/game/controller_address_crc_8005e1e0.c	-O1 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	319998fd133973f4cd3526a0c0980d764034ad6ae652895f7b18bac0f4b89d93
+0x5EE90	0xD0	src/game/controller_data_crc_8005e290.c	-O1 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	bbfa6798a2048b18ffe28c5d1b22a152d7274c197ac4e90fff8f7aed13ac3fdf
+0x5EFB0	0xE0	src/game/set_timer_8005e3b0.c	-O1 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	6a7c4594116ee6783525bc8b39778448f01d75df5a51684b6e301ffb33259915
