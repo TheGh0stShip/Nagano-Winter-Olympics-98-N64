@@ -43,12 +43,14 @@ class BaselineTests(unittest.TestCase):
     def test_matching_manifest_shape(self):
         lines = (ROOT / "config/us/matching_kmc_as_units.tsv").read_text().splitlines()
         rows = [line for line in lines if line and not line.startswith("#")]
+        asm_lines = (ROOT / "config/us/matching_asm_units.tsv").read_text().splitlines()
         ido_lines = (ROOT / "config/us/matching_ido_units.tsv").read_text().splitlines()
         ido7_lines = (ROOT / "config/us/matching_ido7_units.tsv").read_text().splitlines()
-        all_rows = (rows + [line for line in ido_lines if line and not line.startswith("#")]
+        all_rows = (rows + [line for line in asm_lines if line and not line.startswith("#")]
+                    + [line for line in ido_lines if line and not line.startswith("#")]
                     + [line for line in ido7_lines if line and not line.startswith("#")])
-        self.assertEqual(len(all_rows), 898)
-        self.assertEqual(sum(int(row.split("\t")[1], 0) for row in all_rows), 116388)
+        self.assertEqual(len(all_rows), 910)
+        self.assertEqual(sum(int(row.split("\t")[1], 0) for row in all_rows), 117108)
         row = rows[0]
         fields = row.split("\t")
         self.assertEqual(fields[:3], ["0x27F4", "0xC", "src/game/get_global_halfword.c"])
@@ -59,8 +61,8 @@ class BaselineTests(unittest.TestCase):
                        cwd=ROOT, check=True, capture_output=True, text=True)
         report = json.loads((ROOT / "build/report.json").read_text())
         categories = {item["id"]: item["measures"] for item in report["categories"]}
-        self.assertEqual(report["measures"]["matched_code"], "116388")
-        self.assertEqual(report["measures"]["matched_functions"], 963)
+        self.assertEqual(report["measures"]["matched_code"], "117108")
+        self.assertEqual(report["measures"]["matched_functions"], 975)
         self.assertEqual(report["measures"]["matched_data"], "129824")
         self.assertEqual(categories["assets"]["total_code"], "12047904")
         self.assertEqual(categories["assets"]["matched_code"], "794392")

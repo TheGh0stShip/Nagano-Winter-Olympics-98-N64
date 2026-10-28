@@ -85,6 +85,8 @@ def load_inventory() -> list[dict]:
 
 
 def compiler_for(source: str) -> str:
+    if "matching_asm" in source:
+        return "hand-written assembly"
     if "matching_kmc" in source:
         return "KMC GCC 2.7.2 + assembler"
     if "matching_ido7" in source:
