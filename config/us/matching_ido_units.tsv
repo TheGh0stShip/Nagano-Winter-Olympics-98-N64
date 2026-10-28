@@ -616,3 +616,5 @@
 0x52F40	0x500	src/game/read_write_controller_pak_file_80052340.c	-O1 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	75aa190bbc32f4434d9483f41c5cd5421d695ed9547ed60ee3eb56e238b1641c
 0x544F4	0x32C	src/game/declare_controller_pak_pages_800538f4.c	-O1 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	9f825b9463f8a4235ae804db6492663cbd0bd056277c7b21f676e187bd9972ba
 0x54070	0x484	src/game/allocate_controller_pak_file_80053470.c	-O1 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	c4346db9475bc622acd0b9d2ac10dfaf018398d64b7323f8d64aa3991922fe5f
+0x54820	0x1A0	src/game/detect_controller_paks_80053c20.c	--symbol=D_80192A31:0x80192A31 --symbol=D_80192EA0:0x80192EA0 -O1 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	15ef9b7dbaa6e304f8a50babb1718a536f80d76a1a61754e1d59147ec7b5d0a5
+0x53A50	0x620	src/game/controller_pak_motor_80052e50.c	--section-base=.bss:0x80192C60 --symbol=D_80192A30:0x80192A30 --symbol=D_80192EA0:0x80192EA0 -O1 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	d778327c4c9f48e5abe94e3c47787a06ca771ae63914306960bcdc7b6954eebb
