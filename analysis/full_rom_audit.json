@@ -1360,8 +1360,8 @@
   },
   "functions": {
     "total": 1469,
-    "matched": 987,
-    "matched_bytes": 119156,
+    "matched": 989,
+    "matched_bytes": 119628,
     "total_bytes": 392056,
     "size_buckets": {
       "<=0x10": 96,
@@ -1376,9 +1376,9 @@
     },
     "compiler_matches": {
       "hand-written assembly": 23,
-      "IDO 5.3": 702,
+      "IDO 5.3": 703,
       "KMC GCC 2.7.2 + assembler": 59,
-      "IDO 7.1": 203
+      "IDO 7.1": 204
     },
     "address_bands": [
       {
@@ -1410,12 +1410,12 @@
         "start": 135168,
         "end": 200704,
         "functions": 274,
-        "matched": 172,
-        "matched_bytes": 13252,
+        "matched": 173,
+        "matched_bytes": 13440,
         "compiler_matches": {
           "KMC GCC 2.7.2 + assembler": 10,
           "IDO 5.3": 104,
-          "IDO 7.1": 58
+          "IDO 7.1": 59
         }
       },
       {
@@ -1434,11 +1434,11 @@
         "start": 266240,
         "end": 331776,
         "functions": 242,
-        "matched": 147,
-        "matched_bytes": 15624,
+        "matched": 148,
+        "matched_bytes": 15908,
         "compiler_matches": {
           "IDO 7.1": 35,
-          "IDO 5.3": 96,
+          "IDO 5.3": 97,
           "KMC GCC 2.7.2 + assembler": 9,
           "hand-written assembly": 7
         }
@@ -1610,6 +1610,15 @@
         "source": "src/game/init_player_slot_8002eb3c.c"
       },
       {
+        "name": "func_8002C934",
+        "vram": 2147666228,
+        "size": 224,
+        "score": 0.7572815533980582,
+        "jaccard": 0.1511627906976744,
+        "example": "func_8002CB28",
+        "source": "src/game/advance_indexed_scene_8002cb28.c"
+      },
+      {
         "name": "func_8002BD84",
         "vram": 2147663236,
         "size": 220,
@@ -1671,24 +1680,6 @@
         "jaccard": 0.3442622950819672,
         "example": "func_8004678C",
         "source": "src/game/scaled_byte_conversions_800466e0.c"
-      },
-      {
-        "name": "func_8004AFD8",
-        "vram": 2147790808,
-        "size": 284,
-        "score": 0.6666666666666666,
-        "jaccard": 0.25925925925925924,
-        "example": "func_8004B1C8",
-        "source": "src/game/dispatch_stream_updates_8004b1c8.c"
-      },
-      {
-        "name": "func_8002CB28",
-        "vram": 2147666728,
-        "size": 188,
-        "score": 0.6329113924050633,
-        "jaccard": 0.15384615384615385,
-        "example": "func_8002D8E0",
-        "source": "src/game/advance_scene_value_8002d8e0.c"
       },
       {
         "name": "func_80046388",

@@ -526,6 +526,7 @@
 0x4AF2C	0x8C	src/game/select_channel_bytes_8004a32c.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	10d9027940919fa9baf0e2565e5adc7f5c8375860d5c282efef3be68bc713efa
 0x4C374	0x8C	src/game/reset_stream_counter_8004b774.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	54949fccf5694483e235ee1003c482bea3a3a65fca6a21673c13c285efaf22d1
 0x4CB88	0x84	src/game/read_stream_rate_fields_8004bf88.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	4bd5e35435a1eaee08f1de4fa93bbe4ffd5588f03a133f8d379a5b350000a807
+0x4BBD8	0x11C	src/game/dispatch_stream_state_8004afd8.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	e95704ad2af0e594bc8c36811768c07c3758986c2001f3897ba5d9b024fa89ad
 0x4F790	0xA0	src/game/queue_voice_pitch_update_8004eb90.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	c58aab285ff6c1d28314b95e6327d6b4a9ebe2a429d230e1511d9385b280b097
 0x4FD18	0x9C	src/game/remainder_s64_8004f118.c	-O1 -mips3 -32 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	b9073be5a5aff0b39a538e2ebe2581b5b909de1093c324bf7db16b412a0cbbef
 0x518A4	0x19C	src/game/controller_read_data_80050ca4.c	-O1 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	a9c867ad1356ca3299d00cca0450eb739dde182a5f2a079767a824e3a06a00ff
