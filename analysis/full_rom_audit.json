@@ -1360,8 +1360,8 @@
   },
   "functions": {
     "total": 1469,
-    "matched": 937,
-    "matched_bytes": 103524,
+    "matched": 949,
+    "matched_bytes": 108628,
     "total_bytes": 392096,
     "size_buckets": {
       "<=0x10": 96,
@@ -1375,7 +1375,7 @@
       ">0x800": 13
     },
     "compiler_matches": {
-      "IDO 5.3": 674,
+      "IDO 5.3": 686,
       "KMC GCC 2.7.2 + assembler": 60,
       "IDO 7.1": 203
     },
@@ -1444,10 +1444,10 @@
         "start": 331776,
         "end": 397312,
         "functions": 237,
-        "matched": 183,
-        "matched_bytes": 42904,
+        "matched": 195,
+        "matched_bytes": 48008,
         "compiler_matches": {
-          "IDO 5.3": 178,
+          "IDO 5.3": 190,
           "KMC GCC 2.7.2 + assembler": 5
         }
       },
@@ -1596,6 +1596,15 @@
   },
   "attack_queues": {
     "similar_to_matched": [
+      {
+        "name": "func_80054A04",
+        "vram": 2147830276,
+        "size": 604,
+        "score": 0.9966996699669967,
+        "jaccard": 0.9927536231884058,
+        "example": "func_8005A890",
+        "source": "src/game/pfs_repair_id_8005a890.c"
+      },
       {
         "name": "func_80053EBC",
         "vram": 2147827388,
@@ -1865,15 +1874,6 @@
         "jaccard": 0.17567567567567569,
         "example": "func_80046550",
         "source": "src/game/convert_scaled_byte_80046550.c"
-      },
-      {
-        "name": "func_8005DD70",
-        "vram": 2147868016,
-        "size": 240,
-        "score": 0.58,
-        "jaccard": 0.15853658536585366,
-        "example": "func_8004EB90",
-        "source": "src/game/queue_voice_pitch_update_8004eb90.c"
       },
       {
         "name": "func_80006DC8",
