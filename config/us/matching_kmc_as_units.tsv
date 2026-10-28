@@ -58,6 +58,5 @@
 0x4CE74	0x8	src/game/noop_8004c274.c	-O2 -G0 -mips3 -mgp32 -mfp32	78aa5094d5ec7291c79f799c009d04f06c2f20187988e3dcc8d35ee5efdbb378
 0x55FC0	0x8	src/game/noop_800553c0.c	-O2 -G0 -mips3 -mgp32 -mfp32	78aa5094d5ec7291c79f799c009d04f06c2f20187988e3dcc8d35ee5efdbb378
 0x56100	0x8	src/game/noop_80055500.c	-O2 -G0 -mips3 -mgp32 -mfp32	78aa5094d5ec7291c79f799c009d04f06c2f20187988e3dcc8d35ee5efdbb378
-0x5F5F8	0x8	src/game/noop_8005e9f8.c	-O2 -G0 -mips3 -mgp32 -mfp32	78aa5094d5ec7291c79f799c009d04f06c2f20187988e3dcc8d35ee5efdbb378
 0x30374	0x1C	src/game/set_repeated_rgb_8002f774.c	-O2 -G0 -mips3 -mgp32 -mfp32	a429125404658db2edf6cd29be79bbd9e07d81ba3e987148fd303d9922ad474c
 0x30874	0x1C	src/game/set_repeated_rgb_8002fc74.c	-O2 -G0 -mips3 -mgp32 -mfp32	f93c2e65c15baf1eedf69d8e4db717e4ebfe01cade8e304ea93684ee45776c3d

@@ -621,3 +621,7 @@
 0x55CF0	0x110	src/game/start_pi_dma_800550f0.c	-O1 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	ba333650c962c9b156af85b94cef0466e7dc27bfd3f9d86d42719253559e9c6f
 0x4F5D0	0x1C0	src/game/sine_8004e9d0.c	--section-base=.rodata:0x80080F70 --symbol=D_800812B0:0x800812B0 -O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	eef6b2a89564586d0d5998654a939b713e793475240b313886247f9e1acd720b
 0x5D0E0	0x170	src/game/cosine_8005c4e0.c	--section-base=.rodata:0x80081260 --symbol=D_800812B0:0x800812B0 -O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	7a479aba23017b0b05499c4ae2845b81c884eedfd6fdfb0626525d64983229cb
+0x57D18	0xEC	src/game/split_double_exponent_80057118.c	-O3 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	4498bb6a00d9565ff10d6ae1b3fb5fc3a0aa745c4e1ed73a7e82659c640f9ba7
+0x5F090	0xAC0	src/game/format_long_double_8005e490.c	--section-base=.rodata:0x800812C0 --symbol=memcpy:0x8005A530 --symbol=ldiv:0x8005F050 -O3 -mips2 -Wab,-r4300_mul -non_shared -G 0 -Xcpluscomm	42110dafcaccff203c51d2064cc36dd9b874c48d7047e2e9a10a9da22d2cccad
+0x5FB50	0x100	src/game/divide_long_long_8005ef50.c	--symbol=__ll_div:0x8004F02C --symbol=__ll_mul:0x8004F088 -O3 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	ccd1518aa0b91c4e90be8e9c45b3b0f09c1f70ee1bcae1ed21a33b76b29c55ca
+0x5FCE0	0x2A0	src/game/format_integer_8005f0e0.c	--section-base=.data:0x8007DB90 --symbol=__ull_rem:0x8004EF4C --symbol=__ull_div:0x8004EF88 -O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	5b836f63a76f10a3ed4cc6d2857d34b8ad59bd001e4b80bc2877cd162a863cd6
