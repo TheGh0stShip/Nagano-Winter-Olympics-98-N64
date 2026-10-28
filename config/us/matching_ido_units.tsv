@@ -597,3 +597,7 @@
 0x4F140	0x140	src/game/receive_message_8004e540.c	-O1 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	4a24d5df8629748333a86c4023a3c39496d85b3201cd225b4df8efc737e3b7e1
 0x5B7D0	0x150	src/game/jam_message_8005abd0.c	-O1 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	682d996e4da742abc7e8acf3b2c2a2fc050d81303ee9c9f54d68a331da58dcc7
 0x60410	0x150	src/game/start_thread_8005f810.c	-O1 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	d0b6abbab2e2690590890f12b4f9000bd65d618cb15723dc58e3f821268790ca
+0x50730	0x100	src/game/destroy_thread_8004fb30.c	-O1 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	3db4d0d46c353e2495b567931c7f24c1ac5b9ffebb788e3e59fea7bf4fd36f8f
+0x51690	0x150	src/game/create_thread_80050a90.c	-O1 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	78649fb108ddbfdd117ee08276dea11d82d2492b0876896cdb86397a91f8b2b1
+0x5D500	0x150	src/game/pfs_num_files_8005c900.c	-O1 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	ae274cf5517b6ecca7eeba11d1d080bd6e2de67bf68f8c088fec62fe27fccf27
+0x5D660	0x2F0	src/game/pfs_file_state_8005ca60.c	-O1 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	3f4430a6f1f5f046b01147f0d009944957311d0acbe0ffb3f2fc62f48bebde50
