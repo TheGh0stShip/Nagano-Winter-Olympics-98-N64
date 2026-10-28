@@ -85,15 +85,27 @@ def ngrams(tokens: list[str], width: int = 3) -> set[tuple[str, ...]]:
             for index in range(len(tokens) - width + 1)}
 
 
-def matched_sources() -> dict[tuple[int, int], str]:
-    result = {}
+def matched_sources() -> list[tuple[int, int, str]]:
+    """Return verified ROM ranges, including multi-function units."""
+    result = []
     for manifest in MANIFESTS:
         with manifest.open() as stream:
             for row in csv.reader(stream, delimiter="\t"):
                 if not row or row[0].startswith("#"):
                     continue
-                result[(int(row[0], 0), int(row[1], 0))] = row[2]
+                start = int(row[0], 0)
+                result.append((start, start + int(row[1], 0), row[2]))
     return result
+
+
+def covering_source(ranges: list[tuple[int, int, str]],
+                    rom_start: int, size: int) -> str | None:
+    """Find the verified unit that wholly covers a surveyed function."""
+    end = rom_start + size
+    for start, stop, source in ranges:
+        if start <= rom_start and end <= stop:
+            return source
+    return None
 
 
 def families(rom: bytes, include_unmatched: bool = False) -> list[dict]:
@@ -109,7 +121,7 @@ def families(rom: bytes, include_unmatched: bool = False) -> list[dict]:
             "vram": function["vram"],
             "rom": rom_start,
             "size": size,
-            "source": matched.get((rom_start, size)),
+            "source": covering_source(matched, rom_start, size),
         })
     result = []
     for (size, digest), members in grouped.items():
@@ -133,7 +145,7 @@ def similar_functions(rom: bytes, limit: int = 50, minimum: float = 0.45) -> lis
         size = function["size"]
         tokens = token_stream(rom[rom_start:rom_start + size], function["vram"], names)
         records.append((function, rom_start, tokens, ngrams(tokens),
-                        matched.get((rom_start, size))))
+                        covering_source(matched, rom_start, size)))
     known = [record for record in records if record[4] and len(record[2]) >= 6]
     results = []
     for function, rom_start, tokens, grams, source in records:

@@ -71,6 +71,17 @@ class BaselineTests(unittest.TestCase):
         self.assertEqual(categories["assets_extracted"]["matched_code"], "0")
         self.assertEqual(categories["rom_inventory"]["matched_code"], "12582912")
 
+    def test_function_families_respect_merged_unit_coverage(self):
+        result = subprocess.run(
+            ["python3", "tools/find_function_families.py", "--rom",
+             "baseroms/us/baserom.z64", "--include-unmatched"],
+            cwd=ROOT, check=True, capture_output=True, text=True,
+        ).stdout
+        self.assertNotIn("candidate 0x80056240", result)
+        self.assertNotIn("candidate 0x80056FE0", result)
+        self.assertNotIn("candidate 0x800466E0", result)
+        self.assertNotIn("candidate 0x8004678C", result)
+
 
 if __name__ == "__main__":
     unittest.main()
