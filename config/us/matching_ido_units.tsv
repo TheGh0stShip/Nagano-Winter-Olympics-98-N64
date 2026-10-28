@@ -606,3 +606,8 @@
 0x53720	0x2B8	src/game/build_look_at_matrix_80052b20.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	e42141044f2c701e0de84274478f0a80f9e472c9e0286cc74948fda71127e6fb
 0x5A0B0	0x170	src/game/concatenate_float_matrices_800594b0.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	41bd4f6e73417fe1068851ec78bda3d672cb40c216f9317efc07f65787141f13
 0x5BA70	0x1B0	src/game/build_position_matrix_8005ae70.c	--section-base=.rodata:0x80081250 --section-base=.bss:0x80194230 -O3 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	a045bda7799c894738b02a287661f38acb1a7e070b4f2339e6d8f4fbf3b65512
+0x5CA10	0x154	src/game/build_orthographic_matrix_8005be10.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	b4e64f58a8189af2d711d1d46a6daf03a0c9f5f7f25460a1d999ce510b682008
+0x5C420	0x160	src/game/set_audio_frequency_8005b820.c	-O1 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	156519bf82582a9f65304ff0e506b1bbbaf05332d2be88ec13927f3b24c5d8d7
+0x5D950	0x270	src/game/initialize_controller_pak_8005cd50.c	-O1 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	5deee2c3b2c2fa3b98d7183bb649a6c79039a79c1b32f7a49794467b5e1d668f
+0x5DBC0	0x110	src/game/get_controller_pak_status_8005cfc0.c	--section-base=.bss:0x80192EA0 -O1 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	1d3996c17936b8270ee7a826affe3154ecf72f24e825ebb1c63d7356e223ba5d
+0x55E00	0x1C0	src/game/find_controller_pak_file_80055200.c	-O1 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	8cd4329d3430e2c5a1a9a6e60db8c39a2b71491927426883efcae7832e89bb2e
