@@ -1360,8 +1360,8 @@
   },
   "functions": {
     "total": 1469,
-    "matched": 955,
-    "matched_bytes": 112916,
+    "matched": 963,
+    "matched_bytes": 116388,
     "total_bytes": 392096,
     "size_buckets": {
       "<=0x10": 96,
@@ -1375,7 +1375,7 @@
       ">0x800": 13
     },
     "compiler_matches": {
-      "IDO 5.3": 692,
+      "IDO 5.3": 700,
       "KMC GCC 2.7.2 + assembler": 60,
       "IDO 7.1": 203
     },
@@ -1444,10 +1444,10 @@
         "start": 331776,
         "end": 397312,
         "functions": 237,
-        "matched": 201,
-        "matched_bytes": 52296,
+        "matched": 209,
+        "matched_bytes": 55768,
         "compiler_matches": {
-          "IDO 5.3": 196,
+          "IDO 5.3": 204,
           "KMC GCC 2.7.2 + assembler": 5
         }
       },
