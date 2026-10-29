@@ -51,8 +51,8 @@ class BaselineTests(unittest.TestCase):
                     + [line for line in ido_asm_lines if line and not line.startswith("#")]
                     + [line for line in ido_lines if line and not line.startswith("#")]
                     + [line for line in ido7_lines if line and not line.startswith("#")])
-        self.assertEqual(len(all_rows), 1302)
-        self.assertEqual(sum(int(row.split("\t")[1], 0) for row in all_rows), 365524)
+        self.assertEqual(len(all_rows), 1304)
+        self.assertEqual(sum(int(row.split("\t")[1], 0) for row in all_rows), 366124)
         row = rows[0]
         fields = row.split("\t")
         self.assertEqual(fields[:3], ["0x27F4", "0xC", "src/game/get_global_halfword.c"])
@@ -63,8 +63,8 @@ class BaselineTests(unittest.TestCase):
                        cwd=ROOT, check=True, capture_output=True, text=True)
         report = json.loads((ROOT / "build/report.json").read_text())
         categories = {item["id"]: item["measures"] for item in report["categories"]}
-        self.assertEqual(report["measures"]["matched_code"], "365504")
-        self.assertEqual(report["measures"]["matched_functions"], 1444)
+        self.assertEqual(report["measures"]["matched_code"], "366104")
+        self.assertEqual(report["measures"]["matched_functions"], 1446)
         self.assertEqual(report["measures"]["matched_data"], "129824")
         self.assertEqual(report["measures"]["total_data"], "129824")
         self.assertEqual(report["measures"]["matched_data_percent"], 100.0)
