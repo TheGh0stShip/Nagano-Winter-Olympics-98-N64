@@ -1,5 +1,8 @@
 # IDO 7.1 units verified against the retail ROM
 # ROM_START SIZE SOURCE FLAGS SHA256
+0x2A15C	0x164	src/game/find_stable_runtime_value_8002955c.c	--section-base=.rodata:0x800800F0 -O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	976301623fff6c6b3dd48146e7db3695a102bf0b221e4a29bee6dbd7f8a14bd7
+0x285B8	0x128	src/game/select_runtime_table_value_800279b8.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	43ad25737b71d488e8f9fcecd5c8f256a222160533ef891bd0de7f337072d270
+0x29FFC	0x160	src/game/quantize_runtime_value_800293fc.c	--section-base=.rodata:0x800800E0 -O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	23974a9a232f1ae284cc1baac3dce8f1cd711ab2483184eb5d1d54bb428f6884
 0x2BCFC	0x12C	src/game/sort_runtime_values_8002b0fc.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	4387f4f12d45599b1e8b01cb57d5de28dd6374fabf29ae55fa4587549714a69a
 0x2BC14	0xE8	src/game/calculate_indexed_runtime_scale_8002b014.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	2822bdb28bc5f101140175aded7af49df08cfa0f770049680372c43b7043e4c1
 0x2B0E4	0x104	src/game/update_runtime_text_entries_8002a4e4.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	6d9eb01c66e6001fa4105750e8d0bf21b0b573236e4e92f9d6f4b8afba28893f

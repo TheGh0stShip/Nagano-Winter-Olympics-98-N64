@@ -1,5 +1,6 @@
 # IDO 5.3 exact matching units
 # ROM_START SIZE SOURCE FLAGS SHA256
+0x23828	0xC8	src/game/update_interpolated_position_80022c28.c	--section-base=.rodata:0x8007FB58 -O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	7d98621a95e01f05b1a3f0c909bb711444251418ee80aa6744e2257a56b60e7b
 0x25B4C	0xBC	src/game/update_projected_vector_80024f4c.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	4b5c5c11a9b6830b70ca5df20ca195e706f32346c4d23d2347f50754c243b2a8
 0x219AC	0xC0	src/game/build_composite_matrix_80020dac.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	74ba196687b404923915f0e34cff6de5c1498db2bda9f1ed6cf5276afaf351a6
 0x2497C	0xC0	src/game/calculate_player_speed_scale_80023d7c.c	--section-base=.rodata:0x8007FC28 -O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	b44f774e2cefbf7e9065259853d8028c646b98502dbed6f4b1085c46203bd718
