@@ -522,3 +522,4 @@
 0x42198	0x294	src/game/func_80041598.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	8784d1deb63ce11cac57a2f18fbb7ea68da193240e114d9cbfe7a49908924ecc
 0xB6C0	0x3F4	src/game/func_8000aac0.c	--section-base=.rodata:0x8007E028 -O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	6dd6437b18a4ccff5a01fed7310e06e03868d478350cee017bb5f09d32d0990f
 0x41A18	0xC4	src/game/func_80040e18.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	5b52447e697adc54c2a827570e7283ba70e7aa9b921915af3269ae2e5feb6d48
+0x2C44C	0x2A0	src/game/func_8002b84c.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	f319c5003c2f0e3e3a8488bc8281e69b662b228aaefe0c5ac03ccc2cfa34b281
