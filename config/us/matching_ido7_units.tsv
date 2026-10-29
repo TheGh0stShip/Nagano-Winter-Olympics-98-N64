@@ -557,3 +557,4 @@
 0x1A2B8	0x614	src/game/func_800196b8.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0 -Iinclude/ultra	22783211f3033c0c7955a10b0e355fa668b86d79cf7a2dfd6007acdefb156420
 0x448A8	0x144	src/game/func_80043ca8.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	912c1e7b9c570abec5fe40dd18a082b3b53d7e426685dc15ed9fddf105252d9e
 0x1FCCC	0xC8	src/game/func_8001f0cc.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	d08c4795f2ac146d97b684c252c69ba6c75d3edf2ed2823662023c8e6827dece
+0x260F8	0x904	src/game/func_800254f8.c	--section-base=.rodata:0x8007FCA0 -O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	59f629928875fc2274030c27a71b27dfe68da39a7fc6ee7725d9890f90ad44d4
