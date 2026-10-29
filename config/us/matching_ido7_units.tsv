@@ -516,3 +516,4 @@
 0x7FDC	0x368	src/game/func_800073dc.c	--section-base=.data:0x8006C3DC -O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	cd52cebbfbb3351f238303b25e03bbf05cd773f5c290e2071f922b6d287a3162
 0x489AC	0x17C	src/game/func_80047dac.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	e53425c8e43fbac7c350f12d0e1c48c6ccf39b51a1cdb62402101c3b7693aec0
 0x44A0	0x310	src/game/func_800038a0_tu_800038a0.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	4196b93704aa6384da26c801981754765da2c47578278f574a441a4f6b4f4210
+0x20BB8	0x664	src/game/func_8001ffb8.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0 -Iinclude/ultra	15941f11027f25002ffb2222d700bd5d494c85fd6a0bf1ab87a6e98d3bd3b9ab
