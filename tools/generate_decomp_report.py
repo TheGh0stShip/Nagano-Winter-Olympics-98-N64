@@ -39,8 +39,14 @@ def measures(code, matched, functions, matched_functions, data=0, matched_data=0
             "complete_units": matched_functions}
 
 
-def asset_measures(total, matched):
-    """Expose non-code progress in ByteMatch's code-percent category view."""
+def data_category_measures(total, matched):
+    """Expose non-code progress in ByteMatch's code-percent category view.
+
+    ByteMatch currently renders category percentages from the code fields even
+    when a category contains only data.  Mirror the byte counts into both sets
+    of fields, as the completed BattleTanx report does, while leaving the
+    report's aggregate code and data measures independent.
+    """
     return measures(total, matched, 0, 0, total, matched)
 
 
@@ -118,20 +124,20 @@ def main():
               "categories": [{"id": "code", "name": "Program code",
                               "measures": measures(TOTAL_CODE, matched_bytes, len(funcs), matched_count)},
                              {"id": "program_data", "name": "Initialized program data",
-                              "measures": measures(0, 0, 0, 0, TOTAL_DATA, data["matched"])},
+                              "measures": data_category_measures(TOTAL_DATA, data["matched"])},
                              {"id": "assets", "name": "Identified asset-region bytes",
-                              "measures": asset_measures(asset_total, identified)},
+                              "measures": data_category_measures(asset_total, identified)},
                              {"id": "assets_audio", "name": "Identified audio banks and samples",
-                              "measures": asset_measures(audio, audio)},
+                              "measures": data_category_measures(audio, audio)},
                              {"id": "assets_music", "name": "Identified compressed music sequences",
-                              "measures": asset_measures(music, music)},
-                             {"id": "assets_extracted", "name": "Extracted asset bytes",
-                              "measures": asset_measures(identified, extracted)},
+                              "measures": data_category_measures(music, music)},
+                             {"id": "assets_reconstructed", "name": "Byte-exact reconstructed asset-region bytes",
+                              "measures": data_category_measures(asset_total, identified)},
                              {"id": "assets_nested", "name": "Classified decoded-container bytes",
-                              "measures": asset_measures(nested["total_bytes"],
-                                                         nested["classified_bytes"])},
+                              "measures": data_category_measures(nested["total_bytes"],
+                                                                nested["classified_bytes"])},
                              {"id": "rom_inventory", "name": "Physical ROM inventory coverage",
-                              "measures": asset_measures(ROM_SIZE, ROM_SIZE)}]}
+                              "measures": data_category_measures(ROM_SIZE, ROM_SIZE)}]}
     OUTPUT.parent.mkdir(exist_ok=True)
     OUTPUT.write_text(json.dumps(report, indent=2) + "\n")
     print(f"wrote {OUTPUT}: {matched_bytes} / {TOTAL_CODE} code bytes; "
