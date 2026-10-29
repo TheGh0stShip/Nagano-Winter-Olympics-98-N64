@@ -162,6 +162,7 @@
 0x2DA28	0x5C	src/game/clear_indexed_records_8002ce28.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	c95aaade417eedb2a43d6fa755b58a379a9936c3e448f15e47a1548f8fa42906
 0x2F810	0x54	src/game/copy_default_block_8002ec10.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	e8edcc8d6cac558eb955599150736cacb864cf14b0c781765b9e8d74d2177e5d
 0x2F978	0x70	src/game/fetch_default_vector_8002ed78.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	ffe6e62e21a4af21a56847ccb5d66b4f1ee0b72e98b3988111720cbd05a2a9d1
+0x309B0	0x3F0	src/game/sync_runtime_record_blocks_8002fdb0.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	e8de10f4e73085e37ca0101384872eecea01d3b73676fca57edcabccea73c432
 0x31478	0x5C	src/game/init_byte_pattern_80030878.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	cb89275ebe76974722578ec11d3a5609d294e9790572a23304f0bec25e233675
 0x31638	0x68	src/game/set_half_value_and_update_80030a38.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	b7bc04f51f83cb86887f47ede7fa870b991a9104d0cc19ffb8c7095e5250c24e
 0x318B4	0x74	src/game/configure_mode_state_a_80030cb4.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	c97eb580c356604c2e5200da5035642caed864ec45376d144a7b4f15c2e32115
