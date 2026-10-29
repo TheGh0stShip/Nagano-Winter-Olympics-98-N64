@@ -1,3 +1,5 @@
+#include "PR/ultratypes.h"
+#include "PR/mbi.h"
 typedef struct RuntimeData {
     unsigned char pad0[0x977F4];
     unsigned char flagA;
@@ -26,7 +28,7 @@ extern int func_80007170(int arg0);
 extern void func_8000DCC0(void);
 extern int func_8000DA60(void);
 extern void func_8000DAC0(void);
-extern int func_8000E84C(short *arg0);
+extern int func_8000E84C(unsigned short *arg0);
 
 int func_8000E5C4(void) {
     unsigned char next;
@@ -112,6 +114,80 @@ int func_8000E5C4(void) {
     default:
         D_801335C0 = 0;
         break;
+    }
+    return 0;
+}
+
+extern int func_80005C48(void);
+extern float func_8004E9D0(float);
+extern double D_8007E248;
+extern double D_8007E250;
+extern double D_8007E258;
+extern double D_8007E260;
+extern float D_8007E268;
+extern Gfx *D_80126BF4;
+extern short D_801335C8;
+extern unsigned short D_801335CE;
+extern int D_801335D0;
+extern Gfx D_0600D7D0[];
+
+int func_8000E84C(unsigned short *arg0) {
+    unsigned char a;
+    int pad;
+    unsigned char *ctx;
+
+    ctx = D_80126BF0 + 0x84168;
+    if (D_801335D0 == 0) {
+        *(float *)(D_80126BF0 + 0x7F8AC) = 0.0f;
+        a = 0;
+        D_801335CE = 0;
+        D_801335D0++;
+    } else if (D_801335D0 == 1) {
+        a = (unsigned int)(func_8004E9D0((D_801335CE % 360) * D_8007E248 / D_8007E250) * 127.0f + 128.0f);
+        D_801335CE += 2;
+        if (D_801335CE >= 360) {
+            D_801335CE -= 360;
+        }
+        if (func_80005C48() & 0x9000) {
+            func_800485AC(0x468);
+            D_801335CE = 0x30;
+            D_801335D0++;
+            return 1;
+        }
+        if (func_8000DA60() != 0) {
+            if (D_801335C8++ > D_8007E258) {
+                D_801335C0 = 0x1E;
+                *arg0 = 0x8001;
+            }
+        } else {
+            if (D_801335C8++ > D_8007E260) {
+                D_801335C0 = 0x1E;
+                *arg0 = 0x8001;
+            }
+        }
+    } else {
+        a = 0xFF;
+        if (D_801335CE & 8) {
+            *(float *)(D_80126BF0 + 0x84174) = 0.5f;
+        } else {
+            *(float *)(D_80126BF0 + 0x84174) = D_8007E268;
+        }
+        if (--D_801335CE == 0) {
+            D_801335C0 = 0x28;
+            *arg0 = 0x8001;
+            return 1;
+        }
+    }
+    if (func_8000DA60() != 0) {
+        *(Gfx **)(ctx + 0x12C) = D_80126BF4;
+        gSPEndDisplayList(D_80126BF4++);
+    } else {
+        *(Gfx **)(ctx + 0x12C) = D_80126BF4;
+        gDPPipeSync(D_80126BF4++);
+        gDPSetPrimColor(D_80126BF4++, 0, 0, a, a, a, a);
+        gDPPipeSync(D_80126BF4++);
+        gSPDisplayList(D_80126BF4++, D_0600D7D0);
+        gSPEndDisplayList(D_80126BF4++);
     }
     return 0;
 }
