@@ -678,3 +678,4 @@
 0x2D400	0xE0	src/game/func_8002c800.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	bad0e8dc08830274dd36be582aa1dd249d6b8a8b3b2677498e17026a108ccbad
 0x4E480	0xA20	src/game/func_8004d880.c	-O1 -mips2 -non_shared -Xcpluscomm -G 0 -Iinclude/ultra	a6eebf4a0960259d69ac8548b2dbfc8945530b54fa2f510f76f90708e4f8ef89
 0x3DE18	0x498	src/game/func_8003d218.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	78f6243908e6d6d4b7daa43206fee92b47d619a0f084ec57937ea10dd312a7ff
+0x48370	0x308	src/game/func_80047770.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	e9a5b98af2f6ef312fe6d856e65a2393dae89bfcd3d4f9076e5bc40e909a3858
