@@ -206,3 +206,7 @@
 0x2D728	0xBC	src/game/advance_indexed_scene_8002cb28.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	4d57a933d385ddd5b732b6e335f416dc3ede2e5fb2678ab9b6e667ed67080daa
 0x30F18	0xC4	src/game/merge_minimum_byte_tables_80030318.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	bd800e3a3841efeb0916aec8560ba8b576e7d900b4ec7c274d06402960ca7fac
 0x471FC	0xE4	src/game/scale_clamped_byte_c_800465fc.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	97d957a85bc6d6110b13a44ad328b3e03f95b6c448459521f9197e59dbd316b1
+0x2C984	0xDC	src/game/wrap_scaled_u16_8002bd84.c	--section-base=.rodata:0x80080118 -O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	ea9f1e3c72d0e6d0c5412a0357a95bf6e0af9ae75336c0b06da3ce4fdcc7345f
+0x3D1C8	0xB4	src/game/append_default_motion_entries_8003c5c8.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	53fa3424c636fb2dbfd872b7a10341b6995b9136ab5566ae6b6a6f3210c99b4c
+0x46F88	0xE4	src/game/scale_clamped_byte_a_80046388.c	--section-base=.rodata:0x80080D30 -O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	ad8fddace874ba5289d5c9ebc505d632eb05d9162866b871c532e41d3b587228
+0x4706C	0xE4	src/game/scale_clamped_byte_b_8004646c.c	--section-base=.rodata:0x80080D34 -O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	f0634f4b35a6d5b4a64dbd3e6114df43a3ebac149e4784fa4c15b71834a10327
