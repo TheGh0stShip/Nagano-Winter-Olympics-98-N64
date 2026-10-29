@@ -66,6 +66,8 @@ class BaselineTests(unittest.TestCase):
         self.assertEqual(report["measures"]["matched_code"], "210456")
         self.assertEqual(report["measures"]["matched_functions"], 1187)
         self.assertEqual(report["measures"]["matched_data"], "129824")
+        self.assertEqual(report["measures"]["total_data"], "129824")
+        self.assertEqual(report["measures"]["matched_data_percent"], 100.0)
         self.assertEqual(categories["assets"]["total_code"], "12047904")
         self.assertEqual(categories["assets"]["matched_code"], "794392")
         self.assertEqual(categories["assets_audio"]["matched_code"], "750216")

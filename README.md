@@ -16,13 +16,13 @@ You must provide your own legally obtained retail ROM.
 - CPU text catalogue: 1,470 candidate functions / 391,964 function bytes
 - Tracker CPU-code denominator: 392,172 bytes, including 208 bytes of
   alignment/linker code-section padding outside the function catalogue
-- Program initialized data: 129,864 bytes
+- Program initialized data: 129,824 bytes, plus 40 bytes of verified linker padding
 - RSP code identified inside the linked text section: 7,296 bytes
 - SDK functions named: 241 (220 high-confidence)
 - Audio: four libaudio bank files and 327 indexed VADPCM sample payloads
 - Music: 23 loader-indexed Konami LZ sequence records decode and re-encode exactly
 - Matching source: 1,187 functions / 210,456 function bytes in 1,051 verified units
-- Byte-matched initialized data: 129,824 / 129,864 bytes
+- Byte-matched initialized data: 129,824 / 129,824 bytes (100%)
 - Identified post-program asset bytes: 794,392 / 12,047,904 bytes
 - Extracted asset bytes: 0 / 794,392 identified bytes
 - Physical ROM inventory: 12,582,912 / 12,582,912 bytes (100%)

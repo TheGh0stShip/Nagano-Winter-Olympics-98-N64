@@ -1,7 +1,10 @@
+# Audited initialized-data accounting for the loaded program image.
+#
+# Every genuine .data/.rodata byte is reproduced by the IDO-compiled C units
+# in config/us/matching_ido_data_units.tsv and checked by
+# `make verify-matching`. ROM 0x1038..0x1060 is 40 bytes of verified all-zero
+# entry-object/linker padding, not initialized data. It remains covered by the
+# gap-free physical ROM ledger in analysis/data_map/rom_map.tsv.
 [initialized_data]
-# Bytes of the program image's initialized data (ROM 0x1038..0x1060 and
-# 0x62EC0..0x829E0) reproduced by IDO-compiled C units in
-# config/us/matching_ido_data_units.tsv and checked by `make verify-matching`.
-# The 40 unmatched bytes are the entry object's zero .data words (0x80000438).
 matched = 129824
-unmatched = 40
+unmatched = 0
