@@ -17,7 +17,6 @@
 0x8B44	0xC	src/game/clear_byte_80007f44.c	-O2 -G0 -mips3 -mgp32 -mfp32	c80727d79ff639dd930393780101c8d08d063b066fe6e184295f13f5d57aef7e
 0x2DA84	0xC	src/game/clear_byte_8002ce84.c	-O2 -G0 -mips3 -mgp32 -mfp32	ba443abb11bbd9fed5f3c798c9fb2fe0628f65ba86d24c1b44fa3d007e85e621
 0x449EC	0xC	src/game/clear_byte_80043dec.c	-O2 -G0 -mips3 -mgp32 -mfp32	8bdca4f9fbdf9e83cfe96be39c048ea22b2007aff14dce10259bfbb87b115865
-0x12200	0xC	src/game/clear_halfword_80011600.c	-O2 -G0 -mips3 -mgp32 -mfp32	98a10a892be1347d71fb5f67d30ecd2ff81bd762f99c90b701c3441ff35a2903
 0x32AC4	0xC	src/game/clear_halfword_80031ec4.c	-O2 -G0 -mips3 -mgp32 -mfp32	5ab979a5f163d55f59acc1f403fd51b56fe07401878d3949bc2eb20355164d78
 0x1D990	0x10	src/game/clear_word_8001cd90.c	-O2 -G0 -mips3 -mgp32 -mfp32	543d4c7008929fb036f7f2f6340d5be4ed654a5ab708e8da84240fbfb1478571
 0x1DA8C	0xC	src/game/clear_word_8001ce8c.c	-O2 -G0 -mips3 -mgp32 -mfp32	8071e0e7d55c6a9b3289d64c7556c5084971805803d109f285fd12efc146a4af
@@ -25,7 +24,6 @@
 0x106D4	0xC	src/game/get_buffer_8000fad4.c	-O2 -G0 -mips3 -mgp32 -mfp32	224adbd85562149d0307ef80a8a9391c9aca61d84f507084b09a321884222c5c
 0x2B480	0xC	src/game/get_buffer_8002a880.c	-O2 -G0 -mips3 -mgp32 -mfp32	47c8484c0640091d5922e6caefa2dfe922687a985557eaa01dd654dbb8bf7c2d
 0x2B48C	0xC	src/game/get_buffer_8002a88c.c	-O2 -G0 -mips3 -mgp32 -mfp32	982fd6870ca044982f144696c0e71ce78522e660858b35a31376b61ee6754d6f
-0x134F0	0xC	src/game/set_global_float_800128f0.c	-O2 -G0 -mips3 -mgp32 -mfp32	e42cccb4dc46e1835049ebedbe9df85ca23d6f8ebc3d58d2235a2e9d3db47e7a
 0x1ED8C	0xC	src/game/set_global_float_8001e18c.c	-O2 -G0 -mips3 -mgp32 -mfp32	0aebe5fedb22c658b1172b809f2f69c14621b0ba296731c78a4ec6a136c0ca5c
 0x37248	0xC	src/game/set_global_float_80036648.c	-O2 -G0 -mips3 -mgp32 -mfp32	af43ea5f27ff9b8ef3c0f7980e8cb00f1ce56d50fd738f2330876d771004f054
 0x44824	0xC	src/game/set_global_word_80043c24.c	-O2 -G0 -mips3 -mgp32 -mfp32	642dd1cbd05f42df4d1a1b010a43909c2c06821b999a19fba8317e91938bd20d
