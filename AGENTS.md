@@ -15,6 +15,11 @@ retail ROM: a unit is matching only when `make verify-matching` proves its
 relocated bytes equal. Keep speculative or merely equivalent C out of the
 matching manifest.
 
+Use assembly only when provenance establishes that the original function or
+code was handwritten assembly. Compiler-generated game and library code must
+be reconstructed as C that compiles to the exact retail ROM bytes; a near
+match, equivalent implementation, or assembly transcription is not matching.
+
 Use `/home/steve/projects/n64-decomp-kit` when available. Override
 `N64DK_ROOT` and `N64DK_TOOLCHAIN`; do not embed machine-specific paths.
 

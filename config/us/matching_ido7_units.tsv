@@ -204,3 +204,5 @@
 0x2F73C	0x94	src/game/init_player_slot_8002eb3c.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	458ec9de27826888fef7e3c21c0e9785c40c1756ea1d02b714af59e0d1141a1c
 0x382C0	0xA0	src/game/init_runtime_record_800376c0.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	d19635dbd0b6503650d191853b5601a850cca9f031c4857a9130375ed7e3645d
 0x2D728	0xBC	src/game/advance_indexed_scene_8002cb28.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	4d57a933d385ddd5b732b6e335f416dc3ede2e5fb2678ab9b6e667ed67080daa
+0x30F18	0xC4	src/game/merge_minimum_byte_tables_80030318.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	bd800e3a3841efeb0916aec8560ba8b576e7d900b4ec7c274d06402960ca7fac
+0x471FC	0xE4	src/game/scale_clamped_byte_c_800465fc.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	97d957a85bc6d6110b13a44ad328b3e03f95b6c448459521f9197e59dbd316b1
