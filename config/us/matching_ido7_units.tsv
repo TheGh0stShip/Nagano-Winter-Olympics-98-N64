@@ -346,3 +346,4 @@
 0x5C80	0x4D0	src/game/func_80005080.c	--section-base=.rodata:0x8007DE90 -O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	a8ded10bb1b81e9748018c4ce2407652daa9702a7c56e5d2d2c4b868d56377d6
 0x579C	0x4E4	src/game/func_80004b9c.c	--section-base=.rodata:0x8007DE50 -O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	98a35a1ccb71d4f22f0030f24307b1480869056eff4935b6347ec784a3e12dbe
 0x44758	0xCC	src/game/update_controller_presence_80043b58.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	bf21b7e919127a55d0f99d86f374430f1934503c817ffdb979fbb3aa3fff54c4
+0x2F698	0xA4	src/game/initialize_player_state_8002ea98.c	--section-base=.rodata:0x80080130 -O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	bc46b4b02e70618c2b9ee430ac342f7128df4e8a21b87c84c3cebe226a016a5b
