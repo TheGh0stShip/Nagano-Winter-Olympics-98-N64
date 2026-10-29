@@ -1,5 +1,6 @@
 # IDO 7.1 units verified against the retail ROM
 # ROM_START SIZE SOURCE FLAGS SHA256
+0x29104	0xD0	src/game/find_matching_runtime_record_80028504.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	c7a2a9b6ee19585c32240e2c944fc26300c62d8b782769c90016d95e2f7b2660
 0x2A15C	0x164	src/game/find_stable_runtime_value_8002955c.c	--section-base=.rodata:0x800800F0 -O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	976301623fff6c6b3dd48146e7db3695a102bf0b221e4a29bee6dbd7f8a14bd7
 0x285B8	0x128	src/game/select_runtime_table_value_800279b8.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	43ad25737b71d488e8f9fcecd5c8f256a222160533ef891bd0de7f337072d270
 0x29FFC	0x160	src/game/quantize_runtime_value_800293fc.c	--section-base=.rodata:0x800800E0 -O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	23974a9a232f1ae284cc1baac3dce8f1cd711ab2483184eb5d1d54bb428f6884

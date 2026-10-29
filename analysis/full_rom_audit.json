@@ -1360,8 +1360,8 @@
   },
   "functions": {
     "total": 1470,
-    "matched": 1206,
-    "matched_bytes": 215792,
+    "matched": 1207,
+    "matched_bytes": 216000,
     "total_bytes": 391964,
     "size_buckets": {
       "<=0x10": 99,
@@ -1377,7 +1377,7 @@
     "compiler_matches": {
       "hand-written assembly": 29,
       "IDO 5.3": 720,
-      "IDO 7.1": 402,
+      "IDO 7.1": 403,
       "KMC GCC 2.7.2 + assembler": 55
     },
     "address_bands": [
@@ -1410,12 +1410,12 @@
         "start": 135168,
         "end": 200704,
         "functions": 274,
-        "matched": 208,
-        "matched_bytes": 22128,
+        "matched": 209,
+        "matched_bytes": 22336,
         "compiler_matches": {
           "KMC GCC 2.7.2 + assembler": 10,
           "IDO 5.3": 116,
-          "IDO 7.1": 82
+          "IDO 7.1": 83
         }
       },
       {
@@ -1846,22 +1846,6 @@
         "branches": 2,
         "cop1": 0,
         "loads_stores": 13,
-        "trailing_nops": 0
-      },
-      {
-        "name": "func_80028504",
-        "vram": 2147648772,
-        "rom": 168196,
-        "size": 208,
-        "matched": false,
-        "source": null,
-        "compiler": null,
-        "direct_calls": [],
-        "indirect_calls": 0,
-        "jumps": 0,
-        "branches": 4,
-        "cop1": 0,
-        "loads_stores": 6,
         "trailing_nops": 0
       },
       {
@@ -2518,6 +2502,22 @@
         "branches": 9,
         "cop1": 15,
         "loads_stores": 35,
+        "trailing_nops": 1
+      },
+      {
+        "name": "func_8003EE70",
+        "vram": 2147741296,
+        "rom": 260720,
+        "size": 428,
+        "matched": false,
+        "source": null,
+        "compiler": null,
+        "direct_calls": [],
+        "indirect_calls": 0,
+        "jumps": 0,
+        "branches": 8,
+        "cop1": 0,
+        "loads_stores": 36,
         "trailing_nops": 1
       }
     ],
