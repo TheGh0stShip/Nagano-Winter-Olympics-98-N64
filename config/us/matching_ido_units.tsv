@@ -630,3 +630,9 @@
 0x3F18	0xC8	src/game/80003318.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	db2f988cc9b8603cef335790f030db28a82ede0cebfb1aefa702a555116ceb02
 0x1060	0x338	src/game/exact_80000460_unit_80000460.c	--section-base=.bss:0x8008D3B8 --symbol=osTvType:0x80000300 -O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	31e11ee1a5bf2b1845eedbd7e803945a6e97cae58a120f62a45fb86be3c4af0c
 0x381F0	0xD0	src/game/initialize_flagged_runtime_record_800375f0.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	608f9901b185925de7dd935695e4e86115672d0302eee7385b62b72065f9d2dc
+0x217F0	0x1BC	src/game/build_scaled_position_matrix_80020bf0.c	--section-base=.data:0x8006FF7C -O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	9af0eefde2c957c164673c28dec49574ed42b4ff336f6d92c1e059bc5bb37eaa
+0x2FDC0	0xE4	src/game/update_target_angles_8002f1c0.c	--section-base=.rodata:0x80080228 -O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	23ceef222674a9e16eb371db65d1743063eae75994fbbfbb3c68267ff7ee404e
+0x300D0	0x104	src/game/init_target_record_8002f4d0.c	--section-base=.rodata:0x80080238 -O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	fb65eafb7fdfb570e57f711bb479c0b262c6e7193e8f2aaae40239fef031cdc0
+0x303BC	0x118	src/game/clamp_color_intensity_8002f7bc.c	--section-base=.rodata:0x80080240 -O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	a069667cd22b5f32bbda984d445a3edc3d3ada342e6418ebdb5fc7a9a102ba19
+0x30728	0x14C	src/game/build_clamped_light_color_8002fb28.c	--section-base=.rodata:0x80080248 -O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	225faabe874ea44eea3a5b9f081367ae8226c249269cb403d326a54ad1dc46e1
+0x2E018	0xF0	src/game/step_target_state_8002d418.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	c9f7a5569a4e62b39d3d4414beebedba8d137517e8ea3461b56b5a6dba3aff4d
