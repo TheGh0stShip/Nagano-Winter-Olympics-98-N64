@@ -20,7 +20,7 @@ You must provide your own legally obtained retail ROM.
 - RSP code identified inside the linked text section: 7,296 bytes
 - SDK functions named: 241 (220 high-confidence)
 - Audio: four libaudio bank files and 327 indexed VADPCM sample payloads
-- Music: 23 loader-indexed Konami LZ sequence records decode and re-encode exactly
+- Music: 23 loader-indexed Konami LZ sequences, 297 tracks, and 33,236 Nagano/Konami events decode and rebuild exactly
 - Matching source: 1,469 functions / 390,132 function bytes in 1,327 verified units
 - Byte-matched initialized data: 129,824 / 129,824 bytes (100%)
 - Classified post-program bytes: 12,047,904 / 12,047,904 bytes (100%)
@@ -30,7 +30,7 @@ You must provide your own legally obtained retail ROM.
 
 Physical coverage does not mean semantic understanding. The exact physical
 ledger classifies every ROM byte and reconstructs every non-code range, while
-its nested asset audit still leaves 787,597 decoded bytes structurally unknown
+its reproducible nested asset map still leaves 787,597 decoded bytes structurally unknown
 across 236 files, plus 874,747 unreferenced zero bytes that are not yet proven
 padding. See `analysis/data_map/README.md` and the gap-free
 `analysis/data_map/rom_map.tsv`; the earlier conservative inventory remains as

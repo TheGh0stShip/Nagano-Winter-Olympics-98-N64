@@ -3,29 +3,29 @@ audio_bank_0.ctl	0xef040	0xf4980	none	0x5940	{"ALBankFile": 1, "ALBank": 1, "ALI
 audio_bank_1.ctl	0xf4980	0xf7850	none	0x2ed0	{"ALBankFile": 1, "ALBank": 1, "ALInstrument": 53, "ALSound": 53, "ALEnvelope": 1, "ALKeyMap": 1, "ALWaveTable": 46, "ALADPCMBook": 46, "ALADPCMloop": 39}	tbl 0x1aa5e0..0x23c550, 46 samples
 audio_bank_2.ctl	0xf7850	0xf9f10	none	0x26c0	{"ALBankFile": 1, "ALBank": 1, "ALInstrument": 42, "ALSound": 42, "ALEnvelope": 1, "ALKeyMap": 1, "ALWaveTable": 42, "ALADPCMBook": 42, "ALADPCMloop": 20}	tbl 0x23c550..0x2e6e60, 42 samples
 audio_bank_3.ctl	0xf9f10	0x1019f0	none	0x7ae0	{"ALBankFile": 1, "ALBank": 1, "ALInstrument": 154, "ALSound": 154, "ALEnvelope": 1, "ALKeyMap": 1, "ALWaveTable": 146, "ALADPCMBook": 146, "ALADPCMloop": 2}	tbl 0x2e6e60..0x3f1990, 146 samples
-sequence_00	0x3f1990	0x3f2440	konami_lz	0x14f6	{"music_track": 12}	offset table/track bounds decoded; event bytecode undecoded
-sequence_01	0x3f2440	0x3f2dc0	konami_lz	0xd18	{"music_track": 14}	offset table/track bounds decoded; event bytecode undecoded
-sequence_02	0x3f2dc0	0x3f3320	konami_lz	0x6ea	{"music_track": 14}	offset table/track bounds decoded; event bytecode undecoded
-sequence_03	0x3f3320	0x3f38c0	konami_lz	0xbea	{"music_track": 9}	offset table/track bounds decoded; event bytecode undecoded
-sequence_04	0x3f38c0	0x3f4020	konami_lz	0x14cb	{"music_track": 9}	offset table/track bounds decoded; event bytecode undecoded
-sequence_05	0x3f4020	0x3f4260	konami_lz	0x413	{"music_track": 11}	offset table/track bounds decoded; event bytecode undecoded
-sequence_06	0x3f4260	0x3f4430	konami_lz	0x26b	{"music_track": 8}	offset table/track bounds decoded; event bytecode undecoded
-sequence_07	0x3f4430	0x3f4970	konami_lz	0xbd0	{"music_track": 14}	offset table/track bounds decoded; event bytecode undecoded
-sequence_08	0x3f4970	0x3f4b50	konami_lz	0x256	{"music_track": 14}	offset table/track bounds decoded; event bytecode undecoded
-sequence_09	0x3f4b50	0x3f4d30	konami_lz	0x259	{"music_track": 14}	offset table/track bounds decoded; event bytecode undecoded
-sequence_10	0x3f4d30	0x3f4f10	konami_lz	0x256	{"music_track": 14}	offset table/track bounds decoded; event bytecode undecoded
-sequence_11	0x3f4f10	0x3f5100	konami_lz	0x25a	{"music_track": 14}	offset table/track bounds decoded; event bytecode undecoded
-sequence_12	0x3f5100	0x3f5470	konami_lz	0x79d	{"music_track": 12}	offset table/track bounds decoded; event bytecode undecoded
-sequence_13	0x3f5470	0x3f5550	konami_lz	0x1a0	{"music_track": 16}	offset table/track bounds decoded; event bytecode undecoded
-sequence_14	0x3f5550	0x3f5fc0	konami_lz	0x16f0	{"music_track": 14}	offset table/track bounds decoded; event bytecode undecoded
-sequence_15	0x3f5fc0	0x3f6e20	konami_lz	0x1948	{"music_track": 14}	offset table/track bounds decoded; event bytecode undecoded
-sequence_16	0x3f6e20	0x3f8da0	konami_lz	0x391c	{"music_track": 16}	offset table/track bounds decoded; event bytecode undecoded
-sequence_17	0x3f8da0	0x3f93b0	konami_lz	0x10fb	{"music_track": 12}	offset table/track bounds decoded; event bytecode undecoded
-sequence_18	0x3f93b0	0x3f9b80	konami_lz	0xd06	{"music_track": 14}	offset table/track bounds decoded; event bytecode undecoded
-sequence_19	0x3f9b80	0x3f9fe0	konami_lz	0x841	{"music_track": 12}	offset table/track bounds decoded; event bytecode undecoded
-sequence_20	0x3f9fe0	0x3faa40	konami_lz	0x1a57	{"music_track": 12}	offset table/track bounds decoded; event bytecode undecoded
-sequence_21	0x3faa40	0x3fb050	konami_lz	0x1182	{"music_track": 12}	offset table/track bounds decoded; event bytecode undecoded
-sequence_22	0x3fb050	0x3fc620	konami_lz	0x2a39	{"music_track": 16}	offset table/track bounds decoded; event bytecode undecoded
+sequence_00	0x3f1990	0x3f2440	konami_lz	0x14f6	{"music_track": 12, "music_event": 1986}	offset tables and Nagano/Konami event boundaries decoded losslessly
+sequence_01	0x3f2440	0x3f2dc0	konami_lz	0xd18	{"music_track": 14, "music_event": 1249}	offset tables and Nagano/Konami event boundaries decoded losslessly
+sequence_02	0x3f2dc0	0x3f3320	konami_lz	0x6ea	{"music_track": 14, "music_event": 640}	offset tables and Nagano/Konami event boundaries decoded losslessly
+sequence_03	0x3f3320	0x3f38c0	konami_lz	0xbea	{"music_track": 9, "music_event": 1228}	offset tables and Nagano/Konami event boundaries decoded losslessly
+sequence_04	0x3f38c0	0x3f4020	konami_lz	0x14cb	{"music_track": 9, "music_event": 2025}	offset tables and Nagano/Konami event boundaries decoded losslessly
+sequence_05	0x3f4020	0x3f4260	konami_lz	0x413	{"music_track": 11, "music_event": 411}	offset tables and Nagano/Konami event boundaries decoded losslessly
+sequence_06	0x3f4260	0x3f4430	konami_lz	0x26b	{"music_track": 8, "music_event": 261}	offset tables and Nagano/Konami event boundaries decoded losslessly
+sequence_07	0x3f4430	0x3f4970	konami_lz	0xbd0	{"music_track": 14, "music_event": 1144}	offset tables and Nagano/Konami event boundaries decoded losslessly
+sequence_08	0x3f4970	0x3f4b50	konami_lz	0x256	{"music_track": 14, "music_event": 229}	offset tables and Nagano/Konami event boundaries decoded losslessly
+sequence_09	0x3f4b50	0x3f4d30	konami_lz	0x259	{"music_track": 14, "music_event": 230}	offset tables and Nagano/Konami event boundaries decoded losslessly
+sequence_10	0x3f4d30	0x3f4f10	konami_lz	0x256	{"music_track": 14, "music_event": 229}	offset tables and Nagano/Konami event boundaries decoded losslessly
+sequence_11	0x3f4f10	0x3f5100	konami_lz	0x25a	{"music_track": 14, "music_event": 230}	offset tables and Nagano/Konami event boundaries decoded losslessly
+sequence_12	0x3f5100	0x3f5470	konami_lz	0x79d	{"music_track": 12, "music_event": 818}	offset tables and Nagano/Konami event boundaries decoded losslessly
+sequence_13	0x3f5470	0x3f5550	konami_lz	0x1a0	{"music_track": 16, "music_event": 152}	offset tables and Nagano/Konami event boundaries decoded losslessly
+sequence_14	0x3f5550	0x3f5fc0	konami_lz	0x16f0	{"music_track": 14, "music_event": 2111}	offset tables and Nagano/Konami event boundaries decoded losslessly
+sequence_15	0x3f5fc0	0x3f6e20	konami_lz	0x1948	{"music_track": 14, "music_event": 2472}	offset tables and Nagano/Konami event boundaries decoded losslessly
+sequence_16	0x3f6e20	0x3f8da0	konami_lz	0x391c	{"music_track": 16, "music_event": 5538}	offset tables and Nagano/Konami event boundaries decoded losslessly
+sequence_17	0x3f8da0	0x3f93b0	konami_lz	0x10fb	{"music_track": 12, "music_event": 1686}	offset tables and Nagano/Konami event boundaries decoded losslessly
+sequence_18	0x3f93b0	0x3f9b80	konami_lz	0xd06	{"music_track": 14, "music_event": 1280}	offset tables and Nagano/Konami event boundaries decoded losslessly
+sequence_19	0x3f9b80	0x3f9fe0	konami_lz	0x841	{"music_track": 12, "music_event": 774}	offset tables and Nagano/Konami event boundaries decoded losslessly
+sequence_20	0x3f9fe0	0x3faa40	konami_lz	0x1a57	{"music_track": 12, "music_event": 2588}	offset tables and Nagano/Konami event boundaries decoded losslessly
+sequence_21	0x3faa40	0x3fb050	konami_lz	0x1182	{"music_track": 12, "music_event": 1799}	offset tables and Nagano/Konami event boundaries decoded losslessly
+sequence_22	0x3fb050	0x3fc620	konami_lz	0x2a39	{"music_track": 16, "music_event": 4156}	offset tables and Nagano/Konami event boundaries decoded losslessly
 file_001	0x3fc620	0x40088c	konami_lz	0xd640	{"mixed_with_display_lists_candidate": 1}	nested records not structurally decoded
 file_002	0x40088c	0x402f48	konami_lz	0xe600	{"unclassified": 1}	nested records not structurally decoded
 file_003	0x402f48	0x4095ba	konami_lz	0x14210	{"mixed_with_display_lists_candidate": 1}	nested records not structurally decoded

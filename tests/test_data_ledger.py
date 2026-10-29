@@ -4,8 +4,10 @@ Synthetic tests always run; ROM-backed tests run only when the user-supplied
 retail ROM is present at baseroms/us/baserom.z64.
 """
 import hashlib
+import csv
 import struct
 import sys
+import tomllib
 import unittest
 from pathlib import Path
 
@@ -84,6 +86,19 @@ class MapValidationTests(unittest.TestCase):
         with self.assertRaises(nagano_data.DataError):
             led.add(0, 4, "padding", "x", stage="done")
 
+    def test_committed_nested_map_totals(self):
+        with (ROOT / "analysis/data_map/nested_map.tsv").open() as stream:
+            rows = list(csv.DictReader(stream, delimiter="\t"))
+        totals = {}
+        for row in rows:
+            size = int(row["size"])
+            self.assertEqual(int(row["decoded_end"]), int(row["decoded_start"]) + size)
+            totals[row["kind"]] = totals.get(row["kind"], 0) + size
+        progress = tomllib.loads((ROOT / "config/us/asset_progress.toml").read_text())["nested"]
+        self.assertEqual(sum(totals.values()), progress["total_bytes"])
+        self.assertEqual(totals["unknown"], progress["unknown_bytes"])
+        self.assertEqual(totals["pad"], progress["unreferenced_zero_bytes"])
+
 
 class LzTests(unittest.TestCase):
     SAMPLES = [b"", b"A", bytes(600), b"ABCD" * 300, bytes(range(256)) * 9,
@@ -127,6 +142,23 @@ class AudioTests(unittest.TestCase):
         self.assertEqual([(track.start, track.end) for track in sequence.tracks],
                          [(6, 9), (9, 13), (13, 18)])
         self.assertEqual(nagano_sequences.rebuild(sequence), payload)
+
+    def test_sequence_event_format(self):
+        track = nagano_sequences.Track(0, 0, 13,
+            b"\xda\xb3\x78\xef\x00\xd0\x71\x35\x18\x80\xe7\xeb\xff")
+        events = nagano_sequences.parse_events(track)
+        self.assertEqual([(e.kind, e.opcode, e.parameters) for e in events],
+                         [("command", 0xda, (0xb3, 0x78)),
+                          ("command", 0xef, (0x00,)),
+                          ("command", 0xd0, (0x71,)),
+                          ("note", 0x35, (0x18, 0x80)),
+                          ("command", 0xe7, ()),
+                          ("command", 0xeb, ()),
+                          ("command", 0xff, ())])
+        self.assertEqual([e.name for e in events],
+                         ["reverb", "effect_delay", "tempo", "note_or_rest",
+                          "loop_marker", "master_loop_start", "end"])
+        self.assertEqual(nagano_sequences.rebuild_track(events), track.data)
 
     def test_bad_sequence_offsets(self):
         with self.assertRaises(nagano_sequences.SequenceError):
@@ -181,8 +213,26 @@ class RomTests(unittest.TestCase):
             count, group = meta[sq["index"]]
             sequence = nagano_sequences.parse(out, count, group)
             self.assertEqual(nagano_sequences.rebuild(sequence), out)
+            for track in sequence.tracks:
+                events = nagano_sequences.parse_events(track)
+                self.assertEqual(nagano_sequences.rebuild_track(events), track.data)
             total_tracks += len(sequence.tracks)
         self.assertEqual(total_tracks, 297)
+
+    def test_all_sequence_events(self):
+        meta = nagano_sequences.metadata(self.rom)
+        total_events = total_event_bytes = 0
+        for sq in nagano_data.sequence_table(self.rom):
+            out, _ = konami_lz.decode(self.rom[sq["start"]:sq["end"]])
+            count, group = meta[sq["index"]]
+            sequence = nagano_sequences.parse(out, count, group)
+            for track in sequence.tracks:
+                events = nagano_sequences.parse_events(track)
+                self.assertEqual(nagano_sequences.rebuild_track(events), track.data)
+                total_events += len(events)
+                total_event_bytes += sum(len(event.data) for event in events)
+        self.assertEqual(total_events, 33_236)
+        self.assertEqual(total_event_bytes, 86_509)
 
     def test_raw_record_streams(self):
         for f in nagano_data.file_table(self.rom):

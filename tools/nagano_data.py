@@ -390,17 +390,23 @@ def build_map(rom, units_tsv=None, overlay_tsv=None):
         sequence = nagano_sequences.parse(out, track_count, group)
         if nagano_sequences.rebuild(sequence) != out:
             raise DataError(f"sequence {sq['index']} outer-format round trip failed")
+        events = tuple(event for track in sequence.tracks
+                       for event in nagano_sequences.parse_events(track))
+        if sum(len(event.data) for event in events) != len(out) - track_count * 2:
+            raise DataError(f"sequence {sq['index']} event stream coverage failed")
         led.add(s, s + used, "compressed_container", "konami_lz.music_sequence", segment="sequences",
                 compression="konami_lz", decoded_size=len(out), record_count=1,
                 boundary_evidence="tables 0x800736F8/0x80073754 (func_800499CC)", type_evidence="LZ stream header + commands",
                 tool="konami_lz.py", stage="byte-exact", verification="re-encoded from decoded payload",
-                notes=f"{track_count} track offsets decoded; event bytecode not decoded")
+                notes=f"{track_count} tracks; {len(events)} losslessly decoded Nagano/Konami events")
         zero_gap(rom, led, s + used, e, "sequence record alignment", segment="sequences")
         containers.append(dict(name=f"sequence_{sq['index']:02d}", rom_start=s, rom_end=e, comp="konami_lz", decoded=len(out),
-                               children={"music_track": track_count},
-                               notes="offset table/track bounds decoded; event bytecode undecoded"))
+                               children={"music_track": track_count, "music_event": len(events)},
+                               notes="offset tables and Nagano/Konami event boundaries decoded losslessly"))
         assets.append(dict(category="music_sequence", fmt="konami_lz(seq)", key=f"seq{sq['index']:02d}", count=1, frames="",
                            kind="physical", rom=s, size=e - s))
+        assets.append(dict(category="music_event", fmt="nagano_konami_event", key=f"seq{sq['index']:02d}", count=len(events), frames="",
+                           kind="logical", rom=s, size=sum(len(event.data) for event in events)))
     loaders.append(dict(name="music_sequences", rom_start=0x3F1990, rom_end=0x3FC620, dest="heap", comp="konami_lz",
                         decoded="see containers", children="23 sequences", align=16, sites="func_800499CC", records="0x800736F8/0x80073754"))
     # -------- asset file table
@@ -541,7 +547,8 @@ def main(argv=None):
         with open(out / name, "w") as fh:
             fh.write("\t".join(keys) + "\n")
             for d in data:
-                fh.write("\t".join(fmt(d.get(k)) if not isinstance(d.get(k), dict) else json.dumps(d.get(k)) for k in keys) + "\n")
+                line = "\t".join(fmt(d.get(k)) if not isinstance(d.get(k), dict) else json.dumps(d.get(k)) for k in keys)
+                fh.write(line.rstrip("\t") + "\n")
     print("intervals", len(rows))
     for k in CATEGORIES:
         if by_cat.get(k):
