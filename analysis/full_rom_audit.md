@@ -4,8 +4,8 @@ Retail ROM SHA-1: `eaf543e195731031a84f4136b506449209e3a8f5`. This audit scans a
 
 ## Code census
 
-- Exact matches: 1,447 functions / 366,232 bytes.
-- Remaining: 23 functions / 25,716 surveyed bytes.
+- Exact matches: 1,449 functions / 367,068 bytes.
+- Remaining: 21 functions / 24,880 surveyed bytes.
 - Direct call sites: 3,930; indirect call sites: 64; branch sites: 7,046.
 - COP1 instructions: 7,233.
 - Exact duplicate groups: 28; structural duplicate groups: 97; structural groups with unmatched members: 0.
@@ -26,8 +26,8 @@ Retail ROM SHA-1: `eaf543e195731031a84f4136b506449209e3a8f5`. This audit scans a
 ### Verified compiler units
 
 - hand-written assembly: 29
-- IDO 5.3: 769
-- IDO 7.1: 594
+- IDO 5.3: 770
+- IDO 7.1: 595
 - KMC GCC 2.7.2 + assembler: 55
 
 ### Program address bands
@@ -37,8 +37,8 @@ Retail ROM SHA-1: `eaf543e195731031a84f4136b506449209e3a8f5`. This audit scans a
 | `0x1000..0x11000` | 234 | 230 | 60596 | hand-written assembly: 1, IDO 5.3: 64, IDO 7.1: 156, KMC GCC 2.7.2 + assembler: 9 |
 | `0x11000..0x21000` | 243 | 237 | 60624 | IDO 7.1: 116, KMC GCC 2.7.2 + assembler: 11, IDO 5.3: 110 |
 | `0x21000..0x31000` | 274 | 268 | 59152 | KMC GCC 2.7.2 + assembler: 10, IDO 7.1: 139, IDO 5.3: 119 |
-| `0x31000..0x41000` | 239 | 238 | 64944 | IDO 7.1: 84, IDO 5.3: 141, KMC GCC 2.7.2 + assembler: 13 |
-| `0x41000..0x51000` | 243 | 237 | 56712 | IDO 7.1: 99, IDO 5.3: 118, KMC GCC 2.7.2 + assembler: 9, hand-written assembly: 11 |
+| `0x31000..0x41000` | 239 | 239 | 65536 | IDO 7.1: 84, IDO 5.3: 142, KMC GCC 2.7.2 + assembler: 13 |
+| `0x41000..0x51000` | 243 | 238 | 56956 | IDO 7.1: 100, IDO 5.3: 118, KMC GCC 2.7.2 + assembler: 9, hand-written assembly: 11 |
 | `0x51000..0x61000` | 237 | 237 | 64204 | IDO 5.3: 217, hand-written assembly: 17, KMC GCC 2.7.2 + assembler: 3 |
 | `0x61000..0x71000` | 0 | 0 | 0 | none |
 | `0x71000..0x81000` | 0 | 0 | 0 | none |
@@ -104,7 +104,6 @@ The ledger has 2,384 gap-free records.
 - `func_80029870` (`0x80029870`, `0x204` bytes, 0 direct calls, 0 trailing nops)
 - `func_80015430` (`0x80015430`, `0x34C` bytes, 0 direct calls, 0 trailing nops)
 - `func_80048A78` (`0x80048A78`, `0x7C` bytes, 0 direct calls, 1 trailing nops)
-- `func_80048638` (`0x80048638`, `0xF4` bytes, 0 direct calls, 1 trailing nops)
 - `func_8001FC18` (`0x8001FC18`, `0x160` bytes, 0 direct calls, 1 trailing nops)
 - `func_80029A74` (`0x80029A74`, `0x1A4` bytes, 0 direct calls, 1 trailing nops)
 - `func_8000D218` (`0x8000D218`, `0x718` bytes, 0 direct calls, 2 trailing nops)
