@@ -1360,8 +1360,8 @@
   },
   "functions": {
     "total": 1470,
-    "matched": 1032,
-    "matched_bytes": 135080,
+    "matched": 1034,
+    "matched_bytes": 135492,
     "total_bytes": 391964,
     "size_buckets": {
       "<=0x10": 99,
@@ -1378,7 +1378,7 @@
       "hand-written assembly": 29,
       "IDO 5.3": 728,
       "KMC GCC 2.7.2 + assembler": 57,
-      "IDO 7.1": 218
+      "IDO 7.1": 220
     },
     "address_bands": [
       {
@@ -1410,12 +1410,12 @@
         "start": 135168,
         "end": 200704,
         "functions": 274,
-        "matched": 185,
-        "matched_bytes": 16028,
+        "matched": 187,
+        "matched_bytes": 16440,
         "compiler_matches": {
           "KMC GCC 2.7.2 + assembler": 10,
           "IDO 5.3": 108,
-          "IDO 7.1": 67
+          "IDO 7.1": 69
         }
       },
       {
@@ -1608,15 +1608,6 @@
         "jaccard": 0.48,
         "example": "func_8002EB3C",
         "source": "src/game/init_player_slot_8002eb3c.c"
-      },
-      {
-        "name": "func_8002C934",
-        "vram": 2147666228,
-        "size": 224,
-        "score": 0.7572815533980582,
-        "jaccard": 0.1511627906976744,
-        "example": "func_8002CB28",
-        "source": "src/game/advance_indexed_scene_8002cb28.c"
       },
       {
         "name": "func_80020BF0",
