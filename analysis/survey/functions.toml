@@ -57,7 +57,7 @@ functions = [
     { name = "func_80003BB0", vram = 0x80003bb0, size = 0x60 }, # c
     { name = "func_80003C10", vram = 0x80003c10, size = 0x28 }, # leaf
     { name = "func_80003C38", vram = 0x80003c38, size = 0x30 }, # leaf
-    { name = "func_80003C68", vram = 0x80003c68, size = 0x18 }, # stub
+    { name = "func_80003C68", vram = 0x80003c68, size = 0x8 }, # stub; followed by 0x10 linker-alignment bytes
     { name = "func_80003C80", vram = 0x80003c80, size = 0x220 }, # c
     { name = "func_80003EA0", vram = 0x80003ea0, size = 0x8 }, # stub
     { name = "func_80003EA8", vram = 0x80003ea8, size = 0x8 }, # stub

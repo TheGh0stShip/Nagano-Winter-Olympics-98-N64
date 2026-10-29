@@ -438,8 +438,7 @@
 0x38360	0x88	src/game/initialize_runtime_descriptor_80037760.c	-O3 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	c3f5444ef2573d17086c3825b66365724ecb842ddcca4aff52fba70c5666f611
 0x2C224	0x58	src/game/update_runtime_mode_byte_8002b624.c	-O3 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	fd74243d2d54cf55da4988f1dff30c1a50f4bb69baf77db2aa93ec392f3b406f
 0x1BA0	0x2C	src/game/append_static_display_list_80000fa0.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	68398d0b43ae0abab044efefdbbd2599577b0d1b1b65d1c78a494d927375558e
-0x4810	0x28	src/game/clear_bytes_80003c10.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	b8668f9c588a0b46a8502493019814be377ceb43a3e67c6f17302942235f21a4
-0x4838	0x30	src/game/copy_bytes_forward_80003c38.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	df747ebdd00d4d4d398d7222fee964e20be88af1bf38029e77ab91718527a949
+0x4810	0x60	src/game/byte_helpers_80003c10.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	03a7a44204c69e9698e12fc877318cfb7dcab5e3374935963da226db2711fafa
 0x5130	0x80	src/game/advance_counters_on_flag_80004530.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	b0ba18bf891ae9a00a57aad0dd930f44cedd1d8109afd9980d8f06e48572df34
 0x8AC8	0x7C	src/game/process_item_and_set_state_80007ec8.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	115ff429620ec28af76e07250a21f3cb6cd8835e38370e5e50d6fdbbbfde2b5d
 0xC524	0x70	src/game/clear_indexed_record_8000b924.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	08556f84047272cc0e922b720801113d459e8fccf303dd8a5a5a7cbd4df7bb0c
