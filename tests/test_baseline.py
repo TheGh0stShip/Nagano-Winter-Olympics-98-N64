@@ -77,7 +77,7 @@ class BaselineTests(unittest.TestCase):
         self.assertEqual(categories["assets_reconstructed"]["matched_code"], "12047904")
         self.assertEqual(categories["assets_reconstructed"]["matched_code_percent"], 100.0)
         self.assertEqual(categories["assets_nested"]["total_code"], "14762912")
-        self.assertEqual(categories["assets_nested"]["matched_code"], "13975315")
+        self.assertEqual(categories["assets_nested"]["matched_code"], "13997274")
         self.assertEqual(categories["rom_inventory"]["matched_code"], "12582912")
 
     def test_function_families_respect_merged_unit_coverage(self):

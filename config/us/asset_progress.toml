@@ -14,8 +14,8 @@ extracted_bytes = 0
 # format.  These totals are independent of physical ROM coverage.
 [nested]
 total_bytes = 14762912
-classified_bytes = 13975315
-unknown_bytes = 787597
-unreferenced_zero_bytes = 874747
-files_fully_decoded = 290
-files_partially_decoded = 236
+classified_bytes = 13997274
+unknown_bytes = 765638
+unreferenced_zero_bytes = 870338
+files_fully_decoded = 291
+files_partially_decoded = 235

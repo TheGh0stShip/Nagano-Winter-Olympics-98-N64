@@ -18,6 +18,10 @@ def spans(blob: bytes):
         body = rec * 12
         return [(0, body, "anim_records", f"{rec} x s16[6]")] + (
             [(body, len(blob), "pad", "zero end alignment")] if body < len(blob) else [])
+    rec20 = asset_decode.headed_record_stream(blob)
+    if rec20:
+        return [(0, 8, "record_header", "4 x big-endian s16"),
+                (8, len(blob), "records_s16x10", f"{rec20} x s16[10]")]
     if (len(blob) == 0x14210 and blob[:8] == b"\xb8\x00\x00\x00\x00\x00\x00\x00"
             and blob[0x14008:0x14010] == blob[:8]):
         out = [(0, 8, "dl", "display-list prologue")]

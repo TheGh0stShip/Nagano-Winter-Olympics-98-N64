@@ -24,14 +24,14 @@ You must provide your own legally obtained retail ROM.
 - Matching source: 1,469 functions / 390,132 function bytes in 1,327 verified units
 - Byte-matched initialized data: 129,824 / 129,824 bytes (100%)
 - Classified post-program bytes: 12,047,904 / 12,047,904 bytes (100%)
-- Classified decoded-container bytes: 13,975,315 / 14,762,912 bytes (94.67%)
+- Classified decoded-container bytes: 13,997,274 / 14,762,912 bytes (94.81%)
 - Extracted redistributable asset bytes: 0 (none are committed)
 - Physical ROM inventory: 12,582,912 / 12,582,912 bytes (100%)
 
 Physical coverage does not mean semantic understanding. The exact physical
 ledger classifies every ROM byte and reconstructs every non-code range, while
-its reproducible nested asset map still leaves 787,597 decoded bytes structurally unknown
-across 236 files, plus 874,747 unreferenced zero bytes that are not yet proven
+its reproducible nested asset map still leaves 765,638 decoded bytes structurally unknown
+across 235 files, plus 870,338 unreferenced zero bytes that are not yet proven
 padding. See `analysis/data_map/README.md` and the gap-free
 `analysis/data_map/rom_map.tsv`; the earlier conservative inventory remains as
 historical evidence rather than the authoritative data map.

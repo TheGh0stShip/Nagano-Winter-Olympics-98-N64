@@ -132,6 +132,27 @@ def record_stream(blob: bytes, rec: int = 12):
     return None
 
 
+def headed_record_stream(blob: bytes, header: int = 8, rec: int = 20):
+    """Recognize a small typed header followed by a fixed-width s16 record stream.
+
+    Nagano file 53 uses four big-endian s16 header fields followed by 1,318
+    ten-halfword records.  Apply the same autocorrelation test as
+    :func:`record_stream` to the record body so arbitrary graphics payloads do
+    not become records merely because their size is convenient.
+    """
+    if len(blob) <= header or header % 2 or rec % 2:
+        return None
+    count = record_stream(blob[header:], rec)
+    if count is None or header + count * rec != len(blob):
+        return None
+    # Prove that both the header and every record round-trip through the typed
+    # big-endian representation used by the target.
+    head = struct.unpack(">%dh" % (header // 2), blob[:header])
+    body = struct.unpack(">%dh" % ((len(blob) - header) // 2), blob[header:])
+    rebuilt = struct.pack(">%dh" % len(head), *head) + struct.pack(">%dh" % len(body), *body)
+    return count if rebuilt == blob else None
+
+
 def vtx_roundtrip(blob: bytes, start: int, end: int) -> bool:
     """Parse Vtx {s16 x,y,z; u16 flag; s16 s,t; u8 r,g,b,a} and re-pack."""
     out = bytearray()
@@ -159,6 +180,11 @@ def decode_any(blob: bytes):
         regs = [Region(0, body, "anim_records", f"{rec} x s16[6]")]
         c = Counter({"anim_records": body, "pad": len(blob) - body})
         return c, regs + ([Region(body, len(blob), "pad")] if len(blob) > body else [])
+    rec20 = headed_record_stream(blob)
+    if rec20:
+        regs = [Region(0, 8, "record_header", "4 x s16"),
+                Region(8, len(blob), "records_s16x10", f"{rec20} x s16[10]")]
+        return Counter({"record_header": 8, "records_s16x10": len(blob) - 8}), regs
     if len(blob) == 0x14210 and blob[:8] == b"\xb8\x00\x00\x00\x00\x00\x00\x00" and blob[0x14008:0x14010] == blob[:8]:
         regs = [Region(0, 8, "dl"), Region(0x1408, 0x14008, "image_ci8", "320x240 CI8 background"),
                 Region(0x14008, 0x14010, "dl"), Region(0x14010, 0x14210, "tlut", "256 colors RGBA16")]

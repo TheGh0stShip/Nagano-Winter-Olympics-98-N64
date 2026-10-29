@@ -280,3 +280,17 @@ class AssetDecodeTests(unittest.TestCase):
         blob = recs + bytes(16 - len(recs) % 16 if len(recs) % 16 else 0)
         self.assertEqual(asset_decode.record_stream(blob), 200)
         self.assertIsNone(asset_decode.record_stream(bytes(range(256)) * 10))
+
+    def test_headed_s16x10_record_stream_detection(self):
+        import asset_decode
+        import struct as S
+        header = S.pack(">4h", -37, -2, 183, 114)
+        records = b"".join(S.pack(">10h", *(i + j * 100 for j in range(10)))
+                           for i in range(200))
+        blob = header + records
+        self.assertEqual(asset_decode.headed_record_stream(blob), 200)
+        counts, regions = asset_decode.decode_any(blob)
+        self.assertEqual(counts, {"record_header": 8, "records_s16x10": len(records)})
+        self.assertEqual([(r.start, r.end, r.kind) for r in regions],
+                         [(0, 8, "record_header"), (8, len(blob), "records_s16x10")])
+        self.assertIsNone(asset_decode.headed_record_stream(bytes(range(200)) * 20))
