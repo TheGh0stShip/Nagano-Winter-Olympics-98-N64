@@ -4,8 +4,8 @@ Retail ROM SHA-1: `eaf543e195731031a84f4136b506449209e3a8f5`. This audit scans a
 
 ## Code census
 
-- Exact matches: 1,031 functions / 134,884 bytes.
-- Remaining: 439 functions / 257,080 surveyed bytes.
+- Exact matches: 1,032 functions / 135,080 bytes.
+- Remaining: 438 functions / 256,884 surveyed bytes.
 - Direct call sites: 3,930; indirect call sites: 64; branch sites: 7,046.
 - COP1 instructions: 7,233.
 - Exact duplicate groups: 28; structural duplicate groups: 97; structural groups with unmatched members: 1.
@@ -28,7 +28,7 @@ Retail ROM SHA-1: `eaf543e195731031a84f4136b506449209e3a8f5`. This audit scans a
 - hand-written assembly: 29
 - IDO 5.3: 728
 - KMC GCC 2.7.2 + assembler: 57
-- IDO 7.1: 217
+- IDO 7.1: 218
 
 ### Program address bands
 
@@ -36,7 +36,7 @@ Retail ROM SHA-1: `eaf543e195731031a84f4136b506449209e3a8f5`. This audit scans a
 |---|---:|---:|---:|---|
 | `0x1000..0x11000` | 234 | 135 | 11260 | hand-written assembly: 1, IDO 5.3: 73, KMC GCC 2.7.2 + assembler: 9, IDO 7.1: 52 |
 | `0x11000..0x21000` | 243 | 160 | 10836 | IDO 5.3: 116, KMC GCC 2.7.2 + assembler: 13, IDO 7.1: 31 |
-| `0x21000..0x31000` | 274 | 184 | 15832 | KMC GCC 2.7.2 + assembler: 10, IDO 5.3: 108, IDO 7.1: 66 |
+| `0x21000..0x31000` | 274 | 185 | 16028 | KMC GCC 2.7.2 + assembler: 10, IDO 5.3: 108, IDO 7.1: 67 |
 | `0x31000..0x41000` | 239 | 152 | 11520 | IDO 7.1: 28, IDO 5.3: 111, KMC GCC 2.7.2 + assembler: 13 |
 | `0x41000..0x51000` | 243 | 163 | 21232 | IDO 7.1: 40, IDO 5.3: 103, KMC GCC 2.7.2 + assembler: 9, hand-written assembly: 11 |
 | `0x51000..0x61000` | 237 | 237 | 64204 | IDO 5.3: 217, hand-written assembly: 17, KMC GCC 2.7.2 + assembler: 3 |
@@ -93,12 +93,9 @@ The ledger has 2,384 gap-free records.
 - 0.85: `func_8002EA98` at `0x8002EA98` from `func_8002EB3C` (src/game/init_player_slot_8002eb3c.c).
 - 0.76: `func_8002C934` at `0x8002C934` from `func_8002CB28` (src/game/advance_indexed_scene_8002cb28.c).
 - 0.70: `func_80020BF0` at `0x80020BF0` from `func_8005AE70` (src/game/build_position_matrix_8005ae70.c).
-- 0.69: `func_8002D5AC` at `0x8002D5AC` from `func_80029274` (src/game/store_scaled_unsigned_80029274.c).
-- 0.67: `func_8002D5AC` at `0x8002D5AC` from `func_800462DC` (src/game/convert_scaled_byte_800462dc.c).
-- 0.67: `func_8002D5AC` at `0x8002D5AC` from `func_80046550` (src/game/convert_scaled_byte_80046550.c).
-- 0.67: `func_8002D5AC` at `0x8002D5AC` from `func_800466E0` (src/game/scaled_byte_conversions_800466e0.c).
-- 0.67: `func_8002D5AC` at `0x8002D5AC` from `func_8004678C` (src/game/scaled_byte_conversions_800466e0.c).
+- 0.63: `func_8002CBE4` at `0x8002CBE4` from `func_8002D5AC` (src/game/calculate_distance_alpha_8002d5ac.c).
 - 0.61: `func_8002CBE4` at `0x8002CBE4` from `func_80029274` (src/game/store_scaled_unsigned_80029274.c).
+- 0.60: `func_8002A6C4` at `0x8002A6C4` from `func_8002D5AC` (src/game/calculate_distance_alpha_8002d5ac.c).
 - 0.58: `func_8002CBE4` at `0x8002CBE4` from `func_800462DC` (src/game/convert_scaled_byte_800462dc.c).
 - 0.58: `func_8002CBE4` at `0x8002CBE4` from `func_80046550` (src/game/convert_scaled_byte_80046550.c).
 - 0.58: `func_8002CBE4` at `0x8002CBE4` from `func_800466E0` (src/game/scaled_byte_conversions_800466e0.c).
@@ -106,10 +103,13 @@ The ledger has 2,384 gap-free records.
 - 0.57: `func_80006DC8` at `0x80006DC8` from `func_80006BA8` (src/game/mark_active_runtime_records_80006ba8.c).
 - 0.57: `func_80006DC8` at `0x80006DC8` from `func_80006F24` (src/game/mark_active_runtime_records_alt_80006f24.c).
 - 0.57: `func_80003C68` at `0x80003C68` from `func_8001A570` (src/game/set_short_float_8001a570.c).
-- 0.57: `func_8002D5AC` at `0x8002D5AC` from `func_800541B8` (src/game/convert_long_long_800540e0.c).
 - 0.56: `func_8002A6C4` at `0x8002A6C4` from `func_80029274` (src/game/store_scaled_unsigned_80029274.c).
 - 0.56: `func_8002A6C4` at `0x8002A6C4` from `func_800462DC` (src/game/convert_scaled_byte_800462dc.c).
 - 0.56: `func_8002A6C4` at `0x8002A6C4` from `func_80046550` (src/game/convert_scaled_byte_80046550.c).
+- 0.56: `func_8002A6C4` at `0x8002A6C4` from `func_800466E0` (src/game/scaled_byte_conversions_800466e0.c).
+- 0.56: `func_8002A6C4` at `0x8002A6C4` from `func_8004678C` (src/game/scaled_byte_conversions_800466e0.c).
+- 0.55: `func_800293FC` at `0x800293FC` from `func_8002D5AC` (src/game/calculate_distance_alpha_8002d5ac.c).
+- 0.55: `func_8002A6C4` at `0x8002A6C4` from `func_8002A7E0` (src/game/get_ranking_cell_value_8002a7e0.c).
 
 ### Small direct-call functions
 
@@ -121,7 +121,6 @@ The ledger has 2,384 gap-free records.
 - `func_800212B4` (`0x800212B4`, `0x74` bytes, 0 direct calls, 0 trailing nops)
 - `func_8003D0F0` (`0x8003D0F0`, `0x80` bytes, 0 direct calls, 0 trailing nops)
 - `func_8002B67C` (`0x8002B67C`, `0xB0` bytes, 0 direct calls, 0 trailing nops)
-- `func_8002D5AC` (`0x8002D5AC`, `0xC4` bytes, 0 direct calls, 0 trailing nops)
 - `func_80040E18` (`0x80040E18`, `0xC4` bytes, 0 direct calls, 0 trailing nops)
 - `func_8001F0CC` (`0x8001F0CC`, `0xC8` bytes, 0 direct calls, 0 trailing nops)
 - `func_8002F9B4` (`0x8002F9B4`, `0xCC` bytes, 0 direct calls, 0 trailing nops)
@@ -136,6 +135,7 @@ The ledger has 2,384 gap-free records.
 - `func_8001F1D8` (`0x8001F1D8`, `0xF0` bytes, 0 direct calls, 0 trailing nops)
 - `func_80028770` (`0x80028770`, `0xF4` bytes, 0 direct calls, 0 trailing nops)
 - `func_8000A0DC` (`0x8000A0DC`, `0x100` bytes, 0 direct calls, 0 trailing nops)
+- `func_800497C4` (`0x800497C4`, `0x108` bytes, 0 direct calls, 0 trailing nops)
 
 ### Most referenced local functions
 

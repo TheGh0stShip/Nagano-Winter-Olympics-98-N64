@@ -212,3 +212,4 @@
 0x46F88	0xE4	src/game/scale_clamped_byte_a_80046388.c	--section-base=.rodata:0x80080D30 -O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	ad8fddace874ba5289d5c9ebc505d632eb05d9162866b871c532e41d3b587228
 0x4706C	0xE4	src/game/scale_clamped_byte_b_8004646c.c	--section-base=.rodata:0x80080D34 -O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	f0634f4b35a6d5b4a64dbd3e6114df43a3ebac149e4784fa4c15b71834a10327
 0x4DD40	0xB8	src/game/update_stream_voice_magnitude_8004d140.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	80ffac363781ac7618b6ad3f0fdd63d5376c2689af51f39c184218006342379d
+0x2E1AC	0xC4	src/game/calculate_distance_alpha_8002d5ac.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	a2099f572c4b98a25769af2177c85e1dc46de2e229759e1a965a29013bce19da
