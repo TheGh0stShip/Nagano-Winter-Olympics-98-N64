@@ -4,8 +4,8 @@ Retail ROM SHA-1: `eaf543e195731031a84f4136b506449209e3a8f5`. This audit scans a
 
 ## Code census
 
-- Exact matches: 1,415 functions / 342,716 bytes.
-- Remaining: 55 functions / 49,248 surveyed bytes.
+- Exact matches: 1,416 functions / 343,224 bytes.
+- Remaining: 54 functions / 48,740 surveyed bytes.
 - Direct call sites: 3,930; indirect call sites: 64; branch sites: 7,046.
 - COP1 instructions: 7,233.
 - Exact duplicate groups: 28; structural duplicate groups: 97; structural groups with unmatched members: 0.
@@ -27,7 +27,7 @@ Retail ROM SHA-1: `eaf543e195731031a84f4136b506449209e3a8f5`. This audit scans a
 
 - hand-written assembly: 29
 - IDO 5.3: 760
-- IDO 7.1: 571
+- IDO 7.1: 572
 - KMC GCC 2.7.2 + assembler: 55
 
 ### Program address bands
@@ -38,7 +38,7 @@ Retail ROM SHA-1: `eaf543e195731031a84f4136b506449209e3a8f5`. This audit scans a
 | `0x11000..0x21000` | 243 | 232 | 57164 | IDO 7.1: 111, KMC GCC 2.7.2 + assembler: 11, IDO 5.3: 110 |
 | `0x21000..0x31000` | 274 | 261 | 52720 | KMC GCC 2.7.2 + assembler: 10, IDO 7.1: 133, IDO 5.3: 118 |
 | `0x31000..0x41000` | 239 | 230 | 57336 | IDO 7.1: 79, IDO 5.3: 138, KMC GCC 2.7.2 + assembler: 13 |
-| `0x41000..0x51000` | 243 | 228 | 51488 | IDO 7.1: 93, IDO 5.3: 115, KMC GCC 2.7.2 + assembler: 9, hand-written assembly: 11 |
+| `0x41000..0x51000` | 243 | 229 | 51996 | IDO 7.1: 94, IDO 5.3: 115, KMC GCC 2.7.2 + assembler: 9, hand-written assembly: 11 |
 | `0x51000..0x61000` | 237 | 237 | 64204 | IDO 5.3: 217, hand-written assembly: 17, KMC GCC 2.7.2 + assembler: 3 |
 | `0x61000..0x71000` | 0 | 0 | 0 | none |
 | `0x71000..0x81000` | 0 | 0 | 0 | none |
@@ -112,7 +112,6 @@ The ledger has 2,384 gap-free records.
 - `func_80048638` (`0x80048638`, `0xF4` bytes, 0 direct calls, 1 trailing nops)
 - `func_8001FC18` (`0x8001FC18`, `0x160` bytes, 0 direct calls, 1 trailing nops)
 - `func_80029A74` (`0x80029A74`, `0x1A4` bytes, 0 direct calls, 1 trailing nops)
-- `func_8004D428` (`0x8004D428`, `0x1FC` bytes, 0 direct calls, 1 trailing nops)
 - `func_8000D218` (`0x8000D218`, `0x718` bytes, 0 direct calls, 2 trailing nops)
 - `func_80003C68` (`0x80003C68`, `0x18` bytes, 0 direct calls, 5 trailing nops)
 
