@@ -641,3 +641,5 @@
 0x5F090	0xAC0	src/game/format_long_double_8005e490.c	--section-base=.rodata:0x800812C0 --symbol=memcpy:0x8005A530 --symbol=ldiv:0x8005F050 -O3 -mips2 -Wab,-r4300_mul -non_shared -G 0 -Xcpluscomm	42110dafcaccff203c51d2064cc36dd9b874c48d7047e2e9a10a9da22d2cccad
 0x5FB50	0x100	src/game/divide_long_long_8005ef50.c	--symbol=__ll_div:0x8004F02C --symbol=__ll_mul:0x8004F088 -O3 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	ccd1518aa0b91c4e90be8e9c45b3b0f09c1f70ee1bcae1ed21a33b76b29c55ca
 0x5FCE0	0x2A0	src/game/format_integer_8005f0e0.c	--section-base=.data:0x8007DB90 --symbol=__ull_rem:0x8004EF4C --symbol=__ull_div:0x8004EF88 -O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	5b836f63a76f10a3ed4cc6d2857d34b8ad59bd001e4b80bc2877cd162a863cd6
+0x4DAA8	0xC0	src/game/decode_stream_pair_a_8004cea8.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	6150610c83c511fcd6132c0d1ec11baaa26188ca45be8ac44afad34f7a8d23ee
+0x4DBA0	0xC0	src/game/decode_stream_pair_b_8004cfa0.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	3be64b6f30a2515a1b95ab24e82a97ad98db79b9046ccf601734aac3716f8d80
