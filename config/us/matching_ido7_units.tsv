@@ -360,3 +360,66 @@
 0x29F2C	0xD0	src/game/filter_small_mode_value_8002932c.c	--section-base=.rodata:0x800800D0 -O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	fc22795e970920c5734ddb40e40d8ea7c4c0d681a1588748b880d763eae39a60
 0x2FB28	0xEC	src/game/advance_position_toward_target_8002ef28.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	4173de458fb919cdc83a94fbd5027dc31734a30334da8f8982e8f33a71c20a9b
 0x2F9E8	0x140	src/game/set_transformed_target_position_8002ede8.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	882b2dbbf6d95a7f3d4f757e9aec4d9a6b50666bf1baf4cd78a9fd1a10460070
+0x3EBA8	0xD0	src/game/best_8003dfa8.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	c7aee75f1a7e802522c5dbd46773ff3a016640e63b95d503ed57bb1c6162ec82
+0x315B4	0x84	src/game/best_800309b4.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	7b3e85117e15cd1575fad48a0a73a92832f2c2d290d70dba5a8ad71852cc0d6e
+0x3CEF8	0xCC	src/game/f_8003c2f8.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	07fc5a304a93c9980db754d3d4d0549547953bbfdc9e3c65d6cfdd4eeda47d4c
+0x3D7A0	0xD8	src/game/f_8003cba0.c	--section-base=.rodata:0x80080000 -O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	d7aa53f140dcc1d1cc4761253d7d1466a97ef790fd0b6ba65142c2c4f92044b8
+0x4A3C4	0x108	src/game/f_800497c4.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	b5553aa23939a4078a690bb005b1d325342eb423021784f7ab29d75f6e15a15f
+0x4AE50	0xDC	src/game/f_8004a250.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	80935bbb3c6d93c71f2e82daaa3631d52e2a87835a278244e73b68d92dca8c03
+0x480F4	0x10C	src/game/f_800474f4.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	9d1621ce0f68f16d1045fabedfe97b9fd863285d80ae7feb8e1eda82bd2ad34e
+0x310EC	0x148	src/game/f_800304ec.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	5d92915ec0e974c5e56f10c7171813d1c072bfd9415e8d8352015172bd7579f3
+0x3130C	0x16C	src/game/f_8003070c.c	--section-base=.rodata:0x80080250 -O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	3b9c0818022aa3d83004fa07ee5ff69a7253a72e7e33623a56ed17322c721988
+0x43A5C	0x18C	src/game/f_80042e5c.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	9d351c17efd03460e53f430e011a8b4b53d5cc144912d81d012b91f492e798a9
+0x48200	0x110	src/game/exact_80047600.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	4daffb23b6e6f75a9608b04d231a5cc569720e613d5b5c3a6e83e3a3be110757
+0x404E8	0xF8	src/game/a_8003f8e8.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	52ebad958af5093c7d8366f2e205d2b1b7b48a57fdc9bdcab4c00b1ec2cbcfe5
+0x4359C	0x154	src/game/f_8004299c.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	db7076ab4a9bf719e03103fdc6110b9943e1715300d47fd01e3ca6f959df4a61
+0x33A94	0x6C0	src/game/f32e94_80032e94.c	--section-base=.rodata:0x800802E4 -O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	7772ab158dd83d1acd66feca84baf50d54af7c9ea841da39429bb1257d35ce68
+0x330C0	0x9D4	src/game/f324c0_800324c0.c	--section-base=.rodata:0x800802D4 -O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	3cae68371823c7b283ae1a46cb2208d84753b215a7697a5fea7e50ac2c3a12fe
+0x38710	0x100	src/game/ex_80037b10.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	b35f2c93193ec9eb27f18e8490aa6694694f06800a57cbb3887b823fe94c670b
+0x3F504	0x11C	src/game/ex_8003e904.c	--section-base=.rodata:0x80080828 -O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	175baf79a70fbb978de77b02703a9e5c1ef4131e133d95829c6465ce399885f9
+0x49AE4	0x13C	src/game/ex_80048ee4.c	--section-base=.rodata:0x80080DA0 -O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	5bbbc71b0b2bfbf58f1bb5392814ec5c466cd94c1384d9435b2b11602851a299
+0x40E48	0x158	src/game/ex_80040248.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	f160749e1580c90ffe2f0cf559be40a3a4570cb116f9940d25b17aa890e55be8
+0x410EC	0x17C	src/game/ex_800404ec.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	0813283acc2e6544ed65bbb9beee97c9f6fd74568aa799b7405874c8e7dc73e5
+0x3D098	0xC4	src/game/f8003c498.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	85936b3890e43a762bb96b79dbbf18b7819b5a6c857216d007e6c300b4ed13c5
+0x48F10	0xEC	src/game/f80048310.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	62b4f91de2f7d0a2984c0d0f0b9a14805a7a3f86cf80df2a0769cf507fc013dd
+0x3F23C	0x120	src/game/f8003e63c.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	1f89a52794ffbb1e02a1b99e878e375833b5e80a8df1bc8038de5df37d5ea91b
+0x41268	0x158	src/game/f80040668.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	d0ee838e464905618afd12e134dba0dbc5f6a810c56b6a90c80a28b49e45a7f4
+0x30E14	0x104	src/game/f30214_80030214.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	af8a6fa7c4dea7b7c05e1c19d7dc6bd3498315da1f0edfc00910548ea3035c6f
+0x32F04	0xF0	src/game/f32304_80032304.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	d6acdb690c8e3a6d9b6e083a9087b4bb8bed66d6faae623ba663842cdc59e37b
+0x413C0	0x140	src/game/f407c0_800407c0.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	5aae454d443aa09e92ce2f2d89820001b273aa51608e212a94ea955c46b84d97
+0x40810	0x164	src/game/f3fc10_8003fc10.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	68f3703e555e1fac7eaf41ac2e9ec65ff831db0451289e2c10707e43a459f568
+0x487C0	0x1AC	src/game/f47bc0_80047bc0.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	b22ebfed67a0f89c569539cf4c33a43e26cd09dc38310629b7627824ae4a2d86
+0x40BA0	0x108	src/game/fn_8003ffa0.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	45fbfee0d58866023e73e3111a894ee35a13dc6ecb484980506bff36ae7474bd
+0x39D28	0x128	src/game/fn_80039128.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	c92605d76f4f1d3d0ba5671a9f33260a2474dc34f9dcb9f95e991af11fed46ee
+0x4D09C	0x164	src/game/fn_8004c49c.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	8fc5a621e6f676d9187bb3311ba590514da50c85177bb80caea68b0ebe78951a
+0x41D94	0x1B0	src/game/fn_80041194.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	fb5a5737d42cc9b18109bccdc9cad00e49cad842a1bbfa05f4502d126b598b30
+0x3AB94	0x18C	src/game/f_80039f94.c	--section-base=.rodata:0x80080000 -O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	3c60f6e345f153d05ee774ef287b6b91a9f81188f8389894c70da8646774c18a
+0x44080	0x320	src/game/f_80043480.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	6e7fcfc5728119e411cca2459a9a7aab22333a9144974d40755e7ea1aba94030
+0x40974	0x1DC	src/game/f_8003fd74.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	daf807f57eadbedc2b0b0aec0dbeb4e5d74d74562e9a3e560a642363e0862833
+0x4311C	0x1BC	src/game/f_8004251c.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	a1d07c5dc5a6ad10a2401852c985762675f7f493e8c567302f1eee6da19de02b
+0x42780	0x190	src/game/exact_80041b80.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	0d986a90f40a67a169bb6bc923e7e786dcf3f04adcdc2f2be36ebc24abb00158
+0x3AD48	0x1E8	src/game/exact_8003a148.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	6a69878d675f5ca8f13fef978bc93a63a556cfb06a4090ff10bade716b5a4cb6
+0x432D8	0x220	src/game/exact_800426d8.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	4a508e958782784638dec815517f2811067ce38664070e3e04d6f42f68ebafbd
+0x36454	0x16C	src/game/exact_80035854.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	89d988d8dbd85b988fa0dc0ac5fa6fa95b881c708e1ef3a3864ef2a118a41cda
+0x438F0	0x16C	src/game/exact_80042cf0.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	6e0fc751d03e2451717e19274e2bf239281b1deb639477f8e6b3a653d3c4a348
+0x40FA0	0x14C	src/game/a_800403a0.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	038c87add30918b3efbd451908a58c1e27380331a97cd70275ba8c57154fbdb1
+0x383E8	0x1D0	src/game/f_800377e8.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	b5cea3583dabd59381367c2f4d39c1183ee851fc7080460fca08a825f091df4a
+0x41500	0x13C	src/game/f_80040900.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	c6a7df69250d74a220b3975443331218236941cfb362b04cf38cc5c72dc89088
+0x36108	0x34C	src/game/exact_80035508.c	--section-base=.rodata:0x80080310 -O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	1fd04bd80387aa0b3b483cdf3a210e17d42d6e43f218a27397df18ede30fe5aa
+0x34FDC	0x4F8	src/game/exact_800343dc.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	a568409120b28d32b719b040f939bad23a121b7f7945e7eabd3b2895eaff4c8f
+0x3B41C	0x1A8	src/game/ex_8003a81c.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	96655049946f1a4a591eb210bc0335016155686da1331db9d3afe2d1a994d395
+0x42D80	0x1D4	src/game/ex_80042180.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	0131b04a81446730bbd530f0df6f8652738a881ed689d2f1b8113f7003c008d1
+0x436F0	0x200	src/game/ex_80042af0.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	425b55f8e4d514649a93444c9652c7bbbcdcd87d75a035769e70c03b1401977f
+0x391A4	0x24C	src/game/ex_800385a4.c	--section-base=.bss:0x80137870 -O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	105f98b6a1beff036d059b7624e727ff48c38aad34441e7e40d2f2693d15a0fc
+0x4BCF4	0xD4	src/game/ex_8004b0f4.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	86b0d631e7833edc4ea5cc1704bdf004c258ea4245d8435801ec481facc3b55c
+0x3FA70	0x1AC	src/game/f8003ee70.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	e6533c95c50d1ec0a95828cb14fe9f28224e098d5db11128632793f6c0b1d9f5
+0x4C730	0xD4	src/game/f8004bb30.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	86ba9518d396a9dbf7eb129b914c2a4f9377270c90680773e1fe7ba7fad07eb0
+0x4242C	0x2A4	src/game/f8004182c.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	93968632cf59c1fd08146c5b54a70f9ab780d09bb4aea08d5e0a9001b53acabb
+0x40638	0x1D8	src/game/f8003fa38.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	91cd96797982839fec48f683e8b3cf0e8f068a9243e1bbb98696fa9a12a939e5
+0x3A15C	0x140	src/game/f8003955c.c	--section-base=.rodata:0x80080658 -O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	0927ba6a960b5ba515ed07c6d90affa20279e523d4bd16f595aa591447d089dc
+0x32C74	0x208	src/game/f32074_80032074.c	--section-base=.rodata:0x800802B8 -O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	6ca2efa612a2c5a8c984ba305b5d1602087c9ba065216716e0c94efbee54e3c0
+0x35644	0x5C0	src/game/func_80034a44.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	414703116bd2e428d8f925c219c9e671e8c9b688b842c7572cc8f76326b1be01
+0x43BE8	0x498	src/game/func_80042fe8.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	b64339bde2fcff2c2f0e0c829b9df648702fb7b83d007d09b99ba97fd6d71994
+0x42910	0x1F8	src/game/a_80041d10.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	a09fbbb4e573e98367770a41e15f7abaa5f6b8bb3ab14905000ce3c6a288756b
+0x3FC1C	0x2E0	src/game/func_8003f01c.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	a19ad86aa502c113f313c7a94c96e71dfb550a6aff6802f25501f50b06f2aa3f
+0x3EEC4	0x194	src/game/exact_8003e2c4.c	--section-base=.rodata:0x800807F8 -O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	b806491ac57d7df02fa33293c8d89342417abb0446f17f6c0318a20fdc441cd3
