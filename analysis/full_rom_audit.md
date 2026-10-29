@@ -4,8 +4,8 @@ Retail ROM SHA-1: `eaf543e195731031a84f4136b506449209e3a8f5`. This audit scans a
 
 ## Code census
 
-- Exact matches: 1,409 functions / 337,732 bytes.
-- Remaining: 61 functions / 54,232 surveyed bytes.
+- Exact matches: 1,411 functions / 339,404 bytes.
+- Remaining: 59 functions / 52,560 surveyed bytes.
 - Direct call sites: 3,930; indirect call sites: 64; branch sites: 7,046.
 - COP1 instructions: 7,233.
 - Exact duplicate groups: 28; structural duplicate groups: 97; structural groups with unmatched members: 0.
@@ -27,18 +27,18 @@ Retail ROM SHA-1: `eaf543e195731031a84f4136b506449209e3a8f5`. This audit scans a
 
 - hand-written assembly: 29
 - IDO 5.3: 760
-- IDO 7.1: 565
+- IDO 7.1: 567
 - KMC GCC 2.7.2 + assembler: 55
 
 ### Program address bands
 
 | ROM range | Functions | Matched | Matched bytes | Verified compiler units |
 |---|---:|---:|---:|---|
-| `0x1000..0x11000` | 234 | 226 | 58792 | hand-written assembly: 1, IDO 5.3: 62, IDO 7.1: 154, KMC GCC 2.7.2 + assembler: 9 |
+| `0x1000..0x11000` | 234 | 227 | 59804 | hand-written assembly: 1, IDO 5.3: 62, IDO 7.1: 155, KMC GCC 2.7.2 + assembler: 9 |
 | `0x11000..0x21000` | 243 | 232 | 57164 | IDO 7.1: 111, KMC GCC 2.7.2 + assembler: 11, IDO 5.3: 110 |
 | `0x21000..0x31000` | 274 | 259 | 51852 | KMC GCC 2.7.2 + assembler: 10, IDO 7.1: 131, IDO 5.3: 118 |
 | `0x31000..0x41000` | 239 | 229 | 55088 | IDO 7.1: 78, IDO 5.3: 138, KMC GCC 2.7.2 + assembler: 13 |
-| `0x41000..0x51000` | 243 | 226 | 50632 | IDO 7.1: 91, IDO 5.3: 115, KMC GCC 2.7.2 + assembler: 9, hand-written assembly: 11 |
+| `0x41000..0x51000` | 243 | 227 | 51292 | IDO 7.1: 92, IDO 5.3: 115, KMC GCC 2.7.2 + assembler: 9, hand-written assembly: 11 |
 | `0x51000..0x61000` | 237 | 237 | 64204 | IDO 5.3: 217, hand-written assembly: 17, KMC GCC 2.7.2 + assembler: 3 |
 | `0x61000..0x71000` | 0 | 0 | 0 | none |
 | `0x71000..0x81000` | 0 | 0 | 0 | none |
@@ -90,7 +90,6 @@ The ledger has 2,384 gap-free records.
 
 ### Highest similarity to verified C
 
-- 0.71: `func_80041598` at `0x80041598` from `func_8004182C` (src/game/f8004182c.c).
 - 0.65: `func_80015430` at `0x80015430` from `func_80015B98` (src/game/func_80015b98.c).
 - 0.65: `func_80015430` at `0x80015430` from `func_8001577C` (src/game/func_8001577c.c).
 - 0.65: `func_80015430` at `0x80015430` from `func_80015E24` (src/game/func_80015e24.c).
