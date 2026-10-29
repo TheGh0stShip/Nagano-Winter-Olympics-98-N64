@@ -69,10 +69,12 @@ class BaselineTests(unittest.TestCase):
         self.assertEqual(report["measures"]["total_data"], "129824")
         self.assertEqual(report["measures"]["matched_data_percent"], 100.0)
         self.assertEqual(categories["assets"]["total_code"], "12047904")
-        self.assertEqual(categories["assets"]["matched_code"], "794392")
-        self.assertEqual(categories["assets_audio"]["matched_code"], "750216")
-        self.assertEqual(categories["assets_music"]["matched_code"], "44176")
+        self.assertEqual(categories["assets"]["matched_code"], "12047904")
+        self.assertEqual(categories["assets_audio"]["matched_code"], "3149970")
+        self.assertEqual(categories["assets_music"]["matched_code"], "44001")
         self.assertEqual(categories["assets_extracted"]["matched_code"], "0")
+        self.assertEqual(categories["assets_nested"]["total_code"], "14762912")
+        self.assertEqual(categories["assets_nested"]["matched_code"], "13975315")
         self.assertEqual(categories["rom_inventory"]["matched_code"], "12582912")
 
     def test_function_families_respect_merged_unit_coverage(self):

@@ -15,7 +15,7 @@ MANIFESTS = (
     ROOT / "config/us/matching_ido7_units.tsv",
 )
 OUTPUT = ROOT / "build/report.json"
-INVENTORY = ROOT / "analysis/rom_inventory.tsv"
+INVENTORY = ROOT / "analysis/data_map/rom_map.tsv"
 ASSET_PROGRESS = ROOT / "config/us/asset_progress.toml"
 TOTAL_CODE = 392_172
 TOTAL_DATA = 129_824
@@ -45,7 +45,7 @@ def asset_measures(total, matched):
 
 
 def inventory_progress():
-    """Validate the physical ledger and derive conservative asset totals."""
+    """Validate the authoritative physical ledger and derive asset totals."""
     with INVENTORY.open() as stream:
         rows = list(csv.DictReader(stream, delimiter="\t"))
     cursor = 0
@@ -54,15 +54,18 @@ def inventory_progress():
     music = 0
     for row in rows:
         start, end = int(row["start"], 0), int(row["end"], 0)
-        if start != cursor or end <= start or int(row["size"]) != end - start:
+        if start != cursor or end <= start or int(row["size"], 0) != end - start:
             raise ValueError(f"{INVENTORY}: gap, overlap, or bad size at 0x{cursor:X}")
         cursor = end
-        if start >= ASSET_START and row["class"] in {"container", "payload"}:
-            identified += end - start
-            if row["category"] == "audio":
-                audio += end - start
-            elif row["category"] == "music":
-                music += end - start
+        if end > ASSET_START:
+            size = end - max(start, ASSET_START)
+            if row["category"] == "unknown" or row["stage"] == "unknown":
+                continue
+            identified += size
+            if row["category"] == "audio_bank":
+                audio += size
+            elif row["subtype"] == "konami_lz.music_sequence":
+                music += size
     if cursor != ROM_SIZE or ASSET_END != ROM_SIZE:
         raise ValueError(f"{INVENTORY}: inventory does not cover the retail ROM")
     progress = tomllib.loads(ASSET_PROGRESS.read_text())
@@ -72,7 +75,10 @@ def inventory_progress():
     extracted = progress["extraction"]["extracted_bytes"]
     if not 0 <= extracted <= identified:
         raise ValueError(f"{ASSET_PROGRESS}: invalid extracted byte count")
-    return identified, audio, music, extracted
+    nested = progress["nested"]
+    if nested["classified_bytes"] + nested["unknown_bytes"] != nested["total_bytes"]:
+        raise ValueError(f"{ASSET_PROGRESS}: nested payload totals disagree")
+    return identified, audio, music, extracted, nested
 
 
 def main():
@@ -104,7 +110,7 @@ def main():
     data = tomllib.loads((ROOT / "config/us/data_progress.toml").read_text())["initialized_data"]
     if data["matched"] + data["unmatched"] != TOTAL_DATA:
         raise ValueError("initialized data progress does not cover the program data")
-    identified, audio, music, extracted = inventory_progress()
+    identified, audio, music, extracted, nested = inventory_progress()
     asset_total = ASSET_END - ASSET_START
     report = {"measures": measures(TOTAL_CODE, matched_bytes, len(funcs), matched_count,
                                     TOTAL_DATA, data["matched"]),
@@ -121,6 +127,9 @@ def main():
                               "measures": asset_measures(music, music)},
                              {"id": "assets_extracted", "name": "Extracted asset bytes",
                               "measures": asset_measures(identified, extracted)},
+                             {"id": "assets_nested", "name": "Classified decoded-container bytes",
+                              "measures": asset_measures(nested["total_bytes"],
+                                                         nested["classified_bytes"])},
                              {"id": "rom_inventory", "name": "Physical ROM inventory coverage",
                               "measures": asset_measures(ROM_SIZE, ROM_SIZE)}]}
     OUTPUT.parent.mkdir(exist_ok=True)

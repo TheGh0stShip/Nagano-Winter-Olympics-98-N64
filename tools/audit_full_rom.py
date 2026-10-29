@@ -18,7 +18,7 @@ except ModuleNotFoundError:  # direct execution adds tools/, not the project roo
 
 ROOT = Path(__file__).resolve().parents[1]
 FUNCTIONS = ROOT / "analysis/survey/functions.toml"
-INVENTORY = ROOT / "analysis/rom_inventory.tsv"
+INVENTORY = ROOT / "analysis/data_map/rom_map.tsv"
 EXPECTED_SHA1 = "eaf543e195731031a84f4136b506449209e3a8f5"
 ROM_TO_VRAM = 0x7FFFF400
 PROGRAM_END = 0x829E0
@@ -78,6 +78,12 @@ def load_inventory() -> list[dict]:
         row["start"] = int(row["start"], 0)
         row["end"] = int(row["end"], 0)
         row["size"] = int(row["size"], 0)
+        # Normalize the detailed data-map schema for the audit summary.  Keep
+        # physical category and decoding stage separate: byte-exact container
+        # coverage is not proof that every nested record is understood.
+        row["class"] = row["category"]
+        row["category"] = row["subtype"] or row["category"]
+        row["name"] = row["segment"] or row["category"]
         if row["start"] != cursor or row["end"] - row["start"] != row["size"]:
             raise ValueError(f"inventory discontinuity at 0x{cursor:X}")
         cursor = row["end"]
@@ -323,8 +329,9 @@ def markdown(report: dict) -> str:
               "are the next broad source-transfer opportunity.",
               "3. Treat the small-leaf queue as arithmetic, accessors, and SDK-signature work; "
               "MIPS III 64-bit helpers need per-unit `-mips3 -32` flags.",
-              "4. Attack unknown physical ranges through loader references and round-trip parsers. "
-              "Do not convert pointer-like words or entropy boundaries directly into asset claims.",
+              "4. Physical unknown coverage is zero. Continue nested-format work through loader "
+              "references and round-trip parsers; do not treat container reconstruction as proof "
+              "that every decoded child record is understood.",
               "5. Re-run this audit after each matching or inventory campaign so queues and totals "
               "remain derived from authoritative manifests.", ""]
     return "\n".join(lines)

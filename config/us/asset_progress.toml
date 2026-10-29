@@ -7,3 +7,15 @@ rom_end = 0xC00000
 # extracted assets are part of the repository or its reproducible build yet.
 [extraction]
 extracted_bytes = 0
+
+# Logical bytes after decoding the 547 Konami-LZ containers.  "classified"
+# includes typed graphics/animation regions and explicitly reported
+# unreferenced zero runs; it does not promote the remaining bytes to a known
+# format.  These totals are independent of physical ROM coverage.
+[nested]
+total_bytes = 14762912
+classified_bytes = 13975315
+unknown_bytes = 787597
+unreferenced_zero_bytes = 874747
+files_fully_decoded = 290
+files_partially_decoded = 236

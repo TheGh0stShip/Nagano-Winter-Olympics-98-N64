@@ -55,36 +55,63 @@ Entropy, printable runs, and pointer-like words are discovery signals only; they
 
 ## Physical inventory
 
-The ledger has 2,384 gap-free records.
+The ledger has 6,472 gap-free records.
 
 | Class | Bytes | Records |
 |---|---:|---:|
-| unknown | 10,372,608 | 7 |
-| referenced | 880,904 | 1,013 |
-| payload | 690,910 | 93 |
-| code | 401,048 | 5 |
-| data | 129,864 | 3 |
-| container | 103,482 | 1,261 |
-| rom_metadata | 4,096 | 2 |
+| compressed_container | 8,035,702 | 547 |
+| audio_bank | 3,149,970 | 1,806 |
+| executable_code | 796,368 | 18 |
+| padding | 331,944 | 1,514 |
+| initialized_data | 92,001 | 401 |
+| animation_or_skeleton | 86,400 | 2 |
+| code_unit_data | 53,129 | 1,740 |
+| readonly_data | 27,964 | 399 |
+| pointer_or_offset_table | 4,976 | 23 |
+| rom_header_or_boot | 4,096 | 2 |
+| text_or_string | 362 | 20 |
 
 | Category | Bytes | Records |
 |---|---:|---:|
-| - | 10,372,608 | 7 |
-| loader_range | 880,904 | 1,013 |
-| audio | 750,216 | 1,331 |
-| program | 530,912 | 8 |
-| music | 44,176 | 23 |
-| rom_metadata | 4,096 | 2 |
+| konami_lz.asset_file | 7,991,701 | 524 |
+| vadpcm_sample | 3,079,110 | 327 |
+| overlay_text | 395,320 | 13 |
+| cpu_text | 393,752 | 3 |
+| zero_alignment | 331,944 | 1,514 |
+| data_words | 91,961 | 400 |
+| s16x6_record_stream | 86,400 | 2 |
+| overlay_data_words | 48,608 | 1,679 |
+| libaudio.ALADPCMBook | 44,472 | 327 |
+| konami_lz.music_sequence | 44,001 | 23 |
+| data_f32 | 15,768 | 32 |
+| rsp_ucode | 7,296 | 2 |
+| libaudio.ALInstrument | 6,840 | 342 |
+| libaudio.ALWaveTable | 6,540 | 327 |
+| rodata_f64 | 6,252 | 216 |
+| libaudio.ALADPCMloop | 6,000 | 125 |
+| libaudio.ALSound | 5,472 | 342 |
+| rodata_f32 | 4,760 | 119 |
+| rodata_jtbl | 4,396 | 59 |
+| asset_file_table | 4,304 | 1 |
+| ipl3_cic6102 | 4,032 | 1 |
+| libaudio.ALBank | 1,416 | 4 |
+| rodata_words | 1,184 | 32 |
+| data_pointers | 308 | 19 |
+| overlay_table | 256 | 1 |
+| rodata_string | 208 | 14 |
+| data_string | 138 | 5 |
+| data_jtbl | 125 | 2 |
+| sequence_tables | 92 | 1 |
+| n64_header | 64 | 1 |
+| libaudio.ALEnvelope | 64 | 4 |
+| data_unreferenced | 40 | 1 |
+| libaudio.ALBankFile | 32 | 4 |
+| libaudio.ALKeyMap | 24 | 4 |
+| developer_signature | 16 | 1 |
+| audio_bank_table | 16 | 1 |
 
 ### Largest unknown physical ranges
 
-- `0x3FC620..0xC00000`: 8,403,424 bytes (gap_3FC620).
-- `0x2E6E60..0x3F1990`: 1,092,400 bytes (gap_2E6E60).
-- `0x1AA5E0..0x23C550`: 597,872 bytes (gap_1AA5E0).
-- `0xB5110..0xD8CC0`: 146,352 bytes (gap_B5110).
-- `0x8A5F0..0xA15F0`: 94,208 bytes (gap_8A5F0).
-- `0xDA200..0xDFB40`: 22,848 bytes (gap_DA200).
-- `0xEB3B0..0xEF040`: 15,504 bytes (gap_EB3B0).
 
 ## Immediate attack queues
 
@@ -126,5 +153,5 @@ The ledger has 2,384 gap-free records.
 1. Work the similarity queue first, but reject candidates whose only residual is unproven boundary padding rather than forcing inline assembly.
 2. Split the small-wrapper queue by compiler evidence and callee prototype; these are the next broad source-transfer opportunity.
 3. Treat the small-leaf queue as arithmetic, accessors, and SDK-signature work; MIPS III 64-bit helpers need per-unit `-mips3 -32` flags.
-4. Attack unknown physical ranges through loader references and round-trip parsers. Do not convert pointer-like words or entropy boundaries directly into asset claims.
+4. Physical unknown coverage is zero. Continue nested-format work through loader references and round-trip parsers; do not treat container reconstruction as proof that every decoded child record is understood.
 5. Re-run this audit after each matching or inventory campaign so queues and totals remain derived from authoritative manifests.
