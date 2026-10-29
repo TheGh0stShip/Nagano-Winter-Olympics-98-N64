@@ -15,6 +15,7 @@ sys.path.insert(0, str(ROOT / "tools"))
 import konami_lz  # noqa: E402
 import nagano_audio  # noqa: E402
 import nagano_data  # noqa: E402
+import nagano_sequences  # noqa: E402
 import rom_header  # noqa: E402
 
 ROM_PATH = ROOT / "baseroms/us/baserom.z64"
@@ -120,6 +121,17 @@ class AudioTests(unittest.TestCase):
         with self.assertRaises(nagano_audio.AudioError):
             nagano_audio.tbl_samples([{"base": 0x10, "len": 0x20}], 0x20)
 
+    def test_sequence_outer_format(self):
+        payload = struct.pack(">3H", 6, 9, 13) + b"abc" + b"defg" + b"hijkl"
+        sequence = nagano_sequences.parse(payload, 3)
+        self.assertEqual([(track.start, track.end) for track in sequence.tracks],
+                         [(6, 9), (9, 13), (13, 18)])
+        self.assertEqual(nagano_sequences.rebuild(sequence), payload)
+
+    def test_bad_sequence_offsets(self):
+        with self.assertRaises(nagano_sequences.SequenceError):
+            nagano_sequences.parse(struct.pack(">3H", 6, 6, 8) + b"xx", 3)
+
 
 @unittest.skipUnless(HAVE_ROM, "retail ROM not present")
 class RomTests(unittest.TestCase):
@@ -160,6 +172,17 @@ class RomTests(unittest.TestCase):
         for cs, ce, ts, te in nagano_audio.bank_table(self.rom):
             objs, waves = nagano_audio.parse_ctl(self.rom[cs:ce])
             self.assertEqual(nagano_audio.serialize_ctl(objs, ce - cs), self.rom[cs:ce])
+
+    def test_all_sequence_track_tables(self):
+        meta = nagano_sequences.metadata(self.rom)
+        total_tracks = 0
+        for sq in nagano_data.sequence_table(self.rom):
+            out, _ = konami_lz.decode(self.rom[sq["start"]:sq["end"]])
+            count, group = meta[sq["index"]]
+            sequence = nagano_sequences.parse(out, count, group)
+            self.assertEqual(nagano_sequences.rebuild(sequence), out)
+            total_tracks += len(sequence.tracks)
+        self.assertEqual(total_tracks, 297)
 
     def test_raw_record_streams(self):
         for f in nagano_data.file_table(self.rom):

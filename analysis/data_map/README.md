@@ -28,3 +28,10 @@ containers re-encode exactly from their decoded payloads, but the records inside
 the 14.76 MB of decoded asset payload (models, textures, animations) are not yet
 structurally decoded; `asset_inventory.tsv` reports their F3DEX structural-walk
 counts as candidates only.
+
+The 23 music-sequence payloads have a proven outer structure: a leading
+big-endian `u16` offset table identifies 297 tracks in total. The track counts
+come from `D_80074680`, exactly as reconstructed `func_80049A78` consumes them.
+`tools/nagano_sequences.py` verifies and round-trips every offset table and
+track boundary; the custom event bytecode within those tracks remains explicit
+future semantic work.

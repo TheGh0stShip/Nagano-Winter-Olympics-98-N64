@@ -26,6 +26,7 @@ sys.path.insert(0, str(HERE))
 
 import konami_lz  # noqa: E402
 import nagano_audio  # noqa: E402
+import nagano_sequences  # noqa: E402
 import rom_header  # noqa: E402
 
 ROM_SHA1 = "eaf543e195731031a84f4136b506449209e3a8f5"
@@ -381,17 +382,23 @@ def build_map(rom, units_tsv=None, overlay_tsv=None):
                             children=f"{kinds['ALInstrument']} instruments, tbl {ts_:#x}..{te:#x}", align=16,
                             sites="func_80048080 via table 0x80073690", records="0x80073690"))
     # -------- compressed sequences
+    sequence_meta = nagano_sequences.metadata(rom)
     for sq in sequence_table(rom):
         s, e = sq["start"], sq["end"]
         out, used = konami_lz.decode(rom[s:e])
+        track_count, group = sequence_meta[sq["index"]]
+        sequence = nagano_sequences.parse(out, track_count, group)
+        if nagano_sequences.rebuild(sequence) != out:
+            raise DataError(f"sequence {sq['index']} outer-format round trip failed")
         led.add(s, s + used, "compressed_container", "konami_lz.music_sequence", segment="sequences",
                 compression="konami_lz", decoded_size=len(out), record_count=1,
                 boundary_evidence="tables 0x800736F8/0x80073754 (func_800499CC)", type_evidence="LZ stream header + commands",
                 tool="konami_lz.py", stage="byte-exact", verification="re-encoded from decoded payload",
-                notes="nested sequence format not decoded")
+                notes=f"{track_count} track offsets decoded; event bytecode not decoded")
         zero_gap(rom, led, s + used, e, "sequence record alignment", segment="sequences")
         containers.append(dict(name=f"sequence_{sq['index']:02d}", rom_start=s, rom_end=e, comp="konami_lz", decoded=len(out),
-                               children={"music_sequence": 1}, notes="nested format undecoded"))
+                               children={"music_track": track_count},
+                               notes="offset table/track bounds decoded; event bytecode undecoded"))
         assets.append(dict(category="music_sequence", fmt="konami_lz(seq)", key=f"seq{sq['index']:02d}", count=1, frames="",
                            kind="physical", rom=s, size=e - s))
     loaders.append(dict(name="music_sequences", rom_start=0x3F1990, rom_end=0x3FC620, dest="heap", comp="konami_lz",
