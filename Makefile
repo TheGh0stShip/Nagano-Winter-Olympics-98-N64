@@ -15,6 +15,7 @@ verify-rom:
 verify-matching: verify-rom
 	$(N64DK) match-batch config/us/matching_kmc_as_units.tsv=kmc+as --project . --symbols analysis/survey/symbol_addrs.txt
 	$(N64DK) match-batch config/us/matching_asm_units.tsv=as --project . --symbols analysis/survey/symbol_addrs.txt
+	$(N64DK) match-batch config/us/matching_ido_asm_units.tsv=ido5.3 --project . --symbols analysis/survey/symbol_addrs.txt
 	$(N64DK) match-batch config/us/matching_ido_units.tsv=ido5.3 --project . --symbols analysis/survey/symbol_addrs.txt
 	$(N64DK) match-batch config/us/matching_ido7_units.tsv=ido7.1 --project . --symbols analysis/survey/symbol_addrs.txt
 	$(N64DK) match-batch config/us/matching_ido_data_units.tsv=ido5.3 --project . --symbols analysis/survey/symbol_addrs.txt

@@ -1234,6 +1234,7 @@ functions = [
     { name = "func_8004F90C", vram = 0x8004f90c, size = 0x48 }, # leaf
     { name = "func_8004F954", vram = 0x8004f954, size = 0x10 }, # stub
     { name = "func_8004F964", vram = 0x8004f964, size = 0x17c }, # asm
+    { name = "func_8004FAE0", vram = 0x8004fae0, size = 0x10 }, # asm; libultra __osCleanupThread
     { name = "func_8004FAF0", vram = 0x8004faf0, size = 0x40 }, # c
     { name = "func_8004FB30", vram = 0x8004fb30, size = 0x100 }, # c
     { name = "func_8004FC30", vram = 0x8004fc30, size = 0x6a4 }, # c
@@ -1265,7 +1266,7 @@ functions = [
     { name = "func_800512C0", vram = 0x800512c0, size = 0x80 }, # c
     { name = "func_80051340", vram = 0x80051340, size = 0x80 }, # asm
     { name = "func_800513C0", vram = 0x800513c0, size = 0x290 }, # c
-    { name = "func_80051650", vram = 0x80051650, size = 0x100 }, # leaf
+    { name = "func_80051650", vram = 0x80051650, size = 0xa0 }, # asm; libultra bzero, followed by 0x60 linker-padding bytes
     { name = "func_80051750", vram = 0x80051750, size = 0x10 }, # asm
     { name = "func_80051760", vram = 0x80051760, size = 0x10 }, # asm
     { name = "func_80051770", vram = 0x80051770, size = 0x40 }, # c

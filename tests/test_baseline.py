@@ -36,7 +36,7 @@ class BaselineTests(unittest.TestCase):
     def test_survey_totals(self):
         report = json.loads((ROOT / "analysis/survey/report.json").read_text())
         self.assertEqual(report["rom"]["size"], ROM_SIZE)
-        self.assertEqual(report["functions"]["functions"], 1469)
+        self.assertEqual(report["functions"]["functions"], 1470)
         self.assertEqual(report["unknown_bytes"], 10_372_608)
         self.assertEqual(sum(report["ledger_totals"].values()), ROM_SIZE)
 
@@ -44,13 +44,15 @@ class BaselineTests(unittest.TestCase):
         lines = (ROOT / "config/us/matching_kmc_as_units.tsv").read_text().splitlines()
         rows = [line for line in lines if line and not line.startswith("#")]
         asm_lines = (ROOT / "config/us/matching_asm_units.tsv").read_text().splitlines()
+        ido_asm_lines = (ROOT / "config/us/matching_ido_asm_units.tsv").read_text().splitlines()
         ido_lines = (ROOT / "config/us/matching_ido_units.tsv").read_text().splitlines()
         ido7_lines = (ROOT / "config/us/matching_ido7_units.tsv").read_text().splitlines()
         all_rows = (rows + [line for line in asm_lines if line and not line.startswith("#")]
+                    + [line for line in ido_asm_lines if line and not line.startswith("#")]
                     + [line for line in ido_lines if line and not line.startswith("#")]
                     + [line for line in ido7_lines if line and not line.startswith("#")])
-        self.assertEqual(len(all_rows), 910)
-        self.assertEqual(sum(int(row.split("\t")[1], 0) for row in all_rows), 127500)
+        self.assertEqual(len(all_rows), 908)
+        self.assertEqual(sum(int(row.split("\t")[1], 0) for row in all_rows), 129992)
         row = rows[0]
         fields = row.split("\t")
         self.assertEqual(fields[:3], ["0x27F4", "0xC", "src/game/get_global_halfword.c"])
@@ -61,8 +63,8 @@ class BaselineTests(unittest.TestCase):
                        cwd=ROOT, check=True, capture_output=True, text=True)
         report = json.loads((ROOT / "build/report.json").read_text())
         categories = {item["id"]: item["measures"] for item in report["categories"]}
-        self.assertEqual(report["measures"]["matched_code"], "127500")
-        self.assertEqual(report["measures"]["matched_functions"], 1001)
+        self.assertEqual(report["measures"]["matched_code"], "129972")
+        self.assertEqual(report["measures"]["matched_functions"], 1007)
         self.assertEqual(report["measures"]["matched_data"], "129824")
         self.assertEqual(categories["assets"]["total_code"], "12047904")
         self.assertEqual(categories["assets"]["matched_code"], "794392")

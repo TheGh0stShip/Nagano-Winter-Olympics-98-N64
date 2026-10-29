@@ -61,9 +61,9 @@
   "text_size": 392212,
   "data_start": "0x80060014",
   "image_end": "0x80081DE0",
-  "functions": 1469,
+  "functions": 1470,
   "kinds": {
-   "asm": 23,
+   "asm": 24,
    "c": 940,
    "leaf": 412,
    "O0": 1,
@@ -72,19 +72,18 @@
   "seeds": {
    "entry": 1,
    "call": 1060,
-   "pointer": 100,
+   "pointer": 101,
    "unreferenced": 308
   },
   "jump_tables": 59,
   "jump_table_entries": 1048,
   "in_text_data": [
    "0x8004F7D8+0x14",
-   "0x8004FAE0+0x10",
    "0x8005FFC0+0x30"
   ],
   "stray_words": 0,
   "findings": {
-   "in_text_data": 3,
+   "in_text_data": 2,
    "falls_through": 3,
    "branch_outside": 1,
    "cross_branch": 1

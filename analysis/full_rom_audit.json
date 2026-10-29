@@ -1359,12 +1359,12 @@
     "ascii_run_bytes": 504692
   },
   "functions": {
-    "total": 1469,
-    "matched": 1001,
-    "matched_bytes": 127500,
-    "total_bytes": 392056,
+    "total": 1470,
+    "matched": 1007,
+    "matched_bytes": 129972,
+    "total_bytes": 391976,
     "size_buckets": {
-      "<=0x10": 96,
+      "<=0x10": 97,
       "<=0x20": 98,
       "<=0x40": 238,
       "<=0x80": 292,
@@ -1375,7 +1375,7 @@
       ">0x800": 13
     },
     "compiler_matches": {
-      "hand-written assembly": 23,
+      "hand-written assembly": 29,
       "IDO 5.3": 717,
       "KMC GCC 2.7.2 + assembler": 57,
       "IDO 7.1": 204
@@ -1433,25 +1433,25 @@
       {
         "start": 266240,
         "end": 331776,
-        "functions": 242,
-        "matched": 151,
-        "matched_bytes": 18084,
+        "functions": 243,
+        "matched": 155,
+        "matched_bytes": 19612,
         "compiler_matches": {
           "IDO 7.1": 35,
           "IDO 5.3": 100,
           "KMC GCC 2.7.2 + assembler": 9,
-          "hand-written assembly": 7
+          "hand-written assembly": 11
         }
       },
       {
         "start": 331776,
         "end": 397312,
         "functions": 237,
-        "matched": 235,
-        "matched_bytes": 63260,
+        "matched": 237,
+        "matched_bytes": 64204,
         "compiler_matches": {
           "IDO 5.3": 217,
-          "hand-written assembly": 15,
+          "hand-written assembly": 17,
           "KMC GCC 2.7.2 + assembler": 3
         }
       },
@@ -1480,14 +1480,14 @@
         "compiler_matches": {}
       }
     ],
-    "direct_call_sites": 3929,
+    "direct_call_sites": 3930,
     "indirect_call_sites": 64,
     "branch_sites": 7046,
     "cop1_instructions": 7233,
     "exact_duplicate_groups": 28,
     "shape_duplicate_groups": 96,
     "shape_groups_with_unmatched": 4,
-    "trailing_nop_functions": 862
+    "trailing_nop_functions": 863
   },
   "inventory": {
     "records": 2384,
@@ -1727,15 +1727,6 @@
         "source": "src/game/get_ranking_cell_value_8002a7e0.c"
       },
       {
-        "name": "func_8004F724",
-        "vram": 2147809060,
-        "size": 180,
-        "score": 0.5849056603773585,
-        "jaccard": 0.14942528735632185,
-        "example": "func_800503BC",
-        "source": "src/game/leo_interrupt_8004fc30.c"
-      },
-      {
         "name": "func_8002CBE4",
         "vram": 2147666916,
         "size": 212,
@@ -1864,22 +1855,6 @@
     ],
     "small_wrappers": [],
     "small_leaf_functions": [
-      {
-        "name": "func_8004F1F0",
-        "vram": 2147807728,
-        "rom": 327152,
-        "size": 44,
-        "matched": false,
-        "source": null,
-        "compiler": null,
-        "direct_calls": [],
-        "indirect_calls": 0,
-        "jumps": 0,
-        "branches": 0,
-        "cop1": 0,
-        "loads_stores": 5,
-        "trailing_nops": 0
-      },
       {
         "name": "func_80040DBC",
         "vram": 2147749308,
@@ -2662,6 +2637,22 @@
         "branches": 6,
         "cop1": 0,
         "loads_stores": 35,
+        "trailing_nops": 0
+      },
+      {
+        "name": "func_8002B228",
+        "vram": 2147660328,
+        "rom": 179752,
+        "size": 492,
+        "matched": false,
+        "source": null,
+        "compiler": null,
+        "direct_calls": [],
+        "indirect_calls": 0,
+        "jumps": 0,
+        "branches": 6,
+        "cop1": 0,
+        "loads_stores": 54,
         "trailing_nops": 0
       }
     ],
