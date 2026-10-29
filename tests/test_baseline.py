@@ -51,8 +51,8 @@ class BaselineTests(unittest.TestCase):
                     + [line for line in ido_asm_lines if line and not line.startswith("#")]
                     + [line for line in ido_lines if line and not line.startswith("#")]
                     + [line for line in ido7_lines if line and not line.startswith("#")])
-        self.assertEqual(len(all_rows), 908)
-        self.assertEqual(sum(int(row.split("\t")[1], 0) for row in all_rows), 129992)
+        self.assertEqual(len(all_rows), 911)
+        self.assertEqual(sum(int(row.split("\t")[1], 0) for row in all_rows), 130204)
         row = rows[0]
         fields = row.split("\t")
         self.assertEqual(fields[:3], ["0x27F4", "0xC", "src/game/get_global_halfword.c"])
@@ -63,8 +63,8 @@ class BaselineTests(unittest.TestCase):
                        cwd=ROOT, check=True, capture_output=True, text=True)
         report = json.loads((ROOT / "build/report.json").read_text())
         categories = {item["id"]: item["measures"] for item in report["categories"]}
-        self.assertEqual(report["measures"]["matched_code"], "129972")
-        self.assertEqual(report["measures"]["matched_functions"], 1007)
+        self.assertEqual(report["measures"]["matched_code"], "130184")
+        self.assertEqual(report["measures"]["matched_functions"], 1010)
         self.assertEqual(report["measures"]["matched_data"], "129824")
         self.assertEqual(categories["assets"]["total_code"], "12047904")
         self.assertEqual(categories["assets"]["matched_code"], "794392")
@@ -90,6 +90,8 @@ class BaselineTests(unittest.TestCase):
              "baseroms/us/baserom.z64"],
             cwd=ROOT, check=True, capture_output=True, text=True,
         )
+        audit = json.loads((ROOT / "analysis/full_rom_audit.json").read_text())
+        self.assertEqual(audit["functions"]["total_bytes"], 391968)
 
 
 if __name__ == "__main__":

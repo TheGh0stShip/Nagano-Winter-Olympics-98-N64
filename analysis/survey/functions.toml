@@ -506,7 +506,7 @@ functions = [
     { name = "func_800214D0", vram = 0x800214d0, size = 0x288 }, # leaf
     { name = "func_80021758", vram = 0x80021758, size = 0xa4 }, # leaf
     { name = "func_800217FC", vram = 0x800217fc, size = 0x20 }, # leaf
-    { name = "func_8002181C", vram = 0x8002181c, size = 0x14 }, # stub
+    { name = "func_8002181C", vram = 0x8002181c, size = 0x10 }, # stub; 0x4 linker padding follows
     { name = "func_80021830", vram = 0x80021830, size = 0x10 }, # stub
     { name = "func_80021840", vram = 0x80021840, size = 0xd8 }, # c
     { name = "func_80021918", vram = 0x80021918, size = 0x234 }, # c
@@ -538,7 +538,7 @@ functions = [
     { name = "func_80024244", vram = 0x80024244, size = 0x24 }, # leaf
     { name = "func_80024268", vram = 0x80024268, size = 0x210 }, # c
     { name = "func_80024478", vram = 0x80024478, size = 0xd4 }, # leaf
-    { name = "func_8002454C", vram = 0x8002454c, size = 0x14 }, # stub
+    { name = "func_8002454C", vram = 0x8002454c, size = 0x10 }, # stub; 0x4 linker padding follows
     { name = "func_80024560", vram = 0x80024560, size = 0x750 }, # c
     { name = "func_80024CB0", vram = 0x80024cb0, size = 0x10c }, # c
     { name = "func_80024DBC", vram = 0x80024dbc, size = 0x17c }, # c

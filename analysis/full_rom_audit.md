@@ -4,17 +4,17 @@ Retail ROM SHA-1: `eaf543e195731031a84f4136b506449209e3a8f5`. This audit scans a
 
 ## Code census
 
-- Exact matches: 1,007 functions / 129,972 bytes.
-- Remaining: 463 functions / 262,004 surveyed bytes.
+- Exact matches: 1,010 functions / 130,184 bytes.
+- Remaining: 460 functions / 261,784 surveyed bytes.
 - Direct call sites: 3,930; indirect call sites: 64; branch sites: 7,046.
 - COP1 instructions: 7,233.
-- Exact duplicate groups: 28; structural duplicate groups: 96; structural groups with unmatched members: 4.
+- Exact duplicate groups: 28; structural duplicate groups: 97; structural groups with unmatched members: 4.
 - Functions ending in one or more zero words: 863. These need boundary/padding review; a zero word is not automatically compiler-owned code.
 
 ### Size distribution
 
-- <=0x10: 97
-- <=0x20: 98
+- <=0x10: 99
+- <=0x20: 96
 - <=0x40: 238
 - <=0x80: 292
 - <=0x100: 326
@@ -26,9 +26,9 @@ Retail ROM SHA-1: `eaf543e195731031a84f4136b506449209e3a8f5`. This audit scans a
 ### Verified compiler units
 
 - hand-written assembly: 29
-- IDO 5.3: 717
+- IDO 5.3: 719
 - KMC GCC 2.7.2 + assembler: 57
-- IDO 7.1: 204
+- IDO 7.1: 205
 
 ### Program address bands
 
@@ -36,7 +36,7 @@ Retail ROM SHA-1: `eaf543e195731031a84f4136b506449209e3a8f5`. This audit scans a
 |---|---:|---:|---:|---|
 | `0x1000..0x11000` | 234 | 135 | 11260 | hand-written assembly: 1, IDO 5.3: 73, KMC GCC 2.7.2 + assembler: 9, IDO 7.1: 52 |
 | `0x11000..0x21000` | 243 | 160 | 10836 | IDO 5.3: 116, KMC GCC 2.7.2 + assembler: 13, IDO 7.1: 31 |
-| `0x21000..0x31000` | 274 | 173 | 13440 | KMC GCC 2.7.2 + assembler: 10, IDO 5.3: 104, IDO 7.1: 59 |
+| `0x21000..0x31000` | 274 | 176 | 13652 | KMC GCC 2.7.2 + assembler: 10, IDO 5.3: 106, IDO 7.1: 60 |
 | `0x31000..0x41000` | 239 | 147 | 10620 | IDO 7.1: 27, IDO 5.3: 107, KMC GCC 2.7.2 + assembler: 13 |
 | `0x41000..0x51000` | 243 | 155 | 19612 | IDO 7.1: 35, IDO 5.3: 100, KMC GCC 2.7.2 + assembler: 9, hand-written assembly: 11 |
 | `0x51000..0x61000` | 237 | 237 | 64204 | IDO 5.3: 217, hand-written assembly: 17, KMC GCC 2.7.2 + assembler: 3 |
