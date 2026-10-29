@@ -4,8 +4,8 @@ Retail ROM SHA-1: `eaf543e195731031a84f4136b506449209e3a8f5`. This audit scans a
 
 ## Code census
 
-- Exact matches: 1,458 functions / 380,156 bytes.
-- Remaining: 12 functions / 11,792 surveyed bytes.
+- Exact matches: 1,459 functions / 380,356 bytes.
+- Remaining: 11 functions / 11,592 surveyed bytes.
 - Direct call sites: 3,930; indirect call sites: 64; branch sites: 7,046.
 - COP1 instructions: 7,233.
 - Exact duplicate groups: 28; structural duplicate groups: 97; structural groups with unmatched members: 0.
@@ -27,7 +27,7 @@ Retail ROM SHA-1: `eaf543e195731031a84f4136b506449209e3a8f5`. This audit scans a
 
 - hand-written assembly: 29
 - IDO 5.3: 771
-- IDO 7.1: 603
+- IDO 7.1: 604
 - KMC GCC 2.7.2 + assembler: 55
 
 ### Program address bands
@@ -35,7 +35,7 @@ Retail ROM SHA-1: `eaf543e195731031a84f4136b506449209e3a8f5`. This audit scans a
 | ROM range | Functions | Matched | Matched bytes | Verified compiler units |
 |---|---:|---:|---:|---|
 | `0x1000..0x11000` | 234 | 230 | 60596 | hand-written assembly: 1, IDO 5.3: 64, IDO 7.1: 156, KMC GCC 2.7.2 + assembler: 9 |
-| `0x11000..0x21000` | 243 | 239 | 63024 | IDO 7.1: 118, KMC GCC 2.7.2 + assembler: 11, IDO 5.3: 110 |
+| `0x11000..0x21000` | 243 | 240 | 63224 | IDO 7.1: 119, KMC GCC 2.7.2 + assembler: 11, IDO 5.3: 110 |
 | `0x21000..0x31000` | 274 | 273 | 62912 | KMC GCC 2.7.2 + assembler: 10, IDO 7.1: 143, IDO 5.3: 120 |
 | `0x31000..0x41000` | 239 | 239 | 65536 | IDO 7.1: 84, IDO 5.3: 142, KMC GCC 2.7.2 + assembler: 13 |
 | `0x41000..0x51000` | 243 | 240 | 63884 | IDO 7.1: 102, IDO 5.3: 118, KMC GCC 2.7.2 + assembler: 9, hand-written assembly: 11 |
@@ -96,7 +96,6 @@ The ledger has 2,384 gap-free records.
 
 ### Small leaf functions
 
-- `func_8001F0CC` (`0x8001F0CC`, `0xC8` bytes, 0 direct calls, 0 trailing nops)
 - `func_80048A78` (`0x80048A78`, `0x7C` bytes, 0 direct calls, 1 trailing nops)
 - `func_8001FC18` (`0x8001FC18`, `0x160` bytes, 0 direct calls, 1 trailing nops)
 - `func_8000D218` (`0x8000D218`, `0x718` bytes, 0 direct calls, 2 trailing nops)
