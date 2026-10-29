@@ -35,6 +35,10 @@ across 236 files, plus 874,747 unreferenced zero bytes that are not yet proven
 padding. See `analysis/data_map/README.md` and the gap-free
 `analysis/data_map/rom_map.tsv`; the earlier conservative inventory remains as
 historical evidence rather than the authoritative data map.
+These ranges are not unmatched data: their original container bytes decode and
+re-encode exactly. Consequently, no non-function byte-matching work remains.
+Further names and field meanings improve semantic documentation but do not
+change byte-match progress unless new evidence changes a structural boundary.
 The generated [full-ROM audit](analysis/full_rom_audit.md) records structural
 metrics and prioritized function queues without promoting heuristic findings.
 
