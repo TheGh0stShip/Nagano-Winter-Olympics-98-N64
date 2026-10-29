@@ -1360,8 +1360,8 @@
   },
   "functions": {
     "total": 1470,
-    "matched": 1013,
-    "matched_bytes": 130724,
+    "matched": 1016,
+    "matched_bytes": 131260,
     "total_bytes": 391968,
     "size_buckets": {
       "<=0x10": 99,
@@ -1376,9 +1376,9 @@
     },
     "compiler_matches": {
       "hand-written assembly": 29,
-      "IDO 5.3": 721,
+      "IDO 5.3": 723,
       "KMC GCC 2.7.2 + assembler": 57,
-      "IDO 7.1": 206
+      "IDO 7.1": 207
     },
     "address_bands": [
       {
@@ -1422,11 +1422,11 @@
         "start": 200704,
         "end": 266240,
         "functions": 239,
-        "matched": 149,
-        "matched_bytes": 10980,
+        "matched": 151,
+        "matched_bytes": 11340,
         "compiler_matches": {
           "IDO 7.1": 27,
-          "IDO 5.3": 109,
+          "IDO 5.3": 111,
           "KMC GCC 2.7.2 + assembler": 13
         }
       },
@@ -1434,10 +1434,10 @@
         "start": 266240,
         "end": 331776,
         "functions": 243,
-        "matched": 155,
-        "matched_bytes": 19612,
+        "matched": 156,
+        "matched_bytes": 19788,
         "compiler_matches": {
-          "IDO 7.1": 35,
+          "IDO 7.1": 36,
           "IDO 5.3": 100,
           "KMC GCC 2.7.2 + assembler": 9,
           "hand-written assembly": 11
@@ -1924,22 +1924,6 @@
         "branches": 2,
         "cop1": 0,
         "loads_stores": 14,
-        "trailing_nops": 0
-      },
-      {
-        "name": "func_8003E75C",
-        "vram": 2147739484,
-        "rom": 258908,
-        "size": 176,
-        "matched": false,
-        "source": null,
-        "compiler": null,
-        "direct_calls": [],
-        "indirect_calls": 0,
-        "jumps": 0,
-        "branches": 6,
-        "cop1": 2,
-        "loads_stores": 16,
         "trailing_nops": 0
       },
       {
@@ -2644,6 +2628,22 @@
         "branches": 6,
         "cop1": 0,
         "loads_stores": 54,
+        "trailing_nops": 0
+      },
+      {
+        "name": "func_80022F44",
+        "vram": 2147626820,
+        "rom": 146244,
+        "size": 512,
+        "matched": false,
+        "source": null,
+        "compiler": null,
+        "direct_calls": [],
+        "indirect_calls": 0,
+        "jumps": 0,
+        "branches": 22,
+        "cop1": 74,
+        "loads_stores": 6,
         "trailing_nops": 0
       }
     ],
