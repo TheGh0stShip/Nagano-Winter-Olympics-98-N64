@@ -629,3 +629,4 @@
 0x2008	0xD0	src/game/80001408.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	8b4f96804da71dec0dc647c8758f7824740242f719339b217ae526ee80ad9dce
 0x3F18	0xC8	src/game/80003318.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	db2f988cc9b8603cef335790f030db28a82ede0cebfb1aefa702a555116ceb02
 0x1060	0x338	src/game/exact_80000460_unit_80000460.c	--section-base=.bss:0x8008D3B8 --symbol=osTvType:0x80000300 -O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	31e11ee1a5bf2b1845eedbd7e803945a6e97cae58a120f62a45fb86be3c4af0c
+0x381F0	0xD0	src/game/initialize_flagged_runtime_record_800375f0.c	-O2 -mips2 -non_shared -Xcpluscomm -Wab,-r4300_mul -G 0	608f9901b185925de7dd935695e4e86115672d0302eee7385b62b72065f9d2dc
