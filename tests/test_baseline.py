@@ -66,6 +66,18 @@ class BaselineTests(unittest.TestCase):
         self.assertEqual(report["measures"]["total_code"], "391940")
         self.assertEqual(report["measures"]["matched_code"], "391940")
         self.assertEqual(report["measures"]["matched_functions"], 1470)
+        self.assertEqual(report["measures"]["total_units"], 1328)
+        self.assertEqual(report["measures"]["complete_units"], 1328)
+        self.assertEqual(len(report["units"]), 1328)
+        self.assertTrue(all(
+            (ROOT / unit["metadata"]["source_path"]).is_file()
+            for unit in report["units"]
+            if unit["metadata"]["complete"]
+        ))
+        self.assertTrue(all(
+            unit["name"] == unit["metadata"]["source_path"]
+            for unit in report["units"]
+        ))
         self.assertEqual(report["measures"]["matched_data"], "129824")
         self.assertEqual(report["measures"]["total_data"], "129824")
         self.assertEqual(report["measures"]["matched_data_percent"], 100.0)

@@ -23,10 +23,15 @@ ASSET_START = 0x829E0
 ASSET_END = 0xC00000
 
 
-def measures(code, matched, functions, matched_functions, data=0, matched_data=0):
+def measures(code, matched, functions, matched_functions, data=0,
+             matched_data=0, units=None, complete_units=None):
     cp = 100.0 * matched / code if code else 0.0
     dp = 100.0 * matched_data / data if data else 0.0
     fp = 100.0 * matched_functions / functions if functions else 0.0
+    if units is None:
+        units = functions
+    if complete_units is None:
+        complete_units = matched_functions
     return {"fuzzy_match_percent": cp, "total_code": str(code),
             "matched_code": str(matched), "matched_code_percent": cp,
             "total_data": str(data), "matched_data": str(matched_data),
@@ -34,8 +39,8 @@ def measures(code, matched, functions, matched_functions, data=0, matched_data=0
             "matched_functions": matched_functions,
             "matched_functions_percent": fp, "complete_code": str(matched),
             "complete_code_percent": cp, "complete_data": str(matched_data),
-            "complete_data_percent": dp, "total_units": functions,
-            "complete_units": matched_functions}
+            "complete_data_percent": dp, "total_units": units,
+            "complete_units": complete_units}
 
 
 def data_category_measures(total, matched):
@@ -97,7 +102,7 @@ def main():
     # A unit may hold several functions of one translation unit; a function is
     # complete when one verified manifest range covers all of its bytes.
     matched = [(int(r[0], 0), int(r[0], 0) + int(r[1], 0), r[2]) for r in rows]
-    units, matched_bytes, matched_count = [], 0, 0
+    source_units, matched_bytes, matched_count = {}, 0, 0
     for fn in funcs:
         start = fn["vram"] - 0x80000400 + 0x1000
         size = fn["size"]
@@ -106,25 +111,58 @@ def main():
         complete = source is not None
         matched_bytes += size if complete else 0
         matched_count += complete
-        units.append({"name": fn["name"], "measures": measures(size, size if complete else 0, 1, int(complete)),
-                      "functions": [{"name": fn["name"], "size": str(size),
-                                     "fuzzy_match_percent": 100.0 if complete else 0.0,
-                                     "address": str(fn["vram"]),
-                                     "metadata": {"virtual_address": str(fn["vram"])}}],
-                      "metadata": {"complete": complete,
-                                   "source_path": source or f"asm/us/{fn['name']}.s",
-                                   "progress_categories": ["code"],
-                                   "auto_generated": not complete}})
+        source_path = source or f"asm/us/{fn['name']}.s"
+        unit = source_units.setdefault(source_path, {
+            "name": source_path,
+            "code": 0,
+            "matched": 0,
+            "functions": [],
+            "matched_functions": 0,
+            "complete": True,
+        })
+        unit["code"] += size
+        unit["matched"] += size if complete else 0
+        unit["matched_functions"] += int(complete)
+        unit["complete"] = unit["complete"] and complete
+        unit["functions"].append({
+            "name": fn["name"],
+            "size": str(size),
+            "fuzzy_match_percent": 100.0 if complete else 0.0,
+            "address": str(fn["vram"]),
+            "metadata": {"virtual_address": str(fn["vram"])},
+        })
+    units = []
+    for source_path, unit in source_units.items():
+        function_count = len(unit["functions"])
+        units.append({
+            "name": unit["name"],
+            "measures": measures(
+                unit["code"], unit["matched"], function_count,
+                unit["matched_functions"], units=1,
+                complete_units=int(unit["complete"]),
+            ),
+            "functions": unit["functions"],
+            "metadata": {
+                "complete": unit["complete"],
+                "source_path": source_path,
+                "progress_categories": ["code"],
+                "auto_generated": not unit["complete"],
+            },
+        })
     data = tomllib.loads((ROOT / "config/us/data_progress.toml").read_text())["initialized_data"]
     if data["matched"] + data["unmatched"] != TOTAL_DATA:
         raise ValueError("initialized data progress does not cover the program data")
     identified, audio, music, extracted, nested = inventory_progress()
     asset_total = ASSET_END - ASSET_START
+    complete_unit_count = sum(unit["metadata"]["complete"] for unit in units)
     report = {"measures": measures(total_code, matched_bytes, len(funcs), matched_count,
-                                    TOTAL_DATA, data["matched"]),
+                                    TOTAL_DATA, data["matched"], len(units),
+                                    complete_unit_count),
               "units": units, "version": 2,
               "categories": [{"id": "code", "name": "Program code",
-                              "measures": measures(total_code, matched_bytes, len(funcs), matched_count)},
+                              "measures": measures(total_code, matched_bytes, len(funcs), matched_count,
+                                                   units=len(units),
+                                                   complete_units=complete_unit_count)},
                              {"id": "program_data", "name": "Initialized program data",
                               "measures": data_category_measures(TOTAL_DATA, data["matched"])},
                              {"id": "assets", "name": "Identified asset-region bytes",
