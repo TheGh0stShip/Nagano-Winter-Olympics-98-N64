@@ -17,7 +17,6 @@ MANIFESTS = (
 OUTPUT = ROOT / "build/report.json"
 INVENTORY = ROOT / "analysis/data_map/rom_map.tsv"
 ASSET_PROGRESS = ROOT / "config/us/asset_progress.toml"
-TOTAL_CODE = 392_172
 TOTAL_DATA = 129_824
 ROM_SIZE = 12_582_912
 ASSET_START = 0x829E0
@@ -89,6 +88,9 @@ def inventory_progress():
 
 def main():
     funcs = tomllib.loads(FUNCTIONS.read_text())["section"][0]["functions"]
+    # Track executable function bodies as code. Linker/TU alignment between
+    # them remains covered by the physical ROM inventory, but is not C code.
+    total_code = sum(fn["size"] for fn in funcs)
     rows = [line.split("\t") for manifest in MANIFESTS
             for line in manifest.read_text().splitlines()
             if line and not line.startswith("#")]
@@ -118,11 +120,11 @@ def main():
         raise ValueError("initialized data progress does not cover the program data")
     identified, audio, music, extracted, nested = inventory_progress()
     asset_total = ASSET_END - ASSET_START
-    report = {"measures": measures(TOTAL_CODE, matched_bytes, len(funcs), matched_count,
+    report = {"measures": measures(total_code, matched_bytes, len(funcs), matched_count,
                                     TOTAL_DATA, data["matched"]),
               "units": units, "version": 2,
               "categories": [{"id": "code", "name": "Program code",
-                              "measures": measures(TOTAL_CODE, matched_bytes, len(funcs), matched_count)},
+                              "measures": measures(total_code, matched_bytes, len(funcs), matched_count)},
                              {"id": "program_data", "name": "Initialized program data",
                               "measures": data_category_measures(TOTAL_DATA, data["matched"])},
                              {"id": "assets", "name": "Identified asset-region bytes",
@@ -140,7 +142,7 @@ def main():
                               "measures": data_category_measures(ROM_SIZE, ROM_SIZE)}]}
     OUTPUT.parent.mkdir(exist_ok=True)
     OUTPUT.write_text(json.dumps(report, indent=2) + "\n")
-    print(f"wrote {OUTPUT}: {matched_bytes} / {TOTAL_CODE} code bytes; "
+    print(f"wrote {OUTPUT}: {matched_bytes} / {total_code} code bytes; "
           f"{identified} / {asset_total} identified asset-region bytes")
 
 

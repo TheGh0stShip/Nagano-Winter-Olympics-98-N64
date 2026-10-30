@@ -4,7 +4,7 @@
 [![Functions](https://bytematch.dev/TheGh0stShip/Nagano-Winter-Olympics-98-N64.svg?mode=shield&label=Functions&measure=matched_functions)](https://bytematch.dev/TheGh0stShip/Nagano-Winter-Olympics-98-N64)
 [![Report](https://github.com/TheGh0stShip/Nagano-Winter-Olympics-98-N64/actions/workflows/progress.yml/badge.svg)](https://github.com/TheGh0stShip/Nagano-Winter-Olympics-98-N64/actions/workflows/progress.yml)
 
-An in-progress, byte-matching C decompilation of the USA Nintendo 64 release.
+A complete, byte-matching decompilation of the USA Nintendo 64 release.
 You must provide your own legally obtained retail ROM.
 
 ## Verified baseline
@@ -13,15 +13,16 @@ You must provide your own legally obtained retail ROM.
 - Big-endian `.z64`, 12,582,912 bytes, CIC 6102, game code `NH5E`
 - Initial program: ROM `0x1000..0x829E0`, VRAM `0x80000400..0x80081DE0`
 - BSS: `0x80081DE0..0x801954A0`
-- CPU text catalogue: 1,470 candidate functions / 391,964 function bytes
-- Tracker CPU-code denominator: 392,172 bytes, including 208 bytes of
-  alignment/linker code-section padding outside the function catalogue
+- CPU text catalogue: 1,470 functions / 391,940 function-body bytes
+- Linked CPU text also contains 232 bytes of alignment/linker padding outside
+  function bodies; the physical ROM inventory covers it separately from code
 - Program initialized data: 129,824 bytes, plus 40 bytes of verified linker padding
 - RSP code identified inside the linked text section: 7,296 bytes
 - SDK functions named: 241 (220 high-confidence)
 - Audio: four libaudio bank files and 327 indexed VADPCM sample payloads
 - Music: 23 loader-indexed Konami LZ sequences, 297 tracks, and 33,236 Nagano/Konami events decode and rebuild exactly
-- Matching source: 1,469 functions / 390,132 function bytes in 1,327 verified units
+- Matching source: 1,470 / 1,470 functions and 391,940 / 391,940
+  function-body bytes (100%) in 1,328 verified units
 - Byte-matched initialized data: 129,824 / 129,824 bytes (100%)
 - Classified post-program bytes: 12,047,904 / 12,047,904 bytes (100%)
 - Classified decoded-container bytes: 13,997,274 / 14,762,912 bytes (94.81%)

@@ -14,7 +14,7 @@ class BaselineTests(unittest.TestCase):
         self.assertEqual(manifest["game"], "Nagano Winter Olympics '98")
         self.assertEqual(manifest["system"], "N64")
         self.assertEqual(manifest["type"], "decomp")
-        self.assertEqual(manifest["status"], "in-progress")
+        self.assertEqual(manifest["status"], "complete")
         self.assertEqual(manifest["original"], {
             "region": "USA",
             "revision": "Rev 0",
@@ -51,8 +51,8 @@ class BaselineTests(unittest.TestCase):
                     + [line for line in ido_asm_lines if line and not line.startswith("#")]
                     + [line for line in ido_lines if line and not line.startswith("#")]
                     + [line for line in ido7_lines if line and not line.startswith("#")])
-        self.assertEqual(len(all_rows), 1327)
-        self.assertEqual(sum(int(row.split("\t")[1], 0) for row in all_rows), 390152)
+        self.assertEqual(len(all_rows), 1328)
+        self.assertEqual(sum(int(row.split("\t")[1], 0) for row in all_rows), 391960)
         row = rows[0]
         fields = row.split("\t")
         self.assertEqual(fields[:3], ["0x27F4", "0xC", "src/game/get_global_halfword.c"])
@@ -63,8 +63,9 @@ class BaselineTests(unittest.TestCase):
                        cwd=ROOT, check=True, capture_output=True, text=True)
         report = json.loads((ROOT / "build/report.json").read_text())
         categories = {item["id"]: item["measures"] for item in report["categories"]}
-        self.assertEqual(report["measures"]["matched_code"], "390132")
-        self.assertEqual(report["measures"]["matched_functions"], 1469)
+        self.assertEqual(report["measures"]["total_code"], "391940")
+        self.assertEqual(report["measures"]["matched_code"], "391940")
+        self.assertEqual(report["measures"]["matched_functions"], 1470)
         self.assertEqual(report["measures"]["matched_data"], "129824")
         self.assertEqual(report["measures"]["total_data"], "129824")
         self.assertEqual(report["measures"]["matched_data_percent"], 100.0)
@@ -98,7 +99,7 @@ class BaselineTests(unittest.TestCase):
             cwd=ROOT, check=True, capture_output=True, text=True,
         )
         audit = json.loads((ROOT / "analysis/full_rom_audit.json").read_text())
-        self.assertEqual(audit["functions"]["total_bytes"], 391948)
+        self.assertEqual(audit["functions"]["total_bytes"], 391940)
 
 
 if __name__ == "__main__":

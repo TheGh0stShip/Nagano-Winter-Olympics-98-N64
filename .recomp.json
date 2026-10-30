@@ -11,7 +11,7 @@
     "sha1": "eaf543e195731031a84f4136b506449209e3a8f5"
   },
   "project": "Nagano Winter Olympics '98 (N64) matching decompilation",
-  "status": "in-progress",
+  "status": "complete",
   "toolchain": [
     "n64-decomp-kit",
     "Objdiff"
@@ -35,9 +35,7 @@
     }
   ],
   "help": [
-    "Matching remaining game functions",
-    "Identifying initialized data",
-    "Documenting asset formats"
+    "Documenting additional asset semantics"
   ],
   "tags": [
     "matching",
