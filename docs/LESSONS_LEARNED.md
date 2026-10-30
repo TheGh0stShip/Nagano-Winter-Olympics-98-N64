@@ -258,7 +258,21 @@ The final residuals then formed repeated structural families:
 - 16-byte N64 `Vtx` records;
 - nine big-endian float translation/rotation/scale records;
 - RGBA16, RGBA32 and CI8 texture/palette spans between proven display lists;
-- segment-6 pointer graphs and 0xff-terminated model index/weight streams.
+- fixed big-endian `s16[6]` model records (without guessing field meanings);
+- groups of segment-6 pointers delimited by `0xffffffff` words;
+- `u8` triangle-index triplets delimited by `ff ff ff` sentinels.
+
+The model-package family in files 65--74 also uses a repeated 88-byte slot:
+a count in the high byte of a word followed by seven
+`{parameter, segment-6 display-list pointer, segment-6 data pointer}` entries.
+Unused entries and empty slots are zero. Validate every pointer, inactive
+entry, and slot boundary before assigning the record type; a convenient stride
+alone is not evidence.
+
+The companion group tables contain repeated pairs whose second word points to
+successive 64-slot groups, followed by a zero pair. Their first words remain
+semantically unnamed; exact layout and pointer progression do not by
+themselves prove animation or keyframe meaning.
 
 Pin file-specific layouts with both decoded size and content signatures, and
 let stronger embedded references override broader model-record ownership.

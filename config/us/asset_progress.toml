@@ -15,6 +15,6 @@ extracted_bytes = 12047904
 total_bytes = 14762912
 classified_bytes = 14762912
 unknown_bytes = 0
-unreferenced_zero_bytes = 856
+unreferenced_zero_bytes = 896
 files_fully_decoded = 526
 files_partially_decoded = 0

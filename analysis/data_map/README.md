@@ -31,7 +31,8 @@ unknown and unreferenced-zero counts. Typed F3DEX regions round-trip, and all
 14,762,912 logical bytes now have a structural classification. The map combines
 embedded F3DEX references with program-side 28-byte image descriptors,
 fixed-stride Vtx and nine-float transform records, texture/palette boundaries,
-and segment-pointer/model-index records. Only 856 zero bytes remain labeled as
+fixed `s16[6]` model records, sentinel-delimited segment-pointer groups, and
+sentinel-delimited `u8` triangle-index triplets. Only 896 zero bytes remain labeled as
 unreferenced padding. Asset file 53 is also
 structurally decoded: four big-endian signed 16-bit header fields precede 1,318
 fixed records of ten signed 16-bit fields. The record body has a uniquely
@@ -40,9 +41,10 @@ serializing its header and records reproduces all 26,368 bytes exactly. Field
 meanings remain unnamed.
 
 All non-function data decompilation required for exact reconstruction and
-structural coverage is complete. No `unknown` rows remain in the nested map.
-Several broad model-graph/index categories intentionally stop short of naming
-every field; that is semantic refinement, not an unclassified byte range.
+structural coverage is complete. No `unknown` or generic `model_aux` rows
+remain in the nested map.
+Field meanings in the fixed model records intentionally remain unnamed where
+the byte layout is proven but the consumer semantics are not.
 
 The image descriptors are discovered from initialized program data rather than
 hard-coded file IDs. Their consumer is `func_8002C51C`; each record names the

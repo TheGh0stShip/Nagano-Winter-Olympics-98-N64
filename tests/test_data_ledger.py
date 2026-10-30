@@ -16,6 +16,7 @@ sys.path.insert(0, str(ROOT / "tools"))
 
 import konami_lz  # noqa: E402
 import asset_decode  # noqa: E402
+import model_package  # noqa: E402
 import image_descriptors  # noqa: E402
 import nagano_audio  # noqa: E402
 import nagano_data  # noqa: E402
@@ -240,12 +241,32 @@ class RomTests(unittest.TestCase):
                 blob = files[fid]
                 if row["kind"] == "dl":
                     self.assertTrue(asset_decode.dl_roundtrip(blob, start, end))
+                elif row["kind"] == "model_slots":
+                    self.assertEqual((end - start) % model_package.SLOT, 0)
+                    for off in range(start, end, model_package.SLOT):
+                        self.assertIsNotNone(model_package.slot_kind(blob, off))
+                    self.assertTrue(model_package.roundtrip(blob, start, end))
+                elif row["kind"] == "model_group_tables":
+                    self.assertEqual((end - start) % 8, 0)
+                    self.assertTrue(model_package.table_roundtrip(blob, start, end))
+                elif row["kind"] == "model_descriptor":
+                    self.assertTrue(asset_decode.model_descriptor_valid(
+                        blob, start, end))
                 elif row["kind"] == "transform9f":
                     self.assertEqual((end - start) % 36, 0)
                     values = struct.unpack_from(
                         f">{(end - start) // 4}f", blob, start)
                     self.assertEqual(struct.pack(f">{len(values)}f", *values),
                                      blob[start:end])
+                elif row["kind"] == "model_s16x6":
+                    self.assertTrue(asset_decode.model_s16x6_roundtrip(
+                        blob, start, end))
+                elif row["kind"] == "model_segptr_groups":
+                    self.assertTrue(asset_decode.model_segptr_groups_valid(
+                        blob, start, end))
+                elif row["kind"] == "model_tri_indices":
+                    self.assertTrue(asset_decode.model_tri_indices_valid(
+                        blob, start, end))
         self.assertEqual(cursors, {fid: len(blob) for fid, blob in files.items()})
 
     def test_representative_lz_files_reencode_exactly(self):

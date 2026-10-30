@@ -18,6 +18,7 @@ import struct
 from collections import Counter
 
 import f3dex_walk as F
+import model_package
 
 SIZ_BYTES = {0: 0.5, 1: 1, 2: 2, 3: 4}
 
@@ -53,13 +54,21 @@ def decode_file(blob: bytes):
         (0x28F10, "ffba007400000000"), (0x18B80, "ff13006a00a80000"),
         (0x1BF60, "00890073fffe0000"), (0x17BF0, "00b3004dffbe0000"),
     }
-    if (n, blob[:8].hex()) in model_package_signatures:
-        words = struct.unpack(">%dI" % (n // 4), blob[:n - n % 4])
-        seg_words = sum(seg6(word, n) for word in words)
-        zero_words = words.count(0)
-        if seg_words >= 100 and zero_words * 2 >= len(words):
-            regions.append(Region(0, n, "model_aux",
-                                  "word-aligned model/scene records"))
+    is_model_package = (n, blob[:8].hex()) in model_package_signatures
+    # Files 65..74 contain fixed 88-byte model slots arranged in groups of 64,
+    # plus tables that point to each group.  Field semantics remain unproven;
+    # the parser validates layout, pointers, and exact round-tripping only.
+    slot_runs = model_package.find_runs(
+        blob, model_package.dl_entry_points(lists)) if is_model_package else []
+    for start, end, records, empty in slot_runs:
+        regions.append(Region(
+            start, end, "model_slots",
+            f"{records + empty} x 88-byte slots ({records} populated, {empty} empty)"))
+    for start, end, run_start, pairs in model_package.find_group_tables(
+            blob, slot_runs):
+        regions.append(Region(
+            start, end, "model_group_tables",
+            f"{pairs} model-group pointers + terminator (run {run_start:#x})"))
     # A standalone G_ENDDL is itself a complete one-command display list and
     # is also used as the terminator half of external pointer records.  The
     # list finder intentionally favors longer command runs, so preserve these
@@ -207,7 +216,7 @@ def decode_file(blob: bytes):
             (0x5690, 0x5698, "dl", "G_TRI2 command"),
         ),
         (0x9980, "0505050005050500"): (
-            (0, 0x18, "model_aux", "model header"),
+            (0, 0x18, "palette_rgba32", "6 RGBA32 model colors"),
             (0x7AD8, 0x7CD8, "tlut", "256 colors RGBA16"),
             (0x7CE0, 0x80D8, "tex_rgba16", "RGBA16 texture"),
         ),
@@ -218,31 +227,40 @@ def decode_file(blob: bytes):
             (0x82F90, 0x860D0, "vtx", "788 contiguous Vtx records"),
             (0x884D0, 0x8ABD0, "vtx", "624 contiguous Vtx records"),
             (0x8BA70, 0x8CE8C, "transform9f", "143 translation/rotation/scale records"),
-            (0x8CE8C, 0x8F058, "model_aux", "packed model index/weight records"),
-            (0x8F18C, 0x900E0, "model_aux", "model graph and index records"),
+            (0x8CE8C, 0x8F058, "model_s16x6",
+             "721 fixed big-endian s16[6] model records"),
+            (0x8F18C, 0x8F4C0, "model_segptr_groups",
+             "10 sentinel-delimited groups containing 195 segment-6 pointers"),
+            (0x8F4C0, 0x900E0, "model_tri_indices",
+             "u8 triangle-index triplets separated by FF FF FF sentinels"),
         ),
         (0x87720, "e700000000000000"): (
             (0x7E2C8, 0x7F1B0, "transform9f", "106 translation/rotation/scale records"),
-            (0x7F1B0, 0x804C4, "model_aux", "packed model index/weight records"),
-            (0x80644, 0x812B8, "model_aux", "model graph and index records"),
+            (0x7F1B0, 0x804C4, "model_s16x6", "407 fixed big-endian s16[6] model records"),
+            (0x80644, 0x8091C, "model_segptr_groups", "sentinel-delimited segment-6 pointer groups"),
+            (0x8091C, 0x812B8, "model_tri_indices", "sentinel-delimited u8 triangle-index triplets"),
         ),
         (0x836D0, "e700000000000000"): (
             (0x6E728, 0x6ECC8, "transform9f", "40 translation/rotation/scale records"),
             (0x742B0, 0x74470, "tex_rgba16", "RGBA16 texture"),
         ),
         (0x6D3B0, "0000000000000000"): (
-            (0, 0x24, "model_aux", "model header"),
-            (0x4C, 0x50, "model_aux", "model graph sentinel"),
-            (0x78, 0x108, "model_aux", "model graph and index records"),
+            (0, 0x24, "transform9f", "identity translation/rotation/scale record"),
+            (0x24, 0x7C, "model_segptr_groups",
+             "2 sentinel-delimited segment-6 pointer groups"),
+            (0x7C, 0x108, "model_tri_indices",
+             "sentinel-delimited u8 triangle-index triplets"),
         ),
         (0x4A920, "e700000000000000"): (
             (0x3F670, 0x3F8D4, "transform9f", "17 translation/rotation/scale records"),
-            (0x3F94C, 0x401C4, "model_aux", "model graph and index records"),
+            (0x3F94C, 0x3F9CC, "model_segptr_groups", "sentinel-delimited segment-6 pointer groups"),
+            (0x3F9CC, 0x401C4, "model_tri_indices", "sentinel-delimited u8 triangle-index triplets"),
         ),
         (0x95910, "e700000000000000"): (
             (0x8DBD8, 0x8E4FC, "transform9f", "65 translation/rotation/scale records"),
-            (0x8E4FC, 0x8F2C4, "model_aux", "packed model index/weight records"),
-            (0x8F380, 0x8F9D0, "model_aux", "model graph and index records"),
+            (0x8E4FC, 0x8F2C4, "model_s16x6", "294 fixed big-endian s16[6] model records"),
+            (0x8F380, 0x8F524, "model_segptr_groups", "sentinel-delimited segment-6 pointer groups"),
+            (0x8F524, 0x8F9D0, "model_tri_indices", "sentinel-delimited u8 triangle-index triplets"),
             (0x92208, 0x93448, "tex_ci8", "CI8 texture block"),
         ),
         (0x4FCF0, "e700000000000000"): (
@@ -251,7 +269,8 @@ def decode_file(blob: bytes):
         ),
         (0x8F070, "b800000000000000"): (
             (0x7E538, 0x7EE14, "transform9f", "63 translation/rotation/scale records"),
-            (0x7F00C, 0x7F024, "model_aux", "model graph record"),
+            (0x7F00C, 0x7F024, "model_descriptor",
+             "six-word model descriptor with one segment-6 pointer"),
             (0x7FEB4, 0x7FED8, "tex_rgba16", "RGBA16 texture"),
         ),
         (0x4C5D0, "fffe080140c14181"): (
@@ -316,7 +335,11 @@ def decode_file(blob: bytes):
 def coverage(blob: bytes, regions):
     """Paint regions onto the file (priority order) and fill zero gaps as pad."""
     n = len(blob)
-    pri = {"model_aux": 1, "transform9f": 6, "palette_rgba32": 6,
+    pri = {"model_aux": 1, "model_slots": 7, "model_group_tables": 7,
+           "model_descriptor": 6,
+           "model_s16x6": 5,
+           "model_segptr_groups": 5, "model_tri_indices": 5,
+           "transform9f": 6, "palette_rgba32": 6,
            "tex_rgba16": 6, "tex_ci8": 6,
            "image_ci8": 7, "image_rgba16": 7, "dl_ptr_records": 6,
            "dl": 5, "ptrtab": 4, "vtx": 3,
@@ -324,7 +347,10 @@ def coverage(blob: bytes, regions):
     owner = bytearray(n)  # 0 = unknown
     kinds = ["unknown", "pad", "tex", "vtx", "tlut", "ptrtab", "dl",
              "tex_rgba16", "tex_ci8", "image_ci8", "image_rgba16",
-             "dl_ptr_records", "model_aux", "transform9f", "palette_rgba32"]
+             "dl_ptr_records", "model_aux", "model_s16x6",
+             "model_segptr_groups", "model_tri_indices", "transform9f",
+             "palette_rgba32", "model_slots", "model_group_tables",
+             "model_descriptor"]
     code = {k: i for i, k in enumerate(kinds)}
     for r in sorted(regions, key=lambda r: pri.get(r.kind, 0)):
         owner[r.start:r.end] = bytes([code[r.kind]]) * (r.end - r.start)
@@ -387,6 +413,71 @@ def vtx_roundtrip(blob: bytes, start: int, end: int) -> bool:
         x, y, z, flag, s, t, r, g, b, a = struct.unpack_from(">hhhHhhBBBB", blob, o)
         out += struct.pack(">hhhHhhBBBB", x, y, z, flag, s, t, r, g, b, a)
     return bytes(out) == blob[start:end]
+
+
+def model_s16x6_roundtrip(blob: bytes, start: int, end: int) -> bool:
+    """Round-trip fixed model records containing six signed 16-bit fields."""
+    if (end - start) % 12:
+        return False
+    values = struct.unpack_from(">%dh" % ((end - start) // 2), blob, start)
+    return struct.pack(">%dh" % len(values), *values) == blob[start:end]
+
+
+def model_segptr_groups_valid(blob: bytes, start: int, end: int) -> bool:
+    """Validate groups of segment-6 pointers terminated by 0xffffffff."""
+    if (end - start) % 4:
+        return False
+    groups = pointers = 0
+    in_group = False
+    for off in range(start, end, 4):
+        word = struct.unpack_from(">I", blob, off)[0]
+        if word == 0xFFFFFFFF:
+            # The first word is the delimiter following the preceding object.
+            if not in_group and off != start:
+                return False
+            groups += 1
+            in_group = False
+        elif seg6(word, len(blob)):
+            pointers += 1
+            in_group = True
+        else:
+            return False
+    return not in_group and groups >= 1 and pointers >= 1
+
+
+def model_tri_indices_valid(blob: bytes, start: int, end: int) -> bool:
+    """Validate u8 triangle triplets separated by 0xffffff sentinels."""
+    pos = start
+    groups = 0
+    while pos < end:
+        sentinel = blob.find(b"\xff\xff\xff", pos, end)
+        if sentinel < 0:
+            # The final group ends with two bytes of its sentinel in this
+            # region; the third byte is co-owned by the aligned command scan.
+            return (end - pos >= 5 and blob[end - 2:end] == b"\xff\xff"
+                    and end < len(blob) and blob[end] == 0xff
+                    and (end - 2 - pos) % 3 == 0
+                    and max(blob[pos:end - 2]) < 0x40
+                    and groups >= 1)
+        if sentinel == pos or (sentinel - pos) % 3:
+            return False
+        if max(blob[pos:sentinel]) >= 0x40:
+            return False
+        groups += 1
+        pos = sentinel + 3
+        while pos < end and blob[pos] == 0:
+            pos += 1
+    return pos == end and groups >= 1
+
+
+def model_descriptor_valid(blob: bytes, start: int, end: int) -> bool:
+    """Validate the observed six-word model descriptor record."""
+    if end - start != 24:
+        return False
+    words = struct.unpack_from(">6I", blob, start)
+    return (words[:3] == (0, 0, 0) and seg6(words[3], len(blob))
+            and words[4:] == (0, 0)
+            and struct.pack(">6I", *words) == blob[start:end])
 
 
 def dl_roundtrip(blob: bytes, start: int, end: int) -> bool:
