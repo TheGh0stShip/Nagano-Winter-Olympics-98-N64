@@ -7,6 +7,10 @@
 A complete, byte-matching decompilation of the USA Nintendo 64 release.
 You must provide your own legally obtained retail ROM.
 
+For a concise record of the compiler behavior, successful matching techniques,
+failed approaches, final-function breakthrough, asset methodology, and release
+checks, read [Lessons learned](docs/LESSONS_LEARNED.md).
+
 ## Verified baseline
 
 - ROM SHA-1: `eaf543e195731031a84f4136b506449209e3a8f5`
