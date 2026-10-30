@@ -11,7 +11,7 @@ The project uses the USA retail ROM with SHA-1
 `make verify-matching` recompiles it and proves that its relocated bytes equal
 the retail ROM.
 
-At commit `8be4efb`:
+At the completed release:
 
 - 1,470 / 1,470 functions are covered by verified units.
 - 391,940 / 391,940 function-body bytes are byte-exact.
@@ -25,11 +25,11 @@ The linked CPU text section also contains 232 bytes of alignment/linker
 padding. Padding is not C function code, so it is covered by the physical ROM
 inventory rather than inflating the code denominator.
 
-“100% matching decompilation” does not mean every asset field has a semantic
-name. The nested decoded-container map is presently 13,997,274 / 14,762,912
-bytes (94.81%) structurally classified. The remaining 765,638 decoded bytes
-round-trip through their original containers exactly but retain unknown
-in-file semantics. Keep this distinction in reports and public announcements.
+“100% matching decompilation” does not mean every asset field has a final
+semantic name. The nested decoded-container map classifies 14,762,912 /
+14,762,912 bytes (100%), with no unknown ranges. Some model graph, index and
+transform fields retain descriptive rather than gameplay-specific names. Keep
+that distinction in reports and public announcements.
 
 ## The verification hierarchy
 
@@ -231,7 +231,8 @@ different questions:
 - physical inventory: every ROM byte has an owner;
 - reconstruction: structured serializers or canonical payloads reproduce the
   original bytes;
-- extraction: redistributable files are actually committed;
+- extraction: tools reproducibly emit payloads from the user-supplied ROM
+  (the generated files remain ignored and are not committed);
 - nested semantics: decoded container contents have proven record types.
 
 Nagano uses a 538-entry asset table, 524 Konami-LZ containers, four libaudio
@@ -244,6 +245,25 @@ size-divisible blob into records without autocorrelation, reference, parser,
 and exact repack evidence. The file-53 `s16[10]` classification, for example,
 uses an eight-byte typed header, a unique 20-byte stride signal, and exact
 parse/repack verification.
+
+The final nested-asset breakthrough was to combine in-file and code-side
+evidence. `func_8002C51C` consumes 28-byte image descriptors in initialized
+program data. Those descriptors name an asset-file load record, segment-6
+image and palette addresses, pixel format, width, and height. Validating all
+cross-references exposed full-screen CI8 and RGBA16 images that an in-file
+display-list walk could never find.
+
+The final residuals then formed repeated structural families:
+
+- 16-byte N64 `Vtx` records;
+- nine big-endian float translation/rotation/scale records;
+- RGBA16, RGBA32 and CI8 texture/palette spans between proven display lists;
+- segment-6 pointer graphs and 0xff-terminated model index/weight streams.
+
+Pin file-specific layouts with both decoded size and content signatures, and
+let stronger embedded references override broader model-record ownership.
+This reached a gap-free 14,762,912-byte nested map without relabeling unknown
+bytes as a generic opaque blob.
 
 ## Coordination lessons
 

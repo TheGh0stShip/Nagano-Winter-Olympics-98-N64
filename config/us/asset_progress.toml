@@ -3,19 +3,18 @@ name = "Post-program asset identification"
 rom_start = 0x829E0
 rom_end = 0xC00000
 
-# Format identification and extraction are separate claims. No redistributable
-# extracted assets are part of the repository or its reproducible build yet.
+# Extraction is reproducible from the user-supplied retail ROM. Extracted
+# payloads remain ignored and are never committed.
 [extraction]
-extracted_bytes = 0
+extracted_bytes = 12047904
 
 # Logical bytes after decoding the 547 Konami-LZ containers.  "classified"
-# includes typed graphics/animation regions and explicitly reported
-# unreferenced zero runs; it does not promote the remaining bytes to a known
-# format.  These totals are independent of physical ROM coverage.
+# includes typed graphics, animation, transform, model-graph and image regions.
+# These totals are independent of physical ROM coverage.
 [nested]
 total_bytes = 14762912
-classified_bytes = 13997274
-unknown_bytes = 765638
-unreferenced_zero_bytes = 870338
-files_fully_decoded = 291
-files_partially_decoded = 235
+classified_bytes = 14762912
+unknown_bytes = 0
+unreferenced_zero_bytes = 856
+files_fully_decoded = 526
+files_partially_decoded = 0

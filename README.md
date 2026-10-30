@@ -29,21 +29,23 @@ checks, read [Lessons learned](docs/LESSONS_LEARNED.md).
   function-body bytes (100%) in 1,328 verified units
 - Byte-matched initialized data: 129,824 / 129,824 bytes (100%)
 - Classified post-program bytes: 12,047,904 / 12,047,904 bytes (100%)
-- Classified decoded-container bytes: 13,997,274 / 14,762,912 bytes (94.81%)
-- Extracted redistributable asset bytes: 0 (none are committed)
+- Classified decoded-container bytes: 14,762,912 / 14,762,912 bytes (100%)
+- Reproducibly extracted asset-region bytes: 12,047,904 / 12,047,904
+  (generated locally; none are committed)
 - Physical ROM inventory: 12,582,912 / 12,582,912 bytes (100%)
 
-Physical coverage does not mean semantic understanding. The exact physical
-ledger classifies every ROM byte and reconstructs every non-code range, while
-its reproducible nested asset map still leaves 765,638 decoded bytes structurally unknown
-across 235 files, plus 870,338 unreferenced zero bytes that are not yet proven
-padding. See `analysis/data_map/README.md` and the gap-free
+Physical coverage does not mean that every field has a final human-readable
+name. The exact physical ledger classifies every ROM byte and reconstructs
+every non-code range; the reproducible nested map now assigns every decoded
+container byte to a proven structural family. Transform records, model-graph
+records and some texture fields retain provisional descriptive names. See
+`analysis/data_map/README.md` and the gap-free
 `analysis/data_map/rom_map.tsv`; the earlier conservative inventory remains as
 historical evidence rather than the authoritative data map.
-These ranges are not unmatched data: their original container bytes decode and
-re-encode exactly. Consequently, no non-function byte-matching work remains.
-Further names and field meanings improve semantic documentation but do not
-change byte-match progress unless new evidence changes a structural boundary.
+Every original container decodes and re-encodes exactly. Consequently, no
+non-function byte-matching or structural-coverage work remains. Further field
+names improve semantic documentation but do not change byte-match progress
+unless new evidence changes a structural boundary.
 The generated [full-ROM audit](analysis/full_rom_audit.md) records structural
 metrics and prioritized function queues without promoting heuristic findings.
 

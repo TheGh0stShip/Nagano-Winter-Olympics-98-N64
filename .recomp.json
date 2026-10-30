@@ -17,7 +17,7 @@
     "Objdiff"
   ],
   "approach": "Byte-matching C decompilation with relocation-aware verification against the USA retail ROM.",
-  "notes": "Progress is measured from byte-verified code and initialized data. Asset identification, extraction, and physical ROM inventory are reported separately.",
+  "notes": "Byte-verified code and initialized data are complete. Asset extraction, nested structural classification, reconstruction, and physical ROM inventory are also complete and reported as independent categories.",
   "maintainers": [
     {
       "name": "TheGh0stShip",
@@ -34,9 +34,7 @@
       "url": "https://bytematch.dev/TheGh0stShip/Nagano-Winter-Olympics-98-N64"
     }
   ],
-  "help": [
-    "Documenting additional asset semantics"
-  ],
+  "help": [],
   "tags": [
     "matching",
     "MIPS",

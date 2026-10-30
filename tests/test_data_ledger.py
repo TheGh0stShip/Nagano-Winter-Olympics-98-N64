@@ -15,6 +15,8 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "tools"))
 
 import konami_lz  # noqa: E402
+import asset_decode  # noqa: E402
+import image_descriptors  # noqa: E402
 import nagano_audio  # noqa: E402
 import nagano_data  # noqa: E402
 import nagano_sequences  # noqa: E402
@@ -96,8 +98,11 @@ class MapValidationTests(unittest.TestCase):
             totals[row["kind"]] = totals.get(row["kind"], 0) + size
         progress = tomllib.loads((ROOT / "config/us/asset_progress.toml").read_text())["nested"]
         self.assertEqual(sum(totals.values()), progress["total_bytes"])
-        self.assertEqual(totals["unknown"], progress["unknown_bytes"])
+        self.assertEqual(totals.get("unknown", 0), progress["unknown_bytes"])
         self.assertEqual(totals["pad"], progress["unreferenced_zero_bytes"])
+        self.assertEqual(totals.get("unknown", 0), 0)
+        self.assertEqual(progress["files_fully_decoded"], 526)
+        self.assertEqual(progress["files_partially_decoded"], 0)
 
 
 class LzTests(unittest.TestCase):
@@ -193,6 +198,55 @@ class RomTests(unittest.TestCase):
         self.assertEqual(len(ents), 538)
         self.assertEqual(ents[0]["start"], 0x3FC620)
         self.assertEqual(ents[-1]["end"], 0xBB0A20)
+
+    def test_program_side_image_descriptors(self):
+        files = {}
+        for entry in nagano_data.file_table(self.rom):
+            if entry["start"] == entry["end"]:
+                continue
+            source = self.rom[entry["start"]:entry["end"]]
+            files[entry["id"]] = (konami_lz.decode(source)[0]
+                                  if entry["compressed"] else source)
+        found = image_descriptors.find(
+            self.rom, files, ROOT / "analysis/data_map/rom_map.tsv")
+        actual = {
+            (fid, item["format"], item["width"], item["height"])
+            for fid, items in found.items() for item in items
+        }
+        self.assertEqual(actual, {
+            (3, "ci8", 320, 256),
+            (4, "ci8", 512, 352),
+            (4, "ci8", 576, 416),
+            (5, "rgba16", 320, 256),
+            (5, "ci8", 192, 96),
+            (18, "ci8", 320, 448),
+        })
+
+    def test_all_nested_record_regions_roundtrip(self):
+        files = {}
+        for entry in nagano_data.file_table(self.rom):
+            if entry["start"] == entry["end"]:
+                continue
+            source = self.rom[entry["start"]:entry["end"]]
+            files[entry["id"]] = (konami_lz.decode(source)[0]
+                                  if entry["compressed"] else source)
+        cursors = {}
+        with (ROOT / "analysis/data_map/nested_map.tsv").open() as stream:
+            for row in csv.DictReader(stream, delimiter="\t"):
+                fid = int(row["file_id"])
+                start, end = int(row["decoded_start"]), int(row["decoded_end"])
+                self.assertEqual(start, cursors.get(fid, 0))
+                cursors[fid] = end
+                blob = files[fid]
+                if row["kind"] == "dl":
+                    self.assertTrue(asset_decode.dl_roundtrip(blob, start, end))
+                elif row["kind"] == "transform9f":
+                    self.assertEqual((end - start) % 36, 0)
+                    values = struct.unpack_from(
+                        f">{(end - start) // 4}f", blob, start)
+                    self.assertEqual(struct.pack(f">{len(values)}f", *values),
+                                     blob[start:end])
+        self.assertEqual(cursors, {fid: len(blob) for fid, blob in files.items()})
 
     def test_representative_lz_files_reencode_exactly(self):
         for f in nagano_data.file_table(self.rom)[::61]:

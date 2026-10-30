@@ -133,6 +133,8 @@ def main():
                               "measures": data_category_measures(audio, audio)},
                              {"id": "assets_music", "name": "Identified compressed music sequences",
                               "measures": data_category_measures(music, music)},
+                             {"id": "assets_extracted", "name": "Extracted asset bytes",
+                              "measures": data_category_measures(asset_total, extracted)},
                              {"id": "assets_reconstructed", "name": "Byte-exact reconstructed asset-region bytes",
                               "measures": data_category_measures(asset_total, identified)},
                              {"id": "assets_nested", "name": "Classified decoded-container bytes",

@@ -8,11 +8,53 @@ from collections import Counter
 from pathlib import Path
 
 import asset_decode
+import image_descriptors
 import konami_lz
 import nagano_data
 
 
-def spans(blob: bytes):
+def descriptor_regions(blob: bytes, descs):
+    """Convert verified program-side image descriptors into typed regions.
+
+    These augment the in-file F3DEX walk: the renderer often keeps its image
+    pointer in initialized program data, so no segment pointer exists inside
+    the asset itself.
+    """
+    regions = []
+    for d in descs:
+        stride = d["width"] * d["bpp"]
+        shown_end = d["image"] + stride * d["height"]
+        source = f"descriptor ROM {d['record_rom']:#x}"
+        kind = f"image_{d['format']}"
+        regions.append(asset_decode.Region(
+            d["image"], shown_end, kind,
+            f"{d['width']}x{d['height']} ({source})"))
+
+        # Some storage blocks contain complete continuation scanlines beyond
+        # the visible descriptor height.  Only classify whole rows; any tail
+        # remains available to the ordinary decoder/unknown accounting.
+        rows = (d["image_block_end"] - d["image"]) // stride
+        if rows > d["height"]:
+            extra_start = shown_end
+            extra_end = d["image"] + rows * stride
+            continuity = image_descriptors.row_continuity(
+                blob, d["image"], d["width"], d["bpp"], d["height"],
+                rows - d["height"])
+            regions.append(asset_decode.Region(
+                extra_start, extra_end, kind,
+                f"{rows - d['height']} continuation rows "
+                f"(adjacent-row difference {continuity:.3f})"))
+
+        if d["tlut"] is not None:
+            # CI8 can address 256 entries.  Keep the entire independently
+            # delimited palette block (normally exactly 0x200 bytes).
+            regions.append(asset_decode.Region(
+                d["tlut"], d["tlut_block_end"], "tlut",
+                f"RGBA16 palette ({source})"))
+    return regions
+
+
+def spans(blob: bytes, descs=None):
     rec = asset_decode.record_stream(blob)
     if rec:
         body = rec * 12
@@ -22,21 +64,9 @@ def spans(blob: bytes):
     if rec20:
         return [(0, 8, "record_header", "4 x big-endian s16"),
                 (8, len(blob), "records_s16x10", f"{rec20} x s16[10]")]
-    if (len(blob) == 0x14210 and blob[:8] == b"\xb8\x00\x00\x00\x00\x00\x00\x00"
-            and blob[0x14008:0x14010] == blob[:8]):
-        out = [(0, 8, "dl", "display-list prologue")]
-        start = 8
-        while start < 0x1408:
-            kind = "pad" if blob[start] == 0 else "unknown"
-            end = start + 1
-            while end < 0x1408 and (blob[end] == 0) == (kind == "pad"):
-                end += 1
-            out.append((start, end, kind, "unreferenced header/zero area"))
-            start = end
-        return out + [(0x1408, 0x14008, "image_ci8", "320x240 CI8 background"),
-                      (0x14008, 0x14010, "dl", "display-list epilogue"),
-                      (0x14010, 0x14210, "tlut", "256 colors RGBA16")]
     regions, _ = asset_decode.decode_file(blob)
+    if descs:
+        regions.extend(descriptor_regions(blob, descs))
     counts, owner, kinds = asset_decode.coverage(blob, regions)
     out = []
     start = 0
@@ -44,24 +74,30 @@ def spans(blob: bytes):
         end = start + 1
         while end < len(owner) and owner[end] == owner[start]:
             end += 1
-        out.append((start, end, kinds[owner[start]], ""))
+        out.append((start, end, kinds[owner[start]],
+                    "generic structural decoder"))
         start = end
     return out
 
 
-def generate(rom: bytes):
+def generate(rom: bytes, rom_map: Path = Path("analysis/data_map/rom_map.tsv")):
     rows = []
     summaries = []
     totals = Counter()
-    for entry in nagano_data.file_table(rom):
-        if entry["start"] == entry["end"]:
-            continue
+    entries = [entry for entry in nagano_data.file_table(rom)
+               if entry["start"] != entry["end"]]
+    blobs = {}
+    for entry in entries:
         if entry["compressed"]:
-            blob, _ = konami_lz.decode(rom[entry["start"]:entry["end"]])
+            blobs[entry["id"]], _ = konami_lz.decode(
+                rom[entry["start"]:entry["end"]])
         else:
-            blob = rom[entry["start"]:entry["end"]]
+            blobs[entry["id"]] = rom[entry["start"]:entry["end"]]
+    descriptors = image_descriptors.find(rom, blobs, rom_map)
+    for entry in entries:
+        blob = blobs[entry["id"]]
         file_counts = Counter()
-        file_rows = spans(blob)
+        file_rows = spans(blob, descriptors.get(entry["id"]))
         for start, end, kind, info in file_rows:
             size = end - start
             file_counts[kind] += size

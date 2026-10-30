@@ -149,8 +149,8 @@ The ledger has 6,472 gap-free records.
 
 ## Conclusions
 
-1. Work the similarity queue first, but reject candidates whose only residual is unproven boundary padding rather than forcing inline assembly.
-2. Split the small-wrapper queue by compiler evidence and callee prototype; these are the next broad source-transfer opportunity.
-3. Treat the small-leaf queue as arithmetic, accessors, and SDK-signature work; MIPS III 64-bit helpers need per-unit `-mips3 -32` flags.
-4. Physical unknown coverage is zero. Continue nested-format work through loader references and round-trip parsers; do not treat container reconstruction as proof that every decoded child record is understood.
-5. Re-run this audit after each matching or inventory campaign so queues and totals remain derived from authoritative manifests.
+1. Every catalogued function body is covered by a byte-verified source unit.
+2. Program initialized data is byte-matched and the physical ROM ledger is gap-free.
+3. Every decoded asset-container byte has a structural classification; broad model-graph labels may still gain more specific field names.
+4. Extraction and reconstruction remain reproducible from a user-supplied ROM; generated copyrighted payloads are not committed.
+5. Re-run this audit after any catalogue or inventory change so all totals remain derived from authoritative manifests.
