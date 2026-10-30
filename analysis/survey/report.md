@@ -1,5 +1,10 @@
 # Survey: NAGANO OLYMPICS (NH5E)
 
+> **Historical survey snapshot.** These figures record the initial automated
+> survey, not current completion status. The 1,469-function count predates the
+> verified split at `0x8000D218`; see the repository README and
+> `analysis/full_rom_audit.md` for the final 1,470-function catalogue.
+
 - **Program**: static image, main segment 0x80000400..0x80081DE0 (rom); 1469 functions, 241 named from the SDK
 - **ROM understood**: 10.2 % by content, plus 7.4 % only referenced by loader tables; 10,372,608 bytes unknown in 7 ranges
 - **Next**: ROM 0x3FC620..0xC00000 (0x8039e0 bytes) is unclassified; 7.1 bits/byte, zlib ratio 0.86: raw media or lightly packed data (audio, textures, animation)

@@ -1,5 +1,5 @@
 # Function boundaries for NAGANO OLYMPICS: main segment
-# text 0x80000400..0x80060014, 1469 functions
+# text 0x80000400..0x80060014, 1470 functions
 [[section]]
 name = ".main"
 rom = 0x00001000

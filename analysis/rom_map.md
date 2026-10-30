@@ -1,5 +1,11 @@
 # USA ROM inventory
 
+> **Historical survey snapshot.** This document preserves the initial
+> conservative inventory and is not the completion report. Its 1,469-function
+> count predates the verified split at `0x8000D218`, and its data classifications
+> were superseded by [`data_map/README.md`](data_map/README.md),
+> [`full_rom_audit.md`](full_rom_audit.md), and the current README.
+
 This is a gap-free physical map of the 12,582,912-byte retail ROM. Counts are
 format-evidence counts, not guesses about nested media.
 
@@ -15,7 +21,7 @@ format-evidence counts, not guesses about nested media.
 | Unknown | 7 | 10,372,608 |
 | **Total** | **2,384** | **12,582,912** |
 
-The program catalogue has 1,469 conservative CPU-function candidates. The data
+The initial program catalogue had 1,469 conservative CPU-function candidates. The data
 survey identifies 903 objects: 435 word regions, 19 pointer regions, 151 `f32`
 objects, 216 `f64` objects, 19 strings, 61 jump tables, and 2 unreferenced
 regions. These boundaries remain candidates until manually reviewed.
